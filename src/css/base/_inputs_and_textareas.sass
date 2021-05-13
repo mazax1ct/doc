@@ -1,0 +1,104 @@
+.input-label
+  display: block
+  margin-bottom: 24px
+  position: relative
+
+  &.focused
+    .input-label__text
+      font-size: 12px
+      top: 8px
+      transform: translateY(0)
+
+    .input
+      padding-top: 24px
+      padding-bottom: 8px
+
+  &__text
+    display: block
+    font-size: 16px
+    font-weight: 700
+    line-height: 1.5
+    margin-bottom: 8px
+
+  &--with_float_label
+    .input-label__text
+      font-size: 18px
+      font-weight: 500
+      left: 20px
+      line-height: 16px
+      margin-bottom: 0
+      position: absolute
+      transition: color 0.3s
+      top: 50%
+      transform: translateY(-50%)
+      transition: transform 0.3s, font-size 0.3s, top 0.3s, color 0.3s
+      z-index: 1
+
+    .input
+      font-weight: 600
+
+      @media(min-width: 1900px)
+        font-size: 18px
+
+      &:focus
+        padding-top: 24px
+        padding-bottom: 8px
+
+      &:focus + .input-label__text
+        font-size: 12px
+        top: 8px
+        transform: translateY(0)
+
+.input,
+.textarea
+  background-color: #fff
+  border: 1px solid $color_grey
+  border-radius: 0
+  color: $text_color
+  font-size: 16px
+  font-weight: 400
+  line-height: 24px
+  transition: border-color 0.3s, padding 0.3s
+  width: 100%
+
+  &:focus
+    border-color: $color_darkblue
+
+  &.error
+    border-color: $color_red
+
+    &:focus
+      border-color: $color_red
+
+    & + .input-label__text
+      color: $color_red
+
+  &:disabled,
+  &.disabled
+    background-color: $color_grey
+
+  &::-webkit-input-placeholder
+    color: $text_color
+    opacity: 1
+
+  &::-moz-placeholder
+    color: $text_color
+    opacity: 1
+
+  &:-ms-input-placeholder
+    color: $text_color
+    opacity: 1
+
+.input
+  height: 56px
+  padding: 16px 20px
+
+.textarea
+  height: 100px
+  padding: 16px 20px
+  resize: none
+
+input,
+textarea
+  &:focus
+    outline: none

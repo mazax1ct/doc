@@ -1,0 +1,109 @@
+.nobanner-page
+  .header
+    background-color: #fff
+
+  .header__top
+    @media(min-width: 1024px)
+      background-color: #000
+
+.header
+  height: 84px
+  left: 0
+  position: fixed
+  right: 0
+  top: 0
+  transition: background-color 0.3s, height 0.3s
+  z-index: 10
+
+  &.scrolled
+    background-color: #fff
+    height: 77px
+
+    .header__logo
+      height: 59px
+      transform: translateY(0)
+      width: 86px
+
+      svg
+        fill: #08205C
+        height: 59px
+        width: 86px
+
+    .header__menu-toggler,
+    .header__search-toggler
+      border-color: rgba($color_grey, 0.3)
+      height: 77px
+
+      svg
+        fill: $color_grey
+
+    &::after,
+    &::before
+      border-top-color: rgba($color_grey, 0.3)
+      width: 100%
+
+  &::after,
+  &::before
+    border-top: 1px solid $color_grey
+    content: ''
+    position: absolute
+    top: 100%
+    transition: border-color 0.3s, width 0.3s
+    width: calc(50% - 71px)
+    z-index: 1
+
+  &::before
+    left: 0
+
+  &::after
+    left: auto
+    right: 0
+
+  &__top
+    display: none
+
+  &__bottom
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  &__menu-toggler,
+  &__search-toggler
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    height: 84px
+    justify-content: center
+    padding: 0
+    transition: height 0.3s, border-color 0.3s
+    width: 84px
+
+    svg
+      fill: #fff
+      height: 20px
+      transition: fill 0.3s
+      width: 20px
+
+  &__menu-toggler
+    border-right: 1px solid $color_grey
+
+  &__search-toggler
+    border-left: 1px solid $color_grey
+
+    span
+      display: none
+
+  &__logo
+    display: block
+    height: 80px
+    transform: translateY(13px)
+    transition: height 0.3s, width 0.3s, transform 0.3s
+    width: 116px
+
+    svg
+      fill: #fff
+      height: 80px
+      transition: fill 0.3s, height 0.3s, width 0.3s
+      width: 116px
