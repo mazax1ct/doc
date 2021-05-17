@@ -1,0 +1,99 @@
+.shade
+  background-color: rgba($color_darkblue, 0.5)
+  bottom: 0
+  display: none
+  left: 0
+  position: fixed
+  right: 0
+  top: 77px
+  z-index: 10
+
+  @media(min-width: 1024px)
+    top: 0
+
+  &.is-open
+    cursor: url('../images/icons/cursor.svg'), pointer
+    display: block
+
+.popover
+  border-top: 1px solid rgba($color_grey, 0.3)
+  background-color: #fff
+  cursor: initial
+  display: none
+  height: calc(100% - 77px)
+  left: 0
+  position: fixed
+  top: 77px
+  text-align: center
+  width: 100%
+  z-index: 10
+
+  @media(min-width: 1024px)
+    box-shadow: 0 4px 4px 0 rgba(#000, 0.25)
+    border-top: none
+    height: 100%
+    top: 0
+    right: auto
+    width: 645px
+
+  &.is-open
+    display: flex
+
+  &__closer
+    align-items: center
+    border: none
+    border-right: 1px solid rgba($color_grey, 0.3)
+    background-color: #fff
+    color: $color_darkblue
+    cursor: pointer
+    display: flex
+    font-size: 13px
+    font-weight: 500
+    height: 76px
+    justify-content: center
+    letter-spacing: 3px
+    left: 0
+    top: -77px
+    position: absolute
+    padding: 0
+    text-transform: uppercase
+    width: 84px
+    z-index: 1
+
+    @media(min-width: 1024px)
+      border-right: none
+      position: static
+      padding-left: 30px
+      padding-right: 30px
+      width: auto
+
+    svg
+      fill: $color_grey
+      height: 20px
+      width: 20px
+
+      @media(min-width: 1024px)
+        fill: $color_darkblue
+
+    span
+      display: none
+      margin-left: 10px
+
+      @media(min-width: 1024px)
+        display: block
+
+  &__inner
+    display: flex
+    flex-direction: column
+    height: 100%
+    overflow-y: auto
+    padding-left: 30px
+    padding-right: 30px
+
+    @media(min-width: 1024px)
+      height: calc(100% - 76px)
+
+    &::after
+      display: block
+      content: ''
+      min-height: 50px

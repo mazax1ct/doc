@@ -1,0 +1,41 @@
+.socials
+  display: flex
+  justify-content: center
+
+.social-link
+  align-items: center
+  border: 1px solid $color_grey
+  display: flex
+  justify-content: center
+  height: 54px
+  width: 54px
+
+  @media(min-width: 1024px)
+    height: 84px
+    width: 84px
+
+  &:not(:last-child)
+    border-right: none
+
+  &:hover,
+  &:focus
+    color: $color_lightblue
+
+    svg
+      fill: $color_lightblue
+
+  &:active
+    color: $color_grey
+
+    svg
+      fill: $color_grey
+
+  svg
+    fill: $color_darkblue
+    height: 22px
+    transition: fill 0.3s
+    width: 22px
+
+    @media(min-width: 1024px)
+      height: 34px
+      width: 34px

@@ -6,19 +6,8 @@
     @media(min-width: 1024px)
       background-color: #000
 
-.header
-  height: 84px
-  left: 0
-  position: fixed
-  right: 0
-  top: 0
-  transition: background-color 0.3s, height 0.3s
-  z-index: 10
-
-  @media(min-width: 1024px)
-    height: auto
-
-  &.scrolled
+.popover-open
+  .header
     background-color: #fff
     height: 77px
 
@@ -30,8 +19,11 @@
 
     .header__logo
       height: 59px
-      transform: translate(-50%, -10px)
+      transform: translateY(0)
       width: 86px
+
+      @media(min-width: 1024px)
+        transform: translate(-50%, -10px)
 
       svg
         fill: #08205C
@@ -78,6 +70,117 @@
     .header__enter-link
       color: $color_grey
 
+    .header__menu-toggler,
+    .header__search-toggler,
+    .header__cart-link,
+    .header__fav-link,
+    .header__enter-link
+      &:hover,
+      &:focus
+        color: $color_lightblue
+
+        svg
+          fill: $color_lightblue
+
+      &:active
+        color: $color_grey
+
+        svg
+          fill: $color_grey
+
+.header
+  height: 84px
+  left: 0
+  position: fixed
+  right: 0
+  top: 0
+  transition: background-color 0.3s, height 0.3s
+  z-index: 10
+
+  @media(min-width: 1024px)
+    height: auto
+
+  &.scrolled
+    background-color: #fff
+    height: 77px
+
+    @media(min-width: 1024px)
+      height: 175px
+
+    .header__top
+      background-color: $color_darkblue
+
+    .header__logo
+      height: 59px
+      transform: translateY(0)
+      width: 86px
+
+      @media(min-width: 1024px)
+        transform: translate(-50%, -10px)
+
+      svg
+        fill: #08205C
+        height: 59px
+        width: 86px
+
+        @media(min-width: 1024px)
+          opacity: 0
+
+      &::after
+        @media(min-width: 1024px)
+          opacity: 1
+
+    .header__menu-toggler,
+    .header__search-toggler
+      border-color: rgba($color_grey, 0.3)
+      color: $color_grey
+      height: 77px
+
+      @media(min-width: 1024px)
+        border-color: rgba($color_gold, 0.3)
+        height: 84px
+
+      svg
+        fill: $color_grey
+
+    .header__bottom
+      &::after,
+      &::before
+        border-top-color: rgba($color_grey, 0.3)
+        width: 50%
+
+        @media(min-width: 1024px)
+          border-color: rgba($color_gold, 0.3)
+
+    .header__cart-link,
+    .header__fav-link,
+    .header__enter-link
+      border-left-color: rgba($color_gold, 0.3)
+
+      svg
+        fill: $color_grey
+
+    .header__enter-link
+      color: $color_grey
+
+    .header__menu-toggler,
+    .header__search-toggler,
+    .header__cart-link,
+    .header__fav-link,
+    .header__enter-link
+      &:hover,
+      &:focus
+        color: $color_lightblue
+
+        svg
+          fill: $color_lightblue
+
+      &:active
+        color: $color_grey
+
+        svg
+          fill: $color_grey
+
   &__top
     border-bottom: 1px solid #fff
     display: none
@@ -105,6 +208,8 @@
     color: #fff
     cursor: pointer
     display: flex
+    font-size: 10px
+    font-weight: 500
     letter-spacing: 1px
     margin-right: 20px
     padding: 0
@@ -112,6 +217,9 @@
     text-transform: uppercase
 
     @media(min-width: 1350px)
+      font-size: 13px
+
+    @media(min-width: 1400px)
       letter-spacing: 3px
       margin-right: 30px
 
@@ -146,7 +254,7 @@
       &:not(:last-child)
         margin-right: 20px
 
-        @media(min-width: 1350px)
+        @media(min-width: 1400px)
           margin-right: 30px
 
     a
@@ -165,6 +273,8 @@
     border: none
     color: #fff
     cursor: pointer
+    font-size: 10px
+    font-weight: 500
     letter-spacing: 1px
     margin-right: 20px
     padding: 0
@@ -172,8 +282,11 @@
     text-transform: uppercase
 
     @media(min-width: 1350px)
+      font-size: 13px
+
+    @media(min-width: 1400px)
       letter-spacing: 3px
-      margin-right: 20px
+      margin-right: 30px
 
     &:hover,
     &:focus
@@ -187,7 +300,7 @@
     margin-right: 20px
     text-decoration: none
 
-    @media(min-width: 1350px)
+    @media(min-width: 1400px)
       margin-right: 30px
 
     &:hover,
@@ -362,6 +475,7 @@
 
   &__cart-icon
     display: block
+    margin-right: 4px
     position: relative
 
     svg
@@ -404,4 +518,40 @@
     text-decoration: none
     text-transform: uppercase
     transition: color 0.3s, border-color 0.3s
-    width: 184px
+    width: 84px
+
+    @media(min-width: 1350px)
+      width: 184px
+
+    span
+      display: none
+
+      @media(min-width: 1350px)
+        display: block
+
+    svg
+      fill: #fff
+      height: 24px
+      transition: fill 0.3s
+      width: 24px
+
+      @media(min-width: 1350px)
+        display: none
+
+  &__menu-toggler,
+  &__search-toggler,
+  &__cart-link,
+  &__fav-link,
+  &__enter-link
+    &:hover,
+    &:focus
+      color: $color_lightblue
+
+      svg
+        fill: $color_lightblue
+
+    &:active
+      color: $color_grey
+
+      svg
+        fill: $color_grey
