@@ -1,0 +1,100 @@
+.main-menu
+  border-top: 1px solid rgba($color_grey, 0.3)
+  background-color: #fff
+  display: none
+  height: calc(100% - 77px)
+  left: 0
+  position: fixed
+  padding-left: 30px
+  padding-right: 30px
+  top: 77px
+  text-align: center
+  width: 100%
+  z-index: 10
+
+  @media(min-width: 1024px)
+    box-shadow: 0 4px 4px 0 rgba(#000, 0.25)
+
+  &.is-open
+    display: block
+
+  &__list
+    margin-top: 40px
+
+  &__item
+    align-items: center
+    display: flex
+    justify-content: space-between
+
+    &:not(:last-child)
+      margin-bottom: 10px
+
+  &__link
+    display: block
+    font-size: 13px
+    font-weight: 500
+    line-height: 16px
+    padding-top: 10px
+    padding-bottom: 10px
+    text-transform: uppercase
+    text-decoration: none
+
+  &__opener
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    height: 36px
+    justify-content: center
+    margin-right: -10px
+    padding: 0
+    width: 36px
+
+    svg
+      fill: $color_darkblue
+      height: 16px
+      width: 16px
+
+  &__dropdown
+    border-top: 1px solid rgba($color_grey, 0.3)
+    background-color: #fff
+    display: none
+    height: calc(100% - 77px)
+    left: 0
+    position: fixed
+    padding-left: 30px
+    padding-right: 30px
+    top: 77px
+    text-align: center
+    width: 100%
+    z-index: 10
+
+  &__dropdown-title
+    font-size: 13px
+    font-weight: 700
+    line-height: 16px
+    margin-top: 50px
+    margin-bottom: 30px
+    position: relative
+    text-align: center
+
+  &__back
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    height: 36px
+    justify-content: center
+    left: -10px
+    position: absolute
+    padding: 0
+    top: 50%
+    transform: translateY(-50%)
+    width: 36px
+
+    svg
+      fill: $color_darkblue
+      height: 16px
+      width: 16px

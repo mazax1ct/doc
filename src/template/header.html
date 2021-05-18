@@ -18,11 +18,60 @@
   <div class="header__bottom">
     <button class="js-menu-toggler header__menu-toggler" type="button" title="Меню"><svg><use xlink:href="#burger"></use></svg></button>
     <a class="header__logo" href="main.html" title="На главную"><svg><use xlink:href="#logo"></use></svg></a>
-    <button class="header__search-toggler" type="button"><svg><use xlink:href="#search"></use></svg> <span>Поиск</span></button>
+    <button class="js-popover-opener header__search-toggler" type="button" data-popover="search"><svg><use xlink:href="#search"></use></svg> <span>Поиск</span></button>
     <div class="header__bottom-right">
       <a class="header__cart-link" href="cart.html" title="Корзина"><span class="header__cart-icon"><svg><use xlink:href="#cart_2"></use></svg> <span class="header__cart-qnt">2</span></span></a>
-      <a class="header__fav-link" href="favorites.html" title="Избранное"><svg><use xlink:href="#favorites"></use></svg></a>
+      <a class="js-popover-opener header__fav-link" href="favorites.html" title="Избранное" data-popover="favorites"><svg><use xlink:href="#favorites"></use></svg></a>
       <a class="header__enter-link" href="login.html" title="Личный кабинет"><span>Вход</span> <svg><use xlink:href="#personal"></use></svg></a>
     </div>
   </div>
+  <nav class="main-menu">
+    <ul class="main-menu__list">
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="#">О бренде</a> <button class="main-menu__opener" type="button"><svg><use xlink:href="#chevron_right"></use></svg></button>
+        <div class="main-menu__dropdown">
+          <p class="main-menu__dropdown-title"><button class="main-menu__back" type="button"><svg><use xlink:href="#chevron_left"></use></svg></button> СВАДЬБА</p>
+          <div class="sub-menu">
+            <div class="sub-menu__block">
+              <p>Укарашения на свадьбу</p>
+              <ul class="sub-menu__list">
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Помолвочные кольца</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Обручальные кольца</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Парные кольца</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Украшения для невесты</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Украшения для жениха</a></li>
+              </ul>
+            </div>
+            <div class="sub-menu__block">
+              <p>Драгоценные камни</p>
+              <ul class="sub-menu__list">
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Бриллианты</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Рубины</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Сапфиры</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Изумруды</a></li>
+              </ul>
+            </div>
+            <div class="sub-menu__block">
+              <p>Материал</p>
+              <ul class="sub-menu__list">
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Комбинированное золото</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Белое золото</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Лимонное золото</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Золото</a></li>
+              </ul>
+            </div>
+            <div class="sub-menu__block">
+              <img src="images/content/video.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Свадьба</a> <button class="main-menu__opener" type="button"><svg><use xlink:href="#chevron_right"></use></svg></button></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Помолвка</a> <button class="main-menu__opener" type="button"><svg><use xlink:href="#chevron_right"></use></svg></button></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Парные кольца</a> <button class="main-menu__opener" type="button"><svg><use xlink:href="#chevron_right"></use></svg></button></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Ювелирные украшения</a> <button class="main-menu__opener" type="button"><svg><use xlink:href="#chevron_right"></use></svg></button></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Под заказ</a> <button class="main-menu__opener" type="button"><svg><use xlink:href="#chevron_right"></use></svg></button></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Контакты</a></li>
+    </ul>
+  </nav>
 </header>

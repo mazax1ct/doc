@@ -12,7 +12,7 @@
     top: 0
 
   &.is-open
-    cursor: url('../images/icons/cursor.svg'), pointer
+    cursor: url('../images/icons/cursor.svg') 38 38, pointer
     display: block
 
 .popover
@@ -39,6 +39,28 @@
   &.is-open
     display: flex
 
+  &--wide
+    @media(min-width: 1024px)
+      width: 100%
+
+    @media(min-width: 1350px)
+      height: auto
+
+  &--at_right
+    @media(min-width: 1024px)
+      left: auto
+      right: 0
+
+    .popover__closer
+      @media(min-width: 1024px)
+        flex-direction: row-reverse
+        margin-left: auto
+
+      span
+        @media(min-width: 1024px)
+          margin-left: 0
+          margin-right: 10px
+
   &__closer
     align-items: center
     border: none
@@ -57,6 +79,7 @@
     position: absolute
     padding: 0
     text-transform: uppercase
+    transition: color 0.3s
     width: 84px
     z-index: 1
 
@@ -67,9 +90,23 @@
       padding-right: 30px
       width: auto
 
+    &:hover,
+    &:focus
+      color: $color_lightblue
+
+      svg
+        fill: $color_lightblue
+
+    &:active
+      color: $color_grey
+
+      svg
+        fill: $color_grey
+
     svg
       fill: $color_grey
       height: 20px
+      transition: fill 0.3s
       width: 20px
 
       @media(min-width: 1024px)

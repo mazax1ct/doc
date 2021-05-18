@@ -30,15 +30,15 @@ $(document).on('click', '.js-menu-toggler', function () {
   $(this).toggleClass('is-active');
 
   if($(this).hasClass('is-active')) {
-    $('body').addClass('menu-open');
+    $('body').addClass('popover-open');
     $(this).find('svg use').attr('xlink:href', '#close');
-    $('.header__menu-dropdown').addClass('is-open');
-    document.addEventListener('click', headerDropdownClose);
+    $('.main-menu').addClass('is-open');
+    //document.addEventListener('click', headerDropdownClose);
   } else {
-    $('body').removeClass('menu-open');
+    $('body').removeClass('popover-open');
     $(this).find('svg use').attr('xlink:href', '#burger');
-    $('.header__menu-dropdown').removeClass('is-open');
-    document.removeEventListener('click', headerDropdownClose);
+    $('.main-menu').removeClass('is-open');
+    //document.removeEventListener('click', headerDropdownClose);
   }
 
   return false;

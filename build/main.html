@@ -138,6 +138,12 @@
         <path d="M9 11.25C7.7595 11.25 6.75 10.2405 6.75 9C6.75 7.7595 7.7595 6.75 9 6.75C10.2405 6.75 11.25 7.7595 11.25 9C11.25 10.2405 10.2405 11.25 9 11.25ZM9 7.875C8.37975 7.875 7.875 8.37975 7.875 9C7.875 9.62025 8.37975 10.125 9 10.125C9.62025 10.125 10.125 9.62025 10.125 9C10.125 8.37975 9.62025 7.875 9 7.875Z"/>
       </g>
     </symbol>
+    <symbol id="chevron_left" viewBox="0 0 16 16">
+      <path d="M11.8,15.5c-0.1,0-0.2,0-0.3-0.1L3.7,8.3l7.1-7.7c0.2-0.2,0.5-0.2,0.7,0s0.2,0.5,0,0.7l-6.4,7l7,6.4c0.2,0.2,0.2,0.5,0,0.7C12,15.5,11.9,15.5,11.8,15.5z"/>
+    </symbol>
+    <symbol id="chevron_right" viewBox="0 0 16 16">
+      <path d="M4.4,15.5c-0.1,0-0.3,0-0.4-0.1c-0.2-0.2-0.2-0.5,0-0.7L10.7,8L4,1.3C3.8,1.1,3.8,0.8,4,0.6c0.2-0.2,0.5-0.2,0.7,0L12.1,8l-7.4,7.4C4.6,15.5,4.5,15.5,4.4,15.5z"/>
+    </symbol>
   </svg>
 
   <header class="header compensate-for-scrollbar">
@@ -160,13 +166,62 @@
     <div class="header__bottom">
       <button class="js-menu-toggler header__menu-toggler" type="button" title="Меню"><svg><use xlink:href="#burger"></use></svg></button>
       <a class="header__logo" href="main.html" title="На главную"><svg><use xlink:href="#logo"></use></svg></a>
-      <button class="header__search-toggler" type="button"><svg><use xlink:href="#search"></use></svg> <span>Поиск</span></button>
+      <button class="js-popover-opener header__search-toggler" type="button" data-popover="search"><svg><use xlink:href="#search"></use></svg> <span>Поиск</span></button>
       <div class="header__bottom-right">
         <a class="header__cart-link" href="cart.html" title="Корзина"><span class="header__cart-icon"><svg><use xlink:href="#cart_2"></use></svg> <span class="header__cart-qnt">2</span></span></a>
-        <a class="header__fav-link" href="favorites.html" title="Избранное"><svg><use xlink:href="#favorites"></use></svg></a>
+        <a class="js-popover-opener header__fav-link" href="favorites.html" title="Избранное" data-popover="favorites"><svg><use xlink:href="#favorites"></use></svg></a>
         <a class="header__enter-link" href="login.html" title="Личный кабинет"><span>Вход</span> <svg><use xlink:href="#personal"></use></svg></a>
       </div>
     </div>
+    <nav class="main-menu">
+      <ul class="main-menu__list">
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">О бренде</a> <button class="main-menu__opener" type="button"><svg><use xlink:href="#chevron_right"></use></svg></button>
+          <div class="main-menu__dropdown">
+            <p class="main-menu__dropdown-title"><button class="main-menu__back" type="button"><svg><use xlink:href="#chevron_left"></use></svg></button> СВАДЬБА</p>
+            <div class="sub-menu">
+              <div class="sub-menu__block">
+                <p>Укарашения на свадьбу</p>
+                <ul class="sub-menu__list">
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Помолвочные кольца</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Обручальные кольца</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Парные кольца</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Украшения для невесты</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Украшения для жениха</a></li>
+                </ul>
+              </div>
+              <div class="sub-menu__block">
+                <p>Драгоценные камни</p>
+                <ul class="sub-menu__list">
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Бриллианты</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Рубины</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Сапфиры</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Изумруды</a></li>
+                </ul>
+              </div>
+              <div class="sub-menu__block">
+                <p>Материал</p>
+                <ul class="sub-menu__list">
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Комбинированное золото</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Белое золото</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Лимонное золото</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Золото</a></li>
+                </ul>
+              </div>
+              <div class="sub-menu__block">
+                <img src="images/content/video.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Свадьба</a> <button class="main-menu__opener" type="button"><svg><use xlink:href="#chevron_right"></use></svg></button></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Помолвка</a> <button class="main-menu__opener" type="button"><svg><use xlink:href="#chevron_right"></use></svg></button></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Парные кольца</a> <button class="main-menu__opener" type="button"><svg><use xlink:href="#chevron_right"></use></svg></button></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Ювелирные украшения</a> <button class="main-menu__opener" type="button"><svg><use xlink:href="#chevron_right"></use></svg></button></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Под заказ</a> <button class="main-menu__opener" type="button"><svg><use xlink:href="#chevron_right"></use></svg></button></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Контакты</a></li>
+      </ul>
+    </nav>
   </header>
 
   <div class="shade">
@@ -206,6 +261,120 @@
             <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Facebook"><svg><use xlink:href="#fb_stroke"></use></svg></a>
           </div>
         </div>
+      </div>
+    </div>
+  
+    <div class="search popover popover--wide">
+      <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg><use xlink:href="#close"></use></svg> <span>Закрыть</span></button>
+      <a class="search__to-catalog" href="#">Перейти в каталог <svg><use xlink:href="#chevron_right"></use></svg></a>
+      <div class="popover__inner">
+        <p class="search__title">Поиск по каталогу</p>
+        <div class="search__form-block">
+          <form class="search__form" action="search.html" method="get">
+            <input class="search__form-input" name="q" type="text" value="" placeholder="Поиск по каталогу" autocomplete="off">
+            <button class="search__form-submit" type="submit" title="Искать" value="Искать"><svg><use xlink:href="#search"></use></svg></button>
+          </form>
+        </div>
+        <div class="search__vars">
+          <div class="search__vars-block">
+            <p class="search__vars-title">По запросу</p>
+            <ul class="search__vars-menu">
+              <li><button type="button">Изумруд</button></li>
+              <li><button type="button">Золотые серьги с изумрудом</button></li>
+              <li><button type="button">Золотое кольцо с изумрудом</button></li>
+              <li><button type="button">Серьги с изумрудом</button></li>
+              <li><button type="button">Кольцо с изумрудом</button></li>
+              <li><button type="button">С изумрудом</button></li>
+              <li><button type="button">Кольца золотые для женщины с изумрудом</button></li>
+              <li><button type="button">Подвеска с изумрудом</button></li>
+            </ul>
+          </div>
+          <div class="search__vars-block">
+            <p class="search__vars-title">Подборки</p>
+            <ul class="search__vars-menu">
+              <li><button type="button">Кольца для помолвки</button></li>
+              <li><button type="button">Комплекты</button></li>
+              <li><button type="button">Украшения для невесты</button></li>
+              <li><button type="button">Украшения для жениха</button></li>
+              <li><button type="button">Золотые серьги</button></li>
+              <li><button type="button">Обручальные кольца</button></li>
+              <li><button type="button">Парные кольца</button></li>
+            </ul>
+          </div>
+          <div class="search__vars-block">
+            <a class="search__to-catalog2" href="#">Перейти в каталог <svg><use xlink:href="#chevron_right"></use></svg></a>
+            <p class="search__vars-title">Популярные товары</p>
+            <ul class="popular-list">
+              <li class="popular-list__item">
+                <div class="popular">
+                  <a class="popular__link" href="detail.html">
+                    <span class="popular__image"><img src="images/content/popular/img_1.jpg" srcset="images/content/popular/img_1@2x.jpg 2x" alt="Кольцо с бриллиантами"></span>
+                    <span class="popular__title">Кольцо с бриллиантами</span>
+                  </a>
+                  <p class="popular__price popular__price--old">93 000 руб.</p>
+                  <p class="popular__price">41 600 руб.</p>
+                </div>
+              </li>
+              <li class="popular-list__item">
+                <div class="popular">
+                  <a class="popular__link" href="detail.html">
+                    <span class="popular__image"><img src="images/content/popular/img_1.jpg" srcset="images/content/popular/img_1@2x.jpg 2x" alt="Кольцо с бриллиантами"></span>
+                    <span class="popular__title">Кольцо с бриллиантами</span>
+                  </a>
+                  <p class="popular__price popular__price--old">93 000 руб.</p>
+                  <p class="popular__price">41 600 руб.</p>
+                </div>
+              </li>
+              <li class="popular-list__item">
+                <div class="popular">
+                  <a class="popular__link" href="detail.html">
+                    <span class="popular__image"><img src="images/content/popular/img_1.jpg" srcset="images/content/popular/img_1@2x.jpg 2x" alt="Кольцо с бриллиантами"></span>
+                    <span class="popular__title">Кольцо с бриллиантами</span>
+                  </a>
+                  <p class="popular__price popular__price--old">93 000 руб.</p>
+                  <p class="popular__price">41 600 руб.</p>
+                </div>
+              </li>
+              <li class="popular-list__item">
+                <div class="popular">
+                  <a class="popular__link" href="detail.html">
+                    <span class="popular__image"><img src="images/content/popular/img_1.jpg" srcset="images/content/popular/img_1@2x.jpg 2x" alt="Кольцо с бриллиантами"></span>
+                    <span class="popular__title">Кольцо с бриллиантами</span>
+                  </a>
+                  <p class="popular__price popular__price--old">93 000 руб.</p>
+                  <p class="popular__price">41 600 руб.</p>
+                </div>
+              </li>
+              <li class="popular-list__item">
+                <div class="popular">
+                  <a class="popular__link" href="detail.html">
+                    <span class="popular__image"><img src="images/content/popular/img_1.jpg" srcset="images/content/popular/img_1@2x.jpg 2x" alt="Кольцо с бриллиантами"></span>
+                    <span class="popular__title">Кольцо с бриллиантами</span>
+                  </a>
+                  <p class="popular__price popular__price--old">93 000 руб.</p>
+                  <p class="popular__price">41 600 руб.</p>
+                </div>
+              </li>
+              <li class="popular-list__item">
+                <div class="popular">
+                  <a class="popular__link" href="detail.html">
+                    <span class="popular__image"><img src="images/content/popular/img_1.jpg" srcset="images/content/popular/img_1@2x.jpg 2x" alt="Кольцо с бриллиантами"></span>
+                    <span class="popular__title">Кольцо с бриллиантами</span>
+                  </a>
+                  <p class="popular__price popular__price--old">93 000 руб.</p>
+                  <p class="popular__price">41 600 руб.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="favorites popover popover--at_right">
+      <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg><use xlink:href="#close"></use></svg> <span>Закрыть</span></button>
+      <div class="popover__inner">
+  
       </div>
     </div>
   </div>
@@ -308,6 +477,8 @@
   <script src="js/inputmask-init.js"></script>
   <script src="js/header.js"></script>
   <script src="js/popovers.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/main-menu.js"></script>
   <script src="js/footer.js"></script>
   <script src="js/main.js"></script>
   <script src="js/preloader.js"></script>
