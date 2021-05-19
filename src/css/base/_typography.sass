@@ -19,9 +19,14 @@ a
   &:hover,
   &:focus
     color: $color_lightblue
+    outline: none
 
   &:active
     color: $color_grey
+
+*
+  &:focus
+    outline: none !important
 
 h1,.h1,
 h2,.h2,
@@ -98,10 +103,7 @@ table,
 .table-responsive,
 .responsive-table
   margin-top: 0
-  margin-bottom: 16px
-
-  @media(min-width: 1900px)
-    margin-bottom: 24px
+  margin-bottom: 30px
 
   &:last-child
     margin-bottom: 0
@@ -116,22 +118,29 @@ ul
 
   &:not([class])
     li
-      padding-left: 24px
+      padding-left: 28px
       position: relative
+
+      &:not(:last-child)
+        margin-bottom: 30px
 
       &::before
         background-color: $color_grey
+        border-radius: 4px
         content: ''
         height: 8px
         left: 0
         position: absolute
-        top: 1.1em
+        top: 0.7em
         transform: translateY(-50%)
         width: 8px
         z-index: 1
 
-        @media(min-width: 1900px)
-          top: 1em
+ol
+  &:not([class])
+    li
+      &:not(:last-child)
+        margin-bottom: 30px
 
 table
   border-collapse: collapse

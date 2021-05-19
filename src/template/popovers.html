@@ -1,11 +1,11 @@
 <div class="shade">
-  <div class="locations popover">
+  <div class="locations popover" tabindex="0">
     <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg><use xlink:href="#close"></use></svg> <span>Закрыть</span></button>
     <div class="popover__inner">
       <button class="locations__aim" type="button"><svg><use xlink:href="#aim"></use></svg>Определить город автоматически</button>
-      <form class="locations__form" action="">
+      <form class="locations__form" action="" method="get">
         <input class="locations__form-input input" type="text" placeholder="Выберите город">
-        <button class="locations__form-submit" type="button"><span>Изменить</span></button>
+        <button class="locations__form-submit btn btn--type_4" type="submit">Изменить</button>
       </form>
       <p class="locations__list-title">Адреса магазинов в твоём городе:</p>
       <div class="locations__list">
@@ -38,7 +38,7 @@
     </div>
   </div>
 
-  <div class="search popover popover--wide">
+  <div class="search popover popover--wide" tabindex="0">
     <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg><use xlink:href="#close"></use></svg> <span>Закрыть</span></button>
     <a class="search__to-catalog" href="#">Перейти в каталог <svg><use xlink:href="#chevron_right"></use></svg></a>
     <div class="popover__inner">
@@ -145,10 +145,30 @@
     </div>
   </div>
 
-  <div class="favorites popover popover--at_right">
+  <div class="favorites popover popover--at_right" tabindex="0">
     <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg><use xlink:href="#close"></use></svg> <span>Закрыть</span></button>
     <div class="popover__inner">
 
+    </div>
+  </div>
+
+  <div class="cart popover popover--at_right" tabindex="0">
+    <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg><use xlink:href="#close"></use></svg> <span>Закрыть</span></button>
+    <div class="popover__inner">
+      <p class="cart__accaunt-title">Добро пожаловать в ваш аккаунт,<br> Валерия!</p>
+      <p class="cart__title">Ваша корзина</p>
+      <div class="cart__list-block">
+        <div class="cart__item"></div>
+      </div>
+      <a class="btn btn--type_1" href="cart.html">Перейти к оформлению</a>
+      <a class="btn btn--type_2" href="cart.html">Вернуться к покупкам</a>
+
+      <div class="help-block">
+        <p>Нужна помощь?</p>
+        <p>Позвоните нам</p>
+        <p><a href="tel:+78008888888">8 800 888 88 88</a></p>
+        <p><a href="#">Клиентская поддержка</a></p>
+      </div>
     </div>
   </div>
 </div>

@@ -1,9 +1,13 @@
+.input-label
+  display: block
+  margin-bottom: 25px
+
 .input,
 .textarea
   background-color: #fff
   border: 1px solid $color_grey
   border-radius: 0
-  color: $color_grey
+  color: $color_darkblue
   font-size: 13px
   font-weight: 500
   line-height: 16px
@@ -16,15 +20,55 @@
     border-color: $color_darkblue
     color: $color_darkblue
 
+    &::-webkit-input-placeholder
+      color: rgba($color_grey, 0.5)
+
+    &::-moz-placeholder
+      color: rgba($color_grey, 0.5)
+
+    &:-ms-input-placeholder
+      color: rgba($color_grey, 0.5)
+
   &.error
     border-color: $color_red
+    color: $color_red
+
+    &::-webkit-input-placeholder
+      color: rgba($color_red, 0.7)
+
+    &::-moz-placeholder
+      color: rgba($color_red, 0.7)
+
+    &:-ms-input-placeholder
+      color: rgba($color_red, 0.7)
 
     &:focus
       border-color: $color_red
+      color: $color_red
+
+      &::-webkit-input-placeholder
+        color: rgba($color_red, 0.5)
+
+      &::-moz-placeholder
+        color: rgba($color_red, 0.5)
+
+      &:-ms-input-placeholder
+        color: rgba($color_red, 0.5)
 
   &:disabled,
   &.disabled
-    background-color: rgba($color_grey, 0.5)
+    background-color: rgba($color_grey, 0.3)
+    border-color: transparent
+    color: rgba($color_grey, 0.5)
+
+    &::-webkit-input-placeholder
+      color: rgba($color_grey, 0.5)
+
+    &::-moz-placeholder
+      color: rgba($color_grey, 0.5)
+
+    &:-ms-input-placeholder
+      color: rgba($color_grey, 0.5)
 
   &::-webkit-input-placeholder
     color: $color_grey

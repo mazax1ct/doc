@@ -21,12 +21,14 @@
   //= template/style.html
 </head>
 
-<body>
+<body class="nobanner-page">
   //= template/preloader.html
 
   //= template/sprite.html
 
   //= template/header.html
+
+  //= template/popovers.html
 
   <main class="page-content">
     <div class="container">
@@ -62,52 +64,28 @@
         <li>нумерованный список</li>
       </ol>
       <form class="form" method="post" action="index.html">
-        <label class="js-input-label input-label input-label--with_float_label">
-          <input class="input" type="text" value=""/>
-          <span class="input-label__text">Ваше имя</span>
-        </label>
-
-        <label class="js-input-label input-label input-label--with_float_label">
-          <input class="input" type="text" value="Владимир"/>
-          <span class="input-label__text">Ваше имя</span>
-        </label>
-
-        <label class="js-input-label input-label input-label--with_float_label">
-          <input class="input" type="text" value="" disabled/>
-          <span class="input-label__text">Ваше имя</span>
-        </label>
-
-        <label class="js-input-label input-label input-label--with_float_label">
-          <input class="input" type="text" value="Владимир" disabled/>
-          <span class="input-label__text">Ваше имя</span>
-        </label>
-
-        <label class="js-input-label input-label input-label--with_float_label">
-          <input class="input error" type="text" value="Владимир"/>
-          <span class="input-label__text">Ваше имя</span>
-        </label>
-
-        <label class="js-input-label input-label input-label--with_float_label">
-          <input class="input error" type="text" value="" disabled/>
-          <span class="input-label__text">Ваше имя</span>
-        </label>
-
-        <label class="js-input-label input-label input-label--with_float_label">
-          <input class="input error" type="text" value="Владимир" disabled/>
-          <span class="input-label__text">Ваше имя</span>
+        <label class="input-label">
+          <input class="input" type="text" value="" placeholder="Ваше имя"/>
         </label>
 
         <label class="input-label">
-          <span class="input-label__text">Обычный лейбл</span>
-          <input class="input" type="text" value=""/>
+          <input class="input" type="text" value="Владимир" placeholder="Ваше имя"/>
         </label>
 
         <label class="input-label">
-          <input class="input" type="text" value="" placeholder="Обычный плейсхолдер"/>
+          <input class="input error" type="text" value="" placeholder="Ваше имя"/>
         </label>
 
         <label class="input-label">
-          <input class="input" type="text" value="" disabled placeholder="Обычный плейсхолдер"/>
+          <input class="input error" type="text" value="Владимир" placeholder="Ваше имя"/>
+        </label>
+
+        <label class="input-label">
+          <input class="input" type="text" value="" placeholder="Ваше имя" disabled/>
+        </label>
+
+        <label class="input-label">
+          <input class="input" type="text" value="Владимир" placeholder="Ваше имя" disabled/>
         </label>
 
         <label class="input-label">
@@ -161,15 +139,99 @@
         </label>
 
         <p>
-          <a class="button disabled" href="javascript:void(0)" tabindex="-1">Я кнопка!</a>
-          <button class="button" type="button">Нет я кнопка!</button>
-          <input class="button" type="button" value="Акститесь!">
+          <a class="btn btn--type_1" href="javascript:void(0)">Я кнопка!</a>
+          <button class="btn btn--type_1" type="button">Нет я кнопка!</button>
+          <input class="btn btn--type_1" type="button" value="Акститесь!">
+          <button class="btn btn--type_1" type="button" disabled>Disabled</button>
         </p>
 
         <p>
-          <a class="button button--big disabled" href="javascript:void(0)" tabindex="-1">Я кнопка!</a>
-          <button class="button button--big" type="button">Нет я кнопка!</button>
-          <input class="button button--big" type="button" value="Акститесь!">
+          <a class="btn btn--type_2" href="javascript:void(0)">Я кнопка!</a>
+          <button class="btn btn--type_2" type="button">Нет я кнопка!</button>
+          <input class="btn btn--type_2" type="button" value="Акститесь!">
+          <button class="btn btn--type_2" type="button" disabled>Disabled</button>
+        </p>
+
+        <p>
+          <a class="btn btn--type_3" href="javascript:void(0)">Я кнопка!</a>
+          <button class="btn btn--type_3" type="button">Нет я кнопка!</button>
+          <input class="btn btn--type_3" type="button" value="Акститесь!">
+          <button class="btn btn--type_3" type="button" disabled>Disabled</button>
+        </p>
+
+        <p>
+          <a class="btn btn--type_4" href="javascript:void(0)">Я кнопка!</a>
+          <button class="btn btn--type_4" type="button">Нет я кнопка!</button>
+          <input class="btn btn--type_4" type="button" value="Акститесь!">
+          <button class="btn btn--type_4" type="button" disabled>Disabled</button>
+        </p>
+
+        <p>
+          <a class="btn btn--type_5" href="javascript:void(0)">Я кнопка!</a>
+          <button class="btn btn--type_5" type="button">Нет я кнопка!</button>
+          <input class="btn btn--type_5" type="button" value="Акститесь!">
+          <button class="btn btn--type_5" type="button" disabled>Disabled</button>
+        </p>
+
+        <p>
+          <a class="btn btn--type_6" href="javascript:void(0)">Я кнопка!</a>
+          <button class="btn btn--type_6" type="button">Нет я кнопка!</button>
+          <input class="btn btn--type_6" type="button" value="Акститесь!">
+          <button class="btn btn--type_6" type="button" disabled>Disabled</button>
+        </p>
+
+        <p>
+          <a class="btn btn--type_7" href="javascript:void(0)">Я кнопка!</a>
+          <button class="btn btn--type_7" type="button">Нет я кнопка!</button>
+          <input class="btn btn--type_7" type="button" value="Акститесь!">
+          <button class="btn btn--type_7" type="button" disabled>Disabled</button>
+        </p>
+
+        <p>
+          <a class="btn btn--type_8" href="javascript:void(0)">Я кнопка!</a>
+          <button class="btn btn--type_8" type="button">Нет я кнопка!</button>
+          <input class="btn btn--type_8" type="button" value="Акститесь!">
+          <button class="btn btn--type_8" type="button" disabled>Disabled</button>
+        </p>
+
+        <p>
+          <a class="btn btn--type_1 btn--big" href="javascript:void(0)">Я кнопка!</a>
+          <a class="btn btn--type_1 btn--giant" href="javascript:void(0)">Я кнопка!</a>
+        </p>
+
+        <p>
+          <a class="btn btn--type_2 btn--big" href="javascript:void(0)">Я кнопка!</a>
+          <a class="btn btn--type_2 btn--giant" href="javascript:void(0)">Я кнопка!</a>
+        </p>
+
+        <p>
+          <a class="btn btn--type_3 btn--big" href="javascript:void(0)">Я кнопка!</a>
+          <a class="btn btn--type_3 btn--giant" href="javascript:void(0)">Я кнопка!</a>
+        </p>
+
+        <p>
+          <a class="btn btn--type_4 btn--big" href="javascript:void(0)">Я кнопка!</a>
+          <a class="btn btn--type_4 btn--giant" href="javascript:void(0)">Я кнопка!</a>
+        </p>
+
+        <p>
+          <a class="btn btn--type_5 btn--big" href="javascript:void(0)">Я кнопка!</a>
+          <a class="btn btn--type_5 btn--giant" href="javascript:void(0)">Я кнопка!</a>
+        </p>
+
+        <p>
+          <a class="btn btn--type_6 btn--big" href="javascript:void(0)">Я кнопка!</a>
+          <a class="btn btn--type_6 btn--giant" href="javascript:void(0)">Я кнопка!</a>
+        </p>
+
+        <p>
+          <a class="btn btn--type_7 btn--big" href="javascript:void(0)">Я кнопка!</a>
+          <a class="btn btn--type_7 btn--giant" href="javascript:void(0)">Я кнопка!</a>
+        </p>
+
+        <p>
+          <a class="btn btn--type_8 btn--big" href="javascript:void(0)">Я кнопка!</a>
+          <a class="btn btn--type_8 btn--giant" href="javascript:void(0)">Я кнопка!</a>
         </p>
 
         <label class="select">

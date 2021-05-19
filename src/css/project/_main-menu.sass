@@ -1,3 +1,9 @@
+.nobanner-page,
+.scrolled
+  .main-menu
+    @media(min-width: 1024px)
+      display: block
+
 .main-menu
   border-top: 1px solid rgba($color_grey, 0.3)
   background-color: #fff
@@ -12,14 +18,25 @@
   width: 100%
   z-index: 10
 
-  @media(min-width: 1024px)
-    box-shadow: 0 4px 4px 0 rgba(#000, 0.25)
-
   &.is-open
     display: block
 
+  @media(min-width: 1024px)
+    background-color: transparent
+    border-top: none
+    border-bottom: 1px solid rgba($color_gold, 0.3)
+    height: auto
+    left: auto
+    position: relative
+    top: auto
+
   &__list
     margin-top: 40px
+
+    @media(min-width: 1024px)
+      display: flex
+      justify-content: center
+      margin-top: 0
 
   &__item
     align-items: center
@@ -28,6 +45,36 @@
 
     &:not(:last-child)
       margin-bottom: 10px
+
+      @media(min-width: 1024px)
+        padding-right: 18px
+        margin-bottom: 0
+
+      @media(min-width: 1200px)
+        padding-right: 28px
+
+      @media(min-width: 1350px)
+        padding-right: 38px
+
+    &:not(:first-child)
+      @media(min-width: 1024px)
+        padding-left: 18px
+
+      @media(min-width: 1200px)
+        padding-left: 28px
+
+      @media(min-width: 1350px)
+        padding-left: 38px
+
+    &:hover
+      @media(min-width: 1024px)
+        .main-menu__dropdown
+          display: block
+
+    &:focus-within
+      @media(min-width: 1024px)
+        .main-menu__dropdown
+          display: block
 
   &__link
     display: block
@@ -38,6 +85,44 @@
     padding-bottom: 10px
     text-transform: uppercase
     text-decoration: none
+
+    @media(min-width: 1024px)
+      letter-spacing: 1px
+      padding-top: 12px
+      padding-bottom: 12px
+      position: relative
+
+    @media(min-width: 1200px)
+      letter-spacing: 2px
+
+    @media(min-width: 1400px)
+      letter-spacing: 3px
+
+    &:hover,
+    &:focus
+      &::after
+        @media(min-width: 1024px)
+          opacity: 1
+
+    &:focus,
+    &:focus-within
+      & ~ .main-menu__dropdown
+        @media(min-width: 1024px)
+          display: block
+
+    &::after
+      @media(min-width: 1024px)
+        background-color: $color_darkblue
+        bottom: 0
+        content: ''
+        height: 4px
+        left: 0
+        opacity: 0
+        position: absolute
+        top: auto
+        transition: opacity 0.3s
+        width: 100%
+        z-index: 1
 
   &__opener
     align-items: center
@@ -51,6 +136,9 @@
     padding: 0
     width: 36px
 
+    @media(min-width: 1024px)
+      display: none
+
     svg
       fill: $color_darkblue
       height: 16px
@@ -62,6 +150,7 @@
     display: none
     height: calc(100% - 77px)
     left: 0
+    overflow-y: auto
     position: fixed
     padding-left: 30px
     padding-right: 30px
@@ -69,6 +158,24 @@
     text-align: center
     width: 100%
     z-index: 10
+
+    @media(min-width: 1024px)
+      border-top: 1px solid rgba($color_gold, 0.3)
+      border-bottom: 1px solid rgba($color_gold, 0.3)
+      height: auto
+      position: absolute
+      padding-top: 50px
+      padding-bottom: 50px
+      top: 100%
+
+    &:after
+      content: ''
+      display: block
+      height: 50px
+      width: 100%
+
+      @media(min-width: 1024px)
+        display: none
 
   &__dropdown-title
     font-size: 13px
@@ -78,6 +185,9 @@
     margin-bottom: 30px
     position: relative
     text-align: center
+
+    @media(min-width: 1024px)
+      display: none
 
   &__back
     align-items: center
@@ -98,3 +208,67 @@
       fill: $color_darkblue
       height: 16px
       width: 16px
+
+.sub-menu
+  text-align: left
+
+  @media(min-width: 1024px)
+    display: flex
+    //justify-content: space-between
+    max-width: 1310px
+    margin-left: auto
+    margin-right: auto
+
+  @media(min-width: 1900px)
+    max-width: 1460px
+
+  &__block
+    flex-grow: 1
+
+    &:not(:last-child)
+      margin-bottom: 25px
+
+      @media(min-width: 1024px)
+        margin-bottom: 0
+        padding-right: 30px
+
+    &--video
+      max-width: 350px
+
+  &__block-title
+    border-top: 1px solid rgba($color_grey, 0.3)
+    border-bottom: 1px solid rgba($color_grey, 0.3)
+    color: $color_grey
+    font-size: 13px
+    font-weight: 500
+    line-height: 16px
+    letter-spacing: 3px
+    margin-bottom: 25px
+    padding-top: 8px
+    padding-bottom: 8px
+    text-transform: uppercase
+
+    @media(min-width: 1024px)
+      border-top: none
+      border-bottom: none
+      font-size: 11px
+      font-weight: 300
+      margin-bottom: 10px
+      padding-top: 0
+      padding-bottom: 0
+
+  &__item
+    &:not(:last-child)
+      margin-bottom: 15px
+
+      @media(min-width: 1024px)
+        margin-bottom: 0
+
+  &__link
+    color: $color_darkblue
+    font-size: 13px
+    font-weight: 500
+    display: block
+    padding-top: 10px
+    padding-bottom: 10px
+    text-decoration: none

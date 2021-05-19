@@ -1,0 +1,35 @@
+.breadcrumbs
+  color: $color_grey
+  display: none
+  font-size: 13px
+  font-weight: 500
+
+  @media(min-width: 1024px)
+    display: flex
+    flex-wrap: wrap
+    margin-top: 50px
+    margin-bottom: 100px
+
+  &__item
+    align-items: center
+    display: flex
+    margin-bottom: 10px
+
+    &:not(:last-child)
+      margin-right: 12px
+
+    &::before
+      background-color: $color_darkblue
+      border-radius: 5px
+      content: ''
+      height: 5px
+      margin-top: 2px
+      margin-right: 12px
+      width: 5px
+
+  &__link
+    color: $color_grey
+    text-decoration: none
+
+    &:active
+      color: $color_darkblue
