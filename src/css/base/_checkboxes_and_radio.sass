@@ -1,10 +1,11 @@
 .checkbox-label,
 .radio-label
   display: block
-  font-size: 14px
-  line-height: 1.375
   position: relative
   padding-left: 24px
+
+  @media(min-width: 1900px)
+    padding-left: 38px
 
   &:not(:last-child)
     margin-bottom: 16px
@@ -22,14 +23,19 @@
 
 .checkbox-icon,
 .radio-icon
-  border: 1px solid $color_grey
+  border: 1px solid $color_darkblue
   cursor: pointer
-  height: 16px
+  height: 14px
   left: 0
   position: absolute
-  top: 1px
+  top: 2px
   transition: border-color 0.3s
-  width: 16px
+  width: 14px
+
+  @media(min-width: 1900px)
+    height: 18px
+    top: 7px
+    width: 18px
 
 .checkbox-icon
   border-radius: 2px
@@ -48,6 +54,10 @@ input[type="checkbox"]:checked + .checkbox-icon:before
   transform: translate(-50%, -50%)
   width: 10px
 
+  @media(min-width: 1900px)
+    height: 14px
+    width: 14px
+
 input[type="checkbox"]:focus + .checkbox-icon,
 input[type="checkbox"]:active + .checkbox-icon
   border-color: $text_color
@@ -62,6 +72,10 @@ input[type="radio"]:checked + .radio-icon:before
   top: 50%
   transform: translate(-50%, -50%)
   width: 10px
+
+  @media(min-width: 1900px)
+    height: 14px
+    width: 14px
 
 input[type="radio"]:focus + .radio-icon,
 input[type="radio"]:active + .radio-icon

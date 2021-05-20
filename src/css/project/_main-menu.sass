@@ -100,6 +100,8 @@
 
     &:hover,
     &:focus
+      color: $color_darkblue
+
       &::after
         @media(min-width: 1024px)
           opacity: 1
@@ -214,7 +216,6 @@
 
   @media(min-width: 1024px)
     display: flex
-    //justify-content: space-between
     max-width: 1310px
     margin-left: auto
     margin-right: auto
@@ -268,7 +269,8 @@
     color: $color_darkblue
     font-size: 13px
     font-weight: 500
-    display: block
+    display: inline-block
     padding-top: 10px
     padding-bottom: 10px
     text-decoration: none
+    vertical-align: top

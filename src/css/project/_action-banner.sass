@@ -1,0 +1,87 @@
+.action-banner
+  position: relative
+  padding-bottom: 90px
+
+  @media(min-width: 768px)
+    padding-bottom: 0
+
+  picture,
+  img
+    display: block
+    width: 100%
+
+  img
+    @media(min-width: 768px)
+      height: 560px
+      object-fit: cover
+      object-position: 50% 50%
+
+  picture
+    background-color: $color_grey
+    margin-bottom: 30px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+
+  &__container
+    padding-left: 30px
+    padding-right: 30px
+
+    @media(min-width: 768px)
+      left: 50%
+      position: absolute
+      top: 50%
+      transform: translate(-50%, -50%)
+      width: 100%
+      z-index: 1
+
+  &__intro
+    font-weight: 400
+    letter-spacing: 2px
+    margin-bottom: 28px
+    text-transform: uppercase
+
+    @media(min-width: 768px)
+      color: #fff
+      font-weight: 300
+
+    @media(min-width: 1024px)
+      font-size: 18px
+
+  &__title
+    font-family: $secondary_font
+    font-size: 36px
+    line-height: 1.33333
+    margin-bottom: 15px
+
+    @media(min-width: 768px)
+      color: #fff
+
+    @media(min-width: 1024px)
+      font-size: 48px
+
+  &__link
+    align-items: center
+    display: inline-flex
+    color: $color_gold
+    font-size: 13px
+    font-weight: 500
+    padding-top: 5px
+    padding-bottom: 5px
+    text-transform: uppercase
+    text-decoration: none
+
+    &:hover,
+    &:focus,
+    &:active
+      color: darken($color_gold, 10%)
+
+      svg
+        fill: darken($color_gold, 10%)
+
+    svg
+      fill: $color_gold
+      height: 16px
+      margin-left: 10px
+      transition: fill 0.3s
+      width: 16px
