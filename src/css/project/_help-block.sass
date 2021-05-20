@@ -1,0 +1,49 @@
+.help-block
+  max-width: 464px
+  margin-left: auto
+  margin-right: auto
+  text-align: center
+  text-transform: uppercase
+  width: 100%
+
+  @media(min-width: 1024px)
+    background-color: rgba($color_grey, 0.05)
+    padding-top: 40px
+    padding-bottom: 40px
+
+  &:not(:last-child)
+    margin-bottom: 50px
+
+  &__intro
+    display: none
+    font-size: 13px
+    font-weight: 400
+    margin-bottom: 25px
+
+    @media(min-width: 1024px)
+      display: block
+
+  &__title
+    font-size: 18px
+    font-weight: 700
+    letter-spacing: 3px
+    margin-bottom: 10px
+
+  &__phone
+    font-size: 14px
+    font-weight: 500
+    margin-bottom: 0
+
+    a
+      text-decoration: none
+
+  &__support
+    font-size: 10px
+    font-weight: 300
+    display: none
+    letter-spacing: 3px
+    margin-top: 30px
+    text-transform: uppercase
+
+    @media(min-width: 1024px)
+      display: block

@@ -1,0 +1,82 @@
+.small-cart
+  &__accaunt-title
+    font-size: 13px
+    letter-spacing: 3px
+    margin-top: 50px
+    margin-bottom: 50px
+    text-transform: uppercase
+
+    @media(min-width: 1024px)
+      margin-top: 0
+      margin-bottom: 60px
+
+    a
+      &:hover,
+      &:focus
+        text-decoration: none
+
+  &__title
+    font-size: 13px
+    font-weight: 700
+    letter-spacing: 3px
+    margin-bottom: 40px
+    text-transform: uppercase
+
+    @media(min-width: 1024px)
+      margin-bottom: 60px
+
+  &__menu
+    border-bottom: 1px solid rgba($color_grey, 0.3)
+    font-size: 13px
+    font-weight: 500
+    margin-bottom: 50px
+    padding-bottom: 50px
+
+    @media(min-width: 1024px)
+      border-bottom: none
+      font-size: 10px
+      font-weight: 400
+      letter-spacing: 3px
+      padding-bottom: 0
+      text-transform: uppercase
+
+    li
+      &:not(:last-child)
+        margin-bottom: 30px
+
+        @media(min-width: 1024px)
+          margin-bottom: 50px
+
+    a
+      align-items: center
+      display: flex
+      justify-content: space-between
+      padding-top: 5px
+      padding-bottom: 5px
+      text-decoration: none
+
+      @media(min-width: 1024px)
+        color: $color_grey
+        display: inline-flex
+
+      &:hover,
+      &:focus
+        @media(min-width: 1024px)
+          color: $color_lightblue
+          text-decoration: underline
+
+        svg
+          fill: $color_lightblue
+
+      &:active
+        fill: $color_grey
+
+      svg
+        fill: $color_darkblue
+        height: 10px
+        margin-left: 20px
+        transition: fill 0.3s
+        width: 10px
+
+        @media(min-width: 1024px)
+          fill: $color_grey

@@ -174,9 +174,9 @@
       <a class="header__logo" href="main.html" title="На главную"><svg><use xlink:href="#logo"></use></svg></a>
       <button class="js-popover-opener header__search-toggler" type="button" data-popover="search"><svg><use xlink:href="#search"></use></svg> <span>Поиск</span></button>
       <div class="header__bottom-right">
-        <a class="js-popover-opener header__cart-link" href="cart.html" title="Корзина" data-popover="cart"><span class="header__cart-icon"><svg><use xlink:href="#cart_2"></use></svg> <span class="header__cart-qnt">2</span></span></a>
+        <a class="js-popover-opener header__cart-link" href="cart.html" title="Корзина" data-popover="small-cart"><span class="header__cart-icon"><svg><use xlink:href="#cart_2"></use></svg> <span class="header__cart-qnt">2</span></span></a>
         <a class="js-popover-opener header__fav-link" href="favorites.html" title="Избранное" data-popover="favorites"><svg><use xlink:href="#favorites"></use></svg></a>
-        <a class="header__enter-link" href="login.html" title="Личный кабинет"><span>Вход</span> <svg><use xlink:href="#personal"></use></svg></a>
+        <a class="js-popover-opener header__enter-link" href="login.html" title="Личный кабинет" data-popover="login"><span>Вход</span> <svg><use xlink:href="#personal"></use></svg></a>
       </div>
     </div>
     <nav class="main-menu">
@@ -384,13 +384,41 @@
       </div>
     </div>
   
-    <div class="cart popover popover--at_right" tabindex="0">
+    <div class="small-cart popover popover--at_right" tabindex="0">
       <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg><use xlink:href="#close"></use></svg> <span>Закрыть</span></button>
       <div class="popover__inner">
-        <p class="cart__accaunt-title">Добро пожаловать в ваш аккаунт,<br> Валерия!</p>
-        <p class="cart__title">Ваша корзина</p>
-        <div class="cart__list-block">
-          <div class="cart__item"></div>
+        <p class="small-cart__accaunt-title"><a href="login.html">Войти</a> / <a href="register.html">Зарегистироваться</a></p>
+        <p class="small-cart__title">Ваша корзина пуста</p>
+  
+        <ul class="small-cart__menu">
+          <li><a href="#">Обручальные кольца <svg><use xlink:href="#chevron_right"></use></svg></a></li>
+          <li><a href="#">Помолвочные кольца <svg><use xlink:href="#chevron_right"></use></svg></a></li>
+          <li><a href="#">Парные кольца <svg><use xlink:href="#chevron_right"></use></svg></a></li>
+          <li><a href="#">Подобрать подарок <svg><use xlink:href="#chevron_right"></use></svg></a></li>
+        </ul>
+  
+        <div class="help-block">
+          <p class="help-block__intro">Нужна помощь?</p>
+          <p class="help-block__title">Позвоните нам</p>
+          <p class="help-block__phone"><a href="tel:+78008888888">8 800 888 88 88</a></p>
+          <p class="help-block__support"><a href="#">Клиентская поддержка</a></p>
+        </div>
+  
+        <div class="socials">
+          <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Instagram"><svg><use xlink:href="#inst_stroke"></use></svg></a>
+          <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Vkontakte"><svg><use xlink:href="#vk_stroke"></use></svg></a>
+          <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Facebook"><svg><use xlink:href="#fb_stroke"></use></svg></a>
+        </div>
+      </div>
+    </div>
+  
+    <!--<div class="small-cart popover popover--at_right" tabindex="0">
+      <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg><use xlink:href="#close"></use></svg> <span>Закрыть</span></button>
+      <div class="popover__inner">
+        <p class="small-cart__accaunt-title">Добро пожаловать в&nbsp;ваш&nbsp;аккаунт,<br> Валерия!</p>
+        <p class="small-cart__title">Ваша корзина</p>
+        <div class="small-cart__list-block">
+          <div class="small-cart__item"></div>
         </div>
         <a class="btn btn--type_1" href="cart.html">Перейти к оформлению</a>
         <a class="btn btn--type_2" href="cart.html">Вернуться к покупкам</a>
@@ -402,7 +430,7 @@
           <p><a href="#">Клиентская поддержка</a></p>
         </div>
       </div>
-    </div>
+    </div>-->
   </div>
 
   <main class="page-content">
