@@ -11,5 +11,5 @@ $.fancybox.defaults.i18n.en.PREV = "Назад";
 
 
 $(document).ready(function() {
-
+  
 });

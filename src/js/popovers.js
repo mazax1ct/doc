@@ -1,6 +1,7 @@
 var lastFocusedElement; //переменная для последнего элемента в фокусе перед открытием поповера
 var firstTabStop, lastTabStop; //переменные для первого и последнего элемента в фокусе в открытом попапе
 
+//обработчик для работы с клавиатуры
 function keyboardUse(e) {
   if (e.keyCode === 9) {
     if (e.shiftKey) {
@@ -23,6 +24,20 @@ function keyboardUse(e) {
 
 function popoverOpen(el) {
   lastFocusedElement = document.activeElement;
+  //если было открыто меню
+  if($('body').hasClass('menu-open')) {
+    $('.main-menu').fadeOut();
+    $('.main-menu__dropdown').fadeOut();
+    $('.js-menu-toggler').removeClass('is-active').find('svg use').attr('xlink:href', '#burger');
+    $('body').removeClass('menu-open');
+  }
+
+  //если уже открыт поповер
+  if($('body').hasClass('popover-open')) {
+    $('.popover.is-open').fadeOut(300, function() {
+      $('.popover.is-open').removeClass('is-open');
+    });
+  }
 
   $('body').addClass('popover-open');
   $('.shade').fadeIn(300, function() {
@@ -60,6 +75,9 @@ function popoverClose() {
     $('.shade').fadeOut(300, function() {
       $('.shade').removeClass('is-open');
       $('body').removeClass('popover-open');
+      //убираем компенсацию скролла
+      $('#scroll-compensate').remove();
+      $('body').removeClass('compensate-for-scrollbar');
       document.removeEventListener('keydown', keyboardUse);
       lastFocusedElement.focus();
     });
@@ -68,8 +86,10 @@ function popoverClose() {
 
 //открытие поповера
 $(document).on('click', '.js-popover-opener', function () {
+  scrollCompensate();
   $('body').addClass('popover-open');
   popoverOpen($(this).attr('data-popover'));
+
   return false;
 });
 
