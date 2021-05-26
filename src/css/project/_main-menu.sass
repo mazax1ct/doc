@@ -234,7 +234,11 @@
         padding-right: 30px
 
     &--video
+      display: none
       max-width: 350px
+
+      @media(min-width: 1024px)
+        display: block
 
   &__block-title
     border-top: 1px solid rgba($color_grey, 0.3)

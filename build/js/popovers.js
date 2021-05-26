@@ -106,3 +106,14 @@ $(document).on('click', '.shade', function (evt) {
     return false;
   }
 });
+
+//переключение табов
+$(document).on('click', '.popover__tabs-nav-button', function () {
+  $(this).closest('.popover__tabs-nav').find('.popover__tabs-nav-button').removeClass('is-active');
+  $(this).addClass('is-active');
+
+  $(this).closest('.popover__inner').find('.popover__tab').removeClass('is-active');
+  $(this).closest('.popover__inner').find('.popover__tab[data-target='+$(this).attr('data-target')+']').addClass('is-active');
+
+  return false;
+});
