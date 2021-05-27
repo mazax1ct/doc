@@ -1,0 +1,36 @@
+.personal-form
+  max-width: 1176px
+
+  &__row
+    @media(min-width: 1024px)
+      display: flex
+
+    &--top
+      margin-bottom: 50px
+
+      @media(min-width: 1024px)
+        margin-bottom: 75px
+
+  &__cell
+    margin-bottom: 28px
+
+    @media(min-width: 1024px)
+      width: 50%
+
+    &:nth-child(1)
+      @media(min-width: 1024px)
+        padding-right: 40px
+
+    &:nth-child(2)
+      @media(min-width: 1024px)
+        padding-left: 40px
+
+  &__pass-title
+    font-size: 13px
+    font-weight: 500
+    letter-spacing: 2px
+    margin-bottom: 15px
+    text-transform: uppercase
+
+  .btn
+    width: 100%

@@ -46,12 +46,16 @@
           <p class="auth-block__intro">Войдите в личный кабинет или зарегистрируйтесь, если вы новый пользователь.</p>
           <form class="auth-block__form" action="">
             <label class="input-label">
-              <input class="js-phone-mask input text-center" type="text" placeholder="введите номер телефона">
+              <input class="input" type="text" placeholder="введите email ">
             </label>
-            <button class="btn btn--type_1" type="submit">подтвердить</button>
+            <label class="input-label password-toggler-container">
+              <input class="input" type="password" placeholder="пароль*">
+              <button class="js-password-toggler password-toggler" type="button" title="Показать/скрыть пароль"><svg><use xlink:href="#show_pass"></use></svg></button>
+            </label>
+            <button class="btn btn--type_1" type="submit">Войти</button>
           </form>
           <p class="auth-block__terms">Нажимая на кнопку «подтвердить», вы подтверждаете свое согласие с <a href="#" target="_blank">политикой конфиденциальности</a> и даете согласие на обработку персональных данных.</p>
-          <p class="auth-block__link"><a href="auth_email.html">вход через email</a></p>
+          <p class="auth-block__link"><a href="auth.html">вход по телефону</a></p>
           <p class="auth-block__socials-title">вход через соц сети</p>
           <div class="auth-block__socials">
             <a class="auth-block__social" href="#" title="Google"><svg><use xlink:href="#gplus"></use></svg></a>
@@ -88,7 +92,6 @@
             <button class="btn btn--type_1" type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
           </form>
           <p class="auth-block__terms">Нажимая на кнопку «зарегистрироваться», вы подтверждаете свое согласие с <a href="#" target="_blank">политикой конфиденциальности</a> и даете согласие на обработку персональных данных.</p>
-
           <div class="auth-block__advantage">
             <div class="auth-block__advantage-inner">
               <p>Преимущества после регистрации</p>
