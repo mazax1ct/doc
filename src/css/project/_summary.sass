@@ -1,0 +1,125 @@
+.summary
+  @media(min-width: 1024px)
+    border: 1px solid $color_darkblue
+    padding: 30px
+
+  @media(min-width: 1900px)
+    padding-left: 40px
+    padding-right: 40px
+
+  &__title
+    border-bottom: 1px solid $color_darkblue
+    font-size: 18px
+    font-weight: 700
+    letter-spacing: 2px
+    margin-bottom: 50px
+    padding-bottom: 20px
+    text-transform: uppercase
+
+    @media(min-width: 1024px) and (max-width: 1899px)
+      margin-bottom: 25px
+
+    @media(min-width: 1900px)
+      font-size: 26px
+      margin-bottom: 60px
+
+  &__item
+    align-items: flex-end
+    display: flex
+    font-size: 13px
+    font-weight: 700
+    justify-content: space-between
+    letter-spacing: 2px
+    margin-bottom: 40px
+    text-transform: uppercase
+
+    @media(min-width: 1024px) and (max-width: 1899px)
+      font-size: 10px
+      margin-bottom: 25px
+
+    @media(min-width: 1900px)
+      margin-bottom: 55px
+
+    span
+      &:first-child
+        padding-right: 15px
+
+  &__promocode
+    background-color: rgba($color_grey, 0.3)
+    display: flex
+    font-size: 13px
+    font-weight: 700
+    justify-content: space-between
+    letter-spacing: 2px
+    margin-left: -30px
+    margin-right: -30px
+    margin-bottom: 40px
+    padding: 30px
+    text-transform: uppercase
+
+    @media(min-width: 1024px) and (max-width: 1899px)
+      font-size: 10px
+
+    @media(min-width: 1900px)
+      margin-bottom: 55px
+      margin-left: -40px
+      margin-right: -40px
+      padding: 40px
+
+    span
+      &:first-child
+        padding-right: 15px
+
+  &__input
+    background-color: transparent
+    border: none
+    border-bottom: 1px solid $color_grey
+    flex-grow: 1
+    font-size: 13px
+    font-weight: 500
+    line-height: 16px
+    letter-spacing: 3px
+    max-width: 150px
+    padding: 0
+    transition: border-color 0.3s, color 0.3s
+    width: 100%
+
+    &:focus
+      border-color: $color_darkblue
+      color: $color_darkblue
+
+  &__links
+    border-top: 1px solid $color_grey
+    font-size: 13px
+    font-weight: 500
+    margin-bottom: 40px
+    padding-top: 20px
+
+    @media(min-width: 1024px) and (max-width: 1899px)
+      font-size: 10px
+
+    @media(min-width: 1900px)
+      margin-bottom: 55px
+
+    a
+      color: $color_grey
+
+      &:not(:last-child)
+        margin-right: 20px
+
+      &:hover,
+      &:focus
+        color: $color_lightblue
+
+      &:active
+        color: $color_darkblue
+
+  &__price
+    font-size: 16px
+    white-space: nowrap
+
+    @media(min-width: 1900px)
+      font-size: 18px
+
+  .btn
+    width: 100%

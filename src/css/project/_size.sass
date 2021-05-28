@@ -1,0 +1,51 @@
+.size
+  display: block
+  height: 32px
+  position: relative
+  width: 135px
+
+  &::after
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.7461 1.10791L6.37275 5.21569L1.9994 1.10791' stroke='%23ffffff' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A")
+    background-color: $color_darkblue
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    content: ''
+    height: 32px
+    left: auto
+    position: absolute
+    right: 0
+    top: 0
+    width: 32px
+    z-index: 1
+
+  select
+    appearance: none
+    background-color: transparent
+    box-shadow: none
+    border: 1px solid $color_darkblue
+    border-radius: 0
+    background-image: none
+    cursor: pointer
+    color: $color_darkblue
+    display: block
+    font-size: 10px
+    height: 100%
+    letter-spacing: 2px
+    margin: 0
+    outline: 0
+    position: relative
+    padding: 0 32px 0 10px
+    transition: border-color 0.3s, color 0.3s
+    text-transform: uppercase
+    width: 100%
+    z-index: 2
+
+    &::-ms-expand
+      display: none
+
+    &:focus
+      border-color: $color_darkblue
+      color: $color_darkblue
+
+    &:disabled
+      opacity: 0.5

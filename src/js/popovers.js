@@ -103,7 +103,7 @@ $(document).on('click', '.js-popover-closer', function () {
 $(document).on('click', '.shade', function (evt) {
   if($(this).is(evt.target)) {
     popoverClose();
-    return false;
+    //return false;
   }
 });
 

@@ -1,0 +1,273 @@
+.cart
+  @media(min-width: 1024px)
+    display: flex
+    justify-content: space-between
+
+  &__left
+    margin-bottom: 50px
+
+    @media(min-width: 1024px)
+      flex-grow: 1
+      max-width: 920px
+      margin-bottom: 0
+      padding-right: 40px
+
+  &__top
+    border-bottom: 1px solid $color_grey
+    margin-bottom: 30px
+    text-align: right
+
+    @media(min-width: 1024px)
+      text-align: left
+
+  &__button
+    align-items: center
+    background-color: transparent
+    border: none
+    color: $color_grey
+    cursor: pointer
+    font-size: 13px
+    font-weight: 500
+    height: 30px
+    justify-content: center
+    letter-spacing: 2px
+    min-width: 30px
+    padding: 0
+    transition: color 0.3s
+    text-transform: uppercase
+
+    &:not(:last-child)
+      margin-right: 10px
+
+      @media(min-width: 1024px)
+        margin-right: 35px
+
+    &:hover,
+    &:focus
+      color: $color_darkblue
+
+      svg
+        fill: $color_darkblue
+
+    span
+      display: none
+
+      @media(min-width: 1024px)
+        display: block
+
+    svg
+      fill: $color_grey
+      height: 16px
+      transition: fill 0.3s
+      width: 16px
+
+      @media(min-width: 1024px)
+        display: none
+
+  &__right
+    @media(min-width: 1024px)
+      width: 300px
+
+    @media(min-width: 1200px)
+      width: 400px
+
+    @media(min-width: 1900px)
+      width: 545px
+
+.cart-item
+  &:not(:last-child)
+    border-bottom: 1px solid $color_grey
+    margin-bottom: 40px
+    padding-bottom: 40px
+
+  &__inner
+    align-items: flex-start
+    display: flex
+    margin-bottom: 20px
+
+  &__image
+    background-color: #fbfcff
+    display: block
+    min-width: 120px
+    position: relative
+    width: 120px
+
+    @media(min-width: 1200px)
+      min-width: 160px
+      width: 160px
+
+    @media(min-width: 1350px)
+      min-width: 240px
+      width: 240px
+
+    img
+      display: block
+      mix-blend-mode: multiply
+      width: 100%
+
+    input[type="checkbox"]
+      position: absolute
+      height: 1px
+      overflow: hidden
+      clip: rect(0 0 0 0)
+      width: 1px
+
+    .checkbox-icon
+      border-radius: 50%
+      height: 10px
+      left: 6px
+      top: 6px
+      width: 10px
+
+      @media(min-width: 1024px)
+        height: 18px
+        left: 12px
+        top: 12px
+        width: 18px
+
+    input[type="checkbox"]:checked + .checkbox-icon::before
+      border-radius: 50%
+      height: 6px
+      width: 6px
+
+      @media(min-width: 1024px)
+        height: 12px
+        width: 12px
+
+  &__info
+    flex-grow: 1
+    padding-left: 10px
+
+    @media(min-width: 768px)
+      padding-left: 30px
+
+  &__articul
+    color: $color_grey
+    font-size: 10px
+    font-weight: 500
+    margin-bottom: 5px
+
+    @media(min-width: 1024px)
+      font-size: 13px
+      margin-bottom: 15px
+      text-transform: uppercase
+
+  &__title
+    font-size: 13px
+    font-weight: 500
+
+    @media(min-width: 768px)
+      margin-bottom: 20px
+
+    @media(min-width: 1024px)
+      font-size: 16px
+      max-width: 400px
+      text-transform: uppercase
+
+    a
+      text-decoration: none
+
+  &__description
+    color: $color_grey
+    display: none
+    font-size: 14px
+
+    @media(min-width: 1024px)
+      display: block
+      max-width: 400px
+
+  &__size-qnt
+    @media(min-width: 768px)
+      align-items: flex-end
+      display: flex
+      flex-wrap: wrap
+
+    .size,
+    .quantity
+      margin-bottom: 10px
+
+    .size
+      margin-right: 30px
+
+    .quantity
+      margin-right: auto
+
+  &__prices
+    align-items: baseline
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 10px
+
+    @media(min-width: 768px)
+      display: block
+      text-align: right
+
+  &__old-price
+    color: $color_grey
+    font-size: 10px
+    font-weight: 500
+    margin-right: 30px
+    margin-bottom: 5px
+    text-decoration: line-through
+
+    @media(min-width: 768px)
+      font-size: 14px
+      margin-right: 0
+
+    @media(min-width: 1900px)
+      font-size: 18px
+
+  &__price
+    font-size: 16px
+    font-weight: 700
+
+    @media(min-width: 768px)
+      font-size: 24px
+      line-height: 32px
+
+    @media(min-width: 1900px)
+      font-size: 36px
+
+    &:last-child
+      margin-bottom: 5px
+
+      @media(min-width: 768px)
+        margin-bottom: 0
+
+  &__buttons
+    display: flex
+    justify-content: flex-end
+
+  &__button
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    color: $color_grey
+    display: flex
+    font-size: 11px
+    font-weight: 500
+    letter-spacing: 2px
+    padding: 5px 0
+    transition: color 0.3s
+    text-transform: uppercase
+
+    &:not(:last-child)
+      margin-right: 30px
+
+      @media(min-width: 768px)
+        margin-right: 60px
+
+    &:hover,
+    &:focus
+      color: $color_darkblue
+
+      svg
+        fill: $color_darkblue
+
+    svg
+      fill: $color_grey
+      height: 16px
+      margin-left: 15px
+      transition: fill 0.3s
+      width: 16px

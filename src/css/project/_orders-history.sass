@@ -1,0 +1,262 @@
+.order
+  @media(min-width: 1024px)
+    border-bottom: 4px solid $color_grey
+
+  &:not(:last-child)
+    margin-bottom: 70px
+
+    @media(min-width: 1900px)
+      margin-bottom: 105px
+
+  &__title
+    align-items: center
+    background-color: $color_darkblue
+    color: #fff
+    display: flex
+    font-size: 13px
+    font-weight: 700
+    margin-left: -30px
+    margin-right: -30px
+    min-height: 50px
+    padding: 17px 30px
+
+    @media(min-width: 1024px)
+      font-size: 16px
+      font-weight: 500
+      letter-spacing: 2px
+      margin-left: 0
+      margin-right: 0
+      padding: 13px
+      text-transform: uppercase
+
+  &__item
+    padding-top: 40px
+    padding-bottom: 40px
+
+    @media(min-width: 1024px)
+      align-items: flex-start
+      display: flex
+      padding-top: 50px
+      padding-bottom: 50px
+
+    @media(min-width: 1900px)
+      padding-right: 80px
+      padding-top: 65px
+      padding-bottom: 65px
+
+    &:not(:last-child)
+      border-bottom: 1px solid rgba($color_grey, 0.3)
+
+  &__item-info-block
+    align-items: flex-start
+    display: flex
+    margin-bottom: 20px
+
+  &__item-image
+    background-color: #fbfcff
+    min-width: 80px
+    width: 80px
+
+    @media(min-width: 414px)
+      min-width: 120px
+      width: 120px
+
+    @media(min-width: 1024px)
+      min-width: 180px
+      width: 180px
+
+    @media(min-width: 1200px)
+      min-width: 240px
+      width: 240px
+
+    img
+      display: block
+      mix-blend-mode: multiply
+      width: 100%
+
+  &__item-info
+    flex-grow: 1
+    padding-left: 10px
+
+    @media(min-width: 768px)
+      padding-left: 24px
+      padding-right: 24px
+
+    @media(min-width: 1400px)
+      padding-left: 50px
+      padding-right: 50px
+
+    @media(min-width: 1900px)
+      padding-left: 80px
+      padding-right: 80px
+
+  &__item-size-qnt
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+
+    @media(min-width: 1024px)
+      margin-bottom: 10px
+
+  &__item-size,
+  &__item-qnt
+    color: $color_grey
+    font-size: 13px
+    font-weight: 500
+    margin-bottom: 10px
+
+    &:not(:last-child)
+      margin-right: 15px
+
+    &:last-child
+      margin-bottom: 10px
+
+    span
+      color: $color_darkblue
+
+  &__item-articul
+    color: $color_grey
+    font-size: 10px
+    font-weight: 500
+    margin-bottom: 5px
+
+    @media(min-width: 1024px)
+      font-size: 13px
+      margin-bottom: 15px
+      text-transform: uppercase
+
+  &__item-title
+    font-size: 13px
+    font-weight: 500
+    margin-bottom: 10px
+
+    @media(min-width: 1024px)
+      font-size: 16px
+      margin-bottom: 15px
+      text-transform: uppercase
+
+    a
+      text-decoration: none
+
+  &__item-description
+    color: $color_grey
+    display: none
+    font-size: 14px
+
+    @media(min-width: 1024px)
+      display: block
+
+  &__item-bottom
+    align-items: baseline
+    display: flex
+    flex-wrap: wrap
+
+  &__item-old-price
+    color: $color_grey
+    font-size: 10px
+    font-weight: 500
+    line-height: 18px
+    margin-bottom: 0
+    margin-right: 15px
+    padding-top: 5px
+    padding-bottom: 5px
+    text-decoration: line-through
+
+    @media(min-width: 1024px)
+      font-size: 14px
+
+    @media(min-width: 1400px)
+      margin-right: 35px
+
+  &__item-price
+    font-size: 14px
+    font-weight: 700
+    line-height: 18px
+    margin-bottom: 0
+    margin-right: 15px
+    padding-top: 5px
+    padding-bottom: 5px
+
+    @media(min-width: 1024px)
+      font-size: 24px
+
+  &__item-reorder
+    align-items: center
+    color: $color_darkblue
+    display: flex
+    font-size: 13px
+    font-weight: 500
+    line-height: 18px
+    padding-top: 5px
+    padding-bottom: 5px
+    text-transform: uppercase
+    text-decoration: none
+
+    @media(min-width: 1400px)
+      margin-left: auto
+
+    svg
+      fill: $color_darkblue
+      height: 16px
+      margin-left: 10px
+      min-width: 16px
+      width: 16px
+
+  &__delivery
+    border: 1px solid $color_darkblue
+    padding: 5px
+
+    @media(min-width: 1024px)
+      min-width: 360px
+      width: 360px
+
+    @media(min-width: 1200px)
+      min-width: 384px
+      width: 384px
+
+  &__delivery-inner
+    border: 1px solid $color_darkblue
+    padding: 35px 20px 65px
+
+    @media(min-width: 1024px)
+      padding-left: 30px
+      padding-right: 30px
+
+    @media(min-width: 1200px)
+      padding-left: 40px
+      padding-right: 40px
+
+  &__delivery-title
+    border-bottom: 1px solid $color_darkblue
+    font-size: 13px
+    font-weight: 500
+    letter-spacing: 3px
+    margin-bottom: 40px
+    outline: 4px solid transparent
+    padding-bottom: 10px
+    text-align: center
+    text-transform: uppercase
+
+    @media(min-width: 1024px)
+      font-size: 16px
+      letter-spacing: 2px
+
+  &__delivery-info
+    font-size: 10px
+    font-weight: 400
+    letter-spacing: 2px
+    text-transform: uppercase
+
+    @media(min-width: 1024px)
+      font-size: 13px
+
+    &:not(:last-child)
+      margin-bottom: 10px
+
+    span
+      display: inline-block
+      font-size: 13px
+      font-weight: 500
+      letter-spacing: 0
+      min-width: 125px
+      text-transform: none
