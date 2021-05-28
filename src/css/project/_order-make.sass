@@ -1,0 +1,51 @@
+.order-make
+  @media(min-width: 1024px)
+    display: flex
+    justify-content: space-between
+
+  &__left
+    margin-bottom: 50px
+
+    @media(min-width: 1024px)
+      flex-grow: 1
+      max-width: 920px
+      margin-bottom: 0
+      padding-right: 40px
+
+  &__right
+    @media(min-width: 1024px)
+      width: 300px
+
+    @media(min-width: 1200px)
+      width: 400px
+
+    @media(min-width: 1900px)
+      width: 545px
+
+  &__section
+    @media(min-width: 1024px)
+      border: 1px solid $color_darkblue
+      padding: 30px
+
+    @media(min-width: 1900px)
+      padding: 40px 40px 55px
+
+    &:not(:last-child)
+      margin-bottom: 50px
+
+      @media(min-width: 1900px)
+        margin-bottom: 80px
+
+  &__section-title
+    border-bottom: 1px solid rgba($color_grey, 0.3)
+    font-size: 18px
+    font-weight: 700
+    letter-spacing: 3px
+    margin-bottom: 30px
+    padding-bottom: 10px
+
+    @media(min-width: 1024px)
+      border-bottom-color: $color_darkblue
+
+    @media(min-width: 1900px)
+      margin-bottom: 40px

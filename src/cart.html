@@ -39,9 +39,9 @@
       </div>
 
       <div class="cart">
-        <div class="cart__left">
+        <div class="js-content-with-sticky cart__left">
           <div class="cart__top">
-            <button class="cart__button" type="button"><span>Отменить</span> <svg><use xlink:href="#close"></use></svg></button>
+            <button class="js-reset cart__button" type="button"><span>Отменить</span> <svg><use xlink:href="#close"></use></svg></button>
             <button class="cart__button" type="button"><span>В избранное</span> <svg><use xlink:href="#favorites"></use></svg></button>
             <button class="cart__button" type="button"><span>Удалить выбранные</span> <svg><use xlink:href="#delete"></use></svg></button>
           </div>
@@ -65,9 +65,9 @@
                     </select>
                   </label>
                   <div class="quantity">
-                    <button class="quantity__button" type="button" title="Уменьшить"><svg><use xlink:href="#minus"></use></svg></button>
+                    <button class="js-quantity-decrease quantity__button" type="button" title="Уменьшить"><svg><use xlink:href="#minus"></use></svg></button>
                     <input class="quantity__input" type="text" value="1" readonly>
-                    <button class="quantity__button" type="button" title="Увеличить"><svg><use xlink:href="#plus"></use></svg></button>
+                    <button class="js-quantity-increase quantity__button" type="button" title="Увеличить"><svg><use xlink:href="#plus"></use></svg></button>
                   </div>
                   <div class="cart-item__prices">
                     <p class="cart-item__old-price">14 278 990 руб.</p>
@@ -101,9 +101,9 @@
                     </select>
                   </label>
                   <div class="quantity">
-                    <button class="quantity__button" type="button" title="Уменьшить"><svg><use xlink:href="#minus"></use></svg></button>
+                    <button class="js-quantity-decrease quantity__button" type="button" title="Уменьшить"><svg><use xlink:href="#minus"></use></svg></button>
                     <input class="quantity__input" type="text" value="1" readonly>
-                    <button class="quantity__button" type="button" title="Увеличить"><svg><use xlink:href="#plus"></use></svg></button>
+                    <button class="js-quantity-increase quantity__button" type="button" title="Увеличить"><svg><use xlink:href="#plus"></use></svg></button>
                   </div>
                   <div class="cart-item__prices">
                     <p class="cart-item__old-price">14 278 990 руб.</p>
@@ -119,14 +119,14 @@
           </div>
         </div>
         <div class="cart__right">
-          <div class="summary">
+          <div class="js-sticky-block summary">
             <p class="summary__title">ВАШ ЗАКАЗ</p>
             <p class="summary__item"><span>Товаров</span> 2 шт.</p>
             <p class="summary__item"><span>Общая стоимость</span> 30 000 руб.</p>
             <label class="summary__promocode"><span>Ввести промо‑код</span> <input class="summary__input" type="text"></label>
             <p class="summary__links"><a href="#">Правила доставки</a> <a href="#">Условия оферты</a></p>
             <p class="summary__item"><span>Итого (без&nbsp;учета доставки):</span> <span class="summary__price">2 000 000 руб.</span></p>
-            <button class="btn btn--type_1" type="button">оформить заказ</button>
+            <a class="btn btn--type_1" href="order-make.html">оформить заказ</a>
           </div>
         </div>
       </div>
@@ -140,6 +140,9 @@
   //= template/float-bar.html
 
   //= template/scripts.html
+  <script src="js/jquery.sticky-kit.min.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/quantity.js"></script>
 
 </body>
 
