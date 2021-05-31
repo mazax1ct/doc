@@ -49,3 +49,229 @@
 
     @media(min-width: 1900px)
       margin-bottom: 40px
+
+.delivery
+  &:not(:last-child)
+    margin-bottom: 45px
+
+    @media(min-width: 1900px)
+      margin-bottom: 70px
+
+  .radio-icon
+    top: 1px
+
+    @media(min-width: 1900px)
+      top: 2px
+
+  &__title
+    display: block
+    font-size: 13px
+    font-weight: 700
+    letter-spacing: 2px
+    margin-bottom: 30px
+    text-transform: uppercase
+
+    @media(min-width: 1024px)
+      font-size: 14px
+
+    @media(min-width: 1900px)
+      font-size: 18px
+
+  &__description
+    display: block
+    font-size: 13px
+    font-weight: 700
+    margin-left: -24px
+
+    @media(min-width: 1024px)
+      margin-left: 0
+      padding-left: 24px
+
+.payment
+  &:not(:last-child)
+    margin-bottom: 45px
+
+    @media(min-width: 1900px)
+      margin-bottom: 50px
+
+  .radio-icon
+    top: 1px
+
+    @media(min-width: 1900px)
+      top: -1px
+
+  &__title
+    display: block
+    font-size: 13px
+    font-weight: 700
+    letter-spacing: 2px
+    text-transform: uppercase
+
+    @media(min-width: 1024px)
+      font-size: 14px
+
+.user-data
+  max-width: 546px
+
+.another-user
+  display: inline-block
+  font-size: 13px
+  font-weight: 500
+  padding-top: 5px
+  padding-bottom: 5px
+
+.order-item
+  align-items: flex-start
+  display: flex
+
+  &:not(:last-child)
+    border-bottom: 1px solid $color_grey
+    margin-bottom: 40px
+    padding-bottom: 40px
+
+  &__image
+    background-color: #fbfcff
+    display: block
+    min-width: 120px
+    position: relative
+    width: 120px
+
+    @media(min-width: 1200px)
+      min-width: 160px
+      width: 160px
+
+    @media(min-width: 1350px)
+      min-width: 240px
+      width: 240px
+
+    img
+      display: block
+      mix-blend-mode: multiply
+      width: 100%
+
+    input[type="checkbox"]
+      position: absolute
+      height: 1px
+      overflow: hidden
+      clip: rect(0 0 0 0)
+      width: 1px
+
+    .checkbox-icon
+      border-radius: 50%
+      height: 10px
+      left: 6px
+      top: 6px
+      width: 10px
+
+      @media(min-width: 1024px)
+        height: 18px
+        left: 12px
+        top: 12px
+        width: 18px
+
+    input[type="checkbox"]:checked + .checkbox-icon::before
+      border-radius: 50%
+      height: 6px
+      width: 6px
+
+      @media(min-width: 1024px)
+        height: 12px
+        width: 12px
+
+  &__info
+    flex-grow: 1
+    padding-left: 10px
+
+    @media(min-width: 768px)
+      padding-left: 30px
+
+  &__articul
+    color: $color_grey
+    font-size: 10px
+    font-weight: 500
+    margin-bottom: 5px
+
+    @media(min-width: 1024px)
+      font-size: 13px
+      margin-bottom: 15px
+      text-transform: uppercase
+
+  &__title
+    font-size: 13px
+    font-weight: 500
+
+    @media(min-width: 768px)
+      margin-bottom: 20px
+
+    @media(min-width: 1024px)
+      font-size: 16px
+      max-width: 400px
+      text-transform: uppercase
+
+    a
+      text-decoration: none
+
+  &__description
+    color: $color_grey
+    display: none
+    font-size: 14px
+
+    @media(min-width: 1024px)
+      display: block
+      max-width: 400px
+
+  &__size-qnt
+    font-size: 13px
+    font-weight: 500
+
+    @media(min-width: 768px)
+      align-items: flex-end
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+
+  &__size,
+  &__size-qnt-inner
+    margin-bottom: 10px
+
+  &__prices
+    align-items: baseline
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 10px
+
+    @media(min-width: 768px)
+      display: block
+      text-align: right
+
+  &__old-price
+    color: $color_grey
+    font-size: 10px
+    font-weight: 500
+    margin-right: 30px
+    margin-bottom: 5px
+    text-decoration: line-through
+
+    @media(min-width: 768px)
+      font-size: 14px
+      margin-right: 0
+
+    @media(min-width: 1900px)
+      font-size: 18px
+
+  &__price
+    font-size: 16px
+    font-weight: 700
+
+    @media(min-width: 768px)
+      font-size: 24px
+      line-height: 1
+
+    @media(min-width: 1900px)
+      font-size: 36px
+
+    &:last-child
+      margin-bottom: 5px
+
+      @media(min-width: 768px)
+        margin-bottom: 0

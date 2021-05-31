@@ -42,35 +42,122 @@
         <div class="js-content-with-sticky order-make__left">
           <div class="order-make__section">
             <p class="order-make__section-title">1. РЕГИОН ДОСТАВКИ</p>
+            <label class="input-label">
+              <span class="input-label__text">Местоположение</span>
+              <input class="input" type="text" placeholder="Местоположение">
+            </label>
           </div>
           <div class="order-make__section">
             <p class="order-make__section-title">2. СПОСОБ ДОСТАВКИ</p>
+            <label class="delivery radio-label">
+              <input id="radio1" type="radio" name="delivery" value="1" checked/>
+              <span class="radio-icon"></span>
+              <span class="delivery__title">Самовывоз из магазина</span>
+              <span class="delivery__description">
+                Способ получения: бесплатно<br><br>
+                Вы можете самостоятельно забрать заказ из нашего магазина
+              </span>
+            </label>
+            <label class="delivery radio-label">
+              <input id="radio1" type="radio" name="delivery" value="2"/>
+              <span class="radio-icon"></span>
+              <span class="delivery__title">Получение в пункте самовывоза СДЭК</span>
+              <span class="delivery__description">
+                <a href="#">Выбрать пункт выдачи</a><br><br>
+                Способ получения: 150руб.<br><br>
+                Вы можете самостоятельно забрать заказ из нашего магазина
+              </span>
+            </label>
+            <label class="delivery radio-label">
+              <input id="radio1" type="radio" name="delivery" value="3"/>
+              <span class="radio-icon"></span>
+              <span class="delivery__title">Доставка курьером</span>
+              <span class="delivery__description">
+                Способ получения: 300руб.</a><br><br>
+                Доставка в течении 2-10 дней после подтверждения заказа оператором
+              </span>
+            </label>
           </div>
           <div class="order-make__section">
             <p class="order-make__section-title">3. ВЫБОР СПОСОБА ОПЛАТЫ</p>
+            <label class="payment radio-label">
+              <input id="radio1" type="radio" name="delivery" value="1" checked/>
+              <span class="radio-icon"></span>
+              <span class="payment__title">Оплата в магазине при получении</span>
+            </label>
+            <label class="payment radio-label">
+              <input id="radio1" type="radio" name="delivery" value="2"/>
+              <span class="radio-icon"></span>
+              <span class="payment__title">Полная оплата заказа с учетом стоимости доставки*</span>
+            </label>
+            <label class="payment radio-label">
+              <input id="radio1" type="radio" name="delivery" value="3"/>
+              <span class="radio-icon"></span>
+              <span class="payment__title">Полная оплата доставки и предоплата 30% от стоимости товаров в заказе*</span>
+            </label>
+            <label class="payment radio-label">
+              <input id="radio1" type="radio" name="delivery" value="4"/>
+              <span class="radio-icon"></span>
+              <span class="payment__title">Полная оплата доставки без предоплаты за товары в заказе*</span>
+            </label>
           </div>
           <div class="order-make__section">
             <p class="order-make__section-title">4. ДАННЫЕ ЗАКАЗЧИКА</p>
+            <label class="user-data input-label">
+              <input class="input" type="text" name="name" placeholder="Имя*">
+            </label>
+            <label class="user-data input-label">
+              <input class="input" type="text" name="last_name" placeholder="Фамилия*">
+            </label>
+            <label class="user-data input-label">
+              <input class="js-phone-mask input" type="text" name="phone" placeholder="Телефон*">
+            </label>
+            <label class="user-data input-label">
+              <input class="input" type="text" name="email" placeholder="Email*">
+            </label>
+            <label class="user-data input-label">
+              <input class="input" type="text" name="address" placeholder="Адрес доставки*">
+            </label>
+            <a class="another-user" href="#">Указать другого получателя</a>
           </div>
           <div class="order-make__section">
             <p class="order-make__section-title">5. СОСТАВ ЗАКАЗА</p>
-
-            <div class="cart-item">
-              <div class="cart-item__inner">
-                <div class="cart-item__image">
-                  <img src="images/content/history/img.jpg" srcset="images/content/history/img@2x.jpg 2x" alt="alt">
+            <div class="order-item">
+              <div class="order-item__image">
+                <img src="images/content/history/img.jpg" srcset="images/content/history/img@2x.jpg 2x" alt="alt">
+              </div>
+              <div class="order-item__info">
+                <p class="order-item__articul">Артикул: 921657Б</p>
+                <p class="order-item__title"><a href="detail.html">Кольцо с бриллиантами и изумрудами из комбинированного золота</a></p>
+                <p class="order-item__description">1 брил. - 0,06 Ct (приведены характеристики вставок средние для модели), Вставка - Бриллиант, Материал - Золото 585</p>
+                <div class="order-item__size-qnt">
+                  <div class="order-item__size-qnt-inner">
+                    <p class="order-item__size">Размер: 16</p>
+                    <p class="order-item__qnt">Количество: 1 изделие</p>
+                  </div>
+                  <div class="order-item__prices">
+                    <p class="order-item__old-price">14 278 990 руб.</p>
+                    <p class="order-item__price">2 115 900 руб.</p>
+                  </div>
                 </div>
-                <div class="cart-item__info">
-                  <p class="cart-item__articul">Артикул: 921657Б</p>
-                  <p class="cart-item__title"><a href="detail.html">Кольцо с бриллиантами и изумрудами из комбинированного золота</a></p>
-                  <p class="cart-item__description">1 брил. - 0,06 Ct (приведены характеристики вставок средние для модели), Вставка - Бриллиант, Материал - Золото 585</p>
-                  <div class="cart-item__size-qnt">
-                    Размер: 16
-                    Количество: 1 изделие
-                    <div class="cart-item__prices">
-                      <p class="cart-item__old-price">14 278 990 руб.</p>
-                      <p class="cart-item__price">2 115 900 руб.</p>
-                    </div>
+              </div>
+            </div>
+            <div class="order-item">
+              <div class="order-item__image">
+                <img src="images/content/history/img.jpg" srcset="images/content/history/img@2x.jpg 2x" alt="alt">
+              </div>
+              <div class="order-item__info">
+                <p class="order-item__articul">Артикул: 921657Б</p>
+                <p class="order-item__title"><a href="detail.html">Кольцо с бриллиантами и изумрудами из комбинированного золота</a></p>
+                <p class="order-item__description">1 брил. - 0,06 Ct (приведены характеристики вставок средние для модели), Вставка - Бриллиант, Материал - Золото 585</p>
+                <div class="order-item__size-qnt">
+                  <div class="order-item__size-qnt-inner">
+                    <p class="order-item__size">Размер: 16</p>
+                    <p class="order-item__qnt">Количество: 1 изделие</p>
+                  </div>
+                  <div class="order-item__prices">
+                    <p class="order-item__old-price">14 278 990 руб.</p>
+                    <p class="order-item__price">2 115 900 руб.</p>
                   </div>
                 </div>
               </div>
