@@ -1,37 +1,59 @@
 .catalog-slider
   .catalog-item
+    &__info-block
+      padding: 15px 0 0
+
+      @media(min-width: 1024px)
+        padding: 15px
+
+      @media(min-width: 1900px)
+        padding: 25px
+
     &__colors
-      display: flex
-      opacity: 0
-      transition: opacity 0.3s
+      display: none
+
+      @media(min-width: 1024px)
+        display: flex
+        opacity: 0
+        transition: opacity 0.3s
 
     &__description
-      display: block
-      opacity: 0
-      order: 1
+      display: none
+
+      @media(min-width: 1024px)
+        display: block
+        opacity: 0
+        order: 1
 
     &__btn
-      display: flex
-      opacity: 0
-      transition: all 0.3s
+      display: none
+
+      @media(min-width: 1024px)
+        display: flex
+        opacity: 0
+        transition: all 0.3s
 
     &:hover
       .catalog-item__colors,
       .catalog-item__description,
       .catalog-item__btn
-        opacity: 1
+        @media(min-width: 1024px)
+          opacity: 1
 
       .catalog-item__info-block
-        padding: 15px
+        @media(min-width: 1024px)
+          padding: 15px
 
         @media(min-width: 1900px)
           padding: 25px
 
       .catalog-item__description
-        order: 0
+        @media(min-width: 1024px)
+          order: 0
 
       .catalog-item__btn
-        display: flex
+        @media(min-width: 1024px)
+          display: flex
 
 .catalog-item
   background-color: #fff
@@ -52,13 +74,16 @@
     max-width: 365px
 
   &:hover
-    border-color: $color_grey
+    @media(min-width: 1024px)
+      border-color: $color_grey
 
     .catalog-item__image-block
-      border-bottom-color: $color_grey
+      @media(min-width: 1024px)
+        border-bottom-color: $color_grey
 
     .catalog-item__image-togglers
-      opacity: 1
+      @media(min-width: 1024px)
+        opacity: 1
 
   &__image-block
     border-bottom: 1px solid transparent
