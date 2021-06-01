@@ -1,0 +1,16 @@
+.catalog-slider
+  display: flex
+  flex-wrap: wrap
+
+  &.slick-initialized
+    display: block
+
+    @media(min-width: 1900px)
+      margin-left: -21px
+      margin-right: -21px
+
+  &:not(:last-child)
+    margin-bottom: 70px
+    
+    @media(min-width: 1900px)
+      margin-bottom: 160px

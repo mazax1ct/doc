@@ -32,10 +32,6 @@
 
 .slick-slider .slick-list,
 .slick-slider .slick-track {
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
@@ -104,58 +100,73 @@
 }
 
 .slick-dots {
-  bottom: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  left: 0;
-  position: absolute;
-  top: auto;
-  width: 100%;
-  z-index: 1;
+  margin-top: 20px;
+  @media(min-width: 1900px) {
+    margin-top: 70px;
+  }
 }
 
 .slick-dots li {
-  margin-left: 2px;
-  margin-right: 2px;
+  align-items: center;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  margin-left: 5px;
+  margin-right: 5px;
   width: 20px;
+  @media(min-width: 1024px) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  @media(min-width: 1900px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 .slick-dots button {
   align-items: center;
   background-color: transparent;
   border-radius: 50%;
-  border: none;
+  border: 1px solid $color_grey;
   color: transparent;
   cursor: pointer;
   display: flex;
   font-size: 0;
-  height: 20px;
+  height: 8px;
   justify-content: center;
   overflow: hidden;
   padding: 0;
-  width: 20px;
+  transition: all 0.3s;
+  width: 8px;
 }
 
 .slick-dots button::after {
-  background-color: $color_grey;
+  background-color: $color_darkblue;
   border-radius: 50%;
   content: '';
   display: block;
-  height: 6px;
-  transition: all 0.3s;
-  width: 6px;
+  height: 9px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  width: 9px;
+}
+
+.slick-dots .slick-active button {
+  height: 14px;
+  width: 14px;
 }
 
 .slick-dots .slick-active button::after {
-  background-color: $color_darkblue;
-  height: 10px;
-  width: 10px;
+  opacity: 1;
 }
 
 .slick-arrow {
   align-items: center;
-  background-color: #fff;
+  background-color: transparent;
   border: none;
   cursor: pointer;
   display: flex;
@@ -163,34 +174,41 @@
   justify-content: center;
   position: absolute;
   padding: 0;
+  top: 95px;
   transition: background-color 0.3s;
   width: 40px;
   z-index: 1;
+  @media(min-width: 1024px) {
+    top: 115px;
+  }
   @media(min-width: 1900px) {
-    height: 48px;
-    width: 48px;
+    top: 164px;
   }
 
   &:hover {
-    background-color: $color_red;
-
     .slick-arrow__arrow {
-      fill: #fff;
+      fill: $color_darkblue;
     }
   }
 }
 
 .slick-prev {
-  left: 0;
+  left: -15px;
+  @media(min-width: 1900px) {
+    left: -30px;
+  }
 }
 
 .slick-next {
   left: auto;
-  right: 0;
+  right: -15px;
+  @media(min-width: 1900px) {
+    right: -30px;
+  }
 }
 
 .slick-arrow__arrow {
-  fill: $text_color;
+  fill: $color_grey;
   height: 16px;
   transition: fill 0.3s;
   width: 16px;
