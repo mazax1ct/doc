@@ -1,0 +1,71 @@
+.faq-list
+  max-width: 1105px
+  margin-left: auto
+  margin-right: auto
+  margin-bottom: 80px
+
+.faq
+  border: 1px solid $color_grey
+
+  &:not(:last-child)
+    margin-bottom: 20px
+
+    @media(min-width: 1900px)
+      margin-bottom: 30px
+
+  &__toggler
+    background-color: transparent
+    border: none
+    color: $color_darkblue
+    cursor: pointer
+    font-weight: 300
+    min-height: 100px
+    padding: 15px
+    text-align: center
+    width: 100%
+
+    @media(min-width: 768px)
+      align-items: center
+      display: flex
+      font-size: 18px
+      font-weight: 400
+      justify-content: center
+      padding-left: 30px
+      padding-right: 30px
+
+    @media(min-width: 1900px)
+      font-size: 24px
+      min-height: 150px
+
+    &::after
+      background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 1L6 5.5L1 1' stroke='%236F7D9D' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A")
+      background-repeat: no-repeat
+      background-position: 50% 50%
+      content: ''
+      display: block
+      height: 12px
+      margin-left: auto
+      margin-right: auto
+      margin-top: 10px
+      min-width: 12px
+      width: 12px
+
+      @media(min-width: 768px)
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 1L6 5.5L1 1' stroke='%2308205C' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A")
+        margin-left: 20px
+        margin-right: 0
+        margin-top: 5px
+
+      @media(min-width: 1900px)
+        margin-left: 40px
+
+    &.is-active
+      &::after
+        transform: rotate(-180deg)
+
+  &__body
+    display: none
+    padding: 0 30px 30px
+
+    @media(min-width: 1900px)
+      font-size: 16px

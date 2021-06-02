@@ -86,7 +86,9 @@ function popoverClose() {
 
 //открытие поповера
 $(document).on('click', '.js-popover-opener', function () {
-  scrollCompensate();
+  if(!$('body').hasClass('compensate-for-scrollbar')) {
+    scrollCompensate();
+  }
   $('body').addClass('popover-open');
   popoverOpen($(this).attr('data-popover'));
 

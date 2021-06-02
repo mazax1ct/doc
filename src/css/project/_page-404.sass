@@ -1,0 +1,128 @@
+.page-404
+  background-color: $color_darkblue
+  background-image: url("data:image/svg+xml,%3Csvg width='481' height='12' viewBox='0 0 481 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M64.1235 0.822513L96.1065 11.3442L128.09 0.822513L160.087 11.3442L192.07 0.822513L224.053 11.3442L256.036 0.822513L288.019 11.3442L320.002 0.822513L351.985 11.3442L383.968 0.822513L415.951 11.3442L447.934 0.822513L479.788 11.299L480.06 10.7684L447.934 0.212891L415.951 10.7232L383.968 0.212891L351.985 10.7232L320.002 0.212891L288.019 10.7232L256.036 0.212891L224.053 10.7232L192.07 0.212891L160.087 10.7232L128.09 0.212891L96.1065 10.7232L64.1235 0.212891L32.1261 10.7232L0.271892 0.258048L0 0.777356L32.1261 11.3442L64.1235 0.822513Z' fill='%236F7D9D' fill-opacity='0.1'/%3E%3C/svg%3E%0A")
+  background-position: 0 0
+  background-repeat: repeat
+  box-shadow: 0 0 0 2px #fff, 0 0 0 10px $color_darkblue
+  margin-left: -20px
+  margin-right: -20px
+  max-width: 1104px
+  margin-top: 30px
+  margin-bottom: 150px
+  padding: 40px
+
+  @media(min-width: 1024px)
+    box-shadow: 0 0 0 3px #fff, 0 0 0 15px $color_darkblue
+    font-size: 18px
+    font-weight: 400
+    letter-spacing: 3px
+    margin-top: 70px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 180px
+    padding: 140px
+    text-transform: uppercase
+
+  &__inner
+    box-shadow: 0 0 0 2px $color_darkblue, 0 0 0 10px #fff
+    background-color: #fff
+    filter: drop-shadow(0 0 4px rgba(#000, 0.25))
+    margin-bottom: -150px
+    padding: 30px 40px 50px
+    text-align: center
+
+    @media(min-width: 1024px)
+      box-shadow: 0 0 0 3px $color_darkblue, 0 0 0 15px #fff
+      filter: drop-shadow(0 0 4px rgba(#000, 0.25))
+      margin-bottom: -300px
+      padding-left: 100px
+      padding-right: 100px
+
+  &__title
+    font-size: 13px
+    font-weight: 700
+    letter-spacing: 2px
+    margin-bottom: 20px
+    text-transform: uppercase
+
+    @media(min-width: 1024px)
+      font-size: 26px
+      margin-bottom: 50px
+
+  &__404
+    display: block
+    font-size: 36px
+    letter-spacing: 0
+
+    @media(min-width: 1024px)
+      font-size: 80px
+
+  &__text
+    margin-bottom: 50px
+
+    @media(min-width: 1024px)
+      margin-bottom: 80px
+
+  &__btn
+    display: inline-block
+    color: $color_darkblue
+    font-size: 13px
+    font-weight: 700
+    position: relative
+    padding-top: 5px
+    padding-bottom: 5px
+    text-transform: uppercase
+    text-decoration: none
+
+    @media(min-width: 1024px)
+      align-items: center
+      background-color: $color_darkblue
+      color: #fff
+      display: inline-flex
+      font-size: 18px
+      font-weight: 700
+      justify-content: center
+      letter-spacing: 3px
+      min-height: 78px
+      max-width: 380px
+      padding: 7px 16px 6px
+      text-decoration: none
+      text-align: center
+      transition: background-color 0.3s, color 0.3s
+      width: 100%
+
+    &:hover,
+    &:focus
+      color: $color_darkblue
+
+      @media(min-width: 1024px)
+        background-color: lighten($color_darkblue, 10%)
+        border-color: lighten($color_darkblue, 10%)
+        color: #fff
+
+    &:active
+      @media(min-width: 1024px)
+        background-color: $color_grey
+        border-color: $color_grey
+
+      &::after
+        height: 100%
+
+    span
+      position: relative
+      z-index: 1
+
+    &::after
+      background-color: $color_lightblue
+      bottom: 0
+      content: ''
+      height: 12px
+      left: 0
+      position: absolute
+      top: auto
+      transition: height 0.3s
+      width: 100%
+      z-index: 0
+
+      @media(min-width: 1024px)
+        display: none

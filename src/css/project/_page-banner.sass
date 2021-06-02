@@ -1,5 +1,66 @@
 .page-banner
+  color: #fff
+  margin-bottom: 50px
+  position: relative
+  text-align: center
+
+  @media(min-width: 1024px)
+    min-height: 500px
+    text-align: left
+
   picture,
   img
     display: block
     width: 100%
+
+  picture,
+  img
+    @media(min-width: 1024px)
+      min-height: 500px
+
+  img
+    @media(min-width: 1024px)
+      object-fit: cover
+
+  &__container
+    left: 50%
+    max-width: 1370px
+    padding-top: 84px
+    position: absolute
+    padding-left: 30px
+    padding-right: 30px
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: 100%
+
+    @media(min-width: 1024px)
+      padding-top: 134px
+
+    @media(min-width: 1900px)
+      max-width: 1640px
+
+  h1
+    font-family: $secondary_font
+    font-size: 48px
+    font-weight: 700
+    line-height: 1
+    margin-bottom: 20px
+
+    @media(min-width: 1024px)
+      margin-bottom: 40px
+
+    @media(min-width: 1900px)
+      font-size: 60px
+      line-height: 1.33333
+      letter-spacing: 4px
+      margin-bottom: 70px
+
+  &__text
+    @media(min-width: 1024px)
+      color: rgba(#fff, 0.7)
+      font-size: 16px
+      font-weight: 500
+      line-height: 1.5
+      letter-spacing: 1px
+      max-width: 520px
+      text-transform: uppercase
