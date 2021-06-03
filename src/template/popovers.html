@@ -606,4 +606,22 @@
       </div>
     </div>
   </div>
+
+  <div class="vacancy-popover popover popover--at_right" tabindex="0">
+    <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg><use xlink:href="#close"></use></svg> <span>Закрыть</span></button>
+    <div class="popover__inner">
+      <p class="popover__title">Отправить резюме</p>
+      <p class="login__text">Заполните форму и мы ответим вам.</p>
+      <form class="login__form" action="">
+        <label class="login__form-label"><input class="input" type="text" name="fio" placeholder="ФИО*"></label>
+        <label class="login__form-label"><input class="js-phone-mask input" type="text" name="phone" placeholder="Телефон*"></label>
+        <label class="login__form-label"><input class="input" type="text" name="email" placeholder="Email*"></label>
+        <label class="file">
+          <input class="js-upload-file" type="file" name="file" id="file" value="" data-multiple-caption="{count} файла выбрано">
+          <span class="file__text">ПРИКРЕПИТЬ ФАЙЛ</span>
+        </label>
+        <button class="btn btn--type_1" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
 </div>

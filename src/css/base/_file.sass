@@ -1,0 +1,51 @@
+.file
+  align-items: center
+  cursor: pointer
+  display: inline-flex
+  position: relative
+  padding-top: 17px
+  padding-bottom: 17px
+  padding-left: 30px
+  padding-right: 30px
+  overflow: hidden
+  vertical-align: top
+  width: 100%
+
+  &:not(:last-child)
+    margin-bottom: 10px
+
+  &:hover
+    .file__text
+      color: $color_darkblue
+
+  input
+    position: absolute
+    height: 1px
+    overflow: hidden
+    clip: rect(0 0 0 0)
+    width: 1px
+
+    &:focus + .file__text
+      color: $color_darkblue
+
+  &::before
+    background-image: url("data:image/svg+xml,%3Csvg width='15' height='14' viewBox='0 0 15 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.967 4.09845L9.32943 3.51031L4.10155 8.33252C3.45228 8.93143 3.45228 9.90596 4.10155 10.5049C4.75083 11.1038 5.80731 11.1038 6.45662 10.5049L13.4777 4.02828C13.9609 3.58258 14.227 2.99001 14.227 2.35971C14.227 1.72941 13.9609 1.13684 13.4777 0.691141C12.9945 0.245465 12.3521 0 11.6688 0C10.9854 0 10.3431 0.245465 9.8599 0.691168L1.32333 8.56554C0.671479 9.16683 0.3125 9.96625 0.3125 10.8166C0.3125 11.6669 0.671479 12.4663 1.32333 13.0676C1.97519 13.6689 2.84184 14 3.76365 14C4.68547 14 5.55212 13.6689 6.20397 13.0676L12.9472 6.84742L12.3096 6.25931L5.5664 12.4795C5.08485 12.9237 4.44464 13.1683 3.76365 13.1683C3.08266 13.1683 2.44245 12.9236 1.9609 12.4795C1.47935 12.0353 1.21419 11.4447 1.21419 10.8166C1.21419 10.1884 1.4794 9.59782 1.9609 9.15365L10.4975 1.27928C11.1434 0.683539 12.1943 0.683539 12.8401 1.27928C13.486 1.87504 13.486 2.84443 12.8401 3.4402L5.81908 9.91676C5.52135 10.1914 5.03689 10.1914 4.73915 9.91676C4.44141 9.64212 4.44141 9.19524 4.73915 8.9206L9.967 4.09845Z' fill='%236F7D9D'/%3E%3C/svg%3E%0A")
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    content: ''
+    height: 15px
+    margin-right: 5px
+    min-width: 15px
+    width: 15px
+
+  &__text
+    color: $color_grey
+    display: block
+    font-size: 13px
+    font-weight: 500
+    max-width: 300px
+    overflow: hidden
+    text-overflow: ellipsis
+    text-decoration: underline
+    transition: color 0.3s
+    white-space: nowrap

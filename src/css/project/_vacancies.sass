@@ -1,0 +1,112 @@
+.vacancies
+  @media(min-width: 1024px)
+    display: flex
+    justify-content: space-between
+
+  &__left
+    max-width: 500px
+    margin-bottom: 50px
+
+    @media(min-width: 1024px)
+      margin-bottom: 0
+      min-width: 350px
+      padding-right: 50px
+      width: 350px
+
+    @media(min-width: 1350px)
+      min-width: 450px
+      width: 450px
+
+    @media(min-width: 1900px)
+      min-width: 550px
+      width: 550px
+
+    .select-wrapper
+      &:not(:last-child)
+        margin-bottom: 40px
+
+        @media(min-width: 1024px)
+          margin-bottom: 50px
+
+    .btn
+      width: 100%
+
+  &__right
+    @media(min-width: 1024px)
+      flex-grow: 1
+      max-width: 850px
+
+  &__title
+    font-size: 18px
+    font-weight: 700
+    letter-spacing: 3px
+    margin-bottom: 50px
+
+    @media(min-width: 1900px)
+      border-bottom: 2px solid currentColor
+      font-size: 26px
+      letter-spacing: 5px
+
+  &__list
+    @media(min-width: 768px)
+      display: flex
+      flex-wrap: wrap
+      margin-left: -25px
+      margin-right: -25px
+
+    @media(min-width: 1024px) and (max-width: 1349px)
+      margin-left: -10px
+      margin-right: -10px
+
+  &__list-item
+    margin-bottom: 50px
+
+    @media(min-width: 768px)
+      padding-left: 25px
+      padding-right: 25px
+      width: 50%
+
+    @media(min-width: 1024px) and (max-width: 1349px)
+      margin-bottom: 20px
+      padding-left: 10px
+      padding-right: 10px
+
+.vacancy
+  background-color: rgba($color_grey, 0.05)
+  margin-left: -30px
+  margin-right: -30px
+  padding: 60px 30px 40px
+
+  @media(min-width: 1024px) and (max-width: 1349px)
+    padding: 25px 20px
+
+  @media(min-width: 768px)
+    margin-left: 0
+    margin-right: 0
+    max-width: 400px
+
+  &__city
+    color: $color_grey
+    font-size: 13px
+    font-weight: 500
+    letter-spacing: 2px
+    margin-bottom: 30px
+    text-transform: uppercase
+
+  &__title
+    font-size: 18px
+    font-weight: 700
+    letter-spacing: 2px
+    margin-bottom: 35px
+    text-transform: uppercase
+
+  &__description
+    font-size: 13px
+    font-weight: 500
+
+    a
+      text-decoration: none
+
+  .btn
+    margin-top: 15px
+    width: 100%
