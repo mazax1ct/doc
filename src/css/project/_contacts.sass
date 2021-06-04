@@ -1,0 +1,252 @@
+.contacts
+  &__top
+    line-height: 1.64
+    margin-bottom: 50px
+
+    @media(min-width: 1900px)
+      margin-bottom: 120px
+
+  &__top-title
+    font-size: 13px
+    font-weight: 700
+    letter-spacing: 2px
+    text-transform: uppercase
+
+    @media(min-width: 1024px)
+      font-size: 18px
+      letter-spacing: 3px
+      margin-bottom: 35px
+
+  &__container
+    @media(min-width: 768px)
+      display: flex
+
+  &__left
+    margin-bottom: 50px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      min-width: 350px
+      padding-right: 20px
+      width: 350px
+
+    @media(min-width: 1350px)
+      min-width: 505px
+      max-width: 100%
+      padding-right: 50px
+      width: 505px
+
+  &__left-title
+    font-size: 13px
+    font-weight: 700
+    letter-spacing: 2px
+    margin-bottom: 30px
+    text-transform: uppercase
+
+    @media(min-width: 768px)
+      padding-top: 5px
+      margin-bottom: 50px
+
+    @media(min-width: 1024px)
+      font-size: 18px
+
+    @media(min-width: 1350px)
+      margin-bottom: 45px
+
+  &__location-form
+    margin-bottom: 10px
+
+    @media(min-width: 1024px)
+      display: flex
+
+  &__location-input
+    margin-bottom: 15px
+    text-align: center
+
+    @media(min-width: 1024px)
+      flex-grow: 1
+      margin-bottom: 0
+      margin-right: -1px
+      text-align: left
+
+  &__location-submit
+    width: 100%
+
+    @media(min-width: 1024px)
+      min-width: 146px
+      width: 146px
+
+  &__location-aim
+    align-items: center
+    background-color: transparent
+    border: none
+    color: rgba($color_grey, 0.3)
+    cursor: pointer
+    display: flex
+    font-size: 13px
+    font-weight: 500
+    justify-content: center
+    margin-bottom: 40px
+    padding: 10px 0
+    transition: color 0.3s
+
+    @media(min-width: 1900px)
+      margin-bottom: 90px
+
+    &:hover,
+    &:focus
+      color: $color_grey
+
+    &:active
+      color: $color_lightblue
+
+    svg
+      fill: $color_lightblue
+      height: 18px
+      margin-right: 10px
+      width: 18px
+
+  &__locations-list
+    @media(min-width: 768px)
+      max-height: 460px
+      overflow-y: auto
+      scrollbar-width: thin
+      scrollbar-color: $color_grey rgba($color_grey, 0.3)
+
+    @media(min-width: 1024px)
+      max-width: 540px
+
+    &::-webkit-scrollbar
+      height: 6px
+      width: 6px
+
+    &::-webkit-scrollbar-track
+      background-image: linear-gradient($color_grey, $color_grey)
+      background-size: 1px 100%
+      background-position: 50% 0
+      background-repeat: no-repeat
+
+    &::-webkit-scrollbar-thumb
+      background: $color_darkblue
+      width: 6px
+
+  &__locations-item
+    color: $color_grey
+    display: block
+    font-size: 13px
+    font-weight: 500
+    padding-left: 50px
+    position: relative
+    text-decoration: none
+
+    &:not(:last-child)
+      margin-bottom: 50px
+
+      @media(min-width: 1024px)
+        margin-bottom: 85px
+
+    &:hover,
+    &:focus
+      color: $color_grey
+
+      .contacts__locations-item-title
+        color: $color_lightblue
+        text-decoration: underline
+
+    &.is-active
+      .contacts__locations-item-icon
+        &::after
+          background-color: $color_darkblue
+          border-radius: 50%
+          content: ''
+          height: 6px
+          left: 50%
+          position: absolute
+          top: 50%
+          transform: translate(-50%, -50%)
+          width: 6px
+
+          @media(min-width: 1350px)
+            height: 12px
+            width: 12px
+
+  &__locations-item-icon
+    border: 1px solid $color_darkblue
+    border-radius: 50%
+    height: 10px
+    left: 0
+    position: absolute
+    top: 3px
+    width: 10px
+    z-index: 1
+
+    @media(min-width: 1350px)
+      height: 18px
+      width: 18px
+
+  &__locations-item-title
+    color: $color_darkblue
+    display: block
+    margin-bottom: 5px
+    transition: color 0.3s
+
+  &__right
+    @media(min-width: 768px)
+      flex-grow: 1
+      margin-left: 0
+      margin-right: 0
+      width: calc(100% - 350px)
+
+    @media(min-width: 1350px)
+      width: calc(100% - 455px)
+
+    .form
+      margin-left: 0
+      margin-right: 0
+
+  &__tabs-nav
+    display: flex
+    margin-bottom: 35px
+
+  &__tabs-button
+    background-color: transparent
+    border: none
+    border-bottom: 4px solid transparent
+    color: $color_grey
+    cursor: pointer
+    font-size: 13px
+    font-weight: 700
+    letter-spacing: 2px
+    padding: 6px 0 11px
+    transition: color 0.3s, border-bottom-color 0.3s
+    text-transform: uppercase
+
+    &:not(:last-child)
+      margin-right: 20px
+
+      @media(min-width: 1024px)
+        margin-right: 60px
+
+    &:hover,
+    &:focus
+      color: $color_darkblue
+      border-bottom-color: $color_darkblue
+
+    &.is-active
+      border-bottom-color: $color_lightblue
+      color: $color_lightblue
+
+  &__map
+    background-color: $color_grey
+    height: 666px
+    margin-right: -30px
+    margin-left: -30px
+    margin-bottom: 80px
+
+    @media(min-width: 768px)
+      margin-left: 0
+      margin-right: 0
+
+    @media(min-width: 1900px)
+      height: 840px
+      margin-bottom: 170px

@@ -74,10 +74,8 @@ function popoverClose() {
     $('.popover.is-open').removeClass('is-open');
     $('.shade').fadeOut(300, function() {
       $('.shade').removeClass('is-open');
-      $('body').removeClass('popover-open');
-      //убираем компенсацию скролла
+      $('body').removeClass('popover-open').removeClass('compensate-for-scrollbar');
       $('#scroll-compensate').remove();
-      $('body').removeClass('compensate-for-scrollbar');
       document.removeEventListener('keydown', keyboardUse);
       lastFocusedElement.focus();
     });

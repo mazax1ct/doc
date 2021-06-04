@@ -393,6 +393,17 @@
     @media(min-width: 1024px)
       display: none
 
+    svg
+      fill: #fff
+      height: 20px
+      transition: fill 0.3s
+      width: 20px
+
+    &.is-active
+      svg
+        height: 13px
+        width: 13px
+
   &__search-toggler
     border-left: 1px solid $color_grey
     color: #fff

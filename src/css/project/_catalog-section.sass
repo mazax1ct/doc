@@ -1,0 +1,491 @@
+.catalog-section
+  @media(min-width: 1024px)
+    padding-top: 40px
+
+  &__title-block
+    margin-bottom: 40px
+    padding-left: 30px
+    padding-right: 30px
+
+    @media(min-width: 768px)
+      align-items: center
+      display: flex
+      justify-content: space-between
+
+    h2
+      font-size: 13px
+      font-weight: 700
+      letter-spacing: 2px
+      margin-bottom: 0
+      text-transform: uppercase
+
+      @media(min-width: 768px)
+        font-size: 18px
+
+      @media(min-width: 1350px)
+        font-size: 26px
+        letter-spacing: 5px
+
+      span
+        color: $color_grey
+        font-weight: 500
+        letter-spacing: 2px
+        vertical-align: baseline
+
+        @media(min-width: 768px)
+          font-size: 13px
+
+        @media(min-width: 1350px)
+          font-size: 16px
+
+  &__pages
+    color: $color_grey
+    display: none
+    font-size: 13px
+    font-weight: 500
+    margin-bottom: 0
+
+    @media(min-width: 768px)
+      display: block
+
+    @media(min-width: 1350px)
+      font-size: 16px
+
+.filter
+  margin-bottom: 40px
+
+  @media(min-width: 1900px)
+    margin-bottom: 65px
+
+  &__container
+    align-items: flex-start
+    display: flex
+    justify-content: center
+
+  &__opener
+    align-items: center
+    border: 1px solid $color_grey
+    background-color: transparent
+    color: $color_grey
+    cursor: pointer
+    display: flex
+    font-size: 10px
+    font-weight: 400
+    height: 50px
+    justify-content: center
+    letter-spacing: 2px
+    margin-left: 5px
+    margin-right: 5px
+    padding: 0
+    text-transform: uppercase
+    width: 150px
+
+    @media(min-width: 1024px)
+      display: none
+
+    span
+      margin-left: 10px
+      margin-right: 10px
+
+    svg
+      fill: $color_grey
+
+      &:first-child
+        height: 16px
+        width: 16px
+
+      &:last-child
+        height: 10px
+        width: 10px
+
+  &__filter
+    border-top: 1px solid rgba($color_grey, 0.3)
+    background-color: #fff
+    cursor: initial
+    display: none
+    height: calc(100% - 77px)
+    left: 0
+    position: fixed
+    padding-left: 30px
+    padding-right: 30px
+    top: 77px
+    width: 100%
+    z-index: 10
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+    @media(min-width: 1024px)
+      border-top: none
+      background-color: transparent
+      display: flex
+      height: auto
+      left: auto
+      position: static
+      padding-left: 0
+      padding-right: 0
+      top: auto
+      z-index: auto
+
+    .filter__reset-block
+      display: none
+
+  &__closer
+    align-items: center
+    border: none
+    border-right: 1px solid rgba($color_grey, 0.3)
+    background-color: #fff
+    color: $color_darkblue
+    cursor: pointer
+    display: flex
+    font-size: 13px
+    font-weight: 500
+    height: 76px
+    justify-content: center
+    letter-spacing: 3px
+    left: 0
+    top: -77px
+    position: absolute
+    padding: 0
+    text-transform: uppercase
+    transition: color 0.3s
+    width: 84px
+    z-index: 1
+
+    @media(min-width: 1024px)
+      display: none
+
+    &:hover,
+    &:focus
+      color: $color_lightblue
+
+      svg
+        fill: $color_lightblue
+
+    &:active
+      color: $color_grey
+
+      svg
+        fill: $color_grey
+
+    svg
+      fill: $color_grey
+      height: 13px
+      transition: fill 0.3s
+      width: 13px
+
+  &__title
+    font-size: 13px
+    font-weight: 700
+    letter-spacing: 1px
+    margin-bottom: 30px
+    margin-top: 50px
+    text-transform: uppercase
+    text-align: center
+
+    @media(min-width: 1024px)
+      display: none
+
+    @media(min-width: 1200px)
+      align-items: center
+      border-top: 1px solid rgba($color_gold, 0.3)
+      border-bottom: 1px solid rgba($color_gold, 0.3)
+      border-right: 1px solid rgba($color_gold, 0.3)
+      display: flex
+      font-size: 10px
+      font-weight: 500
+      flex-grow: 1
+      height: 50px
+      justify-content: center
+      margin: 0
+
+    @media(min-width: 1350px)
+      font-size: 14px
+      height: 80px
+
+    @media(min-width: 1900px)
+      height: 100px
+
+    &::after
+      @media(min-width: 1024px)
+        content: ':'
+
+    svg
+      display: none
+      fill: $color_darkblue
+      height: 16px
+      margin-right: 10px
+      width: 16px
+
+      @media(min-width: 1024px)
+        display: block
+
+  &__section
+    margin-bottom: 15px
+
+    @media(min-width: 1024px)
+      flex-grow: 1
+      margin-bottom: 0
+
+  &__section-toggler
+    align-items: center
+    border: none
+    border-top: 1px solid transparent
+    border-bottom: 1px solid transparent
+    background-color: transparent
+    color: $color_darkblue
+    cursor: pointer
+    display: flex
+    font-size: 13px
+    font-weight: 500
+    justify-content: space-between
+    letter-spacing: 2px
+    padding: 8px 0 9px
+    transition: color 0.3s, border-color 0.3s
+    text-transform: uppercase
+    width: 100%
+
+    @media(min-width: 1024px)
+      border-top-color: rgba($color_gold, 0.3)
+      border-bottom-color: rgba($color_gold, 0.3)
+      border-right: 1px solid rgba($color_gold, 0.3)
+      height: 50px
+      letter-spacing: 0
+      justify-content: center
+      position: relative
+      text-transform: none
+
+    @media(min-width: 1350px)
+      font-size: 16px
+      height: 80px
+
+    @media(min-width: 1900px)
+      height: 100px
+
+    &::after
+      @media(min-width: 1024px)
+        background-color: transparent
+        bottom: -1px
+        content: ''
+        height: 4px
+        left: 0
+        position: absolute
+        top: auto
+        transition: background-color 0.3s
+        width: 100%
+        z-index: 1
+
+    &:hover,
+    &:focus
+      &::after
+        @media(min-width: 1024px)
+          background-color: $color_darkblue
+
+    &.is-active
+      border-color: rgba($color_grey, 0.3)
+      color: $color_lightblue
+
+      &::after
+        @media(min-width: 1024px)
+          background-color: $color_darkblue
+
+      svg
+        fill: $color_lightblue
+        transform: rotate(-180deg)
+
+    svg
+      fill: $color_darkblue
+      height: 16px
+      transition: fill 0.3s
+      width: 16px
+
+      @media(min-width: 1024px)
+        height: 10px
+        margin-left: 10px
+        margin-top: 4px
+        width: 10px
+
+  &__section-toggler-qnt
+    align-items: center
+    background-color: $color_gold
+    border-radius: 50%
+    color: #fff
+    display: none
+    font-size: 12px
+    font-weight: 700
+    height: 19px
+    justify-content: center
+    line-height: 1
+    margin-right: 10px
+    width: 19px
+
+    @media(min-width: 1024px)
+      display: flex
+
+  &__section-dropdown
+    display: none
+    padding-top: 20px
+    padding-bottom: 30px
+
+  &__sort
+    border: 1px solid $color_grey
+    cursor: pointer
+    display: block
+    height: 50px
+    margin-left: 5px
+    margin-right: 5px
+    position: relative
+    width: 150px
+
+    @media(min-width: 1024px)
+      border-left: none
+      border-right: none
+      border-top: 1px solid rgba($color_gold, 0.3)
+      border-bottom: 1px solid rgba($color_gold, 0.3)
+      display: flex
+      margin-left: 0
+      margin-right: 0
+      width: auto
+
+    @media(min-width: 1350px)
+      height: 80px
+
+    @media(min-width: 1900px)
+      height: 100px
+
+  &__sort-text
+    align-items: center
+    color: $color_grey
+    display: flex
+    font-size: 10px
+    font-weight: 400
+    height: 50px
+    justify-content: center
+    letter-spacing: 1px
+    text-transform: uppercase
+
+    @media(min-width: 1024px)
+      color: $color_darkblue
+      padding-left: 15px
+      position: relative
+
+    @media(min-width: 1350px)
+      font-size: 14px
+      height: 80px
+
+    @media(min-width: 1900px)
+      height: 100px
+
+    span
+      white-space: nowrap
+
+      @media(min-width: 1024px)
+        margin-top: 2px
+
+      &::after
+        @media(min-width: 1024px)
+          content: ' ПО:'
+
+    svg
+      fill: $color_grey
+      height: 10px
+      margin-left: 10px
+      width: 10px
+
+      @media(min-width: 1024px)
+        left: auto
+        margin-top: 3px
+        margin-left: 0
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        z-index: 1
+
+  &__sort-select
+    appearance: none
+    background-color: transparent
+    border: none
+    color: $color_darkblue
+    cursor: pointer
+    height: 50px
+    font-size: 13px
+    font-weight: 500
+    left: 0
+    opacity: 0
+    padding: 0
+    position: absolute
+    top: 0
+    width: 100%
+
+    @media(min-width: 1024px)
+      opacity: 1
+      position: static
+      padding-left: 10px
+      padding-right: 25px
+      width: auto
+
+    @media(min-width: 1350px)
+      font-size: 16px
+      height: 80px
+
+    @media(min-width: 1900px)
+      height: 100px
+
+    &:focus
+      @media(min-width: 1024px)
+        background-color: rgba($color_grey, 0.05)
+
+  &__reset-block
+    &--outer
+      display: none
+      padding-left: 30px
+      padding-right: 30px
+
+      @media(min-width: 1024px)
+        align-items: center
+        display: flex
+        flex-wrap: wrap
+
+  &__reset
+    align-items: center
+    border: none
+    background-color: transparent
+    color: $color_grey
+    cursor: pointer
+    display: flex
+    font-size: 13px
+    font-weight: 500
+    margin-right: 20px
+    padding: 15px 0
+    transition: color 0.3s
+
+    @media(min-width: 1350px)
+      margin-right: 40px
+
+    &:hover,
+    &:focus
+      color: $color_darkblue
+
+      svg
+        fill: $color_darkblue
+
+    &:last-child
+      margin-right: 0
+
+    svg
+      fill: $color_grey
+      height: 7px
+      margin-top: 4px
+      margin-left: 10px
+      transition: fill 0.3s
+      width: 7px
+
+    &--all
+      text-transform: uppercase
+
+      @media(min-width: 1350px)
+        margin-right: 75px
+
+      svg
+        height: 11px
+        margin-top: 1px
+        width: 11px
