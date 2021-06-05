@@ -55,6 +55,70 @@
         @media(min-width: 1024px)
           display: flex
 
+.catalog-list
+  .catalog-item
+    max-width: 365px
+
+    &__info-block
+      padding: 15px 0 0
+
+      @media(min-width: 1024px)
+        padding: 15px
+
+      @media(min-width: 1900px)
+        padding: 25px
+
+    &__colors
+      display: none
+
+      @media(min-width: 1024px)
+        display: flex
+        opacity: 0
+        transition: opacity 0.3s
+
+    &__title
+      @media(min-width: 1900px)
+        font-size: 16px
+        font-weight: 500
+
+    &__description
+      display: none
+
+      @media(min-width: 1024px)
+        display: block
+        opacity: 0
+        order: 1
+
+    &__btn
+      display: none
+
+      @media(min-width: 1024px)
+        display: flex
+        opacity: 0
+        transition: all 0.3s
+
+    &:hover
+      .catalog-item__colors,
+      .catalog-item__description,
+      .catalog-item__btn
+        @media(min-width: 1024px)
+          opacity: 1
+
+      .catalog-item__info-block
+        @media(min-width: 1024px)
+          padding: 15px
+
+        @media(min-width: 1900px)
+          padding: 25px
+
+      .catalog-item__description
+        @media(min-width: 1024px)
+          order: 0
+
+      .catalog-item__btn
+        @media(min-width: 1024px)
+          display: flex
+
 .catalog-item
   background-color: #fff
   border: 1px solid transparent
@@ -195,13 +259,12 @@
 
   &__title
     font-size: 13px
-    font-weight: 700
+    font-weight: 500
     margin-bottom: 20px
     text-transform: uppercase
 
     @media(min-width: 1024px)
       font-size: 16px
-      font-weight: 500
 
     @media(min-width: 1900px)
       font-size: 18px

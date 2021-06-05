@@ -62,6 +62,9 @@
     display: flex
     justify-content: center
 
+    @media(min-width: 1024px)
+      position: relative
+
   &__opener
     align-items: center
     border: 1px solid $color_grey
@@ -106,8 +109,6 @@
     height: calc(100% - 77px)
     left: 0
     position: fixed
-    padding-left: 30px
-    padding-right: 30px
     top: 77px
     width: 100%
     z-index: 10
@@ -116,7 +117,7 @@
     @media(min-width: 1024px)
       border-top: none
       background-color: transparent
-      display: flex
+      display: block
       height: auto
       left: auto
       position: static
@@ -126,7 +127,37 @@
       z-index: auto
 
     .filter__reset-block
-      display: none
+      @media(min-width: 1024px)
+        display: none
+
+    &.is-open
+      display: flex
+
+      @media(min-width: 1024px)
+        display: block
+
+  &__filter-inner
+    display: flex
+    flex-direction: column
+    height: 100%
+    overflow-y: auto
+    padding-left: 30px
+    padding-right: 30px
+
+    @media(min-width: 1024px)
+      flex-direction: row
+      height: auto
+      overflow-y: visible
+      padding-left: 0
+      padding-right: 0
+
+    &::after
+      display: block
+      content: ''
+      min-height: 50px
+
+      @media(min-width: 1024px)
+        display: none
 
   &__closer
     align-items: center
@@ -251,6 +282,8 @@
       letter-spacing: 0
       justify-content: center
       position: relative
+      padding-left: 10px
+      padding-right: 10px
       text-transform: none
 
     @media(min-width: 1350px)
@@ -283,6 +316,9 @@
       border-color: rgba($color_grey, 0.3)
       color: $color_lightblue
 
+      @media(min-width: 1024px)
+        border-color: rgba($color_gold, 0.3)
+
       &::after
         @media(min-width: 1024px)
           background-color: $color_darkblue
@@ -314,6 +350,7 @@
     height: 19px
     justify-content: center
     line-height: 1
+    min-width: 19px
     margin-right: 10px
     width: 19px
 
@@ -322,8 +359,170 @@
 
   &__section-dropdown
     display: none
-    padding-top: 20px
-    padding-bottom: 30px
+    padding-top: 10px
+
+    &.is-active
+      @media(min-width: 1024px)
+        background-color: #fff
+        display: block
+        left: auto
+        position: absolute
+        padding: 30px
+        top: 100%
+        width: 100%
+        z-index: 5
+
+      @media(min-width: 1900px)
+        padding-top: 40px
+        padding-bottom: 40px
+
+      &::after
+        background-color: #fff
+        box-shadow: 0 0 3px 0 rgba($color_grey, 0.3)
+        content: ''
+        height: 100%
+        left: -100%
+        position: absolute
+        top: 0
+        width: 200vw
+        z-index: -1
+
+  &__option
+    cursor: pointer
+    font-size: 13px
+    font-weight: 500
+    display: block
+    line-height: 1
+    padding-top: 10px
+    padding-bottom: 10px
+
+    input[type="checkbox"],
+    input[type="radio"]
+      position: absolute
+      height: 1px
+      overflow: hidden
+      clip: rect(0 0 0 0)
+      width: 1px
+
+      &:focus ~ .filter__option-text
+        color: $color_lightblue
+
+
+      &:checked ~ .filter__option-text
+        color: $color_lightblue
+
+        .filter__option-icon
+          border-color: $color_lightblue
+
+          &::after
+            background-color: $color_lightblue
+            border-radius: 50%
+            content: ''
+            height: 7px
+            left: 50%
+            position: absolute
+            top: 50%
+            transform: translate(-50%, -50%)
+            width: 7px
+            z-index: 1
+
+  &__option-icon
+    border-radius: 50%
+    border: 1px solid $color_grey
+    height: 10px
+    left: 0
+    position: absolute
+    top: 3px
+    width: 10px
+    z-index: 1
+
+  &__option-text
+    color: $color_grey
+    padding-left: 25px
+    position: relative
+
+  &__sizes
+    display: flex
+    flex-wrap: wrap
+    padding-top: 10px
+
+    @media(min-width: 1024px)
+      max-width: 350px
+      margin-bottom: 0
+      padding-top: 0
+
+  &__size
+    cursor: pointer
+    font-size: 12px
+    font-weight: 700
+    height: 40px
+    margin-right: 8px
+    margin-bottom: 8px
+    position: relative
+    width: 40px
+
+    input[type="checkbox"],
+    input[type="radio"]
+      position: absolute
+      height: 1px
+      overflow: hidden
+      clip: rect(0 0 0 0)
+      width: 1px
+
+      &:checked + span
+        background-color: $color_darkblue
+        border-color: $color_darkblue
+        color: #fff
+
+    span
+      align-items: center
+      border: 1px solid $color_grey
+      color: $color_grey
+      display: flex
+      justify-content: center
+      height: 40px
+      width: 40px
+
+  &__slider
+    max-width: 325px
+
+    &:not(:last-child)
+      margin-bottom: 30px
+
+      @media(min-width: 1900px)
+        margin-bottom: 50px
+
+  &__slider-inner
+    display: flex
+
+    &::after,
+    &::before
+      font-size: 12px
+      font-weight: 500
+      padding-top: 7px
+
+    &::before
+      content: 'min'
+      padding-right: 12px
+
+    &::after
+      content: 'max'
+      padding-left: 12px
+
+    .irs--round
+      flex-grow: 1
+
+  &__price-options
+    @media(min-width: 1024px)
+      display: flex
+
+  &__price-options-col
+    &:not(:last-child)
+      @media(min-width: 1350px)
+        padding-right: 30px
+
+      @media(min-width: 1900px)
+        padding-right: 50px
 
   &__sort
     border: 1px solid $color_grey
@@ -489,3 +688,22 @@
         height: 11px
         margin-top: 1px
         width: 11px
+
+.catalog-list
+  display: grid
+  grid-template-columns: repeat(2,1fr)
+  grid-row-gap: 40px
+  grid-column-gap: 10px
+  margin-left: auto
+  margin-right: auto
+  max-width: 1760px
+  padding-left: 30px
+  padding-right: 30px
+
+  @media(min-width: 768px)
+    grid-template-columns: repeat(4,1fr)
+
+  @media(min-width: 1350px)
+    grid-column-gap: 30px
+
+  &__item
