@@ -26,9 +26,11 @@ $(document).on('click', '.filter__section-toggler', function () {
 
       this_.addClass('is-active');
       this_.next('.filter__section-dropdown').addClass('is-active');
+      $('.catalog-list').addClass('open-filter');
     } else {
       this_.removeClass('is-active');
       this_.next('.filter__section-dropdown').removeClass('is-active');
+      $('.catalog-list').removeClass('open-filter');
     }
   }
   return false;
