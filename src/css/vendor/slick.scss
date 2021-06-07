@@ -168,6 +168,7 @@
   align-items: center;
   background-color: transparent;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
   display: flex;
   height: 40px;
@@ -185,6 +186,11 @@
     top: 164px;
   }
 
+  &:focus {
+    background-color: rgba($color_grey, 0.3);
+  }
+
+  &:focus,
   &:hover {
     .slick-arrow__arrow {
       fill: $color_darkblue;

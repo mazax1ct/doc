@@ -1,3 +1,5 @@
+var filtered = false;
+
 $(document).ready(function() {
   if($('.js-catalog-slider').length) {
     $('.js-catalog-slider').each(function(index) {
@@ -53,9 +55,59 @@ $(document).ready(function() {
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: '0px',
-        focusOnSelect: true,
+        focusOnSelect: false,
+        draggable: false,
+        swipe: false,
         asNavFor: $('.js-catalog-slider[data-id="'+$(this).attr('data-id')+'"]')
       });
     });
   }
+});
+
+$(document).on('click', '.js-filter', function () {
+  var filter = $(this).data('filter');
+  var sliderId= $(this).parent().data('id');
+
+  if (filtered === false) {
+    if(!$(this).hasClass('is-active')) {
+      $('.js-catalog-slider[data-id="'+sliderId+'"]').slick('slickFilter','[data-filter="'+filter+'"]');
+      $('.js-catalog-slider-nav[data-id="'+sliderId+'"]').slick('slickFilter','[data-filter="'+filter+'"]');
+      var slick_Count = $('.js-catalog-slider-nav[data-id="'+sliderId+'"]').slick('getSlick');
+      if(slick_Count.slideCount < 6) {
+        $('.js-catalog-slider-nav[data-id="'+sliderId+'"]').addClass('hidden');
+      }
+      $(this).addClass('is-active');
+      filtered = true;
+    } else {
+      $('.js-catalog-slider[data-id="'+sliderId+'"]').slick('slickUnfilter');
+      $('.js-catalog-slider-nav[data-id="'+sliderId+'"]').slick('slickUnfilter').removeClass('hidden');
+      $(this).removeClass('is-active');
+      filtered = false;
+    }
+  } else {
+    if(!$(this).hasClass('is-active')) {
+      $('.js-catalog-slider[data-id="'+sliderId+'"]').slick('slickUnfilter').slick('slickFilter','[data-filter="'+filter+'"]');
+      $('.js-catalog-slider-nav[data-id="'+sliderId+'"]').slick('slickUnfilter');
+      //setTimeout(function() {
+        $('.js-catalog-slider-nav[data-id="'+sliderId+'"]').slick('slickFilter','[data-filter="'+filter+'"]');
+        var slick_Count = $('.js-catalog-slider-nav[data-id="'+sliderId+'"]').slick('getSlick');
+        if(slick_Count.slideCount < 6) {
+          $('.js-catalog-slider-nav[data-id="'+sliderId+'"]').addClass('hidden');
+        } else {
+          $('.js-catalog-slider-nav[data-id="'+sliderId+'"]').removeClass('hidden');
+        }
+        console.log(slick_Count.slideCount);
+      //},1000);
+      $('.js-filter').removeClass('is-active');
+      $(this).addClass('is-active');
+      filtered = true;
+    } else {
+      $('.js-catalog-slider[data-id="'+sliderId+'"]').slick('slickUnfilter');
+      $('.js-catalog-slider-nav[data-id="'+sliderId+'"]').slick('slickUnfilter').removeClass('hidden');
+      $(this).removeClass('is-active');
+      filtered = false;
+    }
+  }
+
+  return false;
 });

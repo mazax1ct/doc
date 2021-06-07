@@ -251,3 +251,38 @@
     font-weight: 700
     letter-spacing: 5px
     min-height: 200px
+
+.highlighted-btn
+  display: inline-block
+  color: $color_darkblue
+  font-size: 13px
+  font-weight: 700
+  position: relative
+  padding-top: 5px
+  padding-bottom: 5px
+  text-transform: uppercase
+  text-decoration: none
+
+  &:hover,
+  &:focus
+    color: $color_darkblue
+
+  &:active
+    &::after
+      height: 100%
+
+  span
+    position: relative
+    z-index: 1
+
+  &::after
+    background-color: $color_lightblue
+    bottom: 0
+    content: ''
+    height: 12px
+    left: 0
+    position: absolute
+    top: auto
+    transition: height 0.3s
+    width: 100%
+    z-index: 0

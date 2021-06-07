@@ -40,6 +40,35 @@
         @media(min-width: 1024px)
           opacity: 1
 
+      .catalog-item__image-block
+        border-bottom-color: $color_darkblue
+
+      .catalog-item__image-togglers
+        opacity: 1
+
+      .catalog-item__info-block
+        @media(min-width: 1024px)
+          padding: 15px
+
+        @media(min-width: 1900px)
+          padding: 25px
+
+      .catalog-item__description
+        @media(min-width: 1024px)
+          order: 0
+
+      .catalog-item__btn
+        @media(min-width: 1024px)
+          display: flex
+
+    &:focus,
+    &:focus-within
+      .catalog-item__colors,
+      .catalog-item__description,
+      .catalog-item__btn
+        @media(min-width: 1024px)
+          opacity: 1
+
       .catalog-item__info-block
         @media(min-width: 1024px)
           padding: 15px
@@ -108,6 +137,14 @@
     &:focus-within
       z-index: 2
 
+      .catalog-item__image-block
+        @media(min-width: 1024px)
+          border-bottom-color: $color_grey
+
+      .catalog-item__image-togglers
+        @media(min-width: 1024px)
+          opacity: 1
+
       .catalog-item__colors
         @media(min-width: 1024px)
           opacity: 1
@@ -131,7 +168,6 @@
   margin-right: auto
   position: relative
   text-decoration: none
-  //transition: border-color 0.3s
   z-index: 1
 
   @media(min-width: 1024px)
@@ -146,17 +182,8 @@
     @media(min-width: 1024px)
       border-color: $color_grey
 
-    .catalog-item__image-block
-      @media(min-width: 1024px)
-        border-bottom-color: $color_grey
-
-    .catalog-item__image-togglers
-      @media(min-width: 1024px)
-        opacity: 1
-
   &__image-block
     border-bottom: 1px solid transparent
-    //transition: border-color 0.3s
     position: relative
 
   &__image

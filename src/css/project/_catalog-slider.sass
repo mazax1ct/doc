@@ -1,3 +1,18 @@
+.catalog-slider-block
+  &:not(:last-child)
+    @media(min-width: 1024px)
+      margin-bottom: 80px
+
+    @media(min-width: 1900px)
+      margin-bottom: 160px
+
+  .title-1
+    @media(min-width: 1350px)
+      margin-bottom: 50px
+
+    @media(min-width: 1900px)
+      margin-bottom: 80px
+
 .catalog-slider
   display: flex
   flex-wrap: wrap
@@ -25,6 +40,10 @@
       margin-bottom: 160px
 
 .catalog-slider-nav
+  &.hidden
+    opacity: 0
+    pointer-events: none
+
   .slick-arrow
     top: 50%
     transform: translateY(-50%)
@@ -107,3 +126,43 @@
         transition: opacity 0.3s
         transform: translate(-50%, -50%)
         width: 9px
+
+.catalog-slider-filter
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  margin-bottom: 30px
+
+  @media(min-width: 1350px)
+    margin-bottom: 50px
+
+  @media(min-width: 1900px)
+    margin-bottom: 80px
+
+  &__btn
+    background-color: transparent
+    border: none
+    color: $color_darkblue
+    cursor: pointer
+    font-size: 10px
+    font-weight: 500
+    margin-left: 10px
+    margin-right: 10px
+    margin-bottom: 10px
+    padding: 10px
+    transition: color 0.3s
+    text-transform: uppercase
+
+    @media(min-width: 1024px)
+      font-size: 13px
+      font-weight: 700
+      margin-left: 40px
+      margin-right: 40px
+
+    &:hover,
+    &:focus
+      color: $color_lightblue
+
+    &.is-active
+      color: $color_lightblue
+      text-decoration: underline
