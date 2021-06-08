@@ -1,0 +1,697 @@
+.detail
+  .container
+    @media(min-width: 1900px)
+      max-width: 1860px
+
+  .breadcrumbs
+    @media(min-width: 1900px)
+      margin-bottom: 50px
+
+  &__top
+    margin-bottom: 100px
+
+    @media(min-width: 1024px)
+      display: flex
+
+    @media(min-width: 1900px)
+      margin-bottom: 210px
+
+  &__top-left
+    margin-bottom: 30px
+
+    @media(min-width: 1024px)
+      margin-bottom: 0
+
+  &__top-left,
+  &__top-right
+    @media(min-width: 1024px)
+      width: 50%
+
+  &__top-right
+    @media(min-width: 1024px)
+      padding-left: 30px
+      position: relative
+
+    @media(min-width: 1900px)
+      padding-left: 60px
+
+  &__pseudo-title
+    font-size: 13px
+    font-weight: 700
+    letter-spacing: 2px
+    margin-bottom: 24px
+    text-transform: uppercase
+
+    @media(min-width: 768px)
+      font-size: 18px
+      font-weight: 700
+      letter-spacing: 3px
+
+    @media(min-width: 1024px)
+      display: none
+
+  &__images
+    margin-left: -30px
+    margin-right: -30px
+    position: relative
+
+    @media(min-width: 1024px)
+      margin-left: 0
+      margin-right: 0
+      padding-left: 100px
+
+    @media(min-width: 1350px)
+      padding-left: 140px
+
+  &__fav
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    height: 40px
+    justify-content: center
+    left: auto
+    padding: 0
+    position: absolute
+    right: 10px
+    top: 10px
+    width: 40px
+    z-index: 2
+
+    @media(min-width: 1024px)
+      display: none
+
+    &:hover,
+    &:focus
+      svg
+        fill: $color_darkblue
+
+    svg
+      fill: $color_grey
+      height: 22px
+      transition: fill 0.3s
+      width: 22px
+
+  &__thumbs
+    display: none
+    overflow: auto
+    scrollbar-width: thin
+    scrollbar-color: $color_grey rgba($color_grey, 0.3)
+
+    @media(min-width: 1024px)
+      display: block
+      direction: rtl
+      height: 100%
+      left: 0
+      position: absolute
+      top: 0
+      width: 90px
+      z-index: 1
+
+    @media(min-width: 1350px)
+      width: 120px
+
+    &::-webkit-scrollbar
+      height: 6px
+      width: 6px
+
+    &::-webkit-scrollbar-track
+      background-image: linear-gradient($color_grey, $color_grey)
+      background-size: 1px 100%
+      background-position: 50% 0
+      background-repeat: no-repeat
+
+    &::-webkit-scrollbar-thumb
+      background: $color_darkblue
+      width: 6px
+
+  &__thumb
+    border: none
+    background-color: #fbfcff
+    cursor: pointer
+    display: block
+    padding: 0
+
+    img
+      mix-blend-mode: multiply
+
+    &:not(:last-child)
+      margin-bottom: 20px
+
+    &--video
+      position: relative
+
+      &::after
+        background-color: rgba($color_gold, 0.5)
+        background-image: url("data:image/svg+xml,%3Csvg width='15' height='22' viewBox='0 0 15 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.3318 11.2322L0.926633 1.95491L0.926633 20.9363L13.3318 11.2322Z' fill='%23ffffff' stroke='%23ffffff' stroke-linecap='round'/%3E%3C/svg%3E%0A")
+        background-repeat: no-repeat
+        background-position: 50% 50%
+        content: ''
+        height: 100%
+        left: 0
+        position: absolute
+        top: 0
+        width: 100%
+        z-index: 1
+
+    &.is-active
+      background-color: darken(#fbfcff, 5%)
+
+  &__art-colors
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  &__articul
+    margin-bottom: 10px
+
+  &__articul
+    color: $color_grey
+    font-size: 13px
+    font-weight: 500
+
+    @media(min-width: 1350px)
+      font-size: 14px
+      font-weight: 700
+      text-transform: uppercase
+
+  &__colors
+    align-items: flex-start
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 5px
+
+    @media(min-width: 1024px)
+      display: none
+
+    img
+      min-width: 10px
+      margin-bottom: 5px
+      width: 10px
+
+      &:not(:last-child)
+        margin-right: 5px
+
+  &__top-buttons
+    display: none
+    left: auto
+    position: absolute
+    right: 0
+    top: -10px
+    width: 40px
+    z-index: 1
+
+    @media(min-width: 1024px)
+      display: block
+
+  &__top-button
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    height: 40px
+    justify-content: center
+    margin-bottom: 10px
+    padding: 0
+    width: 40px
+    z-index: 2
+
+    &:hover,
+    &:focus
+      svg
+        fill: $color_darkblue
+
+    svg
+      fill: $color_grey
+      height: 24px
+      transition: fill 0.3s
+      width: 24px
+
+      @media(min-width: 1900px)
+        height: 30px
+        width: 30px
+
+  &__title
+    display: none
+    font-size: 18px
+    font-weight: 700
+    letter-spacing: 3px
+    max-width: 580px
+    margin-bottom: 20px
+    padding-right: 40px
+    text-transform: uppercase
+
+    @media(min-width: 1024px)
+      display: block
+
+    @media(min-width: 1350px)
+      font-size: 26px
+      font-weight: 700
+      letter-spacing: 5px
+      margin-bottom: 30px
+
+  &__short-info
+    margin-bottom: 20px
+    max-width: 630px
+    padding-right: 40px
+
+    @media(min-width: 1350px)
+      font-size: 14px
+
+  &__chars
+    margin-bottom: 40px
+
+    @media(min-width: 1900px)
+      margin-bottom: 50px
+
+    table
+      border: none
+      font-size: 13px
+      font-weight: 500
+      margin-bottom: 10px
+
+    th
+      font-size: 13px
+      font-weight: 700
+      letter-spacing: 0
+      text-transform: none
+
+    th,
+    td
+      border: none
+      background-color: transparent
+      padding-top: 7px
+      padding-bottom: 7px
+      padding-right: 30px
+      padding-left: 0
+      text-align: left
+
+  &__all-chars
+    align-items: center
+    color: $color_grey
+    display: inline-flex
+    font-size: 12px
+    font-weight: 400
+
+    &:hover,
+    &:focus
+      color: $color_lightblue
+
+      svg
+        fill: $color_lightblue
+
+    svg
+      fill: $color_grey
+      height: 10px
+      margin-left: 10px
+      margin-top: 2px
+      transition: fill 0.3s
+      width: 10px
+
+  &__price-sizes
+    margin-bottom: 60px
+
+    @media(min-width: 1350px)
+      align-items: flex-end
+      display: flex
+      justify-content: space-between
+      flex-direction: row-reverse
+
+  &__sizes
+
+  &__sizes-title
+    font-size: 13px
+    font-weight: 500
+    letter-spacing: 3px
+    margin-bottom: 24px
+    text-transform: uppercase
+    text-align: center
+
+    @media(min-width: 1024px)
+      font-size: 18px
+      margin-bottom: 20px
+      text-align: left
+
+    @media(min-width: 1350px)
+      font-size: 24px
+      font-weight: 700
+      letter-spacing: 0
+
+  &__sizes-list
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 15px
+
+    @media(min-width: 1350px)
+      max-width: 400px
+
+  &__size
+    cursor: pointer
+    font-size: 12px
+    font-weight: 700
+    height: 44px
+    margin-right: 8px
+    margin-bottom: 8px
+    position: relative
+    width: 44px
+
+    @media(min-width: 1024px)
+      height: 48px
+      width: 48px
+
+    input[type="radio"]
+      position: absolute
+      height: 1px
+      overflow: hidden
+      clip: rect(0 0 0 0)
+      width: 1px
+
+      &:checked + span
+        background-color: $color_darkblue
+        border-color: $color_darkblue
+        color: #fff
+
+    span
+      align-items: center
+      border: 1px solid $color_grey
+      color: $color_grey
+      display: flex
+      justify-content: center
+      height: 44px
+      width: 44px
+
+      @media(min-width: 1024px)
+        height: 48px
+        width: 48px
+
+  &__price-block
+    margin-bottom: 60px
+    white-space: nowrap
+
+    @media(min-width: 1350px)
+      margin-bottom: 29px
+      text-align: right
+
+  &__old-price
+    color: rgba($color_grey, 0.3)
+    font-size: 18px
+    font-weight: 500
+    margin-bottom: 0
+    text-decoration: line-through
+
+    @media(min-width: 1900px)
+      font-size: 24px
+
+  &__price
+    font-size: 36px
+    font-weight: 700
+
+    @media(min-width: 1900px)
+      font-size: 48px
+
+  &__shit
+    font-size: 11px
+    font-weight: 500
+    margin-bottom: 0
+    text-transform: uppercase
+
+    a
+      color: $color_grey
+
+      &:hover,
+      &:focus
+        color: $color_lightblue
+
+  &__quantity
+    margin-bottom: 50px
+
+    .quantity
+      margin-left: auto
+      margin-right: auto
+
+      @media(min-width: 1024px)
+        margin-left: 0
+        margin-right: 0
+
+  &__quantity-title
+    color: $color_darkblue
+    font-size: 13px
+    font-weight: 700
+    letter-spacing: 2px
+    margin-bottom: 24px
+    text-align: center
+    text-transform: uppercase
+
+    @media(min-width: 1024px)
+      font-size: 18px
+      margin-bottom: 20px
+      text-align: left
+
+    @media(min-width: 1350px)
+      font-size: 24px
+      font-weight: 700
+      letter-spacing: 0
+
+  &__add-cart
+    margin-bottom: 50px
+    width: 100%
+
+    @media(min-width: 1024px)
+      height: 78px
+
+  &__tabs-nav
+    border-bottom: 1px solid $color_darkblue
+    display: none
+    justify-content: space-between
+    margin-bottom: 30px
+
+    @media(min-width: 1024px)
+      display: flex
+
+  &__tabs-nav-button
+    background-color: transparent
+    border: none
+    border-bottom: 4px solid transparent
+    color: $color_darkblue
+    cursor: pointer
+    font-size: 13px
+    font-weight: 700
+    letter-spacing: 3px
+    padding-bottom: 20px
+    padding-left: 0
+    padding-right: 0
+    transition: color 0.3s
+    text-transform: uppercase
+
+    @media(min-width: 1350px)
+      font-size: 16px
+
+    @media(min-width: 1900px)
+      font-size: 18px
+
+    &:hover,
+    &:focus
+      color: $color_lightblue
+
+    &.is-active
+      border-bottom-color: $color_darkblue
+
+  &__tabs
+    margin-bottom: 50px
+
+  &__tab
+    display: none
+    padding-top: 20px
+    padding-bottom: 20px
+
+    &.is-active
+      display: block
+
+  &__tab-toggler
+    align-items: center
+    background-color: transparent
+    border: none
+    border-top: 1px solid transparent
+    border-bottom: 1px solid transparent
+    color: $color_darkblue
+    cursor: pointer
+    display: flex
+    font-size: 13px
+    font-weight: 700
+    display: flex
+    justify-content: space-between
+    letter-spacing: 2px
+    padding-top: 9px
+    padding-bottom: 9px
+    padding-left: 0
+    padding-right: 0
+    transition: border-color 0.3s, color 0.3s
+    width: 100%
+
+    @media(min-width: 1024px)
+      display: none
+
+    svg
+      fill: $color_darkblue
+      height: 14px
+      transition: fill 0.3s
+      width: 14px
+
+    &.is-active
+      color: $color_lightblue
+      border-top-color: rgba($color_grey, 0.3)
+      border-bottom-color: rgba($color_grey, 0.3)
+
+      svg
+        fill: $color_lightblue
+        transform: rotate(-180deg)
+
+  &__delivery
+    font-size: 10px
+    letter-spacing: 2px
+    font-weight: 500
+    text-transform: uppercase
+
+    @media(min-width: 1024px)
+      font-size: 13px
+      font-weight: 700
+
+    p
+      @media(min-width: 1024px)
+        margin-bottom: 35px
+
+    span
+      color: $color_grey
+
+    a
+      align-items: center
+      color: $color_grey
+      display: inline-flex
+      font-weight: 500
+      letter-spacing: 0
+      text-transform: none
+
+      &:hover,
+      &:focus
+        color: $color_lightblue
+
+        svg
+          fill: $color_lightblue
+
+      svg
+        fill: $color_grey
+        height: 10px
+        margin-left: 10px
+        margin-top: 2px
+        transition: fill 0.3s
+        width: 10px
+
+  &__pair-block
+    margin-bottom: 70px
+
+    @media(min-width: 1900px)
+      margin-bottom: 115px
+
+  &__pair-block-title
+    font-size: 18px
+    font-weight: 700
+    letter-spacing: 3px
+    margin-bottom: 25px
+
+    @media(min-width: 1350px)
+      font-size: 24px
+
+  &__advantages
+    margin-bottom: 70px
+
+  &__advantages-title
+    font-size: 18px
+    font-weight: 700
+    letter-spacing: 3px
+    margin-bottom: 25px
+
+  &__advantage
+    align-items: center
+    display: flex
+    font-size: 14px
+    font-weight: 500
+    flex-direction: column
+    justify-content: center
+    letter-spacing: 2px
+    text-transform: uppercase
+    text-align: center
+
+    @media(min-width: 768px)
+      flex-direction: row
+      justify-content: flex-start
+      text-align: left
+
+    img
+      margin-bottom: 10px
+
+      @media(min-width: 768px)
+        margin-bottom: 0
+        margin-right: 20px
+
+  &__recall
+    width: 100%
+    @media(min-width: 1024px)
+      height: 78px
+
+.detail-slider
+  &__slide
+    background-color: #fbfcff
+
+    &--video
+      a
+        position: relative
+
+        &::before
+          background-color: rgba($color_gold, 0.5)
+          background-image: url("data:image/svg+xml,%3Csvg width='15' height='22' viewBox='0 0 15 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.3318 11.2322L0.926633 1.95491L0.926633 20.9363L13.3318 11.2322Z' fill='%23ffffff' stroke='%23ffffff' stroke-linecap='round'/%3E%3C/svg%3E%0A")
+          background-repeat: no-repeat
+          background-position: 50% 50%
+          content: ''
+          height: 100%
+          left: 0
+          position: absolute
+          top: 0
+          width: 100%
+          z-index: 1
+
+  a,
+  picture,
+  img
+    display: block
+    width: 100%
+
+  img
+    mix-blend-mode: multiply
+
+  a
+    position: relative
+
+    &::after
+      bottom: 24px
+      background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%236F7D9D' fill-opacity='0.5' d='M12 24C5.38293 24 0 18.6171 0 12C0 5.38293 5.38293 0 12 0C18.6171 0 24 5.38293 24 12C24 18.6171 18.6171 24 12 24ZM12 1.5C6.21002 1.5 1.5 6.21002 1.5 12C1.5 17.79 6.21002 22.5 12 22.5C17.79 22.5 22.5 17.79 22.5 12C22.5 6.21002 17.79 1.5 12 1.5Z'/%3E%3Cpath fill='%236F7D9D' fill-opacity='0.5' d='M17.25 12.75H6.75C6.336 12.75 6 12.414 6 12C6 11.586 6.336 11.25 6.75 11.25H17.25C17.664 11.25 18 11.586 18 12C18 12.414 17.664 12.75 17.25 12.75Z'/%3E%3Cpath fill='%236F7D9D' fill-opacity='0.5' d='M12 18C11.586 18 11.25 17.664 11.25 17.25V6.75C11.25 6.336 11.586 6 12 6C12.414 6 12.75 6.336 12.75 6.75V17.25C12.75 17.664 12.414 18 12 18Z'/%3E%3C/svg%3E%0A")
+      background-position: 0 0
+      background-repeat: no-repeat
+      content: ''
+      height: 24px
+      left: auto
+      position: absolute
+      right: 24px
+      top: auto
+      width: 24px
+
+  .slick-arrow
+    top: 50%
+    transform: translateY(-50%)
+
+  .slick-prev
+    left: 15px
+
+  .slick-next
+    right: 15px
