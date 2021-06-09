@@ -1,6 +1,7 @@
 .page-banner
+  background-color: $color_darkblue
   color: #fff
-  margin-bottom: 50px
+  display: block
   position: relative
   text-align: center
 
@@ -8,19 +9,109 @@
     min-height: 500px
     text-align: left
 
+  @media(min-width: 1900px)
+    height: 670px
+
+  &:not(:last-child)
+    margin-bottom: 50px
+
+  &:hover,
+  &:focus,
+  &:active
+    color: #fff
+
   picture,
   img
     display: block
     width: 100%
 
-  picture,
-  img
     @media(min-width: 1024px)
       min-height: 500px
 
   img
     @media(min-width: 1024px)
       object-fit: cover
+
+    @media(min-width: 1900px)
+      height: 670px
+
+  h1,
+  .page-banner__title
+    font-family: $secondary_font
+    font-size: 48px
+    font-weight: 700
+    line-height: 1
+    margin-bottom: 20px
+
+    @media(min-width: 1024px)
+      margin-bottom: 40px
+
+    @media(min-width: 1900px)
+      font-size: 60px
+      line-height: 1.33333
+      letter-spacing: 4px
+      margin-bottom: 70px
+
+  &__intro
+    margin-bottom: 30px
+    text-transform: uppercase
+
+    @media(min-width: 1900px)
+      font-size: 18px
+
+  &__text
+    @media(min-width: 1024px)
+      color: rgba(#fff, 0.7)
+      font-size: 16px
+      font-weight: 500
+      line-height: 1.5
+      letter-spacing: 1px
+      max-width: 520px
+      text-transform: uppercase
+
+  &__pseudo-link
+    align-items: center
+    color: $color_gold
+    display: flex
+    font-size: 13px
+    font-weight: 400
+    justify-content: center
+    text-transform: uppercase
+
+    @media(min-width: 1024px)
+      justify-content: flex-start
+
+    svg
+      fill: $color_gold
+      height: 14px
+      margin-left: 16px
+      width: 14px
+
+  &--big
+    @media(min-width: 1024px)
+      height: 670px
+
+    @media(min-width: 1900px)
+      height: 980px
+
+    img
+      @media(min-width: 1024px)
+        height: 670px
+
+      @media(min-width: 1900px)
+        height: 980px
+
+    h1,
+    .page-banner__title
+      @media(min-width: 1024px)
+        font-size: 54px
+
+      @media(min-width: 1350px)
+        font-size: 60px
+
+      @media(min-width: 1900px)
+        font-size: 98px
+        margin-bottom: 30px
 
   &__container
     left: 50%
@@ -38,29 +129,4 @@
 
     @media(min-width: 1900px)
       max-width: 1640px
-
-  h1
-    font-family: $secondary_font
-    font-size: 48px
-    font-weight: 700
-    line-height: 1
-    margin-bottom: 20px
-
-    @media(min-width: 1024px)
-      margin-bottom: 40px
-
-    @media(min-width: 1900px)
-      font-size: 60px
-      line-height: 1.33333
-      letter-spacing: 4px
-      margin-bottom: 70px
-
-  &__text
-    @media(min-width: 1024px)
-      color: rgba(#fff, 0.7)
-      font-size: 16px
-      font-weight: 500
-      line-height: 1.5
-      letter-spacing: 1px
-      max-width: 520px
-      text-transform: uppercase
+      padding-bottom: 134px

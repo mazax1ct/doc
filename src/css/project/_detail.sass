@@ -1,4 +1,15 @@
 .detail
+  margin-bottom: 50px
+
+  @media(min-width: 1024px)
+    margin-bottom: 80px
+
+  @media(min-width: 1350px)
+    margin-bottom: 100px
+
+  @media(min-width: 1900px)
+    margin-bottom: 200px
+
   .container
     @media(min-width: 1900px)
       max-width: 1860px
@@ -49,6 +60,32 @@
 
     @media(min-width: 1024px)
       display: none
+
+  &__pair-tabs
+    border-bottom: 1px solid $color_grey
+    display: flex
+    margin-bottom: 30px
+
+    @media(min-width: 1024px)
+      display: none
+
+  &__pair-tabs-button
+    background-color: transparent
+    border: none
+    border-bottom: 4px solid transparent
+    color: $color_darkblue
+    cursor: pointer
+    font-size: 13px
+    font-weight: 700
+    padding-left: 0
+    padding-right: 0
+    padding-bottom: 20px
+    text-transform: uppercase
+    text-align: left
+    width: 50%
+
+    &.is-active
+      border-bottom-color: $color_darkblue
 
   &__images
     margin-left: -30px
@@ -164,12 +201,10 @@
     justify-content: space-between
 
   &__articul
-    margin-bottom: 10px
-
-  &__articul
     color: $color_grey
     font-size: 13px
     font-weight: 500
+    margin-bottom: 10px
 
     @media(min-width: 1350px)
       font-size: 14px
@@ -259,6 +294,92 @@
 
     @media(min-width: 1350px)
       font-size: 14px
+
+  &__pair-tab
+    display: none
+    margin-bottom: 50px
+
+    @media(min-width: 1024px)
+      display: block
+
+    &.is-active
+      display: block
+
+  &__pair-tab-title
+    border-bottom: 1px solid $color_darkblue
+    display: none
+    font-size: 18px
+    font-weight: 700
+    letter-spacing: 3px
+    margin-bottom: 25px
+    position: relative
+    padding-bottom: 20px
+    text-transform: uppercase
+
+    @media(min-width: 1024px)
+      display: block
+
+    @media(min-width: 1900px)
+      margin-bottom: 35px
+
+    &::after
+      background-color: $color_darkblue
+      bottom: 0
+      content: ''
+      height: 4px
+      left: 0
+      position: absolute
+      width: 50%
+      z-index: 1
+
+    &.text-right
+      text-align: right
+
+      &::after
+        left: 50%
+
+  &__pair-tab-inner
+    @media(min-width: 1350px)
+      display: flex
+      justify-content: space-between
+
+    &--reverse
+      flex-direction: row-reverse
+
+      .detail__pair-tab-info
+        @media(min-width: 1350px)
+          padding-right: 15px
+          padding-left: 0
+
+  &__pair-tab-image,
+  &__pair-tab-info
+    @media(min-width: 1350px)
+      width: 50%
+
+  &__pair-tab-image
+    display: none
+    max-width: 365px
+    position: relative
+
+    @media(min-width: 1350px)
+      display: block
+
+    .detail__fav
+      @media(min-width: 1024px)
+        display: flex
+
+  &__pair-tab-info
+    @media(min-width: 1350px)
+      padding-left: 15px
+
+    .detail__sizes
+      margin-bottom: 50px
+
+    .detail__price-block
+      margin-bottom: 50px
+
+      @media(min-width: 1350px)
+        text-align: left
 
   &__chars
     margin-bottom: 40px
@@ -455,7 +576,76 @@
       letter-spacing: 0
 
   &__add-cart
+    width: 100%
+
+    @media(min-width: 1024px)
+      height: 78px
+
+    &:not(:last-child)
+      margin-bottom: 50px
+
+      @media(min-width: 1900px)
+        margin-bottom: 80px
+
+  &__pair-buy
+    border-top: 1px solid rgba($color_grey, 0.3)
+    padding-top: 50px
+    padding-bottom: 50px
+    position: relative
+
+    @media(min-width: 1024px)
+      border-bottom: 1px solid rgba($color_grey, 0.3)
+      margin-bottom: 50px
+      padding-top: 30px
+      padding-bottom: 30px
+
+    @media(min-width: 1900px)
+      margin-bottom: 100px
+
+    &::before
+      border-top: 1px solid rgba($color_grey, 0.3)
+      content: ''
+      left: 0
+      position: absolute
+      top: 4px
+      width: 100%
+
+    &::after
+      @media(min-width: 1024px)
+        bottom: 4px
+        border-top: 1px solid rgba($color_grey, 0.3)
+        content: ''
+        left: 0
+        position: absolute
+        top: auto
+        width: 100%
+
+    .detail__price,
+    .detail__old-price
+      @media(min-width: 1024px)
+        text-align: center
+
+    .detail__price
+      @media(min-width: 1350px)
+        font-size: 40px
+
+      @media(min-width: 1900px)
+        font-size: 64px
+
+  &__pair-buy-title
+    font-size: 13px
+    font-weight: 700
+    letter-spacing: 2px
     margin-bottom: 50px
+    text-transform: uppercase
+
+    @media(min-width: 1024px)
+      font-size: 18px
+      letter-spacing: 3px
+      text-align: center
+
+  &__pair-add-cart
+    margin-top: 30px
     width: 100%
 
     @media(min-width: 1024px)
@@ -469,6 +659,7 @@
 
     @media(min-width: 1024px)
       display: flex
+      max-width: 730px
 
   &__tabs-nav-button
     background-color: transparent
@@ -500,6 +691,9 @@
 
   &__tabs
     margin-bottom: 50px
+
+    @media(min-width: 1024px)
+      max-width: 730px
 
   &__tab
     display: none
@@ -606,6 +800,9 @@
   &__advantages
     margin-bottom: 70px
 
+    @media(min-width: 1024px)
+      max-width: 730px
+
   &__advantages-title
     font-size: 18px
     font-weight: 700
@@ -637,8 +834,264 @@
 
   &__recall
     width: 100%
+
     @media(min-width: 1024px)
       height: 78px
+      max-width: 730px
+
+  &__bottom
+
+  &__bottom-title
+    color: $color_darkblue
+    font-size: 18px
+    font-weight: 700
+    letter-spacing: 3px
+    margin-bottom: 25px
+    text-transform: uppercase
+
+    @media(min-width: 1024px)
+      font-family: $secondary_font
+      font-size: 48px
+      margin-bottom: 70px
+      text-align: center
+      text-transform: none
+
+    @media(min-width: 1350px)
+      margin-bottom: 100px
+
+    @media(min-width: 1900px)
+      font-size: 60px
+      letter-spacing: 4px
+      padding-bottom: 175px
+      position: relative
+
+    &::after
+      @media(min-width: 1900px)
+        background-color: rgba($color_gold, 0.5)
+        bottom: 0
+        content: ''
+        height: 110px
+        left: 50%
+        position: absolute
+        top: auto
+        width: 1px
+        z-index: 1
+
+  &__bottom-container
+    @media(min-width: 1024px)
+      display: flex
+
+  &__bottom-left,
+  &__bottom-right
+    @media(min-width: 1024px)
+      width: 50%
+
+  &__bottom-left
+    @media(min-width: 1024px)
+      display: flex
+      flex-direction: column
+      padding-right: 15px
+
+    @media(min-width: 1350px)
+      padding-right: 30px
+
+    @media(min-width: 1900px)
+      padding-right: 60px
+
+  &__bottom-right
+    @media(min-width: 1024px)
+      padding-left: 15px
+
+    @media(min-width: 1350px)
+      padding-left: 30px
+
+    @media(min-width: 1900px)
+      padding-left: 60px
+
+  &__bottom-left-title
+    margin-bottom: 0
+
+    @media(min-width: 1024px)
+      margin-bottom: 20px
+
+    @media(min-width: 1350px)
+      margin-bottom: 40px
+
+    button
+      align-items: center
+      background-color: transparent
+      border: none
+      border-top: 1px solid transparent
+      border-bottom: 1px solid transparent
+      color: $color_darkblue
+      cursor: pointer
+      display: flex
+      font-size: 13px
+      font-weight: 700
+      display: flex
+      justify-content: space-between
+      letter-spacing: 2px
+      padding-top: 9px
+      padding-bottom: 9px
+      padding-left: 0
+      padding-right: 0
+      text-transform: uppercase
+      transition: border-color 0.3s, color 0.3s
+      width: 100%
+
+      @media(min-width: 1024px)
+        border: none
+        font-size: 18px
+        padding: 0
+
+      @media(min-width: 1900px)
+        font-size: 26px
+        letter-spacing: 5px
+
+      svg
+        fill: $color_darkblue
+        height: 14px
+        transition: fill 0.3s
+        width: 14px
+
+        @media(min-width: 1024px)
+          display: none
+
+      &.is-active
+        color: $color_lightblue
+        border-top-color: rgba($color_grey, 0.3)
+        border-bottom-color: rgba($color_grey, 0.3)
+
+        svg
+          fill: $color_lightblue
+          transform: rotate(-180deg)
+
+  &__bottom-left-text
+    display: none
+    padding-top: 20px
+    padding-bottom: 20px
+
+    @media(min-width: 1024px)
+      background-color: rgba($color_grey, 0.05)
+      display: flex !important
+      flex-direction: column
+      flex-grow: 1
+      justify-content: center
+      padding: 60px 30px 60px 30px
+
+    @media(min-width: 1350px)
+      padding: 60px
+
+  &__bottom-right-title
+    color: $color_darkblue
+    font-size: 13px
+    font-weight: 700
+    letter-spacing: 2px
+    margin-bottom: 20px
+    padding-top: 9px
+    padding-bottom: 9px
+    text-transform: uppercase
+
+    @media(min-width: 1024px)
+      font-size: 18px
+      padding-top: 0
+      padding-bottom: 0
+
+    @media(min-width: 1350px)
+      margin-bottom: 40px
+
+    @media(min-width: 1900px)
+      font-size: 26px
+      letter-spacing: 5px
+
+  &__list
+    display: grid
+    grid-template-columns: repeat(2,1fr)
+    grid-row-gap: 40px
+    grid-column-gap: 10px
+    grid-auto-flow: dense
+
+    @media(min-width: 1350px)
+      grid-column-gap: 30px
+
+    @media(min-width: 1900px)
+      grid-column-gap: 80px
+      grid-row-gap: 80px
+
+  &__list-item
+    .catalog-item
+      max-width: 365px
+
+      &__info-block
+        padding: 15px 0 0
+        position: relative
+
+        @media(min-width: 1024px)
+          padding: 15px
+
+        @media(min-width: 1900px)
+          padding: 25px
+
+      &__colors
+        display: none
+
+        @media(min-width: 1024px)
+          display: flex
+          opacity: 0
+          transition: opacity 0.3s
+
+      &__title
+        @media(min-width: 1900px)
+          font-size: 16px
+          font-weight: 500
+
+      &__description
+        display: block
+
+      &__btn
+        display: flex
+
+      &__info-block-dropdown
+        background-color: #fff
+        border: 1px solid $color_grey
+        border-top: none
+        display: none
+        left: -1px
+        padding: 15px
+        position: absolute
+        right: -1px
+        top: 0
+        z-index: 1
+
+        @media(min-width: 1900px)
+          padding: 25px
+
+      &:hover,
+      &:focus,
+      &:focus-within
+        z-index: 2
+
+        .catalog-item__image-block
+          @media(min-width: 1024px)
+            border-bottom-color: $color_grey
+
+        .catalog-item__image-togglers
+          @media(min-width: 1024px)
+            opacity: 1
+
+        .catalog-item__colors
+          @media(min-width: 1024px)
+            opacity: 1
+
+        .catalog-item__info-block
+          @media(min-width: 1024px)
+            padding: 15px
+
+          @media(min-width: 1900px)
+            padding: 25px
+
+        .catalog-item__info-block-dropdown
+          display: block
 
 .detail-slider
   &__slide
@@ -695,3 +1148,197 @@
 
   .slick-next
     right: 15px
+
+.pair
+  background-color: #fff
+  border: 1px solid transparent
+  display: block
+  margin-left: auto
+  margin-right: auto
+  max-width: 375px
+  position: relative
+  text-decoration: none
+  z-index: 1
+
+  @media(min-width: 768px)
+    border-color: $color_grey
+    display: flex
+    max-width: 730px
+    margin-left: 0
+    margin-right: 0
+
+  @media(min-width: 1024px) and (max-width: 1349px)
+    display: block
+    max-width: 375px
+
+  &__image-block
+    margin-left: -30px
+    margin-right: -30px
+    position: relative
+
+    @media(min-width: 768px)
+      border-right: 1px solid $color_grey
+      margin-left: 0
+      margin-right: 0
+      width: 50%
+
+    @media(min-width: 1024px) and (max-width: 1349px)
+      border-right: none
+      border-bottom: 1px solid $color_grey
+      width: 100%
+
+  &__image
+    background-color: #fbfcff
+    display: block
+    transition: background-color 0.3s
+
+    &:hover,
+    &:focus
+      background-color: darken(#fbfcff, 2%)
+
+    img
+      display: block
+      mix-blend-mode: multiply
+      width: 100%
+
+  &__image-togglers
+    display: flex
+    height: 100%
+    left: 0
+    opacity: 0
+    position: absolute
+    top: 0
+    width: 100%
+    z-index: 1
+
+    @media(min-width: 768px)
+      opacity: 1
+
+    &::after,
+    &::before
+      content: ''
+      height: 18px
+      opacity: 0.5
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      width: 9px
+
+    &::after
+      background-image: url("data:image/svg+xml,%3Csvg width='9' height='18' viewBox='0 0 12 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 19L2 10L11 1' stroke='%236F7D9D' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A")
+      left: 15px
+
+    &::before
+      background-image: url("data:image/svg+xml,%3Csvg width='9' height='18' viewBox='0 0 12 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 19L10 10L0.999998 1' stroke='%236F7D9D' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A")
+      left: auto
+      right: 15px
+
+  &__image-toggler
+    border-bottom: 4px solid transparent
+    flex-grow: 1
+    transition: border-color 0.3s
+
+    &:focus-within,
+    &.is-active
+      border-bottom-color: $color_darkblue
+
+  &__fav
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    height: 40px
+    justify-content: center
+    left: auto
+    padding: 0
+    position: absolute
+    right: 0
+    top: 0
+    width: 40px
+    z-index: 2
+
+    &:hover,
+    &:focus
+      svg
+        fill: $color_darkblue
+
+    svg
+      fill: $color_grey
+      height: 22px
+      transition: fill 0.3s
+      width: 22px
+
+  &__info-block
+    display: flex
+    flex-direction: column
+
+    @media(min-width: 768px)
+      padding: 25px
+      width: 50%
+
+    @media(min-width: 1024px) and (max-width: 1349px)
+      width: 100%
+
+  &__colors
+    display: flex
+    justify-content: flex-end
+    margin-bottom: 5px
+    text-align: right
+
+    img
+      display: block
+      min-width: 10px
+      width: 10px
+
+      &:not(:last-child)
+        margin-right: 5px
+
+  &__articul
+    color: $color_grey
+    font-size: 10px
+    font-weight: 500
+    margin-bottom: 5px
+    text-transform: uppercase
+
+    @media(min-width: 1024px)
+      font-size: 13px
+
+  &__title
+    font-size: 18px
+    font-weight: 700
+    letter-spacing: 3px
+    margin-bottom: 20px
+    text-transform: uppercase
+
+    a
+      text-decoration: none
+
+  &__description
+    color: $color_grey
+    font-size: 13px
+    font-weight: 500
+    margin-bottom: 20px
+
+  &__prices
+    align-items: baseline
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 20px
+
+  &__price
+    font-size: 18px
+    font-weight: 700
+    margin-right: 20px
+
+  &__old-price
+    color: rgba($color_grey, 0.3)
+    font-size: 13px
+    font-weight: 500
+    text-decoration: line-through
+
+  &__btn
+    margin-top: auto
+
+    @media(min-width: 1900px)
+      height: 78px

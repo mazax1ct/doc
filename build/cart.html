@@ -688,7 +688,7 @@
       <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg><use xlink:href="#close"></use></svg> <span>Закрыть</span></button>
       <div class="popover__inner">
         <p class="popover__title">Заказать обратный звонок</p>
-        <p class="recall__text">Отправите нам ваш номер<br> и мы свяжемся с вами!</p>
+        <p class="recall__text">Отправьте нам ваш номер<br> и мы свяжемся с вами!</p>
         <form class="recall__form" action="">
           <label class="recall__form-label"><input class="js-phone-mask input" type="text" placeholder="Введите номер телефона"></label>
           <button class="btn btn--type_1" type="submit">Отправить</button>
@@ -905,6 +905,21 @@
         </form>
       </div>
     </div>
+  
+    <div class="hint popover popover--at_right" tabindex="0">
+      <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg><use xlink:href="#close"></use></svg> <span>Закрыть</span></button>
+      <div class="popover__inner">
+        <p class="popover__title">Намекнуть на подарок</p>
+        <div class="hint__image"><img src="images/content/catalog-item/img_6.jpg" srcset="images/content/catalog-item/img_6@2x.jpg" alt=""></div>
+        <form class="popover__form" action="">
+          <label class="popover__form-label"><input class="input" type="text" name="name" placeholder="Ваше имя*"></label>
+          <label class="popover__form-label"><input class="input" type="text" name="email" placeholder="Ваш email*"></label>
+          <label class="popover__form-label"><input class="input" type="text" name="receiver_name" placeholder="Имя получателя*"></label>
+          <label class="popover__form-label"><input class="input" type="text" name="receiver_email" placeholder="Email получателя*"></label>
+          <button class="btn btn--type_1" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
   </div>
 
   <main class="page-content">
@@ -912,7 +927,7 @@
     <div class="container">
       <div class="title-block">
         <h1>Корзина</h1>
-        <a class="back-link" href="#">Вернуться к покупкам <svg><use xlink:href="#back"></use></svg></a>
+        <a class="back-link" href="catalog.html">Вернуться к покупкам <svg><use xlink:href="#back"></use></svg></a>
       </div>
 
       <div class="cart">
@@ -1001,7 +1016,7 @@
             <p class="summary__item"><span>Товаров</span> 2 шт.</p>
             <p class="summary__item"><span>Общая стоимость</span> 30 000 руб.</p>
             <label class="summary__promocode"><span>Ввести промо‑код</span> <input class="summary__input" type="text"></label>
-            <p class="summary__links"><a href="#">Правила доставки</a> <a href="#">Условия оферты</a></p>
+            <p class="summary__links"><a href="#" target="_blank">Правила доставки</a> <a href="#" target="_blank">Условия оферты</a></p>
             <p class="summary__item"><span>Итого (без&nbsp;учета доставки):</span> <span class="summary__price">2 000 000 руб.</span></p>
             <a class="btn btn--type_1" href="order-make.html">оформить заказ</a>
           </div>
@@ -1107,7 +1122,6 @@
   <script src="js/preloader.js"></script>
   <script src="js/jquery.sticky-kit.min.js"></script>
   <script src="js/cart.js"></script>
-  <script src="js/quantity.js"></script>
 
 </body>
 

@@ -31,32 +31,69 @@
   //= template/popovers.html
 
   <main class="page-content">
-    <section class="page-banner">
-      <picture>
-        <source srcset="images/content/banner/banner_desktop_static.jpg, images/content/banner/banner_desktop_static@2x.jpg 2x" media="(min-width: 1024px)">
-        <img src="images/content/banner/banner_mob_static.jpg" srcset="images/content/banner/banner_mob_static@2x.jpg 2x" alt="alt">
-      </picture>
+    <section class="main-slider">
+      <div class="js-main-slider">
+        <div>
+          <a class="page-banner page-banner--big" href="#">
+            <picture>
+              <source srcset="images/content/banner/banner_desktop.jpg, images/content/banner/banner_desktop@2x.jpg 2x" media="(min-width: 1900px)">
+              <source srcset="images/content/banner/banner_desktop_static.jpg, images/content/banner/banner_desktop_static@2x.jpg 2x" media="(min-width: 1024px)">
+              <img src="images/content/banner/banner_mob_static.jpg" srcset="images/content/banner/banner_mob_static@2x.jpg 2x" alt="alt">
+            </picture>
+            <div class="page-banner__container">
+              <p class="page-banner__intro">на обручальные пары</p>
+              <h1 class="page-banner__title">- 50% скидка</h1>
+              <p class="page-banner__pseudo-link">Подробнее <svg><use xlink:href="#double_chevron_right"></use></svg></p>
+            </div>
+          </a>
+        </div>
+        <div>
+          <div class="page-banner page-banner--big">
+            <picture>
+              <source srcset="images/content/banner/banner_desktop.jpg, images/content/banner/banner_desktop@2x.jpg 2x" media="(min-width: 1900px)">
+              <source srcset="images/content/banner/banner_desktop_static.jpg, images/content/banner/banner_desktop_static@2x.jpg 2x" media="(min-width: 1024px)">
+              <img src="images/content/banner/banner_mob_static.jpg" srcset="images/content/banner/banner_mob_static@2x.jpg 2x" alt="alt">
+            </picture>
+            <div class="page-banner__container">
+              <p class="page-banner__intro">на серьги</p>
+              <p class="page-banner__title">- 30% скидка</p>
+              <p class="page-banner__pseudo-link">Подробнее <svg><use xlink:href="#double_chevron_right"></use></svg></p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="page-banner page-banner--big">
+            <picture>
+              <source srcset="images/content/banner/banner_desktop.jpg, images/content/banner/banner_desktop@2x.jpg 2x" media="(min-width: 1900px)">
+              <source srcset="images/content/banner/banner_desktop_static.jpg, images/content/banner/banner_desktop_static@2x.jpg 2x" media="(min-width: 1024px)">
+              <img src="images/content/banner/banner_mob_static.jpg" srcset="images/content/banner/banner_mob_static@2x.jpg 2x" alt="alt">
+            </picture>
+            <div class="page-banner__container">
+              <p class="page-banner__intro">Всю неделю</p>
+              <p class="page-banner__title">- 70% скидка</p>
+              <p class="page-banner__pseudo-link">Подробнее <svg><use xlink:href="#double_chevron_right"></use></svg></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-banner-nav">
+        <div class="js-main-slider-nav">
+          <div>01</div>
+          <div>02</div>
+          <div>03</div>
+        </div>
+      </div>
     </section>
+
 
     <div class="container">
 
     </div>
 
-    <section class="action-banner">
-      <picture>
-        <source srcset="images/content/action_banner/desktop.jpg, images/content/action_banner/desktop@2x.jpg 2x" media="(min-width: 1024px)">
-        <img src="images/content/action_banner/mobile.jpg" srcset="images/content/action_banner/mobile@2x.jpg 2x" alt="alt">
-      </picture>
-      <div class="action-banner__container">
-        <p class="action-banner__intro">Ювелирные изделия по индивидуальному заказу</p>
-        <h2 class="action-banner__title">Создай свой<br> неповторимый дизайн</h2>
-        <p><a class="action-banner__link" href="#">Подробнее <svg><use xlink:href="#double_chevron_right"></use></svg></a></p>
-      </div>
-    </section>
 
-    <section class="shops-map">
-      <a href="#"><img src="images/content/shops_map/map.jpg" srcset="images/content/shops_map/map@2x.jpg 2x" alt="Найти магазин в троём городе"></a>
-    </section>
+    //= template/action-banner.html
+
+    //= template/shop-map.html
   </main>
 
   //= template/footer.html
@@ -64,6 +101,7 @@
   //= template/float-bar.html
 
   //= template/scripts.html
+  <script src="js/main-slider.js"></script>
 </body>
 
 </html>

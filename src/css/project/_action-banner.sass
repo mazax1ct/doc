@@ -1,9 +1,5 @@
 .action-banner
   position: relative
-  padding-bottom: 90px
-
-  @media(min-width: 768px)
-    padding-bottom: 0
 
   &:last-child
     margin-bottom: -90px
@@ -18,9 +14,15 @@
 
   img
     @media(min-width: 768px)
-      height: 560px
+      height: 360px
       object-fit: cover
       object-position: 50% 50%
+
+    @media(min-width: 1350px)
+      height: 400px
+
+    @media(min-width: 1900px)
+      height: 560px
 
   picture
     background-color: $color_grey

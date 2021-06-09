@@ -99,3 +99,19 @@ $(document).on('click', '.detail__tabs-nav-button', function () {
   $('.detail__tab[data-target="'+$(this).attr('data-target')+'"]').addClass('is-active');
   return false;
 });
+
+$(document).on('click', '.detail__bottom-left-title button', function () {
+  if($('body').width() < 1024) {
+    $(this).toggleClass('is-active');
+    $(this).parent().next('.detail__bottom-left-text').slideToggle();
+    return false;
+  }
+});
+
+$(document).on('click', '.detail__pair-tabs-button', function () {
+  $('.detail__pair-tabs-button').removeClass('is-active');
+  $(this).addClass('is-active');
+  $('.detail__pair-tab').removeClass('is-active');
+  $('.detail__pair-tab[data-target="'+$(this).attr('data-target')+'"]').addClass('is-active');
+  return false;
+});

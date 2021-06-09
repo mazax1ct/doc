@@ -32,6 +32,9 @@
   transition: border-color 0.3s
   width: 14px
 
+  @media(min-width: 1350px)
+    top: 3px
+
   @media(min-width: 1900px)
     height: 18px
     top: 7px
@@ -43,7 +46,7 @@
 .radio-icon
   border-radius: 50%
 
-input[type="checkbox"]:checked + .checkbox-icon:before
+input:checked + .checkbox-icon:before
   background-color: $color_darkblue
   border-radius: 2px
   content: ''
@@ -58,11 +61,11 @@ input[type="checkbox"]:checked + .checkbox-icon:before
     height: 12px
     width: 12px
 
-input[type="checkbox"]:focus + .checkbox-icon,
-input[type="checkbox"]:active + .checkbox-icon
+input:focus + .checkbox-icon,
+input:active + .checkbox-icon
   border-color: $text_color
 
-input[type="radio"]:checked + .radio-icon:before
+input:checked + .radio-icon:before
   background-color: $color_darkblue
   border-radius: 50%
   content: ''
@@ -77,21 +80,21 @@ input[type="radio"]:checked + .radio-icon:before
     height: 12px
     width: 12px
 
-input[type="radio"]:focus + .radio-icon,
-input[type="radio"]:active + .radio-icon
+input:focus + .radio-icon,
+input:active + .radio-icon
   border-color: $text_color
 
 .checkbox-text,
 .radio-text
   cursor: pointer
 
-input[type="checkbox"]:disabled ~ .checkbox-text,
-input[type="checkbox"].disabled ~ .checkbox-text,
-input[type="checkbox"]:disabled ~ .checkbox-icon,
-input[type="checkbox"].disabled ~ .checkbox-icon,
-input[type="radio"]:disabled ~ .radio-text,
-input[type="radio"].disabled ~ .radio-text,
-input[type="radio"]:disabled ~ .radio-icon,
-input[type="radio"].disabled ~ .radio-icon
+input:disabled ~ .checkbox-text,
+input.disabled ~ .checkbox-text,
+input:disabled ~ .checkbox-icon,
+input.disabled ~ .checkbox-icon,
+input:disabled ~ .radio-text,
+input.disabled ~ .radio-text,
+input:disabled ~ .radio-icon,
+input.disabled ~ .radio-icon
   cursor: default
   opacity: 0.5
