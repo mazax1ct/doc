@@ -124,16 +124,18 @@ body
       right: 8.958333333333333%
 
 .grey-bg
-  background-color: #F8F8F8
-  background-image: url('../images/backgrounds/grey-bg.jpg')
-  background-repeat: no-repeat
-  background-size: 100% auto
-  background-position: 50% 0
-  position: relative
   padding-bottom: 50px
 
   @media(min-width: 768px)
     padding-bottom: 80px
+
+  @media(min-width: 1024px)
+    background-color: #F8F8F8
+    background-image: url('../images/backgrounds/grey-bg.jpg')
+    background-repeat: no-repeat
+    background-size: 100% auto
+    background-position: 50% 0
+    position: relative
 
   @media(min-width: 1900px)
     padding-bottom: 100px
@@ -148,3 +150,59 @@ body
   .delimiter2
     &:last-child
       margin-bottom: 0
+
+.blue-block
+  align-items: center
+  background-image: url("data:image/svg+xml,%3Csvg width='481' height='12' viewBox='0 0 481 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M64.1235 0.822513L96.1065 11.3442L128.09 0.822513L160.087 11.3442L192.07 0.822513L224.053 11.3442L256.036 0.822513L288.019 11.3442L320.002 0.822513L351.985 11.3442L383.968 0.822513L415.951 11.3442L447.934 0.822513L479.788 11.299L480.06 10.7684L447.934 0.212891L415.951 10.7232L383.968 0.212891L351.985 10.7232L320.002 0.212891L288.019 10.7232L256.036 0.212891L224.053 10.7232L192.07 0.212891L160.087 10.7232L128.09 0.212891L96.1065 10.7232L64.1235 0.212891L32.1261 10.7232L0.271892 0.258048L0 0.777356L32.1261 11.3442L64.1235 0.822513Z' fill='%236F7D9D' fill-opacity='0.1'/%3E%3C/svg%3E%0A")
+  background-position: 0 0
+  background-repeat: repeat
+  background-color: #001945
+  color: $color_grey
+  display: flex
+  font-family: $secondary_font
+  font-size: 24px
+  justify-content: center
+  margin-bottom: 100px
+  padding-top: 110px
+  padding-bottom: 110px
+  position: relative
+
+  @media(min-width: 1024px)
+    min-height: 800px
+
+  @media(min-width: 1900px)
+    font-size: 41px
+    line-height: 1.5
+    min-height: 1085px
+    margin-bottom: 260px
+
+  span
+    color: #fff
+
+  &::before,
+  &::after
+    background-color: $color_lightblue
+    content: ''
+    height: 70px
+    left: 50%
+    position: absolute
+    width: 1px
+
+    @media(min-width: 1900px)
+      height: 130px
+
+  &::before
+    transform: translateY(-50%)
+    top: 0
+
+  &::after
+    bottom: 0
+    transform: translateY(50%)
+    top: auto
+
+  &__container
+    max-width: 830px
+    width: 100%
+
+    @media(min-width: 1900px)
+      max-width: 1360px
