@@ -1,0 +1,237 @@
+.articles-block
+  margin-bottom: 50px
+
+  @media(min-width: 1024px)
+    margin-bottom: 80px
+
+  @media(min-width: 1900px)
+    margin-bottom: 100px
+
+.articles-slider
+  margin-bottom: 50px
+
+  @media(min-width: 1024px)
+    margin-left: -30px
+    margin-right: -30px
+    margin-bottom: 80px
+
+  @media(min-width: 1900px)
+    margin-bottom: 100px
+
+  .slick-arrow
+    @media(min-width: 1024px)
+      background-color: rgba($color_grey, 0.2)
+      top: 50%
+      transform: translateY(-50%)
+
+    @media(min-width: 1900px)
+      background-color: transparent
+
+  .slick-prev
+    @media(min-width: 1024px)
+      left: 30px
+
+    @media(min-width: 1900px)
+      left: 10px
+
+  .slick-next
+    @media(min-width: 1024px)
+      right: 30px
+
+    @media(min-width: 1900px)
+      right: 10px
+
+  .slick-arrow__arrow
+    @media(min-width: 1024px)
+      fill: #fff
+
+    @media(min-width: 1900px)
+      fill: $color_grey
+
+  .slick-track
+    display: flex
+
+  .slick-slide
+    align-items: center
+    display: flex
+    height: auto
+
+    @media(min-width: 1024px)
+      padding: 30px
+
+    @media(min-width: 1900px)
+      padding: 50px
+
+  .slick-current
+    .article-slide
+      @media(min-width: 1024px)
+        transform: scale(1.16)
+
+    .article-slide__title
+      opacity: 1
+
+.article-slide
+  display: block
+  margin-left: auto
+  margin-right: auto
+  max-width: 240px
+  position: relative
+  text-align: center
+  text-decoration: none
+
+  @media(min-width: 1024px)
+    max-width: 560px
+    transition:  transform 0.3s
+    transform: scale(1)
+
+  &:hover
+    img
+      transform: scale(1.02)
+
+  &__image
+    border-radius: 50%
+    display: block
+    margin-left: auto
+    margin-right: auto
+    max-width: 180px
+    margin-bottom: 25px
+    overflow: hidden
+
+    @media(min-width: 1024px)
+      border-radius: 0
+      max-width: 100%
+      margin-bottom: 0
+
+    img
+      transition: transform 0.3s
+      transform: scale(1)
+
+  &__title
+    display: block
+
+    @media(min-width: 1024px)
+      bottom: 14px
+      border: 3px solid rgba($color_darkblue, 0.6)
+      color: #fff
+      display: flex
+      left: 14px
+      opacity: 0
+      padding: 10px
+      position: absolute
+      right: 14px
+      top: 14px
+      transition: opacity 0.3s
+      z-index: 1
+
+    @media(min-width: 1900px)
+      font-size: 20px
+
+    span
+      display: block
+
+      @media(min-width: 1024px)
+        align-items: center
+        background-color: rgba($color_darkblue, 0.6)
+        display: flex
+        justify-content: center
+        padding: 20px
+
+      @media(min-width: 1900px)
+        padding: 40px
+
+.articles-slider-nav-container
+  margin-left: auto
+  margin-right: auto
+  max-width: 240px
+  margin-bottom: 50px
+
+  @media(min-width: 1024px)
+    margin-bottom: 80px
+
+  @media(min-width: 1900px)
+    margin-bottom: 100px
+
+.articles-slider-nav
+  &.hidden
+    opacity: 0
+    pointer-events: none
+
+  .slick-arrow
+    top: 50%
+    transform: translateY(-50%)
+
+  .slick-prev
+    left: -40px
+
+  .slick-next
+    right: -40px
+
+  .slick-active
+    button
+      &::after
+        height: 8px
+        width: 8px
+
+    & + .slick-active
+      button
+        &::after
+          height: 11px
+          width: 11px
+
+      & + .slick-current
+        button
+          color: $color_lightblue
+
+          &::after
+            opacity: 0
+            height: 14px
+            width: 14px
+
+        & + .slick-active
+          button
+            &::after
+              height: 11px
+              width: 11px
+
+          & + .slick-active
+            button
+              &::after
+                height: 8px
+                width: 8px
+
+  &__slide
+    display: block !important
+
+    button
+      align-items: center
+      background-color: transparent
+      border: none
+      color: transparent
+      display: flex
+      font-size: 20px
+      font-weight: 300
+      height: 20px
+      justify-content: center
+      margin-left: auto
+      margin-right: auto
+      position: relative
+      transition: color 0.3s
+      padding: 0
+      width: 20px
+
+      @media(min-width: 1024px)
+        font-size: 30px
+        height: 40px
+        width: 40px
+
+      &::after
+        border: 1px solid $color_grey
+        border-radius: 50%
+        content: ''
+        height: 11px
+        left: 50%
+        position: absolute
+        top: 50%
+        transform: translate(-50%, -50%)
+        transition: all 0.3s
+        width: 11px

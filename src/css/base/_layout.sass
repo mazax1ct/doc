@@ -27,6 +27,10 @@ body
       @media(min-width: 1024px)
         padding-top: 175px
 
+  &.main-page
+    .page-content
+      position: relative
+
 .page-content
   flex: 1 0 auto
   overflow-x: hidden
@@ -62,3 +66,85 @@ body
 
   @media(min-width: 1900px)
     margin-bottom: 150px
+
+.delimiter2
+  background-color: $color_lightblue
+  height: 70px
+  margin-left: auto
+  margin-right: auto
+  margin-top: 50px
+  margin-bottom: 50px
+  width: 1px
+
+  @media(min-width: 768px)
+    margin-bottom: 80px
+    margin-top: 80px
+
+  @media(min-width: 1900px)
+    height: 110px
+    margin-bottom: 100px
+    margin-top: 100px
+
+.stripes
+  display: none
+
+  @media(min-width: 1024px)
+    display: block
+    height: 100%
+    left: 0
+    position: absolute
+    top: 0
+    width: 100%
+    z-index: -1
+
+  div
+    @media(min-width: 1024px)
+      background-color: rgba($color_gold, 0.15)
+      height: 100%
+      position: absolute
+      top: 0
+      transform: translateX(-50%)
+      width: 1px
+
+    &:nth-child(1)
+      left: 8.958333333333333%
+
+    &:nth-child(2)
+      left: 29.42708333333333%
+
+    &:nth-child(3)
+      left: 50%
+
+    &:nth-child(4)
+      left: auto
+      right: 29.42708333333333%
+
+    &:nth-child(5)
+      left: auto
+      right: 8.958333333333333%
+
+.grey-bg
+  background-color: #F8F8F8
+  background-image: url('../images/backgrounds/grey-bg.jpg')
+  background-repeat: no-repeat
+  background-size: 100% auto
+  background-position: 50% 0
+  position: relative
+  padding-bottom: 50px
+
+  @media(min-width: 768px)
+    padding-bottom: 80px
+
+  @media(min-width: 1900px)
+    padding-bottom: 100px
+
+  & > *:not(.stripes)
+    position: relative
+    z-index: 1
+
+  .stripes
+    z-index: 0
+
+  .delimiter2
+    &:last-child
+      margin-bottom: 0

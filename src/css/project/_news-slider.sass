@@ -1,0 +1,91 @@
+.news-slider-block
+  margin-bottom: 50px
+
+  @media(min-width: 1024px)
+    margin-bottom: 80px
+
+  @media(min-width: 1900px)
+    margin-bottom: 100px
+
+.news-slider
+  margin-bottom: 50px
+
+  @media(min-width: 1024px)
+    margin-bottom: 80px
+
+  @media(min-width: 1900px)
+    margin-bottom: 100px
+
+  .slick-arrow
+    background-color: rgba($color_grey, 0.2)
+
+    @media(min-width: 1024px)
+      margin-top: -30px
+      top: 50%
+      transform: translateY(-50%)
+
+  .slick-arrow__arrow
+    fill: #fff
+
+  .slick-prev
+    left: 15px
+
+    @media(min-width: 1900px)
+      left: 35px
+
+  .slick-next
+    right: 15px
+
+    @media(min-width: 1900px)
+      right: 35px
+
+  .slick-track
+    display: flex
+
+  .slick-slide
+    align-items: center
+    display: flex
+    height: auto
+    padding-left: 4px
+    padding-right: 4px
+
+    @media(min-width: 1024px)
+      padding-left: 10px
+      padding-right: 10px
+
+.news-slide
+  display: block
+  text-align: center
+  text-decoration: none
+  width: 100%
+
+  @media(min-width: 1350px)
+    font-size: 24px
+
+  &:hover,
+  &:focus
+    img
+      transform: scale(1.02)
+
+  &__image
+    display: block
+    margin-bottom: 20px
+    overflow: hidden
+    width: 100%
+
+    @media(min-width: 1900px)
+      margin-bottom: 35px
+
+    img
+      display: block
+      transition: transform 0.3s
+      transform: scale(1)
+      width: 100%
+
+  &__title
+    display: block
+    max-width: 530px
+    margin-left: auto
+    margin-right: auto
+    padding-left: 30px
+    padding-right: 30px
