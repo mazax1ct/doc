@@ -1,221 +1,194 @@
 .slick-slider {
-  position: relative;
-  display: block;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -khtml-user-select: none;
-  -ms-touch-action: pan-y;
-  touch-action: pan-y;
-  -webkit-tap-highlight-color: transparent;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .slick-list {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .slick-list:focus {
-  outline: none;
+    outline: none;
 }
 
 .slick-list.dragging {
-  cursor: pointer;
-  cursor: hand;
+    cursor: pointer;
+    cursor: hand;
 }
 
 .slick-slider .slick-list,
 .slick-slider .slick-track {
-  transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
 .slick-track {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .slick-track:after,
 .slick-track:before {
-  display: table;
-  content: '';
+    display: table;
+    content: '';
 }
 
 .slick-track:after {
-  clear: both;
+    clear: both;
 }
 
 .slick-loading .slick-track {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 .slick-slide {
-  display: none;
-  float: left;
-  height: 100%;
-  min-height: 1px;
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
 }
 
 [dir='rtl'] .slick-slide {
-  float: right;
+    float: right;
 }
 
 .slick-slide img {
-  display: block;
+    display: block;
 }
 
 .slick-slide.slick-loading img {
-  display: none;
+    display: none;
 }
 
 .slick-slide.dragging img {
-  pointer-events: none;
+    pointer-events: none;
 }
 
 .slick-initialized .slick-slide {
-  display: block;
+    display: block;
 }
 
 .slick-loading .slick-slide {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 .slick-vertical .slick-slide {
-  display: block;
-  height: auto;
-  border: 1px solid transparent;
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
 }
 
 .slick-arrow.slick-hidden {
-  display: none;
+    display: none;
 }
 
 .slick-dots {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
-  @media(min-width: 1900px) {
-    margin-top: 70px;
-  }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .slick-dots li {
-  align-items: center;
-  display: flex;
-  height: 20px;
-  justify-content: center;
-  margin-left: 5px;
-  margin-right: 5px;
-  width: 20px;
-  @media(min-width: 1024px) {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  @media(min-width: 1900px) {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
+    align-items: center;
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 20px;
 }
 
 .slick-dots button {
-  align-items: center;
-  background-color: transparent;
-  border-radius: 50%;
-  border: 1px solid $color_grey;
-  color: transparent;
-  cursor: pointer;
-  display: flex;
-  font-size: 0;
-  height: 8px;
-  justify-content: center;
-  overflow: hidden;
-  padding: 0;
-  transition: all 0.3s;
-  width: 8px;
-}
-
-.slick-dots button::after {
-  background-color: $color_darkblue;
-  border-radius: 50%;
-  content: '';
-  display: block;
-  height: 9px;
-  opacity: 0;
-  transition: opacity 0.3s;
-  width: 9px;
+    align-items: center;
+    background-color: rgba($color_grey, 0.2);
+    border: none;
+    border-radius: 50%;
+    color: transparent;
+    cursor: pointer;
+    display: flex;
+    font-size: 0;
+    height: 8px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0;
+    transition: all 0.3s;
+    width: 8px;
 }
 
 .slick-dots .slick-active button {
-  height: 14px;
-  width: 14px;
-}
-
-.slick-dots .slick-active button::after {
-  opacity: 1;
+    background-color: $color_darkblue;
 }
 
 .slick-arrow {
-  align-items: center;
-  background-color: transparent;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex;
-  height: 40px;
-  justify-content: center;
-  position: absolute;
-  padding: 0;
-  top: 95px;
-  transition: background-color 0.3s;
-  width: 40px;
-  z-index: 1;
-  @media(min-width: 1024px) {
-    top: 115px;
-  }
-  @media(min-width: 1900px) {
-    top: 164px;
-  }
-
-  &:focus {
-    background-color: rgba($color_grey, 0.3);
-  }
-
-  &:focus,
-  &:hover {
-    .slick-arrow__arrow {
-      fill: $color_darkblue;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    position: absolute;
+    padding: 0;
+    top: 95px;
+    transition: background-color 0.3s;
+    width: 40px;
+    z-index: 1;
+    @media(min-width: 1024px) {
+        top: 115px;
     }
-  }
+    @media(min-width: 1900px) {
+        top: 164px;
+    }
+
+    &:focus {
+        background-color: rgba($color_grey, 0.3);
+    }
+
+    &:focus,
+    &:hover {
+        .slick-arrow__arrow {
+            fill: $color_darkblue;
+        }
+    }
 }
 
 .slick-prev {
-  left: -15px;
-  @media(min-width: 1900px) {
-    left: -30px;
-  }
+    left: -15px;
+    @media(min-width: 1900px) {
+        left: -30px;
+    }
 }
 
 .slick-next {
-  left: auto;
-  right: -15px;
-  @media(min-width: 1900px) {
-    right: -30px;
-  }
+    left: auto;
+    right: -15px;
+    @media(min-width: 1900px) {
+        right: -30px;
+    }
 }
 
 .slick-arrow__arrow {
-  fill: $color_grey;
-  height: 16px;
-  transition: fill 0.3s;
-  width: 16px;
+    fill: $color_grey;
+    height: 16px;
+    transition: fill 0.3s;
+    width: 16px;
 }

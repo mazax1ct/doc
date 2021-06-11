@@ -15,7 +15,7 @@ body
   min-height: 100%
   min-width: 320px
   overflow-x: hidden
-  overflow-wrap: break-word
+  //overflow-wrap: break-word
 
   &.popover-open
     overflow: hidden
@@ -80,8 +80,10 @@ body
     margin-bottom: 80px
     margin-top: 80px
 
-  @media(min-width: 1900px)
+  @media(min-width: 1350px)
     height: 110px
+
+  @media(min-width: 1900px)
     margin-bottom: 100px
     margin-top: 100px
 
@@ -137,8 +139,8 @@ body
     background-position: 50% 0
     position: relative
 
-  @media(min-width: 1900px)
-    padding-bottom: 100px
+  @media(min-width: 1350px)
+    padding-bottom: 150px
 
   & > *:not(.stripes)
     position: relative
@@ -167,8 +169,10 @@ body
   padding-bottom: 110px
   position: relative
 
-  @media(min-width: 1024px)
-    min-height: 800px
+  @media(min-width: 1350px)
+    font-size: 36px
+    line-height: 1.5
+    //min-height: 600px
 
   @media(min-width: 1900px)
     font-size: 41px
@@ -188,7 +192,7 @@ body
     position: absolute
     width: 1px
 
-    @media(min-width: 1900px)
+    @media(min-width: 1350px)
       height: 130px
 
   &::before
@@ -204,5 +208,103 @@ body
     max-width: 830px
     width: 100%
 
+    @media(min-width: 1350px)
+      max-width: 1000px
+
     @media(min-width: 1900px)
       max-width: 1360px
+
+.fw
+  &:not(:last-child)
+    margin-bottom: 50px
+
+    @media(min-width: 1024px)
+      margin-bottom: 80px
+
+    @media(min-width: 1350px)
+      margin-bottom: 150px
+
+    @media(min-width: 1900px)
+      margin-bottom: 210px
+
+  &__container
+    @media(min-width: 768px)
+      align-items: center
+      display: flex
+
+  &__block
+    @media(min-width: 768px)
+      width: 50%
+
+    &--center
+      padding: 30px
+
+      @media(min-width: 768px)
+        align-items: center
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+      @media(min-width: 1024px)
+        padding: 60px
+
+    &--order_1
+      @media(min-width: 768px)
+        order: 1
+
+    &--order_2
+      @media(min-width: 768px)
+        order: 2
+
+    &--fw_img
+      picture,
+      img
+        display: block
+        width: 100%
+
+.video
+  display: block
+  overflow: hidden
+  position: relative
+
+  &:hover,
+  &:focus
+    img
+      transform: scale(1.02)
+
+  &::before
+    background-color: rgba($color_darkblue, 0.6)
+    content: ''
+    height: 100%
+    left: 0
+    position: absolute
+    top: 0
+    width: 100%
+    z-index: 1
+
+  &::after
+    background-image: url("data:image/svg+xml,%3Csvg width='137' height='141' viewBox='0 0 137 141' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M135.029 70.5311C135.029 107.58 105.025 137.613 68.0147 137.613C31.0044 137.613 1 107.58 1 70.5311C1 33.4819 31.0044 3.44922 68.0147 3.44922C105.025 3.44922 135.029 33.4819 135.029 70.5311Z' stroke='%23CDBC9D' stroke-width='2'/%3E%3Ccircle cx='68' cy='4' r='3.5' transform='rotate(90 68 4)' fill='%236B9CFD' stroke='%236B9CFD'/%3E%3Ccircle cx='68' cy='137' r='3.5' transform='rotate(90 68 137)' fill='%236B9CFD' stroke='%236B9CFD'/%3E%3Cpath d='M78.3318 70.2322L65.9266 60.9549L65.9266 79.9363L78.3318 70.2322Z' fill='%236B9CFD' stroke='%236B9CFD' stroke-linecap='round'/%3E%3C/svg%3E%0A")
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    background-size: auto 100%
+    content: ''
+    height: 86px
+    left: 50%
+    position: absolute
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: 86px
+    z-index: 2
+
+    @media(min-width: 1350px)
+      height: 140px
+      width: 140px
+
+  picture,
+  img
+    display: block
+    width: 100%
+
+  img
+    transform: scale(1)
+    transition: transform 0.3s

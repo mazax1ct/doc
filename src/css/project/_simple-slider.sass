@@ -1,0 +1,42 @@
+.simple-slider-block
+  margin-left: auto
+  margin-right: auto
+
+  @media(min-width: 1350px)
+    max-width: 500px
+
+  @media(min-width: 1900px)
+    max-width: 660px
+
+.simple-slider
+  margin-bottom: 40px
+
+.simple-slider-nav
+  color: $color_grey
+  font-size: 18px
+  line-height: 40px
+  max-width: 230px
+  position: relative
+  padding-left: 30px
+  padding-right: 30px
+  text-align: center
+  white-space: nowrap
+
+  @media(min-width: 768px)
+    padding-left: 0
+    padding-right: 0
+    width: 150px
+
+  &__current
+    color: $color_lightblue
+    font-size: 30px
+
+  .slick-arrow
+    top: 50%
+    transform: translateY(-50%)
+
+  .slick-prev
+    left: -15px
+
+  .slick-next
+    right: -15px

@@ -51,35 +51,41 @@ h1,.h1
     margin-bottom: 56px
 
 h2,.h2
-  font-size: 24px
+  font-family: $secondary_font
+  font-size: 30px
   line-height: 1.33333
-  margin-bottom: 24px
+  letter-spacing: 2px
+  margin-bottom: 20px
 
-  @media(min-width: 1024px)
-    font-size: 28px
-    line-height: 1.4
+  @media(min-width: 1350px)
+    font-size: 36px
+    line-height: 1.5
+    margin-bottom: 30px
 
   @media(min-width: 1900px)
-    font-size: 32px
+    font-size: 48px
     line-height: 1.5
+    letter-spacing: 4px
+    margin-bottom: 40px
 
 h3,.h3
   font-size: 18px
   line-height: 1.2
-  margin-bottom: 24px
+  letter-spacing: 3px
+  margin-bottom: 25px
 
   @media(min-width: 1900px)
-    font-size: 28px
-    line-height: 1.42857
+    font-size: 26px
+    letter-spacing: 5px
+    margin-bottom: 30px
 
 h4,.h4
-  font-size: 20px
+  font-size: 18px
   line-height: 1.2
-  margin-bottom: 16px
+  margin-bottom: 25px
 
   @media(min-width: 1900px)
-    font-size: 24px
-    line-height: 1.33333
+    margin-bottom: 40px
 
 h5,.h5,
 h6,.h6,
@@ -226,3 +232,71 @@ img
     font-size: 60px
     letter-spacing: 4px
     margin-bottom: 120px
+
+.kitsch-title
+  color: $color_gold
+  font-family: $secondary_font
+  font-size: 30px
+  letter-spacing: 2px
+  padding-top: 80px
+  padding-bottom: 80px
+  position: relative
+  text-align: center
+
+  @media(min-width: 1350px)
+    font-size: 48px
+
+  @media(min-width: 1900px)
+    font-size: 60px
+    line-height: 1.5
+    letter-spacing: 4px
+
+  &::after,
+  &::before
+    background-image: url("data:image/svg+xml,%3Csvg width='11' height='39' viewBox='0 0 11 39' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.3407 11.9751L7.12119 10.0239L7.8529 12.4629L8.3407 14.902V17.5849V19.0483L7.8529 21.4873L6.38948 24.4142L4.92607 26.8532L3.95046 28.5605L3.21875 30.2678V31.9751L3.95046 34.4142L6.14558 38.3166L5.65777 35.8776V32.219V30.7556L6.14558 29.0483L7.12119 27.0971L8.3407 24.902L9.31631 23.1947L9.80412 21.4873L10.048 19.5361V17.341L9.56021 15.3898L9.07241 13.6825L8.3407 11.9751Z' fill='%236B9CFD' stroke='%236B9CFD'/%3E%3Cpath d='M2.70837 26.4138L4.17178 28.6089L3.44007 26.1699L2.95227 23.7308V21.0479V19.5845L3.44007 17.1455L4.90349 14.2186L5.8791 12.2674L7.34251 9.5845L7.83032 8.12108L8.07422 5.92596L6.6108 2.99913L5.14739 0.316204L5.63519 2.75523L5.8791 5.92596L5.63519 7.87718L5.14739 9.5845L4.17178 11.5357L2.95227 13.7308L2.22056 15.1943L1.48885 17.1455L1.00105 19.0967V21.0479L1.48885 23.243L1.97666 24.9504L2.70837 26.4138Z' fill='%236B9CFD' stroke='%236B9CFD'/%3E%3C/svg%3E%0A")
+    background-repeat: no-repeat
+    background-position: 0 0
+    content: ''
+    height: 39px
+    left: 50%
+    position: absolute
+    transform: translateX(-50%)
+    width: 11px
+    z-index: 1
+
+  &::after
+    bottom: 0
+    top: auto
+
+  &::before
+    top: 0
+
+.more-link
+  align-items: center
+  display: inline-flex
+  font-size: 13px
+  font-weight: 700
+  padding-top: 10px
+  padding-bottom: 10px
+  text-transform: uppercase
+  text-decoration: none
+
+  svg
+    fill: $color_lightblue
+    height: 16px
+    margin-left: 10px
+    width: 16px
+
+.brand-text
+  font-family: $secondary_font
+  line-height: 1.33333
+  letter-spacing: 1px
+
+  @media(min-width: 1350px)
+    font-size: 18px
+
+  @media(min-width: 1900px)
+    font-size: 28px
+
+.color-gold
+  color: $color_gold

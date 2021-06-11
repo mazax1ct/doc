@@ -3,33 +3,42 @@
   margin-bottom: 50px
   position: relative
 
-  @media(min-width: 1350px)
+  @media(min-width: 1024px)
     margin-bottom: 90px
 
   &::after,
   &::before
-    @media(min-width: 1024px)
-      bottom: 0
-      content: ''
-      left: 50%
-      position: absolute
-      top: auto
-      transform: translate(-50%, 55px)
-      z-index: 1
+    bottom: 0
+    content: ''
+    left: 50%
+    position: absolute
+    top: auto
+    transform: translate(-50%, 50%)
+    z-index: 1
 
   &::before
+    background-color: $color_gold
+    height: 70px
+    transform: translate(-50%, 50%)
+    width: 1px
+
     @media(min-width: 1024px)
-      background-color: $color_gold
       height: 110px
-      transform: translate(-50%, 55px)
-      width: 1px
 
   &::after
+    bottom: 50px
+    background-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M26.9033 14.9868L14.053 25.8081L1.20272 14.9868M26.7436 1.4979L13.8933 12.3192L1.04297 1.4979' stroke='%23CDBC9D' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A")
+    background-repeat: no-repeat
+    background-position: 50% 0
+    background-size: 20px 20px
+    height: 20px
+    transform: translateX(-50%)
+    width: 20px
+
     @media(min-width: 1024px)
-      background-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M26.9033 14.9868L14.053 25.8081L1.20272 14.9868M26.7436 1.4979L13.8933 12.3192L1.04297 1.4979' stroke='%23CDBC9D' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A")
-      background-repeat: no-repeat
-      background-position: 50% 0
-      height: 170px
+      bottom: 80px
+      background-size: 28px 28px
+      height: 28px
       width: 28px
 
 .main-banner-nav
