@@ -87,7 +87,7 @@
       </div>
     </section>
 
-    <div class="block-1">
+    <div id="1" class="block-1 main-page__section" data-title="<span class='text'><span>01.</span> Категории</span>">
       <div class="block-1__container">
         <div class="block-1__block block-1__block--image">
           <picture>
@@ -130,11 +130,30 @@
           <p class="block-1__link-block"><a href="catalog-section.html">Перейти в раздел Обручальные кольца</a></p>
         </div>
       </div>
-
+      <div class="js-categories-slider categories-slider">
+        <div class="categories-slider__item">
+          <a class="category" href="catalog-section.html">
+            <span class="category__image"><img src="images/content/product-slider/img_2.jpg" srcset="images/content/product-slider/img_2@2x.jpg" alt="alt"></span>
+            <span class="category__title">Помолвочные кольца</span>
+          </a>
+        </div>
+        <div class="categories-slider__item">
+          <a class="category" href="catalog-section.html">
+            <span class="category__image"><img src="images/content/product-slider/img_3.jpg" srcset="images/content/product-slider/img_3@2x.jpg" alt="alt"></span>
+            <span class="category__title">Парные кольца</span>
+          </a>
+        </div>
+        <div class="categories-slider__item">
+          <a class="category" href="catalog-section.html">
+            <span class="category__image"><img src="images/content/product-slider/img_4.jpg" srcset="images/content/product-slider/img_4@2x.jpg" alt="alt"></span>
+            <span class="category__title">Ювелирные украшения</span>
+          </a>
+        </div>
+      </div>
       <p class="block-1__more"><a class="highlighted-btn" href="#"><span>Перейти в каталог</span></a></p>
     </div>
 
-    <div class="grey-bg">
+    <div id="2" class="grey-bg main-page__section" data-title="<span class='text'><span>02.</span> История</span>">
       <div class="stripes"><div></div><div></div><div></div><div></div><div></div></div>
 
       <h2 class="title-1">История</h2>
@@ -188,13 +207,15 @@
       </section>
     </div>
 
-    <div class="blue-block">
-      <div class="blue-block__container container">
-        <p>Наша <span>миссия</span> – сделать из процесса выбора <span>обручальных</span> колец праздник! Визитной карточкой Дворца обручальных <span>колец</span> являются: <span>высокие стандарты качества</span>, широкий ассортимент (более <span>1000 моделей</span> колец), выполнение индивидуальных заказов в кратчайшие сроки. География наших колец: <span>Россия</span>, ближнее зарубежье, <span>Европа</span>.</p>
+    <div id="3" class="main-page__section main-page__section--dark" data-title="<span class='text'><span>03.</span> Миссия</span>">
+      <div class="blue-block">
+        <div class="blue-block__container container">
+          <p>Наша <span>миссия</span> – сделать из процесса выбора <span>обручальных</span> колец праздник! Визитной карточкой Дворца обручальных <span>колец</span> являются: <span>высокие стандарты качества</span>, широкий ассортимент (более <span>1000 моделей</span> колец), выполнение индивидуальных заказов в кратчайшие сроки. География наших колец: <span>Россия</span>, ближнее зарубежье, <span>Европа</span>.</p>
+        </div>
       </div>
     </div>
 
-    <section class="catalog-slider-block">
+    <section id="4" class="catalog-slider-block main-page__section" data-title="<span class='text'><span>04.</span> Продукция</span>">
       <div class="container">
         <h2 class="title-1">Подобрать подарок</h2>
 
@@ -738,101 +759,139 @@
           </div>
         </div>
       </div>
-    </section>
 
-    <section class="cols-3">
-      <div class="cols-3__container container">
-        <h2 class="title-1">К вашим услугам</h2>
-        <div class="cols-3__cols">
-          <div class="cols-3__col">
-            <img src="images/content/cols-3/img_1.svg" alt="">
-            <p>Бесплатная<br> доставка</p>
-          </div>
-          <div class="cols-3__col">
-            <img src="images/content/cols-3/img_2.svg" alt="">
-            <p>Бесплатная<br> подарочная упаковка</p>
-          </div>
-          <div class="cols-3__col">
-            <img src="images/content/cols-3/img_3.svg" alt="">
-            <p>Пожизненное<br> обслуживание</p>
+      <section class="cols-3">
+        <div class="cols-3__container container">
+          <h2 class="title-1">К вашим услугам</h2>
+          <div class="cols-3__cols">
+            <div class="cols-3__col">
+              <img src="images/content/cols-3/img_1.svg" alt="">
+              <p>Бесплатная<br> доставка</p>
+            </div>
+            <div class="cols-3__col">
+              <img src="images/content/cols-3/img_2.svg" alt="">
+              <p>Бесплатная<br> подарочная упаковка</p>
+            </div>
+            <div class="cols-3__col">
+              <img src="images/content/cols-3/img_3.svg" alt="">
+              <p>Пожизненное<br> обслуживание</p>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <div class="delimiter"></div>
     </section>
 
-    <div class="delimiter"></div>
-
-    <section class="service-block">
+    <section id="5" class="service-block main-page__section" data-title="<span class='text'><span>05.</span> Услуги</span>">
       <div class="service-block__container container">
         <h2 class="title-1">Дворцовый сервис</h2>
-
+        <div class="service-block__list">
+          <div class="service-block__item">
+            <a class="service service--big" href="#">
+              <span class="service__image"><img src="images/content/service/img.jpg" srcset="images/content/service/img@2x.jpg 2x" alt="alt"></span>
+              <span class="service__inner">
+                <svg class="service__icon"><use xlink:href="#service_1"></use></svg>
+                <span class="service__title">Программа обновления</span>
+                <span class="service__text">Описание изменение размера описание размера</span>
+              </span>
+            </a>
+          </div>
+          <div class="service-block__item">
+            <a class="service service--small" href="#">
+              <span class="service__inner">
+                <svg class="service__icon"><use xlink:href="#service_2"></use></svg>
+                <span class="service__title">Изменение размера</span>
+                <span class="service__text">Описание изменение размера описание размера</span>
+              </span>
+            </a>
+          </div>
+          <div class="service-block__item">
+            <a class="service service--small" href="#">
+              <span class="service__inner">
+                <svg class="service__icon"><use xlink:href="#service_3"></use></svg>
+                <span class="service__title">Бесплатное обслуживание</span>
+                <span class="service__text">Описание изменение размера описание размера</span>
+              </span>
+            </a>
+          </div>
+          <div class="service-block__item">
+            <a class="service service--small" href="#">
+              <span class="service__inner">
+                <svg class="service__icon"><use xlink:href="#service_4"></use></svg>
+                <span class="service__title">Гравировка</span>
+                <span class="service__text">Описание изменение размера описание размера</span>
+              </span>
+            </a>
+          </div>
+        </div>
       </div>
-    </section>
 
-    <section class="fw">
-      <div class="fw__container">
-        <div class="fw__block fw__block--order_2 fw__block--fw_img">
-          <a class="video" href="https://www.youtube.com/watch?v=sn-S82mF_gw" data-fancybox="video_2">
+      <section class="fw">
+        <div class="fw__container">
+          <div class="fw__block fw__block--order_2 fw__block--fw_img">
+            <a class="video" href="https://www.youtube.com/watch?v=sn-S82mF_gw" data-fancybox="video_2">
+              <picture>
+                <source srcset="images/content/video/img_1_desc.jpg, images/content/video/img_1_desc@2x.jpg 2x" media="(min-width: 768px)">
+                <img src="images/content/video/img_1_mob.jpg" srcset="images/content/video/img_1_mob@2x.jpg 2x" alt="alt">
+              </picture>
+            </a>
+          </div>
+          <div class="fw__block fw__block--order_1 fw__block--center">
+            <div style="max-width: 470px">
+              <h2>Собственное производство</h2>
+              <p class="brand-text">Ассортимент включает<br> <span class="color-gold">более 1000 моделей</span> помолвочных, обручальных колец, которые могут быть преподнесены любимым в качестве подарка.</p>
+              <p><a class="more-link" href="#">Узнать больше <svg><use xlink:href="#double_chevron_right"></use></svg></a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fw">
+        <div class="fw__container">
+          <div class="fw__block fw__block--fw_img">
             <picture>
-              <source srcset="images/content/video/img_1_desc.jpg, images/content/video/img_1_desc@2x.jpg 2x" media="(min-width: 768px)">
-              <img src="images/content/video/img_1_mob.jpg" srcset="images/content/video/img_1_mob@2x.jpg 2x" alt="alt">
+              <source srcset="images/content/fw/img_1_desc.jpg, images/content/fw/img_1_desc@2x.jpg 2x" media="(min-width: 768px)">
+              <img src="images/content/fw/img_1_mob.jpg" srcset="images/content/fw/img_1_mob@2x.jpg 2x" alt="alt">
             </picture>
-          </a>
-        </div>
-        <div class="fw__block fw__block--order_1 fw__block--center">
-          <div style="max-width: 470px">
-            <h2>Собственное производство</h2>
-            <p class="brand-text">Ассортимент включает<br> <span class="color-gold">более 1000 моделей</span> помолвочных, обручальных колец, которые могут быть преподнесены любимым в качестве подарка.</p>
-            <p><a class="more-link" href="#">Узнать больше <svg><use xlink:href="#double_chevron_right"></use></svg></a></p>
+          </div>
+          <div class="fw__block fw__block--center">
+            <div style="max-width: 710px">
+              <h2>Изготовление по индивидуальному эскизу</h2>
+              <p>Краткое описание статьи специализация<br> создание обручальных колец</p>
+              <p><a class="more-link" href="#">Узнать больше <svg><use xlink:href="#double_chevron_right"></use></svg></a></p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="fw">
-      <div class="fw__container">
-        <div class="fw__block fw__block--fw_img">
-          <picture>
-            <source srcset="images/content/fw/img_1_desc.jpg, images/content/fw/img_1_desc@2x.jpg 2x" media="(min-width: 768px)">
-            <img src="images/content/fw/img_1_mob.jpg" srcset="images/content/fw/img_1_mob@2x.jpg 2x" alt="alt">
-          </picture>
-        </div>
-        <div class="fw__block fw__block--center">
-          <div style="max-width: 710px">
-            <h2>Изготовление по индивидуальному эскизу</h2>
-            <p>Краткое описание статьи специализация<br> создание обручальных колец</p>
-            <p><a class="more-link" href="#">Узнать больше <svg><use xlink:href="#double_chevron_right"></use></svg></a></p>
+      <section class="cols-3">
+        <div class="cols-3__container container">
+          <h2 class="title-1">Сертификат качества</h2>
+          <div class="cols-3__cols">
+            <div class="cols-3__col">
+              <img src="images/content/cols-3/img_4.svg" alt="">
+              <p>Каратность</p>
+            </div>
+            <div class="cols-3__col">
+              <img src="images/content/cols-3/img_5.svg" alt="">
+              <p>Качество огранки</p>
+            </div>
+            <div class="cols-3__col">
+              <img src="images/content/cols-3/img_6.svg" alt="">
+              <p>Чистота</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="cols-3">
-      <div class="cols-3__container container">
-        <h2 class="title-1">Сертификат качества</h2>
-        <div class="cols-3__cols">
-          <div class="cols-3__col">
-            <img src="images/content/cols-3/img_4.svg" alt="">
-            <p>Каратность</p>
-          </div>
-          <div class="cols-3__col">
-            <img src="images/content/cols-3/img_5.svg" alt="">
-            <p>Качество огранки</p>
-          </div>
-          <div class="cols-3__col">
-            <img src="images/content/cols-3/img_6.svg" alt="">
-            <p>Чистота</p>
-          </div>
-        </div>
-      </div>
+      <div class="delimiter2"></div>
     </section>
-
-    <div class="delimiter2"></div>
 
     <div class="grey-bg">
       <div class="stripes"><div></div><div></div><div></div><div></div><div></div></div>
 
-      <div class="news-slider-block">
+      <div id="6" class="news-slider-block main-page__section" data-title="<span class='text'><span>06.</span> Новости</span>">
         <h2 class="title-1">Новости</h2>
 
         <div class="js-news-slider news-slider" data-id="1">
@@ -904,11 +963,11 @@
         </div>
 
         <p class="text-center"><a class="highlighted-btn" href="#"><span>Все акции и новости</span></a></p>
+
+        <div class="delimiter2"></div>
       </div>
 
-      <div class="delimiter2"></div>
-
-      <div class="articles-block">
+      <div id="7" class="articles-block main-page__section" data-title="<span class='text'><span>07.</span> Статьи</span>">
         <div class="container">
           <h2 class="title-1">Полезные статьи</h2>
 
@@ -994,9 +1053,9 @@
 
           <p class="text-center"><a class="highlighted-btn" href="#"><span>Смотреть все статьи</span></a></p>
         </div>
-      </div>
 
-      <div class="delimiter2"></div>
+        <div class="delimiter2"></div>
+      </div>
     </div>
 
     //= template/action-banner.html
@@ -1009,8 +1068,10 @@
   //= template/float-bar.html
 
   //= template/scripts.html
+  <script src="js/page-nav.js"></script>
   <script src="js/main-slider.js"></script>
   <script src="js/product-slider.js"></script>
+  <script src="js/categories-slider.js"></script>
 
   <script src="js/simple-slider.js"></script>
   <script src="js/catalog-item.js"></script>

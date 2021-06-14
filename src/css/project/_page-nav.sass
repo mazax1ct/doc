@@ -1,0 +1,88 @@
+.page-nav
+  font-family: $primary_font
+  position: absolute !important
+  left: auto
+  right: 0
+  top: 0
+  bottom: 0
+  width: 180px
+  overflow: hidden
+  clip: rect(0,auto,auto,0)
+  z-index: 2
+
+  &__menu
+    left: auto
+    position: fixed
+    right: 0
+    top: 50%
+    transform: translateY(-50%)
+    width: 180px
+    display: flex
+    align-items: center
+    z-index: 99
+
+  &__list
+    list-style: none
+    margin: 0
+    position: absolute
+    padding: 0
+
+    &--light
+      .page-nav__link--active
+        color: $color_darkblue
+
+        &::after
+          background-color: $color_darkblue
+
+    &--dark
+      .page-nav__link--active
+        color: #fff
+
+        &::after
+          background-color: #fff
+
+  &__item
+
+  &__link
+    align-items: center
+    color: transparent
+    display: flex
+    justify-content: flex-end
+    width: 180px
+    height: 40px
+    font-size: 8px
+    font-weight: 700
+    letter-spacing: 2px
+    position: relative
+    padding-right: 40px
+    transition: all .3s ease
+    text-transform: uppercase
+    text-decoration: none
+    white-space: nowrap
+
+    @media(min-height: 980px)
+      height: 50px
+
+    @media(min-width: 1350px)
+      font-size: 10px
+
+    .text
+      display: none
+      margin-right: 12px
+
+      span
+        color: $color_lightblue
+
+    &::after
+      background-color: rgba($color_grey, 0.2)
+      content: ''
+      display: block
+      height: 1px
+      transition: all 0.3s
+      width: 24px
+
+    &--active
+      padding-right: 0
+
+      .text
+        display: block

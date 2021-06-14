@@ -1,7 +1,6 @@
 $(document).ready(function() {
   if($('.js-product-slider').length) {
     $('.js-product-slider').slick({
-      fade: true,
       arrows: false,
       mobileFirst: true,
       dots: true,

@@ -31,6 +31,10 @@ body
     .page-content
       position: relative
 
+    .main-page__section
+      position: relative
+      overflow: hidden
+
 .page-content
   flex: 1 0 auto
   overflow-x: hidden
@@ -172,7 +176,6 @@ body
   @media(min-width: 1350px)
     font-size: 36px
     line-height: 1.5
-    //min-height: 600px
 
   @media(min-width: 1900px)
     font-size: 41px
@@ -266,6 +269,7 @@ body
   display: block
   overflow: hidden
   position: relative
+  z-index: 1
 
   &:hover,
   &:focus
