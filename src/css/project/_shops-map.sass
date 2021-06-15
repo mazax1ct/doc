@@ -7,9 +7,11 @@
     position: relative
 
   &:last-child
+    margin-top: 90px
     margin-bottom: -90px
 
     @media(min-width: 1024px)
+      margin-top: 170px
       margin-bottom: -170px
 
   a,
@@ -103,3 +105,13 @@
         height: 26px
         margin-right: 24px
         width: 26px
+
+.action-banner + .shops-map,
+.blue-block + .shops-map,
+  margin-top: 0
+
+  &:last-child
+    margin-top: 0
+
+    @media(min-width: 1024px)
+      margin-top: 0

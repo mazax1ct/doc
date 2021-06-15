@@ -242,15 +242,35 @@
         box-shadow: inset 0 0 0 4px rgba($color_grey, 0.5), inset 0 0 0 4.5px #fff
 
   &--big
-    border-width: 2px
-    min-height: 78px
+    @media(min-width: 1350px)
+      border-width: 2px
+      min-height: 64px
+
+    @media(min-width: 1900px)
+      min-height: 78px
 
   &--giant
-    border-width: 2px
-    font-size: 26px
-    font-weight: 700
-    letter-spacing: 5px
-    min-height: 200px
+    min-height: 100px
+    max-width: 315px
+    width: 100%
+
+    @media(min-width: 768px)
+      max-width: 460px
+
+    @media(min-width: 1024px)
+      max-width: 680px
+
+    @media(min-width: 1900px)
+      border-width: 2px
+      font-size: 26px
+      font-weight: 700
+      letter-spacing: 5px
+      min-height: 200px
+      max-width: 1000px
+
+  &--310
+    max-width: 310px
+    width: 100%
 
 .highlighted-btn
   display: inline-block

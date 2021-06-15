@@ -11,23 +11,6 @@
     @media(min-width: 1900px)
       margin-bottom: 210px
 
-  &.main-page__section
-    &:not(:last-child)
-      margin-bottom: 0
-      padding-bottom: 50px
-
-      @media(min-width: 1024px)
-        margin-bottom: 0
-        padding-bottom: 80px
-
-      @media(min-width: 1350px)
-        margin-bottom: 0
-        padding-bottom: 150px
-
-      @media(min-width: 1900px)
-        margin-bottom: 0
-        padding-bottom: 210px
-
   &__container
     padding-left: 0
     padding-right: 0
@@ -35,6 +18,39 @@
     @media(min-width: 1024px)
       padding-left: 30px
       padding-right: 30px
+
+    @media(min-width: 1900px)
+      max-width: 1760px
+
+  &__title
+    padding-left: 30px
+    padding-right: 30px
+
+    & + .service-block__text
+      margin-top: -20px
+
+      @media(min-width: 1900px)
+        margin-top: -80px
+
+  &__text
+    font-family: $secondary-font
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 50px
+    max-width: 660px
+    padding-left: 30px
+    padding-right: 30px
+    text-align: center
+
+    @media(min-width: 1024px)
+      font-size: 16px
+      margin-bottom: 80px
+
+    @media(min-width: 1900px)
+      font-size: 18px
+      line-height: 1.5
+      letter-spacing: 2px
+      max-width: 850px
 
   &__list
     border-top: 1px solid rgba($color_gold, 0.3)

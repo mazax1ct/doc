@@ -15,7 +15,6 @@ body
   min-height: 100%
   min-width: 320px
   overflow-x: hidden
-  //overflow-wrap: break-word
 
   &.popover-open
     overflow: hidden
@@ -31,9 +30,86 @@ body
     .page-content
       position: relative
 
-    .main-page__section
-      position: relative
-      overflow: hidden
+.main-page
+  &__section
+    position: relative
+    overflow: hidden
+
+.section_1
+  margin-top: -50px
+  padding-bottom: 100px
+
+  @media(min-width: 1024px)
+    margin-top: -90px
+
+  @media(min-width: 1900px)
+    padding-bottom: 200px
+
+  .categories-block
+    margin-bottom: 0
+
+  .categories-block__container
+    background-color: #fff
+    padding-top: 50px
+
+    @media(min-width: 1024px)
+      padding-top: 90px
+
+.section_3
+  margin-top: -70px
+  overflow: hidden
+  padding-top: 70px
+  padding-bottom: 35px
+
+  @media(min-width: 1350px)
+    margin-top: -65px
+    padding-top: 65px
+    padding-bottom: 65px
+
+  .blue-block
+    margin-bottom: 0
+
+  .main-page__section
+    overflow: visible
+
+.section_4
+  padding-top: 50px
+  padding-bottom: 50px
+
+  @media(min-width: 768px)
+    padding-bottom: 80px
+
+  @media(min-width: 1350px)
+    padding-top: 95px
+
+  @media(min-width: 1900px)
+    padding-top: 195px
+    padding-bottom: 150px
+
+  .delimiter
+    margin-bottom: 0
+
+.section_6
+  .delimiter2
+    @media(min-width: 768px)
+      margin-bottom: 80px
+
+.section_7
+  padding-bottom: 50px
+  margin-bottom: -50px
+
+  @media(min-width: 768px)
+    padding-bottom: 80px
+    margin-bottom: -80px
+
+  @media(min-width: 1350px)
+    margin-bottom: -150px
+
+  @media(min-width: 1900px)
+    padding-bottom: 150px
+
+  .delimiter2
+    margin-bottom: 0
 
 .page-content
   flex: 1 0 auto
@@ -90,6 +166,23 @@ body
   @media(min-width: 1900px)
     margin-bottom: 100px
     margin-top: 100px
+
+.delimiter3
+  background-color: $color_grey
+  display: none
+  height: 110px
+  margin-left: auto
+  margin-right: auto
+  width: 1px
+
+  @media(min-width: 1024px)
+    display: block
+    margin-top: 120px
+    margin-bottom: 120px
+
+  @media(min-width: 1900px)
+    margin-top: 160px
+    margin-bottom: 160px
 
 .stripes
   display: none
@@ -172,6 +265,7 @@ body
   padding-top: 110px
   padding-bottom: 110px
   position: relative
+  z-index: 1
 
   @media(min-width: 1350px)
     font-size: 36px
@@ -192,6 +286,7 @@ body
     content: ''
     height: 70px
     left: 50%
+    transform: translateY(-50%)
     position: absolute
     width: 1px
 
@@ -199,13 +294,12 @@ body
       height: 130px
 
   &::before
-    transform: translateY(-50%)
     top: 0
 
   &::after
     bottom: 0
-    transform: translateY(50%)
     top: auto
+    transform: translateY(50%)
 
   &__container
     max-width: 830px
@@ -221,19 +315,45 @@ body
   &:not(:last-child)
     margin-bottom: 50px
 
-    @media(min-width: 1024px)
+    @media(min-width: 768px)
       margin-bottom: 80px
 
     @media(min-width: 1350px)
       margin-bottom: 150px
 
     @media(min-width: 1900px)
-      margin-bottom: 210px
+      margin-bottom: 200px
+
+  & + .delimiter3
+    @media(min-width: 1350px)
+      margin-top: -70px
 
   &__container
     @media(min-width: 768px)
       align-items: center
       display: flex
+
+    &--align_start
+      @media(min-width: 768px)
+        align-items: flex-start
+
+      .fw__block--center
+        @media(min-width: 768px)
+          justify-content: flex-start
+
+    &--delimiter
+      @media(min-width: 1024px)
+        position: relative
+
+      &::after
+        @media(min-width: 1024px)
+          background-color: $color_grey
+          content: ''
+          height: 110px
+          left: 50%
+          position: absolute
+          top: 0
+          width: 1px
 
   &__block
     @media(min-width: 768px)
@@ -247,9 +367,12 @@ body
         display: flex
         flex-direction: column
         justify-content: center
+        padding-top: 0
+        padding-bottom: 0
 
-      @media(min-width: 1024px)
-        padding: 60px
+      @media(min-width: 1350px)
+        padding-left: 60px
+        padding-right: 60px
 
     &--order_1
       @media(min-width: 768px)
@@ -264,6 +387,56 @@ body
       img
         display: block
         width: 100%
+
+    &--fw_img.fw__block--center
+      padding-top: 0
+      padding-bottom: 0
+
+      @media(max-width: 767px)
+        padding: 0
+
+.cols-3
+  &:not(:last-child)
+    @media(min-width: 768px)
+      margin-bottom: 80px
+
+    @media(min-width: 1350px)
+      margin-bottom: 100px
+
+    @media(min-width: 1900px)
+      margin-bottom: 160px
+
+  &__container
+    @media(min-width: 1900px)
+      max-width: 1860px
+
+  &__cols
+    @media(min-width: 768px)
+      display: flex
+
+  &__col
+    font-size: 14px
+    font-weight: 700
+    letter-spacing: 2px
+    margin-bottom: 75px
+    text-transform: uppercase
+    text-align: center
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      padding-left: 15px
+      padding-right: 15px
+      width: 33.33333%
+
+    @media(min-width: 1024px)
+      font-size: 16px
+
+    @media(min-width: 1350px)
+      font-size: 18px
+      letter-spacing: 3px
+
+    img
+      margin-bottom: 40px
 
 .video
   display: block

@@ -1,0 +1,122 @@
+.cards-list
+  @media(min-width: 768px)
+    display: flex
+    flex-wrap: wrap
+    margin-left: -20px
+    margin-right: -20px
+
+  &__item
+    margin-bottom: 40px
+
+    @media(min-width: 768px)
+      display: flex
+      justify-content: center
+      padding-left: 20px
+      padding-right: 20px
+      width: 50%
+
+    &:nth-last-child(1),
+    &:nth-last-child(2)
+      @media(min-width: 768px)
+        margin-bottom: 0
+
+.card
+  align-items: center
+  border: 1px solid $color_darkblue
+  display: flex
+  flex-direction: column
+  justify-content: center
+  margin-left: auto
+  margin-right: auto
+  max-width: 315px
+  padding: 10px
+  text-align: center
+  width: 100%
+
+  @media(min-width: 768px)
+    max-width: 460px
+
+  @media(min-width: 768px)
+    min-height: 480px
+
+  @media(min-width: 1350px)
+    max-width: 500px
+    min-height: 560px
+
+  @media(min-width: 1900px)
+    max-width: 640px
+    min-height: 700px
+
+  &--blue
+    background-color: $color_darkblue
+    color: #fff
+
+    .card__inner
+      border-color: #fff
+
+    .btn--type_8
+      border-color: #fff
+
+  &__inner
+    align-items: center
+    border: 1px solid $color_darkblue
+    display: flex
+    flex-direction: column
+    flex-grow: 1
+    justify-content: flex-end
+    padding: 60px 30px
+    width: 100%
+
+    @media(min-width: 1350px)
+      padding: 80px 60px
+
+    @media(min-width: 1900px)
+      padding: 120px 80px
+
+  &__title
+    font-size: 13px
+    font-weight: 700
+    letter-spacing: 2px
+    margin-bottom: 20px
+    text-transform: uppercase
+
+    @media(min-width: 768px)
+      font-size: 16px
+
+    @media(min-width: 1024px)
+      font-size: 18px
+      letter-spacing: 3px
+      margin-bottom: 40px
+
+    @media(min-width: 1350px)
+      font-size: 22px
+      margin-bottom: 50px
+
+    @media(min-width: 1900px)
+      font-size: 26px
+      letter-spacing: 5px
+      margin-bottom: 60px
+
+  &__text
+    margin-bottom: 20px
+
+    @media(min-width: 1024px)
+      margin-bottom: 50px
+
+    @media(min-width: 1350px)
+      font-size: 14px
+      font-weight: 500
+      letter-spacing: 2px
+      margin-bottom: 70px
+      text-transform: uppercase
+
+    @media(min-width: 1900px)
+      margin-bottom: 100px
+
+  .btn
+    font-size: 10px
+    max-width: 310px
+    width: 100%
+
+    @media(min-width: 768px)
+      font-size: 13px

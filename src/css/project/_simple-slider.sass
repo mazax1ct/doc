@@ -23,6 +23,7 @@
   white-space: nowrap
 
   @media(min-width: 768px)
+    min-width: 150px
     padding-left: 0
     padding-right: 0
     width: 150px
@@ -40,3 +41,56 @@
 
   .slick-next
     right: -15px
+
+.simple-slider-block-2
+  margin-bottom: 50px
+
+  @media(min-width: 768px)
+    align-items: flex-end
+    display: flex
+    justify-content: space-between
+    margin-bottom: 80px
+
+  @media(min-width: 1350px)
+    margin-bottom: 130px
+
+  .simple-slider-nav
+    display: none
+
+    @media(min-width: 768px)
+      display: block
+      margin-left: 40px
+
+.simple-slider-2
+  max-width: 900px
+  margin-left: -30px
+  margin-right: -30px
+
+  @media(min-width: 768px)
+    margin-left: 0
+    margin-right: 0
+    width: calc(100% - 190px)
+
+  @media(min-width: 1900px)
+    max-width: 1280px
+
+  &__slide
+    padding-left: 4px
+    padding-right: 4px
+
+    @media(min-width: 768px)
+      padding-left: 0
+      padding-right: 0
+
+  .slick-arrow
+    background-color: rgba($color_grey, 0.3)
+    top: 120px
+
+    svg
+      fill: #fff
+
+  .slick-prev
+    left: 15px
+
+  .slick-next
+    right: 15px

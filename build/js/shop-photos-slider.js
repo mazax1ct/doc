@@ -1,34 +1,37 @@
 $(document).ready(function() {
-  if($('.js-articles-slider').length) {
-    $('.js-articles-slider').each(function(index) {
+  if($('.js-shop-photos-slider').length) {
+    $('.js-shop-photos-slider').each(function(index) {
       $(this).slick({
         arrows: true,
         prevArrow: '<button class="slick-arrow slick-prev" aria-label="Назад" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#chevron_left"/></svg></button>',
         nextArrow: '<button class="slick-arrow slick-next" aria-label="Вперед" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#chevron_right"/></svg></button>',
         mobileFirst: true,
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1,
+        asNavFor: $('.js-shop-photos-slider-nav[data-id="'+$(this).attr('data-id')+'"]'),
         centerMode: true,
-        centerPadding: '0px',
-        asNavFor: $('.js-articles-slider-nav[data-id="'+$(this).attr('data-id')+'"]'),
+        centerPadding: '20px',
         responsive: [
           {
-            breakpoint: 1023,
+            breakpoint: 767,
             settings: {
-              slidesToShow: 3,
-              slidesToScroll: 1
+              arrows: false,
+              centerPadding: '28.22916%',
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: false
             }
-          }
+          },
         ]
       });
     });
   }
 
-  if($('.js-articles-slider-nav').length) {
-    $('.js-articles-slider-nav').each(function(index) {
+  if($('.js-shop-photos-slider-nav').length) {
+    $('.js-shop-photos-slider-nav').each(function(index) {
       $(this).slick({
         arrows: true,
         prevArrow: '<button class="slick-arrow slick-prev" aria-label="Назад" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#chevron_left"/></svg></button>',
@@ -44,7 +47,7 @@ $(document).ready(function() {
         focusOnSelect: false,
         draggable: false,
         swipe: false,
-        asNavFor: $('.js-articles-slider[data-id="'+$(this).attr('data-id')+'"]')
+        asNavFor: $('.js-shop-photos-slider[data-id="'+$(this).attr('data-id')+'"]')
       });
     });
   }
