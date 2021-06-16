@@ -1,0 +1,225 @@
+.reviews-form
+  margin-bottom: 100px
+
+  @media(min-width: 1024px)
+    display: flex
+
+  @media(min-width: 1900px)
+    margin-bottom: 220px
+
+  &__block
+    @media(min-width: 1024px)
+      width: 50%
+
+    &--image
+      display: none
+      position: relative
+
+      @media(min-width: 1024px)
+        display: block
+
+      img
+        display: block
+        height: 100%
+        object-fit: cover
+        width: 100%
+
+    &--form
+      padding-left: 30px
+      padding-right: 30px
+
+      @media(min-width: 1024px)
+        align-items: center
+        display: flex
+        justify-content: center
+
+      @media(min-width: 1900px)
+        padding-left: 60px
+        padding-right: 60px
+
+      .select-wrapper__label
+        @media(min-width: 1900px)
+          font-size: 14px
+          margin-bottom: 10px
+
+  &__title-block
+    background-color: rgba($color_grey, 0.6)
+    bottom: 40px
+    color: #fff
+    font-weight: 500
+    height: auto
+    left: 50%
+    max-width: 420px
+    position: absolute
+    padding: 40px
+    top: auto
+    transform: translateX(-50%)
+    text-align: center
+    width: 60%
+    z-index: 1
+
+    @media(min-width: 1900px)
+      font-size: 16px
+
+    &::after
+      border: 1px solid #fff
+      bottom: 5px
+      content: ''
+      left: 5px
+      position: absolute
+      right: 5px
+      top: 5px
+      z-index: 1
+
+  &__title
+    font-size: 18px
+    font-weight: 700
+    letter-spacing: 3px
+    margin-bottom: 15px
+    text-transform: uppercase
+
+    @media(min-width: 1900px)
+      font-size: 26px
+      letter-spacing: 5px
+
+.review
+  max-width: 1000px
+  margin-left: auto
+  margin-right: auto
+  position: relative
+
+  @media(min-width: 768px)
+    display: flex
+    justify-content: space-between
+
+  @media(min-width: 1900px)
+    max-width: 1200px
+
+  &:not(:last-child)
+    margin-bottom: 50px
+    padding-bottom: 50px
+
+    @media(min-width: 1350px)
+      margin-bottom: 100px
+      padding-bottom: 100px
+
+    &::after
+      background-color: $color_grey
+      bottom: 0
+      content: ''
+      height: 1px
+      left: 50%
+      position: absolute
+      top: auto
+      transform: translateX(-50%)
+      width: 70px
+      z-index: 1
+
+      @media(min-width: 1350px)
+        width: 110px
+
+  &__image-block
+    margin-left: auto
+    margin-right: auto
+    max-width: 420px
+    margin-bottom: 40px
+    text-align: center
+    width: 100%
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      margin-left: 0
+      margin-right: 0
+      min-width: 300px
+      width: 300px
+
+    @media(min-width: 1024px)
+      min-width: 420px
+      width: 420px
+
+    img
+      max-width: 180px
+      margin-left: auto
+      margin-right: auto
+
+      @media(min-width: 1024px)
+        max-width: 240px
+
+      @media(min-width: 1350px)
+        max-width: 324px
+
+  &__info
+    @media(min-width: 768px)
+      padding-left: 40px
+      max-width: 575px
+
+  &__date
+    color: $color_grey
+    font-size: 10px
+    font-weight: 400
+    letter-spacing: 2px
+    margin-bottom: 25px
+
+    @media(min-width: 1900px)
+      font-size: 13px
+
+  &__title
+    font-size: 18px
+    font-weight: 700
+    letter-spacing: 3px
+    margin-bottom: 20px
+    text-transform: uppercase
+
+  &__preview-text
+    margin-bottom: 20px
+
+  &__more
+    align-items: center
+    background-color: transparent
+    border: none
+    color: $color_darkblue
+    cursor: pointer
+    display: inline-flex
+    font-size: 10px
+    font-weight: 400
+    letter-spacing: 2px
+    padding: 5px 0
+    text-transform: uppercase
+    transition: color 0.3s
+
+    @media(min-width: 1900px)
+      font-size: 13px
+
+    &:hover,
+    &:focus
+      color: $color_lightblue
+
+    svg
+      fill: $color_lightblue
+      height: 10px
+      margin-left: 10px
+      width: 10px
+
+  &__answer
+    background-image: url("data:image/svg+xml,%3Csvg width='22' height='16' viewBox='0 0 22 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.19239 13.2343C1.19239 13.2343 6.5463 13.588 10.9763 16C16.6224 13.3475 20.8076 13.2343 20.8076 13.2343C19.7889 6.54996 22 0.615385 22 0.615385C22 0.615385 20.3891 2.56764 19.1651 3.51547C17.9411 4.46331 16.4645 5.24845 16.7408 6.54996C17.0172 7.85146 16.9462 8.65075 16.4645 9.02564C16.4645 9.02564 18.6755 8.96905 19.1572 8.16269C19.1572 8.16269 19.402 10.4757 15.7222 10.7374C14.7667 10.5464 13.9612 10.0796 13.3453 9.40053C12.4451 8.41026 12.1687 6.73386 12.9268 6.61362C13.6849 6.4863 14.3166 7.54023 14.3166 7.54023C14.4508 7.04509 16.1881 7.10875 16.3223 5.31211C16.4566 3.51547 13.0689 2.46154 12.5162 1.9664C12.0581 1.55614 11.308 0.473917 11.0711 0.120248V0.00707339C11.0711 0.00707339 11.0553 0.0282935 11.0316 0.0636605C11.0079 0.0212202 11 0 11 0L10.9921 0.113174C10.7552 0.466843 10.005 1.54907 9.54702 1.95933C8.99426 2.45446 5.59871 3.5084 5.74085 5.30504C5.87509 7.10168 7.60445 7.03802 7.74659 7.53316C7.74659 7.53316 8.38622 6.47922 9.1364 6.60654C9.88658 6.72679 9.61019 8.40318 8.71788 9.39346C8.10194 10.0725 7.28859 10.5393 6.33309 10.7303C2.59799 10.4828 2.83489 8.15561 2.83489 8.15561C3.31658 8.96198 5.52764 9.01857 5.52764 9.01857C5.04594 8.64368 4.97487 7.84439 5.25126 6.54288C5.53553 5.24138 4.06676 4.45623 2.83489 3.5084C1.61091 2.56057 0 0.608311 0 0.608311C0 0.608311 2.21106 6.54288 1.19239 13.2343Z' fill='%2308205C'/%3E%3C/svg%3E%0A")
+    background-position: 0 1px
+    background-repeat: no-repeat
+    margin-top: 40px
+    min-height: 20px
+    padding-left: 40px
+
+    @media(min-width: 1350px)
+      background-position: 0 3px
+
+    @media(min-width: 1900px)
+      background-position: 0 9px
+
+.review-slider
+  .slick-arrow
+    top: 65px
+
+    @media(min-width: 1024px)
+      top: 95px
+
+    @media(min-width: 1350px)
+      top: 145px
