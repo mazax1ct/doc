@@ -1,0 +1,264 @@
+.container
+  .offer
+    padding-left: 0
+    padding-right: 0
+
+.offer
+  margin-left: auto
+  margin-right: auto
+  max-width: 1860px
+  padding-left: 30px
+  padding-right: 30px
+
+  @media(min-width: 1024px)
+    display: flex
+
+  &--reverse
+    flex-direction: row-reverse
+
+    .offer__block--text
+      padding-right: 0
+
+      @media(min-width: 1024px)
+        padding-left: 15px
+
+      @media(min-width: 1350px)
+        padding-left: 30px
+
+      @media(min-width: 1900px)
+        padding-left: 60px
+
+    .offer__block--list
+      padding-left: 0
+
+      @media(min-width: 1024px)
+        padding-right: 15px
+
+      @media(min-width: 1350px)
+        padding-right: 30px
+
+      @media(min-width: 1900px)
+        padding-right: 60px
+
+  &:not(:last-child)
+    margin-bottom: 50px
+
+    @media(min-width: 768px)
+      margin-bottom: 80px
+
+    @media(min-width: 1350px)
+      margin-bottom: 150px
+
+    @media(min-width: 1900px)
+      margin-bottom: 200px
+
+  &__block
+    @media(min-width: 1024px)
+      width: 50%
+
+    &--text
+      @media(min-width: 1024px)
+        display: flex
+        flex-direction: column
+        padding-right: 15px
+
+      @media(min-width: 1350px)
+        padding-right: 30px
+
+      @media(min-width: 1900px)
+        padding-right: 60px
+
+    &--list
+      @media(min-width: 1024px)
+        padding-left: 15px
+
+      @media(min-width: 1350px)
+        padding-left: 30px
+
+      @media(min-width: 1900px)
+        padding-left: 60px
+
+  &__block-toggler
+    margin-bottom: 0
+
+    @media(min-width: 1024px)
+      margin-bottom: 20px
+
+    @media(min-width: 1350px)
+      margin-bottom: 40px
+
+    button
+      align-items: center
+      background-color: transparent
+      border: none
+      border-top: 1px solid transparent
+      border-bottom: 1px solid transparent
+      color: $color_darkblue
+      cursor: pointer
+      display: flex
+      font-size: 13px
+      font-weight: 700
+      display: flex
+      justify-content: space-between
+      letter-spacing: 2px
+      padding-top: 9px
+      padding-bottom: 9px
+      padding-left: 0
+      padding-right: 0
+      text-transform: uppercase
+      transition: border-color 0.3s, color 0.3s
+      width: 100%
+
+      @media(min-width: 1024px)
+        border: none
+        font-size: 18px
+        padding: 0
+
+      @media(min-width: 1900px)
+        font-size: 26px
+        letter-spacing: 5px
+
+      svg
+        fill: $color_darkblue
+        height: 14px
+        transition: fill 0.3s
+        width: 14px
+
+        @media(min-width: 1024px)
+          display: none
+
+      &.is-active
+        color: $color_lightblue
+        border-top-color: rgba($color_grey, 0.3)
+        border-bottom-color: rgba($color_grey, 0.3)
+
+        svg
+          fill: $color_lightblue
+          transform: rotate(-180deg)
+
+  &__text
+    display: none
+    padding-top: 20px
+    padding-bottom: 20px
+
+    @media(min-width: 1024px)
+      background-color: rgba($color_grey, 0.05)
+      display: flex !important
+      flex-direction: column
+      flex-grow: 1
+      justify-content: center
+      padding: 60px 30px 60px 30px
+
+    @media(min-width: 1350px)
+      padding: 60px
+
+  &__title
+    color: $color_darkblue
+    font-size: 13px
+    font-weight: 700
+    letter-spacing: 2px
+    margin-bottom: 20px
+    padding-top: 9px
+    padding-bottom: 9px
+    text-transform: uppercase
+
+    @media(min-width: 1024px)
+      font-size: 18px
+      padding-top: 0
+      padding-bottom: 0
+
+    @media(min-width: 1350px)
+      margin-bottom: 40px
+
+    @media(min-width: 1900px)
+      font-size: 26px
+      letter-spacing: 5px
+
+  &__list
+    display: grid
+    grid-template-columns: repeat(2,1fr)
+    grid-row-gap: 40px
+    grid-column-gap: 10px
+    grid-auto-flow: dense
+
+    @media(min-width: 1350px)
+      grid-column-gap: 30px
+
+    @media(min-width: 1900px)
+      grid-column-gap: 80px
+      grid-row-gap: 80px
+
+  &__list-item
+    .catalog-item
+      max-width: 365px
+
+      &__info-block
+        padding: 15px 0 0
+        position: relative
+
+        @media(min-width: 1024px)
+          padding: 15px
+
+        @media(min-width: 1900px)
+          padding: 25px
+
+      &__colors
+        display: none
+
+        @media(min-width: 1024px)
+          display: flex
+          opacity: 0
+          transition: opacity 0.3s
+
+      &__title
+        @media(min-width: 1900px)
+          font-size: 16px
+          font-weight: 500
+
+      &__description
+        display: block
+
+      &__btn
+        display: flex
+
+      &__info-block-dropdown
+        background-color: #fff
+        border: 1px solid $color_grey
+        border-top: none
+        display: none
+        left: -1px
+        padding: 15px
+        position: absolute
+        right: -1px
+        top: 0
+        z-index: 1
+
+        @media(min-width: 1900px)
+          padding: 25px
+
+      &:hover,
+      &:focus,
+      &:focus-within
+        z-index: 2
+
+        .catalog-item__image-block
+          @media(min-width: 1024px)
+            border-bottom-color: $color_grey
+
+        .catalog-item__image-togglers
+          @media(min-width: 1024px)
+            opacity: 1
+
+        .catalog-item__colors
+          @media(min-width: 1024px)
+            opacity: 1
+
+        .catalog-item__info-block
+          @media(min-width: 1024px)
+            padding: 15px
+
+          @media(min-width: 1900px)
+            padding: 25px
+
+        .catalog-item__info-block-dropdown
+          display: block

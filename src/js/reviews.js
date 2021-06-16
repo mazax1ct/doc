@@ -15,3 +15,8 @@ $(document).ready(function() {
     });
   }
 });
+
+$(document).on('click', '.js-scroll-to-reviews', function () {
+  var top = $('.reviews-form').offset().top - $('.header').height();
+  $('body, html').animate({scrollTop: top}, 1500);
+});
