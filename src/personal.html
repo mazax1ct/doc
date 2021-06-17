@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Личные данные</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/fonts-preload.html
+
+  //= template/preloader-styles.html
+
+  //= template/style.html
+</head>
+
+<body class="nobanner-page">
+  //= template/preloader.html
+
+  //= template/sprite.html
+
+  //= template/header.html
+
+  //= template/popovers.html
+
+  <main class="page-content">
+
+    <div class="container">
+      <div class="title-block">
+        <h1>ЛИЧНЫЙ КАБИНЕТ</h1>
+      </div>
+
+      <ul class="personal-menu">
+        <li class="personal-menu__item"><a class="personal-menu__link is-active" href="javascript:void(0)">ЛИЧНЫЕ ДАННЫЕ</a></li>
+        <li class="personal-menu__item"><a class="personal-menu__link" href="last-order.html">ПОСЛЕДНИЙ ЗАКАЗ</a></li>
+        <li class="personal-menu__item"><a class="personal-menu__link" href="history.html">ИСТОРИЯ ЗАКАЗОВ</a></li>
+        <li class="personal-menu__item"><a class="personal-menu__link" href="favorites.html">ИЗБРАННОЕ</a></li>
+        <li class="personal-menu__item"><a class="personal-menu__link" href="subscribes.html">ПОДПИСКИ</a></li>
+      </ul>
+
+      <form class="personal-form" method="" action="">
+        <div class="personal-form__row">
+          <div class="personal-form__cell">
+            <label>
+              <input class="input" name="name" type="text" placeholder="Имя*">
+            </label>
+          </div>
+          <div class="personal-form__cell">
+            <label>
+              <input class="input" name="last_name" type="text" placeholder="Фамилия*">
+            </label>
+          </div>
+        </div>
+        <div class="personal-form__row">
+          <div class="personal-form__cell">
+            <label>
+              <input class="js-phone-mask input" name="phone" type="text" placeholder="Телефон*">
+            </label>
+          </div>
+          <div class="personal-form__cell">
+            <label>
+              <input class="input" name="email" type="text" placeholder="Email*">
+            </label>
+          </div>
+        </div>
+        <div class="personal-form__row personal-form__row--top">
+          <div class="personal-form__cell">
+            <label>
+              <input class="input" name="birth" type="text" placeholder="Дата рождения">
+            </label>
+          </div>
+          <div class="personal-form__cell">
+            <label>
+              <input class="input" name="city" type="text" placeholder="Ваш город">
+            </label>
+          </div>
+        </div>
+
+        <div class="personal-form__row">
+          <div class="personal-form__cell">
+            <p class="personal-form__pass-title">СМЕНА ПАРОЛЯ</p>
+            <label>
+              <input class="input" name="password" type="password" placeholder="Пароль*">
+            </label>
+          </div>
+        </div>
+        <div class="personal-form__row">
+          <div class="personal-form__cell">
+            <label>
+              <input class="input" name="repassword" type="password" placeholder="Повторить пароль*">
+            </label>
+          </div>
+        </div>
+        <div class="personal-form__row">
+          <div class="personal-form__cell">
+            <button class="btn btn--type_1" type="submit">СОХРАНИТЬ ИЗМЕНЕНИЯ</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </main>
+
+  //= template/footer.html
+
+  //= template/float-bar.html
+
+  //= template/scripts.html
+
+</body>
+
+</html>

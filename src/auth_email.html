@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Авторизация/Регистрация</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/fonts-preload.html
+
+  //= template/preloader-styles.html
+
+  //= template/style.html
+</head>
+
+<body class="nobanner-page">
+  //= template/preloader.html
+
+  //= template/sprite.html
+
+  //= template/header.html
+
+  //= template/popovers.html
+
+  <main class="page-content">
+
+    <div class="container">
+      <div class="title-block">
+        <h1>ЛИЧНЫЙ КАБИНЕТ</h1>
+      </div>
+
+      <div class="auth-block">
+        <div class="auth-nav">
+          <button class="auth-nav__button is-active" type="button" data-target="1">ВХОД</button>
+          <button class="auth-nav__button" type="button" data-target="2">РЕГИСТРАЦИЯ</button>
+        </div>
+        <div class="auth-block__tab is-active" data-target="1">
+          <p class="auth-block__intro">Войдите в личный кабинет или зарегистрируйтесь, если вы новый пользователь.</p>
+          <form class="auth-block__form" action="">
+            <label class="input-label">
+              <input class="input" type="text" placeholder="введите email ">
+            </label>
+            <label class="input-label password-toggler-container">
+              <input class="input" type="password" placeholder="пароль*">
+              <button class="js-password-toggler password-toggler" type="button" title="Показать/скрыть пароль"><svg><use xlink:href="#show_pass"></use></svg></button>
+            </label>
+            <button class="btn btn--type_1" type="submit">Войти</button>
+          </form>
+          <p class="auth-block__terms">Нажимая на кнопку «подтвердить», вы подтверждаете свое согласие с <a href="#" target="_blank">политикой конфиденциальности</a> и даете согласие на обработку персональных данных.</p>
+          <p class="auth-block__link"><a href="auth.html">вход по телефону</a></p>
+          <p class="auth-block__socials-title">вход через соц сети</p>
+          <div class="auth-block__socials">
+            <a class="auth-block__social" href="#" title="Google"><svg><use xlink:href="#gplus"></use></svg></a>
+            <a class="auth-block__social" href="#" title="Вконтакте"><svg><use xlink:href="#vk"></use></svg></a>
+            <a class="auth-block__social" href="#" title="Facebook"><svg><use xlink:href="#fb"></use></svg></a>
+          </div>
+          <div class="auth-block__advantage">
+            <div class="auth-block__advantage-inner">
+              <p>Преимущества после авторизации</p>
+              <ul>
+                <li>Доступ к клубным ценам и акциям</li>
+                <li>Подарки на День рождения</li>
+                <li>Будьте в курсе новинок</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="auth-block__tab" data-target="2">
+          <p class="auth-block__intro">Добро пожаловать на страницу регистрации личного кабинета на нашем сайте.</p>
+          <form class="auth-block__form" action="">
+            <label class="input-label">
+              <input class="input" type="text" placeholder="имя*">
+            </label>
+            <label class="input-label">
+              <input class="js-phone-mask input" type="text" placeholder="Телефон*">
+            </label>
+            <label class="input-label">
+              <input class="input" type="text" placeholder="Email*">
+            </label>
+            <label class="input-label password-toggler-container">
+              <input class="input" type="password" placeholder="пароль*">
+              <button class="js-password-toggler password-toggler" type="button" title="Показать/скрыть пароль"><svg><use xlink:href="#show_pass"></use></svg></button>
+            </label>
+            <button class="btn btn--type_1" type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+          </form>
+          <p class="auth-block__terms">Нажимая на кнопку «зарегистрироваться», вы подтверждаете свое согласие с <a href="#" target="_blank">политикой конфиденциальности</a> и даете согласие на обработку персональных данных.</p>
+          <div class="auth-block__advantage">
+            <div class="auth-block__advantage-inner">
+              <p>Преимущества после регистрации</p>
+              <ul>
+                <li>Доступ к клубным ценам и акциям</li>
+                <li>Подарки на День рождения</li>
+                <li>Будьте в курсе новинок</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  //= template/footer.html
+
+  //= template/float-bar.html
+
+  //= template/scripts.html
+  <script src="js/auth-block.js"></script>
+</body>
+
+</html>
