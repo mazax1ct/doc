@@ -1,0 +1,95 @@
+.history
+
+  .fw
+    position: relative
+
+    &::after
+      @media(min-width: 768px)
+        top: 0
+        bottom: 0
+
+    &:first-child
+      &::after
+        @media(min-width: 768px)
+          top: 50%
+          bottom: 0
+
+      &::before
+        @media(min-width: 768px)
+          border-width: 2px
+          height: 12px
+          width: 12px
+
+    &:last-child
+      &::after
+        @media(min-width: 768px)
+          top: 0
+          bottom: 50%
+
+      &::before
+        @media(min-width: 768px)
+          border-width: 3px
+          height: 20px
+          width: 20px
+
+    &::after
+      @media(min-width: 768px)
+        background-color: $color_gold
+        content: ''
+        left: 50%
+        position: absolute
+        transform: translateX(-50%)
+        width: 1px
+        z-index: 1
+
+    &::before
+      @media(min-width: 768px)
+        border: 3px solid #fff
+        background-color: $color_gold
+        border-radius: 50%
+        content: ''
+        height: 16px
+        left: 50%
+        outline: 1px solid $color_gold
+        position: absolute
+        top: 50%
+        transform: translate(-50%, -50%)
+        width: 16px
+
+    &:not(:last-child)
+      margin-bottom: 0
+      padding-bottom: 50px
+
+      @media(min-width: 768px)
+        padding-bottom: 80px
+
+      @media(min-width: 1350px)
+        padding-bottom: 150px
+
+      @media(min-width: 1900px)
+        padding-bottom: 200px
+
+  .fw__block--fw_img.fw__block--order_2
+    @media(min-width: 768px)
+      padding-left: 30px
+      padding-right: 0
+
+    @media(min-width: 1350px)
+      padding-left: 60px
+      padding-right: 0
+
+  .fw__block--fw_img
+    @media(min-width: 768px)
+      padding-right: 30px
+
+    @media(min-width: 1350px)
+      padding-right: 60px
+
+  .fw__block--fw_img.fw__block--center
+    @media(min-width: 768px)
+      padding-right: 30px
+      padding-left: 30px
+
+    @media(min-width: 1350px)
+      padding-right: 60px
+      padding-right: 60px
