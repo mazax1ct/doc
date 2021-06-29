@@ -54,10 +54,33 @@
 
   &__title
     color: $color_gold
-    font-size: 13px
     font-weight: 500
     text-transform: uppercase
     text-align: center
+
+    @media(min-width: 1900px)
+      font-size: 18px
+      font-weight: 700
+      letter-spacing: 3px
+
+    &:hover
+      &::after,
+      &::before
+        background-color: $color_lightblue
+        border-color: $color_lightblue
+
+    a
+      color: $color_gold
+      text-decoration: none
+
+      &:hover
+        color: $color_darkblue
+        text-decoration: underline
+
+        &::after,
+        &::before
+          background-color: $color_lightblue
+          border-color: $color_lightblue
 
     &::after,
     &::before
@@ -70,6 +93,7 @@
       margin-left: 12px
       margin-right: 12px
       position: relative
+      transition: background-color 0.3s, border-color 0.3s
       vertical-align: middle
       width: 6px
 

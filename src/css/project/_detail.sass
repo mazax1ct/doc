@@ -432,16 +432,8 @@
       transition: fill 0.3s
       width: 10px
 
-  &__price-sizes
-    margin-bottom: 60px
-
-    @media(min-width: 1350px)
-      align-items: flex-end
-      display: flex
-      justify-content: space-between
-      flex-direction: row-reverse
-
   &__sizes
+    margin-bottom: 50px
 
   &__sizes-title
     font-family: $primary_font
@@ -510,12 +502,8 @@
         width: 48px
 
   &__price-block
-    margin-bottom: 60px
+    margin-bottom: 50px
     white-space: nowrap
-
-    @media(min-width: 1350px)
-      margin-bottom: 29px
-      text-align: right
 
   &__old-price
     color: rgba($color_grey, 0.3)
@@ -642,12 +630,19 @@
     font-size: 13px
     font-weight: 700
     letter-spacing: 2px
-    margin-bottom: 50px
+    margin-bottom: 30px
     text-transform: uppercase
 
     @media(min-width: 1024px)
       font-size: 18px
       letter-spacing: 3px
+      text-align: center
+
+  &__pair-buy-sizes
+    font-weight: 500
+    margin-bottom: 10px
+
+    @media(min-width: 1024px)
       text-align: center
 
   &__pair-add-cart
@@ -1226,8 +1221,8 @@
     @media(min-width: 768px)
       opacity: 1
 
-    &::after,
-    &::before
+    //&::after,
+    //&::before
       content: ''
       height: 18px
       opacity: 0.5
@@ -1236,11 +1231,11 @@
       transform: translateY(-50%)
       width: 9px
 
-    &::after
+    //&::after
       background-image: url("data:image/svg+xml,%3Csvg width='9' height='18' viewBox='0 0 12 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 19L2 10L11 1' stroke='%236F7D9D' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A")
       left: 15px
 
-    &::before
+    //&::before
       background-image: url("data:image/svg+xml,%3Csvg width='9' height='18' viewBox='0 0 12 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 19L10 10L0.999998 1' stroke='%236F7D9D' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A")
       left: auto
       right: 15px
@@ -1296,7 +1291,11 @@
     display: flex
     justify-content: flex-end
     margin-bottom: 5px
+    margin-top: 5px
     text-align: right
+
+    @media(min-width: 768px)
+      margin-top: 0
 
     img
       display: block
@@ -1354,3 +1353,17 @@
 
     @media(min-width: 1900px)
       height: 78px
+
+.zoom
+  background-color: #fbfcff
+  border: 1px solid rgba($color_grey, 0.3)
+
+  img
+    mix-blend-mode: multiply
+
+  &:not(:hover)
+    background-image: none !important
+
+  &:hover
+    picture
+      opacity: 0

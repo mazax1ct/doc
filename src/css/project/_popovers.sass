@@ -152,7 +152,10 @@
     &::after
       display: block
       content: ''
-      min-height: 50px
+      min-height: 90px
+
+      @media(min-width: 1024px)
+        min-height: 50px
 
   &__title
     font-size: 13px

@@ -119,6 +119,21 @@ body
   @media(min-width: 1024px)
     padding-bottom: 170px
 
+  &.shaded
+    position: relative
+    z-index: 1
+
+    &::before
+      background-color: rgba($color_darkblue, 0.5)
+      bottom: 0
+      content: ''
+      left: 0
+      position: fixed
+      right: 0
+      top: 0
+      z-index: 10
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
 .container
   margin-left: auto
   margin-right: auto

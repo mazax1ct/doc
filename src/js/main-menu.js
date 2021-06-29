@@ -44,3 +44,12 @@ $(document).on('click', '.main-menu__back', function () {
   $(this).closest('.main-menu__dropdown').fadeOut();
   return false;
 });
+
+//шейд при ховере на пункт меню с выпадашкой
+$('.main-menu__item.root').hover(
+  function() {
+    $('.page-content').addClass('shaded');
+  }, function() {
+    $('.page-content').removeClass('shaded');
+  }
+);

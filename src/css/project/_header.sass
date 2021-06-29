@@ -12,7 +12,7 @@
 
     .header__logo
       height: 59px
-      transform: translateY(0)
+      transform: translate(0, 0)
       width: 86px
 
       @media(min-width: 1024px)
@@ -106,7 +106,7 @@
 
     .header__logo
       height: 59px
-      transform: translateY(0)
+      transform: translate(0, 0)
       width: 86px
 
       @media(min-width: 1024px)
@@ -424,15 +424,17 @@
   &__logo
     display: block
     height: 80px
+    overflow: hidden
     transform: translateY(13px)
     transition: height 0.3s, width 0.3s, transform 0.3s
     width: 116px
 
     @media(min-width: 1024px)
+      height: 108px
       left: 50%
       position: absolute
-      transform: translateX(-50%)
       top: 20px
+      transform: translate(-50%, 0)
       width: 156px
 
     svg

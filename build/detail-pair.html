@@ -262,7 +262,7 @@
     </div>
     <nav class="main-menu">
       <ul class="main-menu__list">
-        <li class="main-menu__item">
+        <li class="main-menu__item root">
           <a class="main-menu__link" href="#">О бренде</a> <button class="main-menu__opener" type="button"><svg><use xlink:href="#chevron_right"></use></svg></button>
           <div class="main-menu__dropdown">
             <p class="main-menu__dropdown-title"><button class="main-menu__back" type="button"><svg><use xlink:href="#chevron_left"></use></svg></button> СВАДЬБА</p>
@@ -1175,10 +1175,6 @@
                     </div>
                     <p class="detail__shit"><a class="js-popover-opener" href="#" data-popover="sizes-guide">Как определить свой размер?</a></p>
                   </div>
-                  <div class="detail__price-block">
-                    <p class="detail__old-price">93 000 руб.</p>
-                    <p class="detail__price">41 600 руб.</p>
-                  </div>
                   <div class="detail__quantity">
                     <h2 class="detail__quantity-title">Количество</h2>
                     <div class="quantity">
@@ -1186,6 +1182,10 @@
                       <input class="quantity__input" type="text" value="1" readonly>
                       <button class="js-quantity-increase quantity__button" type="button" title="Увеличить"><svg><use xlink:href="#plus"></use></svg></button>
                     </div>
+                  </div>
+                  <div class="detail__price-block">
+                    <p class="detail__old-price">93 000 руб.</p>
+                    <p class="detail__price">41 600 руб.</p>
                   </div>
                   <a class="detail__add-cart btn btn--type_5" href="cart.html">Добавить в корзину</a>
                 </div>
@@ -1307,10 +1307,6 @@
                     </div>
                     <p class="detail__shit"><a class="js-popover-opener" href="#" data-popover="sizes-guide">Как определить свой размер?</a></p>
                   </div>
-                  <div class="detail__price-block">
-                    <p class="detail__old-price">93 000 руб.</p>
-                    <p class="detail__price">41 600 руб.</p>
-                  </div>
                   <div class="detail__quantity">
                     <h2 class="detail__quantity-title">Количество</h2>
                     <div class="quantity">
@@ -1319,6 +1315,10 @@
                       <button class="js-quantity-increase quantity__button" type="button" title="Увеличить"><svg><use xlink:href="#plus"></use></svg></button>
                     </div>
                   </div>
+                  <div class="detail__price-block">
+                    <p class="detail__old-price">93 000 руб.</p>
+                    <p class="detail__price">41 600 руб.</p>
+                  </div>
                   <a class="detail__add-cart btn btn--type_5" href="cart.html">Добавить в корзину</a>
                 </div>
               </div>
@@ -1326,6 +1326,9 @@
 
             <div class="detail__pair-buy">
               <h3 class="detail__pair-buy-title">Стоимость за два кольца:</h3>
+              <p class="detail__pair-buy-sizes">Женское кольцо: <span>15.5</span></p>
+              <p class="detail__pair-buy-sizes">Мужское кольцо: <span>21</span></p>
+              <br>
               <p class="detail__old-price">93 000 руб.</p>
               <p class="detail__price">41 600 руб.</p>
               <a class="detail__pair-add-cart btn btn--type_1" href="#">Купить обручальную пару</a>
@@ -2679,6 +2682,8 @@
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jquery.inputmask.min.js"></script>
   <script src="js/inputmask-init.js"></script>
+  <script src="js/select2.full.min.js"></script>
+  <script src="js/select2-addon.js"></script>
   <script src="js/header.js"></script>
   <script src="js/scroll-compensate.js"></script>
   <script src="js/popovers.js"></script>
@@ -2686,6 +2691,7 @@
   <script src="js/main-menu.js"></script>
   <script src="js/password-toggler.js"></script>
   <script src="js/footer.js"></script>
+  <script src="js/float-bar.js"></script>
   <script src="js/main.js"></script>
   <script src="js/quantity.js"></script>
   <script src="js/preloader.js"></script>

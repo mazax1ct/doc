@@ -6,7 +6,7 @@ $(document).ready(function() {
         prevArrow: '<button class="slick-arrow slick-prev" aria-label="Назад" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#chevron_left"/></svg></button>',
         nextArrow: '<button class="slick-arrow slick-next" aria-label="Вперед" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#chevron_right"/></svg></button>',
         mobileFirst: true,
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 300,
         slidesToShow: 1,
@@ -15,6 +15,12 @@ $(document).ready(function() {
         centerPadding: '0px',
         asNavFor: $('.js-articles-slider-nav[data-id="'+$(this).attr('data-id')+'"]'),
         responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              dots: false
+            }
+          },
           {
             breakpoint: 1023,
             settings: {

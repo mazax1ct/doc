@@ -30,8 +30,6 @@ $(document).ready(function () {
 
     var sections = getSections ();
 
-    console.log(sections);
-
     function makeMenu (arr, id, cls, title) {
       var menu = '';
 

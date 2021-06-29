@@ -38,8 +38,8 @@
 
     &:hover,
     &:focus
-      background-color: lighten($color_darkblue, 10%)
-      border-color: lighten($color_darkblue, 10%)
+      background-color: $color_lightblue
+      border-color: $color_lightblue
       color: #fff
 
     &:active
@@ -159,7 +159,7 @@
     box-shadow: inset 0 0 0 4px #fff, inset 0 0 0 4.5px $color_darkblue
     color: $color_darkblue
     flex-direction: column
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s
 
     &:hover,
     &:focus
@@ -243,7 +243,6 @@
 
   &--big
     @media(min-width: 1350px)
-      //border-width: 2px
       min-height: 64px
 
     @media(min-width: 1900px)

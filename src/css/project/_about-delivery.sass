@@ -1,16 +1,18 @@
 .about-delivery
-  display: flex
-  margin-bottom: 50px
-
-  @media(min-width: 1024px)
+  @media(min-width: 768px)
+    display: flex
     margin-bottom: 100px
 
   @media(min-width: 1900px)
     margin-bottom: 160px
 
   &__item
+    margin-bottom: 50px
     text-align: center
-    width: 50%
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      width: 50%
 
   &__title
     font-size: 13px

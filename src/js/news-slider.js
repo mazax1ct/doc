@@ -4,7 +4,7 @@ $(document).ready(function() {
       $(this).slick({
         arrows: false,
         mobileFirst: true,
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 300,
         slidesToShow: 1,
@@ -17,6 +17,7 @@ $(document).ready(function() {
             breakpoint: 767,
             settings: {
               initialSlide: 1,
+              dots: false,
               arrows: true,
               prevArrow: '<button class="slick-arrow slick-prev" aria-label="Назад" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#chevron_left"/></svg></button>',
               nextArrow: '<button class="slick-arrow slick-next" aria-label="Вперед" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#chevron_right"/></svg></button>',

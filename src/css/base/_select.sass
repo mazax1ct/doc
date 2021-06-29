@@ -25,10 +25,11 @@
 
   &__container
     display: block
+    font-size: 13px
     height: 54px
-    position: relative
+    position: relative      
 
-    &::after
+    //&::after
       background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.7461 1.10791L6.37275 5.21569L1.9994 1.10791' stroke='%236F7D9D' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A")
       background-color: transparent
       background-position: 50% 50%
@@ -42,7 +43,8 @@
       transform: translate(-50%, -50%)
       width: 12px
 
-    select
+
+    //select
       appearance: none
       background-color: #fff
       box-shadow: none
@@ -61,18 +63,12 @@
       text-transform: uppercase
       width: 100%
 
-      @media(min-width: 1350px)
-        font-size: 16px
-
-      @media(min-width: 1900px)
-        font-size: 18px
-
-      &::-ms-expand
+      //&::-ms-expand
         display: none
 
-      &:focus
+      //&:focus
         border-color: $color_darkblue
         color: $color_darkblue
 
-      &:disabled
+      //&:disabled
         opacity: 0.5
