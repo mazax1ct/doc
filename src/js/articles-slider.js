@@ -24,6 +24,7 @@ $(document).ready(function() {
           {
             breakpoint: 1023,
             settings: {
+              dots: false,
               slidesToShow: 3,
               slidesToScroll: 1
             }

@@ -2,6 +2,7 @@ $(document).ready(function() {
   if($('.js-main-slider').length) {
     $('.js-main-slider').slick({
       autoplay: true,
+      autoplaySpeed: 5000,
       fade: true,
       arrows: false,
       mobileFirst: true,
@@ -17,6 +18,7 @@ $(document).ready(function() {
   if($('.js-main-slider-nav').length) {
     $('.js-main-slider-nav').slick({
       autoplay: true,
+      autoplaySpeed: 5000,
       vertical: true,
       arrows: true,
       prevArrow: '<button class="slick-arrow slick-prev" aria-label="Назад" type="button"></button>',
