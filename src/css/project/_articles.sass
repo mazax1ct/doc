@@ -276,10 +276,12 @@
       letter-spacing: 3px
 
 .article-nav
+  display: flex
+  justify-content: space-between
+  position: relative
+
   @media(min-width: 768px)
-    display: flex
     min-height: 70px
-    position: relative
 
   @media(min-width: 1350px)
     min-height: 110px
@@ -307,23 +309,36 @@
       width: 50%
 
     &:first-child
-      margin-bottom: 50px
+      .article-nav__link
+        @media(max-width: 767px)
+          flex-direction: row-reverse
 
-      @media(min-width: 768px)
-        margin-bottom: 0
+        @media(min-width: 768px)
+          align-items: flex-end
 
     &:last-child
       @media(min-width: 768px)
+        align-items: flex-end
         text-align: right
 
+        .article-nav__link
+          @media(max-width: 767px)
+            flex-direction: row-reverse
+
+          @media(min-width: 768px)
+            align-items: flex-start
+
   &__link
+    align-items: center
     display: inline-flex
-    flex-direction: column
     height: 100%
     max-width: 350px
     vertical-align: top
     text-transform: uppercase
     text-decoration: none
+
+    @media(min-width: 768px)
+      flex-direction: column
 
     @media(min-width: 768px) and (max-width: 1023px)
       max-width: 280px
@@ -365,19 +380,22 @@
     display: block
     font-size: 10px
     font-weight: 400
-    margin-bottom: 10px
+
+    @media(min-width: 768px)
+      margin-bottom: 10px
 
     @media(min-width: 1350px)
       font-size: 14px
       margin-bottom: 15px
 
   &__link-text
-    align-items: center
-    display: flex
-    flex-grow: 1
-    font-size: 13px
-    font-weight: 700
-    letter-spacing: 2px
+    @media(min-width: 768px)
+      align-items: center
+      display: flex
+      flex-grow: 1
+      font-size: 13px
+      font-weight: 700
+      letter-spacing: 2px
 
     @media(min-width: 1024px)
       font-size: 16px
@@ -385,3 +403,9 @@
     @media(min-width: 1350px)
       font-size: 18px
       letter-spacing: 3px
+
+    span
+      display: none
+
+      @media(min-width: 768px)
+        display: block
