@@ -16,7 +16,7 @@
 
   .breadcrumbs
     @media(min-width: 1900px)
-      margin-bottom: 50px
+      margin-bottom: 50px !important
 
   &__top
     margin-bottom: 100px
@@ -858,13 +858,17 @@
 
     @media(min-width: 1024px)
       font-family: $secondary_font
-      font-size: 48px
+      font-size: 36px
       margin-bottom: 70px
       text-align: center
       text-transform: none
 
     @media(min-width: 1350px)
+      font-size: 40px
       margin-bottom: 100px
+
+    @media(min-width: 1600px)
+      font-size: 48px
 
     @media(min-width: 1900px)
       font-size: 60px
