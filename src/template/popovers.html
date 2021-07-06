@@ -1,151 +1,169 @@
 <div class="shade">
-  <div class="locations popover" tabindex="0">
-    <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg><use xlink:href="#close"></use></svg> <span>Закрыть</span></button>
-    <div class="popover__inner">
-      <button class="locations__aim" type="button"><svg><use xlink:href="#aim"></use></svg>Определить город автоматически</button>
-      <form class="locations__form" action="" method="get">
-        <input class="locations__form-input input" type="text" placeholder="Выберите город">
-        <button class="locations__form-submit btn btn--type_4" type="submit">Изменить</button>
-      </form>
-      <p class="locations__list-title">Адреса магазинов в твоём городе:</p>
-      <div class="locations__list">
-        <a class="locations__item" href="#">
-          <span class="locations__item-title">Санкт-Петербург, ул. Чайковского, дом 22</span>
-          <span class="locations__item-address">Режим работы: с 12:00 до 21:00</span>
-        </a>
-        <a class="locations__item" href="#">
-          <span class="locations__item-title">Санкт-Петербург, пр. Дальневосточный, 12</span>
-          <span class="locations__item-address">Режим работы: с 12:00 до 21:00</span>
-        </a>
-        <a class="locations__item" href="#">
-          <span class="locations__item-title">Санкт-Петербург, пр. Светлановский, 109</span>
-          <span class="locations__item-address">Режим работы: с 12:00 до 21:00</span>
-        </a>
-        <a class="locations__item" href="#">
-          <span class="locations__item-title">Санкт-Петербург, Пражская, д. 48/50</span>
-          <span class="locations__item-address">Режим работы: с 11:00 до 21:00</span>
-        </a>
-      </div>
-      <div class="locations__contacts-block">
-        <p class="locations__contacts-title">Позвонить нам</p>
-        <p class="locations__phone-link"><a href="tel:+78008888888">8 800 888 88 88</a></p>
-        <div class="socials">
-          <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Instagram"><svg><use xlink:href="#inst"></use></svg></a>
-          <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Vkontakte"><svg><use xlink:href="#vk"></use></svg></a>
-          <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Facebook"><svg><use xlink:href="#fb"></use></svg></a>
+    <div class="locations popover" tabindex="0">
+        <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg>
+                <use xlink:href="#close"></use>
+            </svg> <span>Закрыть</span></button>
+        <div class="popover__inner">
+            <button class="locations__aim" type="button"><svg>
+                    <use xlink:href="#aim"></use>
+                </svg>Определить город автоматически</button>
+            <form class="locations__form" action="" method="get">
+                <input class="locations__form-input input" type="text" placeholder="Выберите город">
+                <button class="locations__form-submit btn btn--type_4" type="submit">Изменить</button>
+            </form>
+            <p class="locations__list-title">Адреса магазинов в твоём городе:</p>
+            <div class="locations__list">
+                <a class="locations__item" href="#">
+                    <span class="locations__item-title">Санкт-Петербург, ул. Чайковского, дом 22</span>
+                    <span class="locations__item-address">Режим работы: с 12:00 до 21:00</span>
+                </a>
+                <a class="locations__item" href="#">
+                    <span class="locations__item-title">Санкт-Петербург, пр. Дальневосточный, 12</span>
+                    <span class="locations__item-address">Режим работы: с 12:00 до 21:00</span>
+                </a>
+                <a class="locations__item" href="#">
+                    <span class="locations__item-title">Санкт-Петербург, пр. Светлановский, 109</span>
+                    <span class="locations__item-address">Режим работы: с 12:00 до 21:00</span>
+                </a>
+                <a class="locations__item" href="#">
+                    <span class="locations__item-title">Санкт-Петербург, Пражская, д. 48/50</span>
+                    <span class="locations__item-address">Режим работы: с 11:00 до 21:00</span>
+                </a>
+            </div>
+            <div class="locations__contacts-block">
+                <p class="locations__contacts-title">Позвонить нам</p>
+                <p class="locations__phone-link"><a href="tel:+78008888888">8 800 888 88 88</a></p>
+                <div class="socials">
+                    <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Instagram"><svg>
+                            <use xlink:href="#inst"></use>
+                        </svg></a>
+                    <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Vkontakte"><svg>
+                            <use xlink:href="#vk"></use>
+                        </svg></a>
+                    <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Facebook"><svg>
+                            <use xlink:href="#fb"></use>
+                        </svg></a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 
-  <div class="search popover popover--wide" tabindex="0">
-    <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg><use xlink:href="#close"></use></svg> <span>Закрыть</span></button>
-    <a class="search__to-catalog" href="#">Перейти в каталог <svg><use xlink:href="#chevron_right"></use></svg></a>
-    <div class="popover__inner">
-      <p class="search__title">Поиск по каталогу</p>
-      <div class="search__form-block">
-        <form class="search__form" action="search.html" method="get">
-          <input class="search__form-input" name="q" type="text" value="" placeholder="Поиск по каталогу" autocomplete="off">
-          <button class="search__form-submit" type="submit" title="Искать" value="Искать"><svg><use xlink:href="#search"></use></svg></button>
-        </form>
-      </div>
-      <div class="search__vars">
-        <div class="search__vars-block">
-          <p class="search__vars-title">По запросу</p>
-          <ul class="search__vars-menu">
-            <li><button type="button">Изумруд</button></li>
-            <li><button type="button">Золотые серьги с изумрудом</button></li>
-            <li><button type="button">Золотое кольцо с изумрудом</button></li>
-            <li><button type="button">Серьги с изумрудом</button></li>
-            <li><button type="button">Кольцо с изумрудом</button></li>
-            <li><button type="button">С изумрудом</button></li>
-            <li><button type="button">Кольца золотые для женщины с изумрудом</button></li>
-            <li><button type="button">Подвеска с изумрудом</button></li>
-          </ul>
+    <div class="search popover popover--wide" tabindex="0">
+        <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg>
+                <use xlink:href="#close"></use>
+            </svg> <span>Закрыть</span></button>
+        <a class="search__to-catalog" href="#">Перейти в каталог <svg>
+                <use xlink:href="#chevron_right"></use>
+            </svg></a>
+        <div class="popover__inner">
+            <p class="search__title">Поиск по каталогу</p>
+            <div class="search__form-block">
+                <form class="search__form" action="search.html" method="get">
+                    <input class="search__form-input" name="q" type="text" value="" placeholder="Поиск по каталогу" autocomplete="off">
+                    <button class="search__form-submit" type="submit" title="Искать" value="Искать"><svg>
+                            <use xlink:href="#search"></use>
+                        </svg></button>
+                </form>
+            </div>
+            <div class="search__vars">
+                <div class="search__vars-block">
+                    <p class="search__vars-title">По запросу</p>
+                    <ul class="search__vars-menu">
+                        <li><button type="button">Изумруд</button></li>
+                        <li><button type="button">Золотые серьги с изумрудом</button></li>
+                        <li><button type="button">Золотое кольцо с изумрудом</button></li>
+                        <li><button type="button">Серьги с изумрудом</button></li>
+                        <li><button type="button">Кольцо с изумрудом</button></li>
+                        <li><button type="button">С изумрудом</button></li>
+                        <li><button type="button">Кольца золотые для женщины с изумрудом</button></li>
+                        <li><button type="button">Подвеска с изумрудом</button></li>
+                    </ul>
+                </div>
+                <div class="search__vars-block">
+                    <p class="search__vars-title">Подборки</p>
+                    <ul class="search__vars-menu">
+                        <li><button type="button">Кольца для помолвки</button></li>
+                        <li><button type="button">Комплекты</button></li>
+                        <li><button type="button">Украшения для невесты</button></li>
+                        <li><button type="button">Украшения для жениха</button></li>
+                        <li><button type="button">Золотые серьги</button></li>
+                        <li><button type="button">Обручальные кольца</button></li>
+                        <li><button type="button">Парные кольца</button></li>
+                    </ul>
+                </div>
+                <div class="search__vars-block">
+                    <a class="search__to-catalog2" href="#">Перейти в каталог <svg>
+                            <use xlink:href="#chevron_right"></use>
+                        </svg></a>
+                    <p class="search__vars-title">Популярные товары</p>
+                    <ul class="popular-list">
+                        <li class="popular-list__item">
+                            <div class="popular">
+                                <a class="popular__link" href="detail.html">
+                                    <span class="popular__image"><img src="images/content/popular/img_1.jpg" srcset="images/content/popular/img_1@2x.jpg 2x" alt="Кольцо с бриллиантами"></span>
+                                    <span class="popular__title">Кольцо с бриллиантами</span>
+                                </a>
+                                <p class="popular__price popular__price--old">93 000 руб.</p>
+                                <p class="popular__price">41 600 руб.</p>
+                            </div>
+                        </li>
+                        <li class="popular-list__item">
+                            <div class="popular">
+                                <a class="popular__link" href="detail.html">
+                                    <span class="popular__image"><img src="images/content/popular/img_1.jpg" srcset="images/content/popular/img_1@2x.jpg 2x" alt="Кольцо с бриллиантами"></span>
+                                    <span class="popular__title">Кольцо с бриллиантами</span>
+                                </a>
+                                <p class="popular__price popular__price--old">93 000 руб.</p>
+                                <p class="popular__price">41 600 руб.</p>
+                            </div>
+                        </li>
+                        <li class="popular-list__item">
+                            <div class="popular">
+                                <a class="popular__link" href="detail.html">
+                                    <span class="popular__image"><img src="images/content/popular/img_1.jpg" srcset="images/content/popular/img_1@2x.jpg 2x" alt="Кольцо с бриллиантами"></span>
+                                    <span class="popular__title">Кольцо с бриллиантами</span>
+                                </a>
+                                <p class="popular__price popular__price--old">93 000 руб.</p>
+                                <p class="popular__price">41 600 руб.</p>
+                            </div>
+                        </li>
+                        <li class="popular-list__item">
+                            <div class="popular">
+                                <a class="popular__link" href="detail.html">
+                                    <span class="popular__image"><img src="images/content/popular/img_1.jpg" srcset="images/content/popular/img_1@2x.jpg 2x" alt="Кольцо с бриллиантами"></span>
+                                    <span class="popular__title">Кольцо с бриллиантами</span>
+                                </a>
+                                <p class="popular__price popular__price--old">93 000 руб.</p>
+                                <p class="popular__price">41 600 руб.</p>
+                            </div>
+                        </li>
+                        <li class="popular-list__item">
+                            <div class="popular">
+                                <a class="popular__link" href="detail.html">
+                                    <span class="popular__image"><img src="images/content/popular/img_1.jpg" srcset="images/content/popular/img_1@2x.jpg 2x" alt="Кольцо с бриллиантами"></span>
+                                    <span class="popular__title">Кольцо с бриллиантами</span>
+                                </a>
+                                <p class="popular__price popular__price--old">93 000 руб.</p>
+                                <p class="popular__price">41 600 руб.</p>
+                            </div>
+                        </li>
+                        <li class="popular-list__item">
+                            <div class="popular">
+                                <a class="popular__link" href="detail.html">
+                                    <span class="popular__image"><img src="images/content/popular/img_1.jpg" srcset="images/content/popular/img_1@2x.jpg 2x" alt="Кольцо с бриллиантами"></span>
+                                    <span class="popular__title">Кольцо с бриллиантами</span>
+                                </a>
+                                <p class="popular__price popular__price--old">93 000 руб.</p>
+                                <p class="popular__price">41 600 руб.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="search__vars-block">
-          <p class="search__vars-title">Подборки</p>
-          <ul class="search__vars-menu">
-            <li><button type="button">Кольца для помолвки</button></li>
-            <li><button type="button">Комплекты</button></li>
-            <li><button type="button">Украшения для невесты</button></li>
-            <li><button type="button">Украшения для жениха</button></li>
-            <li><button type="button">Золотые серьги</button></li>
-            <li><button type="button">Обручальные кольца</button></li>
-            <li><button type="button">Парные кольца</button></li>
-          </ul>
-        </div>
-        <div class="search__vars-block">
-          <a class="search__to-catalog2" href="#">Перейти в каталог <svg><use xlink:href="#chevron_right"></use></svg></a>
-          <p class="search__vars-title">Популярные товары</p>
-          <ul class="popular-list">
-            <li class="popular-list__item">
-              <div class="popular">
-                <a class="popular__link" href="detail.html">
-                  <span class="popular__image"><img src="images/content/popular/img_1.jpg" srcset="images/content/popular/img_1@2x.jpg 2x" alt="Кольцо с бриллиантами"></span>
-                  <span class="popular__title">Кольцо с бриллиантами</span>
-                </a>
-                <p class="popular__price popular__price--old">93 000 руб.</p>
-                <p class="popular__price">41 600 руб.</p>
-              </div>
-            </li>
-            <li class="popular-list__item">
-              <div class="popular">
-                <a class="popular__link" href="detail.html">
-                  <span class="popular__image"><img src="images/content/popular/img_1.jpg" srcset="images/content/popular/img_1@2x.jpg 2x" alt="Кольцо с бриллиантами"></span>
-                  <span class="popular__title">Кольцо с бриллиантами</span>
-                </a>
-                <p class="popular__price popular__price--old">93 000 руб.</p>
-                <p class="popular__price">41 600 руб.</p>
-              </div>
-            </li>
-            <li class="popular-list__item">
-              <div class="popular">
-                <a class="popular__link" href="detail.html">
-                  <span class="popular__image"><img src="images/content/popular/img_1.jpg" srcset="images/content/popular/img_1@2x.jpg 2x" alt="Кольцо с бриллиантами"></span>
-                  <span class="popular__title">Кольцо с бриллиантами</span>
-                </a>
-                <p class="popular__price popular__price--old">93 000 руб.</p>
-                <p class="popular__price">41 600 руб.</p>
-              </div>
-            </li>
-            <li class="popular-list__item">
-              <div class="popular">
-                <a class="popular__link" href="detail.html">
-                  <span class="popular__image"><img src="images/content/popular/img_1.jpg" srcset="images/content/popular/img_1@2x.jpg 2x" alt="Кольцо с бриллиантами"></span>
-                  <span class="popular__title">Кольцо с бриллиантами</span>
-                </a>
-                <p class="popular__price popular__price--old">93 000 руб.</p>
-                <p class="popular__price">41 600 руб.</p>
-              </div>
-            </li>
-            <li class="popular-list__item">
-              <div class="popular">
-                <a class="popular__link" href="detail.html">
-                  <span class="popular__image"><img src="images/content/popular/img_1.jpg" srcset="images/content/popular/img_1@2x.jpg 2x" alt="Кольцо с бриллиантами"></span>
-                  <span class="popular__title">Кольцо с бриллиантами</span>
-                </a>
-                <p class="popular__price popular__price--old">93 000 руб.</p>
-                <p class="popular__price">41 600 руб.</p>
-              </div>
-            </li>
-            <li class="popular-list__item">
-              <div class="popular">
-                <a class="popular__link" href="detail.html">
-                  <span class="popular__image"><img src="images/content/popular/img_1.jpg" srcset="images/content/popular/img_1@2x.jpg 2x" alt="Кольцо с бриллиантами"></span>
-                  <span class="popular__title">Кольцо с бриллиантами</span>
-                </a>
-                <p class="popular__price popular__price--old">93 000 руб.</p>
-                <p class="popular__price">41 600 руб.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <!--<div class="favorites-popup popover popover--at_right" tabindex="0">
+    <!--<div class="favorites-popup popover popover--at_right" tabindex="0">
     <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg><use xlink:href="#close"></use></svg> <span>Закрыть</span></button>
     <div class="popover__inner">
       <p class="favorites-popup__accaunt-title">Добро пожаловать в&nbsp;ваш&nbsp;аккаунт,<br> Валерия!</p>
@@ -234,15 +252,17 @@
     </div>
   </div>-->
 
-  <div class="favorites-popup popover popover--at_right" tabindex="0">
-    <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg><use xlink:href="#close"></use></svg> <span>Закрыть</span></button>
-    <div class="popover__inner">
-      <p class="favorites-popup__accaunt-title">Добро пожаловать в&nbsp;ваш&nbsp;аккаунт,<br> Валерия!</p>
-      <p class="favorites-popup__title">В избранном пусто</p>
+    <div class="favorites-popup popover popover--at_right" tabindex="0">
+        <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg>
+                <use xlink:href="#close"></use>
+            </svg> <span>Закрыть</span></button>
+        <div class="popover__inner">
+            <p class="favorites-popup__accaunt-title">Добро пожаловать в&nbsp;ваш&nbsp;аккаунт,<br> Валерия!</p>
+            <p class="favorites-popup__title">В избранном пусто</p>
+        </div>
     </div>
-  </div>
 
-  <!--<div class="small-cart popover popover--at_right" tabindex="0">
+    <!--<div class="small-cart popover popover--at_right" tabindex="0">
     <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg><use xlink:href="#close"></use></svg> <span>Закрыть</span></button>
     <div class="popover__inner">
       <p class="small-cart__accaunt-title"><a href="login.html">Войти</a> / <a href="register.html">Зарегистироваться</a></p>
@@ -267,376 +287,420 @@
     </div>
   </div>-->
 
-  <div class="small-cart popover popover--at_right" tabindex="0">
-    <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg><use xlink:href="#close"></use></svg> <span>Закрыть</span></button>
-    <div class="popover__inner">
-      <p class="small-cart__accaunt-title">Добро пожаловать в&nbsp;ваш&nbsp;аккаунт,<br> Валерия!</p>
-      <p class="small-cart__title">Ваша корзина</p>
-      <div class="small-cart__list-block">
-        <div class="small-cart__list">
-          <div class="small-cart__list-item">
-            <div class="sc-item">
-              <button class="sc-item__delete" type="button" title="Удалить"><svg><use xlink:href="#close"></use></svg></button>
-              <p class="sc-item__row">
-                <span class="sc-item__articul">921657Б</span>
-                <span class="sc-item__size">размер 16</span>
-              </p>
-              <a class="sc-item__link" href="detail.html">
-                <span class="sc-item__image-block">
-                  <img src="images/content/sc-item/img.jpg" srcset="images/content/sc-item/img@2x.jpg 2x" alt="Кольцо с бриллиантами и изумрудами из комбинированного золота">
-                </span>
-                <span class="sc-item__title">Кольцо с бриллиантами и изумрудами из комбинированного золота</span>
-                <span class="sc-item__pseudo-link">подробнее <svg><use xlink:href="#chevron_right"></use></svg></span>
-              </a>
-              <p class="sc-item__row">
-                <span class="sc-item__price">41 600 руб.</span>
-              </p>
+    <div class="small-cart popover popover--at_right" tabindex="0">
+        <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg>
+                <use xlink:href="#close"></use>
+            </svg> <span>Закрыть</span></button>
+        <div class="popover__inner">
+            <p class="small-cart__accaunt-title">Добро пожаловать в&nbsp;ваш&nbsp;аккаунт,<br> Валерия!</p>
+            <p class="small-cart__title">Ваша корзина</p>
+            <div class="small-cart__list-block">
+                <div class="small-cart__list">
+                    <div class="small-cart__list-item">
+                        <div class="sc-item">
+                            <button class="sc-item__delete" type="button" title="Удалить"><svg>
+                                    <use xlink:href="#close"></use>
+                                </svg></button>
+                            <p class="sc-item__row">
+                                <span class="sc-item__articul">921657Б</span>
+                                <span class="sc-item__size">размер 16</span>
+                            </p>
+                            <a class="sc-item__link" href="detail.html">
+                                <span class="sc-item__image-block">
+                                    <img src="images/content/sc-item/img.jpg" srcset="images/content/sc-item/img@2x.jpg 2x" alt="Кольцо с бриллиантами и изумрудами из комбинированного золота">
+                                </span>
+                                <span class="sc-item__title">Кольцо с бриллиантами и изумрудами из комбинированного золота</span>
+                                <span class="sc-item__pseudo-link">подробнее <svg>
+                                        <use xlink:href="#chevron_right"></use>
+                                    </svg></span>
+                            </a>
+                            <p class="sc-item__row">
+                                <span class="sc-item__price">41 600 руб.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="small-cart__list-item">
+                        <div class="sc-item">
+                            <button class="sc-item__delete" type="button" title="Удалить"><svg>
+                                    <use xlink:href="#close"></use>
+                                </svg></button>
+                            <p class="sc-item__row">
+                                <span class="sc-item__articul">921657Б</span>
+                                <span class="sc-item__size">размер 16</span>
+                            </p>
+                            <a class="sc-item__link" href="detail.html">
+                                <span class="sc-item__image-block">
+                                    <img src="images/content/sc-item/img.jpg" srcset="images/content/sc-item/img@2x.jpg 2x" alt="Кольцо с бриллиантами и изумрудами из комбинированного золота">
+                                </span>
+                                <span class="sc-item__title">Кольцо с бриллиантами и изумрудами из комбинированного золота</span>
+                                <span class="sc-item__pseudo-link">подробнее <svg>
+                                        <use xlink:href="#chevron_right"></use>
+                                    </svg></span>
+                            </a>
+                            <p class="sc-item__row">
+                                <span class="sc-item__price">41 600 руб.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="small-cart__list-item">
+                        <div class="sc-item">
+                            <button class="sc-item__delete" type="button" title="Удалить"><svg>
+                                    <use xlink:href="#close"></use>
+                                </svg></button>
+                            <p class="sc-item__row">
+                                <span class="sc-item__articul">921657Б</span>
+                                <span class="sc-item__size">размер 16</span>
+                            </p>
+                            <a class="sc-item__link" href="detail.html">
+                                <span class="sc-item__image-block">
+                                    <img src="images/content/sc-item/img.jpg" srcset="images/content/sc-item/img@2x.jpg 2x" alt="Кольцо с бриллиантами и изумрудами из комбинированного золота">
+                                </span>
+                                <span class="sc-item__title">Кольцо с бриллиантами и изумрудами из комбинированного золота</span>
+                                <span class="sc-item__pseudo-link">подробнее <svg>
+                                        <use xlink:href="#chevron_right"></use>
+                                    </svg></span>
+                            </a>
+                            <p class="sc-item__row">
+                                <span class="sc-item__price">41 600 руб.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="small-cart__list-item">
+                        <div class="sc-item">
+                            <button class="sc-item__delete" type="button" title="Удалить"><svg>
+                                    <use xlink:href="#close"></use>
+                                </svg></button>
+                            <p class="sc-item__row">
+                                <span class="sc-item__articul">921657Б</span>
+                                <span class="sc-item__size">размер 16</span>
+                            </p>
+                            <a class="sc-item__link" href="detail.html">
+                                <span class="sc-item__image-block">
+                                    <img src="images/content/sc-item/img.jpg" srcset="images/content/sc-item/img@2x.jpg 2x" alt="Кольцо с бриллиантами и изумрудами из комбинированного золота">
+                                </span>
+                                <span class="sc-item__title">Кольцо с бриллиантами и изумрудами из комбинированного золота</span>
+                                <span class="sc-item__pseudo-link">подробнее <svg>
+                                        <use xlink:href="#chevron_right"></use>
+                                    </svg></span>
+                            </a>
+                            <p class="sc-item__row">
+                                <span class="sc-item__price">41 600 руб.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="small-cart__list-item">
-            <div class="sc-item">
-              <button class="sc-item__delete" type="button" title="Удалить"><svg><use xlink:href="#close"></use></svg></button>
-              <p class="sc-item__row">
-                <span class="sc-item__articul">921657Б</span>
-                <span class="sc-item__size">размер 16</span>
-              </p>
-              <a class="sc-item__link" href="detail.html">
-                <span class="sc-item__image-block">
-                  <img src="images/content/sc-item/img.jpg" srcset="images/content/sc-item/img@2x.jpg 2x" alt="Кольцо с бриллиантами и изумрудами из комбинированного золота">
-                </span>
-                <span class="sc-item__title">Кольцо с бриллиантами и изумрудами из комбинированного золота</span>
-                <span class="sc-item__pseudo-link">подробнее <svg><use xlink:href="#chevron_right"></use></svg></span>
-              </a>
-              <p class="sc-item__row">
-                <span class="sc-item__price">41 600 руб.</span>
-              </p>
+            <a class="small-cart__button btn btn--type_1" href="cart.html">Перейти к оформлению</a>
+
+            <a class="small-cart__button btn btn--type_2" href="cart.html">Вернуться к покупкам</a>
+
+            <div class="help-block">
+                <p class="help-block__intro">Нужна помощь?</p>
+                <p class="help-block__title">Позвоните нам</p>
+                <p class="help-block__phone"><a href="tel:+78008888888">8 800 888 88 88</a></p>
+                <p class="help-block__support"><a href="#">Клиентская поддержка</a></p>
             </div>
-          </div>
-          <div class="small-cart__list-item">
-            <div class="sc-item">
-              <button class="sc-item__delete" type="button" title="Удалить"><svg><use xlink:href="#close"></use></svg></button>
-              <p class="sc-item__row">
-                <span class="sc-item__articul">921657Б</span>
-                <span class="sc-item__size">размер 16</span>
-              </p>
-              <a class="sc-item__link" href="detail.html">
-                <span class="sc-item__image-block">
-                  <img src="images/content/sc-item/img.jpg" srcset="images/content/sc-item/img@2x.jpg 2x" alt="Кольцо с бриллиантами и изумрудами из комбинированного золота">
-                </span>
-                <span class="sc-item__title">Кольцо с бриллиантами и изумрудами из комбинированного золота</span>
-                <span class="sc-item__pseudo-link">подробнее <svg><use xlink:href="#chevron_right"></use></svg></span>
-              </a>
-              <p class="sc-item__row">
-                <span class="sc-item__price">41 600 руб.</span>
-              </p>
+        </div>
+    </div>
+
+    <div class="login popover popover--at_right" tabindex="0">
+        <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg>
+                <use xlink:href="#close"></use>
+            </svg> <span>Закрыть</span></button>
+        <div class="popover__inner">
+            <p class="popover__title">Вход в ваш аккаунт</p>
+            <p class="popover__tabs-nav"><button class="popover__tabs-nav-button is-active" type="button" data-target="1">Войти</button> / <button class="popover__tabs-nav-button" type="button" data-target="2">Зарегистироваться</button></p>
+            <div class="popover__tabs">
+                <div class="popover__tab is-active" data-target="1">
+                    <p class="popover__text">С возвращением!<br><br> Введите свой номер телефона для<br> доступа к личному кабинету</p>
+                    <form class="popover__form" action="">
+                        <label class="popover__form-label"><input class="js-phone-mask input" type="text" placeholder="Введите номер телефона"></label>
+                        <button class="btn btn--type_1" type="submit">Подтвердить</button>
+                    </form>
+                    <p class="login__link"><a href="#">вход через email</a></p>
+                    <p class="login__link"><a href="#">вход через соц сети</a></p>
+                    <div class="login__reg-block">
+                        <p class="login__reg-title">нет аккаунта?</p>
+                        <p class="login__reg-link"><a href="#">регистрация</a></p>
+                    </div>
+                </div>
+                <div class="popover__tab" data-target="2">
+                    <form class="popover__form" action="">
+                        <label class="popover__form-label"><input class="input" type="text" placeholder="Имя*"></label>
+                        <label class="popover__form-label"><input class="js-phone-mask input" type="text" placeholder="Введите номер телефона*"></label>
+                        <label class="popover__form-label"><input class="input" type="text" placeholder="Email*"></label>
+                        <label class="popover__form-label password-toggler-container"><input class="input" type="password" placeholder="Пароль*"><button class="js-password-toggler password-toggler" type="button" title="Показать/скрыть пароль"><svg>
+                                    <use xlink:href="#show_pass"></use>
+                                </svg></button></label>
+                        <button class="btn btn--type_1" type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                    </form>
+                </div>
             </div>
-          </div>
-          <div class="small-cart__list-item">
-            <div class="sc-item">
-              <button class="sc-item__delete" type="button" title="Удалить"><svg><use xlink:href="#close"></use></svg></button>
-              <p class="sc-item__row">
-                <span class="sc-item__articul">921657Б</span>
-                <span class="sc-item__size">размер 16</span>
-              </p>
-              <a class="sc-item__link" href="detail.html">
-                <span class="sc-item__image-block">
-                  <img src="images/content/sc-item/img.jpg" srcset="images/content/sc-item/img@2x.jpg 2x" alt="Кольцо с бриллиантами и изумрудами из комбинированного золота">
-                </span>
-                <span class="sc-item__title">Кольцо с бриллиантами и изумрудами из комбинированного золота</span>
-                <span class="sc-item__pseudo-link">подробнее <svg><use xlink:href="#chevron_right"></use></svg></span>
-              </a>
-              <p class="sc-item__row">
-                <span class="sc-item__price">41 600 руб.</span>
-              </p>
+
+            <div class="socials">
+                <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Instagram"><svg>
+                        <use xlink:href="#inst"></use>
+                    </svg></a>
+                <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Vkontakte"><svg>
+                        <use xlink:href="#vk"></use>
+                    </svg></a>
+                <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Facebook"><svg>
+                        <use xlink:href="#fb"></use>
+                    </svg></a>
             </div>
-          </div>
         </div>
-      </div>
-      <a class="small-cart__button btn btn--type_1" href="cart.html">Перейти к оформлению</a>
-
-      <a class="small-cart__button btn btn--type_2" href="cart.html">Вернуться к покупкам</a>
-
-      <div class="help-block">
-        <p class="help-block__intro">Нужна помощь?</p>
-        <p class="help-block__title">Позвоните нам</p>
-        <p class="help-block__phone"><a href="tel:+78008888888">8 800 888 88 88</a></p>
-        <p class="help-block__support"><a href="#">Клиентская поддержка</a></p>
-      </div>
     </div>
-  </div>
 
-  <div class="login popover popover--at_right" tabindex="0">
-    <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg><use xlink:href="#close"></use></svg> <span>Закрыть</span></button>
-    <div class="popover__inner">
-      <p class="popover__title">Вход в ваш аккаунт</p>
-      <p class="popover__tabs-nav"><button class="popover__tabs-nav-button is-active" type="button" data-target="1">Войти</button> / <button class="popover__tabs-nav-button" type="button" data-target="2">Зарегистироваться</button></p>
-      <div class="popover__tabs">
-        <div class="popover__tab is-active" data-target="1">
-          <p class="popover__text">С возвращением!<br><br> Введите свой номер телефона для<br> доступа к личному кабинету</p>
-          <form class="popover__form" action="">
-            <label class="popover__form-label"><input class="js-phone-mask input" type="text" placeholder="Введите номер телефона"></label>
-            <button class="btn btn--type_1" type="submit">Подтвердить</button>
-          </form>
-          <p class="login__link"><a href="#">вход через email</a></p>
-          <p class="login__link"><a href="#">вход через соц сети</a></p>
-          <div class="login__reg-block">
-            <p class="login__reg-title">нет аккаунта?</p>
-            <p class="login__reg-link"><a href="#">регистрация</a></p>
-          </div>
+    <div class="recall popover popover--at_right" tabindex="0">
+        <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg>
+                <use xlink:href="#close"></use>
+            </svg> <span>Закрыть</span></button>
+        <div class="popover__inner">
+            <p class="popover__title">Заказать обратный звонок</p>
+            <p class="recall__text">Отправьте нам ваш номер<br> и мы свяжемся с вами!</p>
+            <form class="recall__form" action="">
+                <label class="recall__form-label"><input class="js-phone-mask input" type="text" placeholder="Введите номер телефона"></label>
+                <button class="btn btn--type_1" type="submit">Отправить</button>
+            </form>
         </div>
-        <div class="popover__tab" data-target="2">
-          <form class="popover__form" action="">
-            <label class="popover__form-label"><input class="input" type="text" placeholder="Имя*"></label>
-            <label class="popover__form-label"><input class="js-phone-mask input" type="text" placeholder="Введите номер телефона*"></label>
-            <label class="popover__form-label"><input class="input" type="text" placeholder="Email*"></label>
-            <label class="popover__form-label password-toggler-container"><input class="input" type="password" placeholder="Пароль*"><button class="js-password-toggler password-toggler" type="button" title="Показать/скрыть пароль"><svg><use xlink:href="#show_pass"></use></svg></button></label>
-            <button class="btn btn--type_1" type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
-          </form>
-        </div>
-      </div>
-
-      <div class="socials">
-        <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Instagram"><svg><use xlink:href="#inst"></use></svg></a>
-        <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Vkontakte"><svg><use xlink:href="#vk"></use></svg></a>
-        <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Facebook"><svg><use xlink:href="#fb"></use></svg></a>
-      </div>
     </div>
-  </div>
 
-  <div class="recall popover popover--at_right" tabindex="0">
-    <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg><use xlink:href="#close"></use></svg> <span>Закрыть</span></button>
-    <div class="popover__inner">
-      <p class="popover__title">Заказать обратный звонок</p>
-      <p class="recall__text">Отправьте нам ваш номер<br> и мы свяжемся с вами!</p>
-      <form class="recall__form" action="">
-        <label class="recall__form-label"><input class="js-phone-mask input" type="text" placeholder="Введите номер телефона"></label>
-        <button class="btn btn--type_1" type="submit">Отправить</button>
-      </form>
+    <div class="add-cart popover popover--at_right" tabindex="0">
+        <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg>
+                <use xlink:href="#close"></use>
+            </svg> <span>Закрыть</span></button>
+        <div class="popover__inner">
+            <p class="popover__title">Быстрое добавление в корзину</p>
+            <div class="add-cart__inner">
+                <p class="add-cart__top">
+                    <span class="add-cart__articul">Артикул: 921657Б</span>
+                    <button class="add-cart__favorites" type="button" title="Добавить в избранное"><svg>
+                            <use xlink:href="#favorites"></use>
+                        </svg></button>
+                </p>
+                <p class="add-cart__description">Кольцо с бриллиантами и изумрудами из комбинированного золота</p>
+                <p class="add-cart__sizes-title">Выбрать размер:</p>
+                <div class="add-cart__sizes">
+                    <label class="add-cart__size">
+                        <input type="radio" name="size" value="15" checked>
+                        <span>15</span>
+                    </label>
+                    <label class="add-cart__size">
+                        <input type="radio" name="size" value="15.5">
+                        <span>15.5</span>
+                    </label>
+                    <label class="add-cart__size">
+                        <input type="radio" name="size" value="16">
+                        <span>16</span>
+                    </label>
+                    <label class="add-cart__size">
+                        <input type="radio" name="size" value="16.5">
+                        <span>16.5</span>
+                    </label>
+                    <label class="add-cart__size">
+                        <input type="radio" name="size" value="17">
+                        <span>17</span>
+                    </label>
+                    <label class="add-cart__size">
+                        <input type="radio" name="size" value="17.5">
+                        <span>17.5</span>
+                    </label>
+                    <label class="add-cart__size">
+                        <input type="radio" name="size" value="18">
+                        <span>18</span>
+                    </label>
+                    <label class="add-cart__size">
+                        <input type="radio" name="size" value="18.5">
+                        <span>18.5</span>
+                    </label>
+                    <label class="add-cart__size">
+                        <input type="radio" name="size" value="19">
+                        <span>19</span>
+                    </label>
+                    <label class="add-cart__size">
+                        <input type="radio" name="size" value="19.5">
+                        <span>19.5</span>
+                    </label>
+                    <label class="add-cart__size">
+                        <input type="radio" name="size" value="20">
+                        <span>20</span>
+                    </label>
+                    <label class="add-cart__size">
+                        <input type="radio" name="size" value="20.5">
+                        <span>20.5</span>
+                    </label>
+                    <label class="add-cart__size">
+                        <input type="radio" name="size" value="21">
+                        <span>21</span>
+                    </label>
+                    <label class="add-cart__size">
+                        <input type="radio" name="size" value="21.5">
+                        <span>21.5</span>
+                    </label>
+                    <label class="add-cart__size">
+                        <input type="radio" name="size" value="22">
+                        <span>22</span>
+                    </label>
+                    <label class="add-cart__size">
+                        <input type="radio" name="size" value="22.5">
+                        <span>22.5</span>
+                    </label>
+                    <label class="add-cart__size">
+                        <input type="radio" name="size" value="23">
+                        <span>23</span>
+                    </label>
+                    <label class="add-cart__size">
+                        <input type="radio" name="size" value="23.5">
+                        <span>23.5</span>
+                    </label>
+                </div>
+                <p class="add-cart__shit"><a class="js-popover-opener" href="#" data-popover="sizes-guide">Как определить свой размер?</a></p>
+                <div class="add-cart__quantity">
+                    <p class="add-cart__quantity-title">Количество</p>
+                    <div class="quantity">
+                        <button class="js-quantity-decrease quantity__button" type="button" title="Уменьшить"><svg>
+                                <use xlink:href="#minus"></use>
+                            </svg></button>
+                        <input class="quantity__input" type="text" value="1" readonly>
+                        <button class="js-quantity-increase quantity__button" type="button" title="Увеличить"><svg>
+                                <use xlink:href="#plus"></use>
+                            </svg></button>
+                    </div>
+                </div>
+                <div class="add-cart__prices">
+                    <p class="add-cart__old-price">93 000 руб.</p>
+                    <p class="add-cart__price">41 600 руб.</p>
+                </div>
+                <a class="add-cart__add-cart btn btn--type_4" href="javascript:void(0)">Кольцо в корзину</a>
+                <a class="add-cart__to-detail btn btn--type_2" href="detail.html">Смотреть все характеристики</a>
+                <!--<img src="images/content/catalog-item/img_6.jpg" srcset="images/content/catalog-item/img_6@2x.jpg" alt="">-->
+            </div>
+        </div>
     </div>
-  </div>
 
-  <div class="add-cart popover popover--at_right" tabindex="0">
-    <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg><use xlink:href="#close"></use></svg> <span>Закрыть</span></button>
-    <div class="popover__inner">
-      <p class="popover__title">Быстрое добавление в корзину</p>
-      <div class="add-cart__inner">
-        <p class="add-cart__top">
-          <span class="add-cart__articul">Артикул: 921657Б</span>
-          <button class="add-cart__favorites" type="button" title="Добавить в избранное"><svg><use xlink:href="#favorites"></use></svg></button>
-        </p>
-        <p class="add-cart__description">Кольцо с бриллиантами и изумрудами из комбинированного золота</p>
-        <p class="add-cart__sizes-title">Выбрать размер:</p>
-        <div class="add-cart__sizes">
-          <label class="add-cart__size">
-            <input type="radio" name="size" value="15" checked>
-            <span>15</span>
-          </label>
-          <label class="add-cart__size">
-            <input type="radio" name="size" value="15.5">
-            <span>15.5</span>
-          </label>
-          <label class="add-cart__size">
-            <input type="radio" name="size" value="16">
-            <span>16</span>
-          </label>
-          <label class="add-cart__size">
-            <input type="radio" name="size" value="16.5">
-            <span>16.5</span>
-          </label>
-          <label class="add-cart__size">
-            <input type="radio" name="size" value="17">
-            <span>17</span>
-          </label>
-          <label class="add-cart__size">
-            <input type="radio" name="size" value="17.5">
-            <span>17.5</span>
-          </label>
-          <label class="add-cart__size">
-            <input type="radio" name="size" value="18">
-            <span>18</span>
-          </label>
-          <label class="add-cart__size">
-            <input type="radio" name="size" value="18.5">
-            <span>18.5</span>
-          </label>
-          <label class="add-cart__size">
-            <input type="radio" name="size" value="19">
-            <span>19</span>
-          </label>
-          <label class="add-cart__size">
-            <input type="radio" name="size" value="19.5">
-            <span>19.5</span>
-          </label>
-          <label class="add-cart__size">
-            <input type="radio" name="size" value="20">
-            <span>20</span>
-          </label>
-          <label class="add-cart__size">
-            <input type="radio" name="size" value="20.5">
-            <span>20.5</span>
-          </label>
-          <label class="add-cart__size">
-            <input type="radio" name="size" value="21">
-            <span>21</span>
-          </label>
-          <label class="add-cart__size">
-            <input type="radio" name="size" value="21.5">
-            <span>21.5</span>
-          </label>
-          <label class="add-cart__size">
-            <input type="radio" name="size" value="22">
-            <span>22</span>
-          </label>
-          <label class="add-cart__size">
-            <input type="radio" name="size" value="22.5">
-            <span>22.5</span>
-          </label>
-          <label class="add-cart__size">
-            <input type="radio" name="size" value="23">
-            <span>23</span>
-          </label>
-          <label class="add-cart__size">
-            <input type="radio" name="size" value="24">
-            <span>24</span>
-          </label>
+    <div class="sizes-guide popover popover--medium popover--at_right" tabindex="0">
+        <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg>
+                <use xlink:href="#close"></use>
+            </svg> <span>Закрыть</span></button>
+        <div class="popover__inner">
+            <p class="popover__title">Гайд по размеру колец</p>
+            <div class="sizes-guide__container">
+                <div class="sizes-guide__right">
+                    <p class="sizes-guide__right-title">КАК ИЗМЕрИТЬ ОКРУЖНОСТЬ ПАЛЬЦА</p>
+                    <p>
+                        <img src="images/get_size/img_1.jpg" alt=""><br>
+                        1. Положите нитку под пальцем
+                    </p>
+                    <p>
+                        <img src="images/get_size/img_2.jpg" alt=""><br>
+                        2. Оберните ее вокруг пальца и отметьте пересечение нитки
+                    </p>
+                    <p>
+                        <img src="images/get_size/img_3.jpg" alt=""><br>
+                        3. Измерьте расстояние линейкой
+                    </p>
+                    <p>
+                        4. Сопоставьте измерение по таблице
+                    </p>
+                </div>
+                <div class="sizes-guide__left">
+                    <table>
+                        <tr>
+                            <th>Размер</th>
+                            <th>Окружность пальца (мм)</th>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>47-48</td>
+                        </tr>
+                        <tr>
+                            <td>15,5</td>
+                            <td>48-49</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>49-50</td>
+                        </tr>
+                        <tr>
+                            <td>16,5</td>
+                            <td>50-52</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>52-53</td>
+                        </tr>
+                        <tr>
+                            <td>17,5</td>
+                            <td>53-55</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>55-56</td>
+                        </tr>
+                        <tr>
+                            <td>18,5</td>
+                            <td>56-58</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>58-59</td>
+                        </tr>
+                        <tr>
+                            <td>19,5</td>
+                            <td>59-61</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>61-63</td>
+                        </tr>
+                        <tr>
+                            <td>20,5</td>
+                            <td>63-65</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>65-66</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
-        <p class="add-cart__shit"><a class="js-popover-opener" href="#" data-popover="sizes-guide">Как определить свой размер?</a></p>
-        <div class="add-cart__quantity">
-          <p class="add-cart__quantity-title">Количество</p>
-          <div class="quantity">
-            <button class="js-quantity-decrease quantity__button" type="button" title="Уменьшить"><svg><use xlink:href="#minus"></use></svg></button>
-            <input class="quantity__input" type="text" value="1" readonly>
-            <button class="js-quantity-increase quantity__button" type="button" title="Увеличить"><svg><use xlink:href="#plus"></use></svg></button>
-          </div>
-        </div>
-        <div class="add-cart__prices">
-          <p class="add-cart__old-price">93 000 руб.</p>
-          <p class="add-cart__price">41 600 руб.</p>
-        </div>
-        <a class="add-cart__add-cart btn btn--type_4" href="javascript:void(0)">Кольцо в корзину</a>
-        <a class="add-cart__to-detail btn btn--type_2" href="detail.html">Смотреть все характеристики</a>
-        <!--<img src="images/content/catalog-item/img_6.jpg" srcset="images/content/catalog-item/img_6@2x.jpg" alt="">-->
-      </div>
     </div>
-  </div>
 
-  <div class="sizes-guide popover popover--medium popover--at_right" tabindex="0">
-    <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg><use xlink:href="#close"></use></svg> <span>Закрыть</span></button>
-    <div class="popover__inner">
-      <p class="popover__title">Гайд по размеру колец</p>
-      <div class="sizes-guide__container">
-        <div class="sizes-guide__right">
-          <p class="sizes-guide__right-title">КАК ИЗМЕрИТЬ ОКРУЖНОСТЬ ПАЛЬЦА</p>
-          <p>
-            <img src="images/get_size/img_1.jpg" alt=""><br>
-            1. Положите нитку под пальцем
-          </p>
-          <p>
-            <img src="images/get_size/img_2.jpg" alt=""><br>
-            2. Оберните ее вокруг пальца и отметьте пересечение нитки
-          </p>
-          <p>
-            <img src="images/get_size/img_3.jpg" alt=""><br>
-            3. Измерьте расстояние линейкой
-          </p>
-          <p>
-            4. Сопоставьте измерение по таблице
-          </p>
+    <div class="vacancy-popover popover popover--at_right" tabindex="0">
+        <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg>
+                <use xlink:href="#close"></use>
+            </svg> <span>Закрыть</span></button>
+        <div class="popover__inner">
+            <p class="popover__title">Отправить резюме</p>
+            <p class="popover__text">Заполните форму и мы ответим вам.</p>
+            <form class="popover__form" action="">
+                <label class="popover__form-label"><input class="input" type="text" name="fio" placeholder="ФИО*"></label>
+                <label class="popover__form-label"><input class="js-phone-mask input" type="text" name="phone" placeholder="Телефон*"></label>
+                <label class="popover__form-label"><input class="input" type="text" name="email" placeholder="Email*"></label>
+                <label class="file">
+                    <input class="js-upload-file" type="file" name="file" id="file" value="" data-multiple-caption="{count} файла выбрано">
+                    <span class="file__text">ПРИКРЕПИТЬ ФАЙЛ</span>
+                </label>
+                <button class="btn btn--type_1" type="submit">Отправить</button>
+            </form>
         </div>
-        <div class="sizes-guide__left">
-          <table>
-            <tr>
-              <th>Размер</th>
-              <th>Окружность пальца (мм)</th>
-            </tr>
-            <tr>
-              <td>15</td>
-              <td>47-48</td>
-            </tr>
-            <tr>
-              <td>15,5</td>
-              <td>48-49</td>
-            </tr>
-            <tr>
-              <td>16</td>
-              <td>49-50</td>
-            </tr>
-            <tr>
-              <td>16,5</td>
-              <td>50-52</td>
-            </tr>
-            <tr>
-              <td>17</td>
-              <td>52-53</td>
-            </tr>
-            <tr>
-              <td>17,5</td>
-              <td>53-55</td>
-            </tr>
-            <tr>
-              <td>18</td>
-              <td>55-56</td>
-            </tr>
-            <tr>
-              <td>18,5</td>
-              <td>56-58</td>
-            </tr>
-            <tr>
-              <td>19</td>
-              <td>58-59</td>
-            </tr>
-            <tr>
-              <td>19,5</td>
-              <td>59-61</td>
-            </tr>
-            <tr>
-              <td>20</td>
-              <td>61-63</td>
-            </tr>
-            <tr>
-              <td>20,5</td>
-              <td>63-65</td>
-            </tr>
-            <tr>
-              <td>21</td>
-              <td>65-66</td>
-            </tr>
-          </table>
+    </div>
+
+    <div class="hint popover popover--at_right" tabindex="0">
+        <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg>
+                <use xlink:href="#close"></use>
+            </svg> <span>Закрыть</span></button>
+        <div class="popover__inner">
+            <p class="popover__title">Намекнуть на подарок</p>
+            <div class="hint__image"><img src="images/content/catalog-item/img_6.jpg" srcset="images/content/catalog-item/img_6@2x.jpg" alt=""></div>
+            <form class="popover__form" action="">
+                <label class="popover__form-label"><input class="input" type="text" name="name" placeholder="Ваше имя*"></label>
+                <label class="popover__form-label"><input class="input" type="text" name="email" placeholder="Ваш email*"></label>
+                <label class="popover__form-label"><input class="input" type="text" name="receiver_name" placeholder="Имя получателя*"></label>
+                <label class="popover__form-label"><input class="input" type="text" name="receiver_email" placeholder="Email получателя*"></label>
+                <button class="btn btn--type_1" type="submit">Отправить</button>
+            </form>
         </div>
-      </div>
     </div>
-  </div>
-
-  <div class="vacancy-popover popover popover--at_right" tabindex="0">
-    <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg><use xlink:href="#close"></use></svg> <span>Закрыть</span></button>
-    <div class="popover__inner">
-      <p class="popover__title">Отправить резюме</p>
-      <p class="popover__text">Заполните форму и мы ответим вам.</p>
-      <form class="popover__form" action="">
-        <label class="popover__form-label"><input class="input" type="text" name="fio" placeholder="ФИО*"></label>
-        <label class="popover__form-label"><input class="js-phone-mask input" type="text" name="phone" placeholder="Телефон*"></label>
-        <label class="popover__form-label"><input class="input" type="text" name="email" placeholder="Email*"></label>
-        <label class="file">
-          <input class="js-upload-file" type="file" name="file" id="file" value="" data-multiple-caption="{count} файла выбрано">
-          <span class="file__text">ПРИКРЕПИТЬ ФАЙЛ</span>
-        </label>
-        <button class="btn btn--type_1" type="submit">Отправить</button>
-      </form>
-    </div>
-  </div>
-
-  <div class="hint popover popover--at_right" tabindex="0">
-    <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg><use xlink:href="#close"></use></svg> <span>Закрыть</span></button>
-    <div class="popover__inner">
-      <p class="popover__title">Намекнуть на подарок</p>
-      <div class="hint__image"><img src="images/content/catalog-item/img_6.jpg" srcset="images/content/catalog-item/img_6@2x.jpg" alt=""></div>
-      <form class="popover__form" action="">
-        <label class="popover__form-label"><input class="input" type="text" name="name" placeholder="Ваше имя*"></label>
-        <label class="popover__form-label"><input class="input" type="text" name="email" placeholder="Ваш email*"></label>
-        <label class="popover__form-label"><input class="input" type="text" name="receiver_name" placeholder="Имя получателя*"></label>
-        <label class="popover__form-label"><input class="input" type="text" name="receiver_email" placeholder="Email получателя*"></label>
-        <button class="btn btn--type_1" type="submit">Отправить</button>
-      </form>
-    </div>
-  </div>
 </div>
