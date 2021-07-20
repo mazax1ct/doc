@@ -55,8 +55,9 @@
 
   &__location-form
     margin-bottom: 10px
+    position: relative
 
-    @media(min-width: 1024px)
+    //@media(min-width: 1024px)
       display: flex
 
   &__location-input
@@ -75,6 +76,66 @@
     @media(min-width: 1024px)
       min-width: 146px
       width: 146px
+
+  &__location-dropdown
+    border: 1px solid $color_grey
+    background-color: #fff
+    font-size: 13px
+    font-weight: 500
+    line-height: 16px
+    left: 0
+    margin-top: -1px
+    max-height: 200px
+    overflow-y: auto
+    position: absolute
+    top: 100%
+    width: 100%
+    z-index: 2
+    scrollbar-width: thin
+    scrollbar-color: $color_grey rgba($color_grey, 0.3)
+
+    &::-webkit-scrollbar
+      height: 6px
+      width: 6px
+
+    &::-webkit-scrollbar-track
+      background-image: linear-gradient($color_grey, $color_grey)
+      background-size: 1px 100%
+      background-position: 50% 0
+      background-repeat: no-repeat
+
+    &::-webkit-scrollbar-thumb
+      background: $color_darkblue
+      width: 6px
+
+  &__location-option
+    background-color: transparent
+    border: none
+    color: $color_grey
+    cursor: pointer
+    height: 54px
+    padding: 19px 17px 18px
+    text-align: left
+    text-transform: uppercase
+    transition: background-color 0.3s
+    width: 100%
+
+    &:not(:last-child)
+      border-bottom: 1px solid $color_grey
+
+    &:hover,
+    &:focus
+      background-color: rgba($color_grey, 0.1)
+
+  &__location-noresults
+    color: $color_red
+    height: 54px
+    margin: 0
+    padding: 19px 17px 18px
+    text-align: left
+    text-transform: uppercase
+    transition: background-color 0.3s
+    width: 100%
 
   &__location-aim
     align-items: center

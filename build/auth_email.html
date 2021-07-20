@@ -327,16 +327,36 @@
 
   <div class="shade">
       <div class="locations popover" tabindex="0">
-          <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg>
+          <button class="js-popover-closer popover__closer" type="button" title="Закрыть">
+              <svg>
                   <use xlink:href="#close"></use>
-              </svg> <span>Закрыть</span></button>
+              </svg>
+              <span>Закрыть</span>
+          </button>
           <div class="popover__inner">
-              <button class="locations__aim" type="button"><svg>
+              <button class="locations__aim" type="button">
+                  <svg>
                       <use xlink:href="#aim"></use>
-                  </svg>Определить город автоматически</button>
+                  </svg>
+                  Определить город автоматически
+              </button>
               <form class="locations__form" action="" method="get">
                   <input class="locations__form-input input" type="text" placeholder="Выберите город">
-                  <button class="locations__form-submit btn btn--type_4" type="submit">Изменить</button>
+                  <!--<button class="locations__form-submit btn btn--type_4" type="submit">Изменить</button>-->
+                  <div class="locations__form-dropdown">
+                      <p class="locations__form-noresults">Ничего не найдено</p>
+                      <button class="locations__form-option" type="button">Санкт-Петербург</button>
+                      <button class="locations__form-option" type="button">Москва</button>
+                      <button class="locations__form-option" type="button">Екатеринбург</button>
+                      <button class="locations__form-option" type="button">Пермь</button>
+                      <button class="locations__form-option" type="button">Норильск</button>
+                      <button class="locations__form-option" type="button">Санкт-Петербург</button>
+                      <button class="locations__form-option" type="button">Москва</button>
+                      <button class="locations__form-option" type="button">Екатеринбург</button>
+                      <button class="locations__form-option" type="button">Пермь</button>
+                      <button class="locations__form-option" type="button">Норильск</button>
+                      <button class="locations__form-option" type="button">Санкт-Петербург</button>
+                  </div>
               </form>
               <p class="locations__list-title">Адреса магазинов в твоём городе:</p>
               <div class="locations__list">
@@ -361,35 +381,49 @@
                   <p class="locations__contacts-title">Позвонить нам</p>
                   <p class="locations__phone-link"><a href="tel:+78008888888">8 800 888 88 88</a></p>
                   <div class="socials">
-                      <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Instagram"><svg>
+                      <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Instagram">
+                          <svg>
                               <use xlink:href="#inst"></use>
-                          </svg></a>
-                      <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Vkontakte"><svg>
+                          </svg>
+                      </a>
+                      <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Vkontakte">
+                          <svg>
                               <use xlink:href="#vk"></use>
-                          </svg></a>
-                      <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Facebook"><svg>
+                          </svg>
+                      </a>
+                      <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Facebook">
+                          <svg>
                               <use xlink:href="#fb"></use>
-                          </svg></a>
+                          </svg>
+                      </a>
                   </div>
               </div>
           </div>
       </div>
   
       <div class="search popover popover--wide" tabindex="0">
-          <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg>
+          <button class="js-popover-closer popover__closer" type="button" title="Закрыть">
+              <svg>
                   <use xlink:href="#close"></use>
-              </svg> <span>Закрыть</span></button>
-          <a class="search__to-catalog" href="#">Перейти в каталог <svg>
+              </svg>
+              <span>Закрыть</span>
+          </button>
+          <a class="search__to-catalog" href="#">
+              Перейти в каталог
+              <svg>
                   <use xlink:href="#chevron_right"></use>
-              </svg></a>
+              </svg>
+          </a>
           <div class="popover__inner">
               <p class="search__title">Поиск по каталогу</p>
               <div class="search__form-block">
                   <form class="search__form" action="search.html" method="get">
                       <input class="search__form-input" name="q" type="text" value="" placeholder="Поиск по каталогу" autocomplete="off">
-                      <button class="search__form-submit" type="submit" title="Искать" value="Искать"><svg>
+                      <button class="search__form-submit" type="submit" title="Искать" value="Искать">
+                          <svg>
                               <use xlink:href="#search"></use>
-                          </svg></button>
+                          </svg>
+                      </button>
                   </form>
               </div>
               <div class="search__vars">
@@ -419,9 +453,12 @@
                       </ul>
                   </div>
                   <div class="search__vars-block">
-                      <a class="search__to-catalog2" href="#">Перейти в каталог <svg>
+                      <a class="search__to-catalog2" href="#">
+                          Перейти в каталог
+                          <svg>
                               <use xlink:href="#chevron_right"></use>
-                          </svg></a>
+                          </svg>
+                      </a>
                       <p class="search__vars-title">Популярные товары</p>
                       <ul class="popular-list">
                           <li class="popular-list__item">
@@ -580,9 +617,12 @@
     </div>-->
   
       <div class="favorites-popup popover popover--at_right" tabindex="0">
-          <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg>
+          <button class="js-popover-closer popover__closer" type="button" title="Закрыть">
+              <svg>
                   <use xlink:href="#close"></use>
-              </svg> <span>Закрыть</span></button>
+              </svg>
+              <span>Закрыть</span>
+          </button>
           <div class="popover__inner">
               <p class="favorites-popup__accaunt-title">Добро пожаловать в&nbsp;ваш&nbsp;аккаунт,<br> Валерия!</p>
               <p class="favorites-popup__title">В избранном пусто</p>
@@ -1111,73 +1151,90 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__top">
-      <div class="container">
-        <div class="footer__logo"><img width="50" height="43" src="images/footer_logo.svg" alt=""></div>
-        <div class="footer__subscribe">
-          <p class="footer__subscribe-title"><small>подписаться на новости</small> и получить подарок!</p>
-          <form action="">
-            <input class="footer__subscribe-input" type="text" placeholder="EMAIL">
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="footer__mid">
-      <div class="container">
-        <div class="footer__mid-block">
-          <p class="footer__mid-title">СВЯЗАТЬСЯ С НАМИ</p>
-          <p class="footer__contacts"><a class="footer__contacts-link" href="tel:+78008888888"><svg><use xlink:href="#phone"></use></svg> 8 800 888 88 88</a></p>
-          <p class="footer__contacts"><a class="footer__contacts-link" href="#"><svg><use xlink:href="#wa"></use></svg> Whats up</a></p>
-          <p class="footer__contacts"><a class="footer__contacts-link" href="#"><svg><use xlink:href="#tg"></use></svg> Telegram</a></p>
-          <div class="footer__socials">
-            <a class="footer__social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Instagram"><svg><use xlink:href="#inst"></use></svg></a>
-            <a class="footer__social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Vkontakte"><svg><use xlink:href="#vk"></use></svg></a>
-            <a class="footer__social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Facebook"><svg><use xlink:href="#fb"></use></svg></a>
+      <div class="footer__top">
+          <div class="container">
+              <div class="footer__logo"><img width="50" height="43" src="images/footer_logo.svg" alt=""></div>
+              <div class="footer__subscribe">
+                  <p class="footer__subscribe-title"><small>подписаться на новости</small> и получить подарок!</p>
+                  <form action="">
+                      <input class="footer__subscribe-input" type="text" placeholder="EMAIL">
+                      <button class="footer__subscribe-submit" type="submit" title="Отправить">
+                          <svg>
+                              <use xlink:href="#double_chevron_right"></use>
+                          </svg>
+                      </button>
+                  </form>
+              </div>
           </div>
-        </div>
-        <div class="footer__mid-block">
-          <p class="js-footer-toggler footer__mid-title">О КОМПАНИИ</p>
-          <ul class="footer__menu">
-            <li><a href="#">О бренде</a></li>
-            <li><a href="vacancies.html">Вакансии</a></li>
-            <li><a href="reviews.html">Отзывы</a></li>
-            <li><a href="#">Магазины</a></li>
-            <li><a href="#">Представительства</a></li>
-          </ul>
-        </div>
-        <div class="footer__mid-block">
-          <p class="js-footer-toggler footer__mid-title">КАТАЛОГ</p>
-          <ul class="footer__menu">
-            <li><a href="catalog-section.html">Свадьба</a></li>
-            <li><a href="catalog-section.html">Помолвка</a></li>
-            <li><a href="catalog-section.html">Парные кольца</a></li>
-            <li><a href="catalog-section.html">Ювелирные изделия</a></li>
-            <li><a href="catalog-section.html">Новинки</a></li>
-            <li><a href="catalog-section.html">Распродажа</a></li>
-            <li><a href="catalog-section.html">Индивидуальный заказ</a></li>
-          </ul>
-        </div>
-        <div class="footer__mid-block">
-          <p class="js-footer-toggler footer__mid-title">ПОМОЩЬ</p>
-          <ul class="footer__menu">
-            <li><a href="delivery_payment.html">Оплата и доставка</a></li>
-            <li><a href="#">Как купить</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="guarantee.html">Гарантии</a></li>
-          </ul>
-        </div>
       </div>
-      <div class="footer__mid-logo"><img width="239" height="99" src="images/footer_big_logo.svg" alt="Дворец обручальных колец"></div>
-    </div>
-    <div class="footer__bottom">
-      <div class="container">
-        <p class="footer__copyright">© Дворец обручальных колец 2021</p>
-        <ul class="footer__service-menu">
-          <li><a href="#">Условия обработки персональных данных</a></li>
-          <li><a href="#">Политика в отношении обработки персональных данных</a></li>
-        </ul>
+      <div class="footer__mid">
+          <div class="container">
+              <div class="footer__mid-block">
+                  <p class="footer__mid-title">СВЯЗАТЬСЯ С НАМИ</p>
+                  <p class="footer__contacts"><a class="footer__contacts-link" href="tel:+78008888888"><svg>
+                              <use xlink:href="#phone"></use>
+                          </svg> 8 800 888 88 88</a></p>
+                  <p class="footer__contacts"><a class="footer__contacts-link" href="#"><svg>
+                              <use xlink:href="#wa"></use>
+                          </svg> Whats up</a></p>
+                  <p class="footer__contacts"><a class="footer__contacts-link" href="#"><svg>
+                              <use xlink:href="#tg"></use>
+                          </svg> Telegram</a></p>
+                  <div class="footer__socials">
+                      <a class="footer__social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Instagram"><svg>
+                              <use xlink:href="#inst"></use>
+                          </svg></a>
+                      <a class="footer__social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Vkontakte"><svg>
+                              <use xlink:href="#vk"></use>
+                          </svg></a>
+                      <a class="footer__social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Facebook"><svg>
+                              <use xlink:href="#fb"></use>
+                          </svg></a>
+                  </div>
+              </div>
+              <div class="footer__mid-block">
+                  <p class="js-footer-toggler footer__mid-title">О КОМПАНИИ</p>
+                  <ul class="footer__menu">
+                      <li><a href="#">О бренде</a></li>
+                      <li><a href="vacancies.html">Вакансии</a></li>
+                      <li><a href="reviews.html">Отзывы</a></li>
+                      <li><a href="#">Магазины</a></li>
+                      <li><a href="#">Представительства</a></li>
+                  </ul>
+              </div>
+              <div class="footer__mid-block">
+                  <p class="js-footer-toggler footer__mid-title">КАТАЛОГ</p>
+                  <ul class="footer__menu">
+                      <li><a href="catalog-section.html">Свадьба</a></li>
+                      <li><a href="catalog-section.html">Помолвка</a></li>
+                      <li><a href="catalog-section.html">Парные кольца</a></li>
+                      <li><a href="catalog-section.html">Ювелирные изделия</a></li>
+                      <li><a href="catalog-section.html">Новинки</a></li>
+                      <li><a href="catalog-section.html">Распродажа</a></li>
+                      <li><a href="catalog-section.html">Индивидуальный заказ</a></li>
+                  </ul>
+              </div>
+              <div class="footer__mid-block">
+                  <p class="js-footer-toggler footer__mid-title">ПОМОЩЬ</p>
+                  <ul class="footer__menu">
+                      <li><a href="delivery_payment.html">Оплата и доставка</a></li>
+                      <li><a href="#">Как купить</a></li>
+                      <li><a href="faq.html">FAQ</a></li>
+                      <li><a href="guarantee.html">Гарантии</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="footer__mid-logo"><img width="239" height="99" src="images/footer_big_logo.svg" alt="Дворец обручальных колец"></div>
       </div>
-    </div>
+      <div class="footer__bottom">
+          <div class="container">
+              <p class="footer__copyright">© Дворец обручальных колец 2021</p>
+              <ul class="footer__service-menu">
+                  <li><a href="#">Условия обработки персональных данных</a></li>
+                  <li><a href="#">Политика в отношении обработки персональных данных</a></li>
+              </ul>
+          </div>
+      </div>
   </footer>
 
   <div class="float-bar">

@@ -178,13 +178,15 @@
     position: relative
 
   &::after
-    @media(min-width: 768px)
+    @media(min-width: 1024px)
+      bottom: 0
       background-color: $color_lightblue
       content: ''
       height: 70px
       left: 50%
       position: absolute
-      top: 50%
+      transform: translateY(-250%)
+      top: auto
       width: 1px
       z-index: 1
 
@@ -336,6 +338,7 @@
     vertical-align: top
     text-transform: uppercase
     text-decoration: none
+    width: 100%
 
     @media(min-width: 768px)
       flex-direction: column

@@ -1,15 +1,35 @@
 <div class="shade">
     <div class="locations popover" tabindex="0">
-        <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg>
+        <button class="js-popover-closer popover__closer" type="button" title="Закрыть">
+            <svg>
                 <use xlink:href="#close"></use>
-            </svg> <span>Закрыть</span></button>
+            </svg>
+            <span>Закрыть</span>
+        </button>
         <div class="popover__inner">
-            <button class="locations__aim" type="button"><svg>
+            <button class="locations__aim" type="button">
+                <svg>
                     <use xlink:href="#aim"></use>
-                </svg>Определить город автоматически</button>
+                </svg>
+                Определить город автоматически
+            </button>
             <form class="locations__form" action="" method="get">
                 <input class="locations__form-input input" type="text" placeholder="Выберите город">
-                <button class="locations__form-submit btn btn--type_4" type="submit">Изменить</button>
+                <!--<button class="locations__form-submit btn btn--type_4" type="submit">Изменить</button>-->
+                <div class="locations__form-dropdown">
+                    <p class="locations__form-noresults">Ничего не найдено</p>
+                    <button class="locations__form-option" type="button">Санкт-Петербург</button>
+                    <button class="locations__form-option" type="button">Москва</button>
+                    <button class="locations__form-option" type="button">Екатеринбург</button>
+                    <button class="locations__form-option" type="button">Пермь</button>
+                    <button class="locations__form-option" type="button">Норильск</button>
+                    <button class="locations__form-option" type="button">Санкт-Петербург</button>
+                    <button class="locations__form-option" type="button">Москва</button>
+                    <button class="locations__form-option" type="button">Екатеринбург</button>
+                    <button class="locations__form-option" type="button">Пермь</button>
+                    <button class="locations__form-option" type="button">Норильск</button>
+                    <button class="locations__form-option" type="button">Санкт-Петербург</button>
+                </div>
             </form>
             <p class="locations__list-title">Адреса магазинов в твоём городе:</p>
             <div class="locations__list">
@@ -34,35 +54,49 @@
                 <p class="locations__contacts-title">Позвонить нам</p>
                 <p class="locations__phone-link"><a href="tel:+78008888888">8 800 888 88 88</a></p>
                 <div class="socials">
-                    <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Instagram"><svg>
+                    <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Instagram">
+                        <svg>
                             <use xlink:href="#inst"></use>
-                        </svg></a>
-                    <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Vkontakte"><svg>
+                        </svg>
+                    </a>
+                    <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Vkontakte">
+                        <svg>
                             <use xlink:href="#vk"></use>
-                        </svg></a>
-                    <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Facebook"><svg>
+                        </svg>
+                    </a>
+                    <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Facebook">
+                        <svg>
                             <use xlink:href="#fb"></use>
-                        </svg></a>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="search popover popover--wide" tabindex="0">
-        <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg>
+        <button class="js-popover-closer popover__closer" type="button" title="Закрыть">
+            <svg>
                 <use xlink:href="#close"></use>
-            </svg> <span>Закрыть</span></button>
-        <a class="search__to-catalog" href="#">Перейти в каталог <svg>
+            </svg>
+            <span>Закрыть</span>
+        </button>
+        <a class="search__to-catalog" href="#">
+            Перейти в каталог
+            <svg>
                 <use xlink:href="#chevron_right"></use>
-            </svg></a>
+            </svg>
+        </a>
         <div class="popover__inner">
             <p class="search__title">Поиск по каталогу</p>
             <div class="search__form-block">
                 <form class="search__form" action="search.html" method="get">
                     <input class="search__form-input" name="q" type="text" value="" placeholder="Поиск по каталогу" autocomplete="off">
-                    <button class="search__form-submit" type="submit" title="Искать" value="Искать"><svg>
+                    <button class="search__form-submit" type="submit" title="Искать" value="Искать">
+                        <svg>
                             <use xlink:href="#search"></use>
-                        </svg></button>
+                        </svg>
+                    </button>
                 </form>
             </div>
             <div class="search__vars">
@@ -92,9 +126,12 @@
                     </ul>
                 </div>
                 <div class="search__vars-block">
-                    <a class="search__to-catalog2" href="#">Перейти в каталог <svg>
+                    <a class="search__to-catalog2" href="#">
+                        Перейти в каталог
+                        <svg>
                             <use xlink:href="#chevron_right"></use>
-                        </svg></a>
+                        </svg>
+                    </a>
                     <p class="search__vars-title">Популярные товары</p>
                     <ul class="popular-list">
                         <li class="popular-list__item">
@@ -253,9 +290,12 @@
   </div>-->
 
     <div class="favorites-popup popover popover--at_right" tabindex="0">
-        <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg>
+        <button class="js-popover-closer popover__closer" type="button" title="Закрыть">
+            <svg>
                 <use xlink:href="#close"></use>
-            </svg> <span>Закрыть</span></button>
+            </svg>
+            <span>Закрыть</span>
+        </button>
         <div class="popover__inner">
             <p class="favorites-popup__accaunt-title">Добро пожаловать в&nbsp;ваш&nbsp;аккаунт,<br> Валерия!</p>
             <p class="favorites-popup__title">В избранном пусто</p>
