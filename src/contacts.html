@@ -76,65 +76,20 @@
                                 <use xlink:href="#aim"></use>
                             </svg>Определить город автоматически</button>
                         <div class="contacts__locations-list">
-                            <a class="contacts__locations-item is-active" href="#">
+                            <a class="js-to-map-point contacts__locations-item is-active" href="#" data-lat="59.946734" data-lon="30.352430">
                                 <span class="contacts__locations-item-icon"></span>
                                 <span class="contacts__locations-item-title">Санкт-Петербург, ул. Чайковского, дом 22</span>
                                 <span class="contacts__locations-item-address">Режим работы: с 12:00 до 21:00</span>
                             </a>
-                            <a class="contacts__locations-item" href="#">
+                            <a class="js-to-map-point contacts__locations-item" href="#" data-lat="59.914534" data-lon="30.436754">
                                 <span class="contacts__locations-item-icon"></span>
                                 <span class="contacts__locations-item-title">Санкт-Петербург, пр. Дальневосточный, 12</span>
                                 <span class="contacts__locations-item-address">Режим работы: с 12:00 до 21:00</span>
                             </a>
-                            <a class="contacts__locations-item" href="#">
+                            <a class="js-to-map-point contacts__locations-item" href="#" data-lat="59.863328" data-lon="30.404083">
                                 <span class="contacts__locations-item-icon"></span>
                                 <span class="contacts__locations-item-title">Санкт-Петербург, пр. Светлановский, 109</span>
                                 <span class="contacts__locations-item-address">Режим работы: с 12:00 до 21:00</span>
-                            </a>
-                            <a class="contacts__locations-item" href="#">
-                                <span class="contacts__locations-item-icon"></span>
-                                <span class="contacts__locations-item-title">Санкт-Петербург, Пражская, д. 48/50</span>
-                                <span class="contacts__locations-item-address">Режим работы: с 11:00 до 21:00</span>
-                            </a>
-                            <a class="contacts__locations-item" href="#">
-                                <span class="contacts__locations-item-icon"></span>
-                                <span class="contacts__locations-item-title">Санкт-Петербург, ул. Чайковского, дом 22</span>
-                                <span class="contacts__locations-item-address">Режим работы: с 12:00 до 21:00</span>
-                            </a>
-                            <a class="contacts__locations-item" href="#">
-                                <span class="contacts__locations-item-icon"></span>
-                                <span class="contacts__locations-item-title">Санкт-Петербург, пр. Дальневосточный, 12</span>
-                                <span class="contacts__locations-item-address">Режим работы: с 12:00 до 21:00</span>
-                            </a>
-                            <a class="contacts__locations-item" href="#">
-                                <span class="contacts__locations-item-icon"></span>
-                                <span class="contacts__locations-item-title">Санкт-Петербург, пр. Светлановский, 109</span>
-                                <span class="contacts__locations-item-address">Режим работы: с 12:00 до 21:00</span>
-                            </a>
-                            <a class="contacts__locations-item" href="#">
-                                <span class="contacts__locations-item-icon"></span>
-                                <span class="contacts__locations-item-title">Санкт-Петербург, Пражская, д. 48/50</span>
-                                <span class="contacts__locations-item-address">Режим работы: с 11:00 до 21:00</span>
-                            </a>
-                            <a class="contacts__locations-item" href="#">
-                                <span class="contacts__locations-item-icon"></span>
-                                <span class="contacts__locations-item-title">Санкт-Петербург, ул. Чайковского, дом 22</span>
-                                <span class="contacts__locations-item-address">Режим работы: с 12:00 до 21:00</span>
-                            </a>
-                            <a class="contacts__locations-item" href="#">
-                                <span class="contacts__locations-item-icon"></span>
-                                <span class="contacts__locations-item-title">Санкт-Петербург, пр. Дальневосточный, 12</span>
-                                <span class="contacts__locations-item-address">Режим работы: с 12:00 до 21:00</span>
-                            </a>
-                            <a class="contacts__locations-item" href="#">
-                                <span class="contacts__locations-item-icon"></span>
-                                <span class="contacts__locations-item-title">Санкт-Петербург, пр. Светлановский, 109</span>
-                                <span class="contacts__locations-item-address">Режим работы: с 12:00 до 21:00</span>
-                            </a>
-                            <a class="contacts__locations-item" href="#">
-                                <span class="contacts__locations-item-icon"></span>
-                                <span class="contacts__locations-item-title">Санкт-Петербург, Пражская, д. 48/50</span>
-                                <span class="contacts__locations-item-address">Режим работы: с 11:00 до 21:00</span>
                             </a>
                         </div>
                     </div>
@@ -143,7 +98,7 @@
                             <button class="contacts__tabs-button is-active" type="button">Все магазины</button>
                             <button class="contacts__tabs-button" type="button">Пункты выдачи</button>
                         </div>
-                        <div class="contacts__map"></div>
+                        <div id="contacts_map" class="contacts__map"></div>
                         <form class="form form--big">
                             <p class="form__title">ОСТАВИТЬ ЗАЯВКУ</p>
                             <p class="form__text">КАКОЙ-ТО ТЕКСТ ДЛЯ ПОЯСНЕНИЯ ПОЛЬЗОВАТЕЛЮ ЧТО НУЖНО ДЕЛАТЬ</p>
@@ -180,6 +135,7 @@
     //= template/float-bar.html
 
     //= template/scripts.html
+    <script src="js/contacts-map.js"></script>
 
 </body>
 
