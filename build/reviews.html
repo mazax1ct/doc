@@ -1070,6 +1070,42 @@
                 </form>
             </div>
         </div>
+    
+        <div class="service-request popover popover--at_right" tabindex="0">
+            <button class="js-popover-closer popover__closer" type="button" title="Закрыть">
+                <svg>
+                    <use xlink:href="#close"></use>
+                </svg>
+                <span>Закрыть</span>
+            </button>
+            <div class="popover__inner">
+                <p class="popover__title">Записаться на услугу</p>
+                <p class="popover__text">Заполните форму и мы ответим вам.</p>
+                <form class="popover__form" action="">
+                    <label class="select-wrapper">
+                        <span class="select-wrapper__label">Выберите услугу</span>
+                        <span class="select-wrapper__container">
+                            <select class="js-select">
+                                <option value="1">Уход</option>
+                                <option value="2">Регулировка</option>
+                                <option value="3">Ремонт</option>
+                                <option value="4">Программа обновления</option>
+                                <option value="5">Гравировка</option>
+                                <option value="6">Другое</option>
+                            </select>
+                        </span>
+                    </label>
+                    <label class="popover__form-label"><input class="input" type="text" name="fio" placeholder="ФИО*"></label>
+                    <label class="popover__form-label"><input class="js-phone-mask input" type="text" name="phone" placeholder="Телефон*"></label>
+                    <label class="popover__form-label"><input class="input" type="text" name="email" placeholder="Email*"></label>
+                    <button class="btn btn--type_1" type="submit">Отправить</button>
+                </form>
+            </div>
+            <div class="popover__inner" style="display: none">
+                <p class="popover__title">Спасибо за вашу заявку</p>
+                <p class="popover__text">В ближайшее время мы свяжемся с вами.</p>
+            </div>
+        </div>
     </div>
 
     <main class="page-content">

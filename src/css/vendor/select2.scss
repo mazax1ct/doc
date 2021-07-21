@@ -5,6 +5,7 @@
     margin: 0;
     min-width: 100%;
     position: relative;
+    text-align: left;
     width: 100%;
 }
 
@@ -381,6 +382,25 @@
 .select2-container--default .select2-results > .select2-results__options {
     max-height: 200px;
     overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: $color_grey rgba($color_grey, 0.3);
+
+    &::-webkit-scrollbar {
+        height: 6px;
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-image: linear-gradient($color_grey, $color_grey);
+        background-size: 1px 100%;
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $color_darkblue;
+        width: 6px;
+    }
 }
 
 .select2-container--default .select2-results__option .select2-results__option {

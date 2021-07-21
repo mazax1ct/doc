@@ -124,6 +124,10 @@
                             </label>
                             <button class="btn btn--type_1" type="submit">Отправить</button>
                         </form>
+                        <div class="form form--big" style="display: none">
+                            <p class="form__title">СПАСИБО ЗА ВАШУ ЗАЯВКУ!</p>
+                            <p class="form__text">В БЛИЖАЙШЕЕ ВРЕМЯ МЫ СВЯЖЕМСЯ С ВАМИ.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -136,7 +140,12 @@
 
     //= template/scripts.html
     <script src="js/contacts-map.js"></script>
-
+    <script>
+        $(document).on('click', '.form button', function() {
+            $('.form').toggle();
+            return false;
+        });
+    </script>
 </body>
 
 </html>

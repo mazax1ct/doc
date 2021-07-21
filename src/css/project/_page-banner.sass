@@ -125,6 +125,7 @@
     top: 50%
     transform: translate(-50%, -50%)
     width: 100%
+    z-index: 2
 
     @media(min-width: 1024px)
       padding-top: 134px
@@ -132,3 +133,22 @@
     @media(min-width: 1900px)
       max-width: 1640px
       padding-bottom: 134px
+
+  &--light
+    h1,
+    .page-banner__title,
+    .page-banner__intro
+      color: $color_darkblue
+
+    //picture
+      position: relative
+
+      //&::after
+        background-color: rgba($color_grey, 0.3)
+        bottom: 0
+        content: ''
+        left: 0
+        position: absolute
+        right: 0
+        top: 0
+        z-index: 1
