@@ -202,16 +202,16 @@
       &:not(:last-child)
         margin-bottom: 10px
 
+    a,
     button
-      background-color: transparent
-      border: none
-      cursor: pointer
       color: $color_grey
+      display: inline-block
       font-size: 13px
       font-weight: 500
       padding: 5px 0
-      text-align: left
       transition: color 0.3s
+      text-decoration: none
+      vertical-align: top
 
       &:hover,
       &:focus
@@ -219,6 +219,12 @@
 
       &:active
         color: $color_darkblue
+
+    button
+      background-color: transparent
+      border: none
+      cursor: pointer
+      text-align: left
 
   &__to-catalog2
     align-items: center
