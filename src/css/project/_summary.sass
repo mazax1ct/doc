@@ -70,8 +70,13 @@
     span
       &:first-child
         padding-right: 15px
+        white-space: nowrap
 
-  &__input
+  &__promocode-label
+    align-items: center
+    display: flex
+
+  &__promocode-input
     background-color: transparent
     border: none
     border-bottom: 1px solid $color_grey
@@ -80,7 +85,8 @@
     font-weight: 500
     line-height: 16px
     letter-spacing: 3px
-    max-width: 150px
+    height: 30px
+    max-width: 155px
     padding: 0
     transition: border-color 0.3s, color 0.3s
     width: 100%
@@ -88,6 +94,30 @@
     &:focus
       border-color: $color_darkblue
       color: $color_darkblue
+
+  &__promocode-apply
+    align-items: center
+    background-color: transparent
+    border: none
+    border-bottom: 1px solid $color_grey
+    cursor: pointer
+    height: 30px
+    display: block
+    min-width: 30px
+    //margin-left: 6px
+    padding: 0
+    width: 30px
+
+    &:hover,
+    &:focus
+      svg
+        fill: $color_lightblue
+
+    svg
+      fill: $color_darkblue
+      height: 16px
+      transition: fill 0.3s
+      width: 16px
 
   &__links
     border-top: 1px solid $color_grey
