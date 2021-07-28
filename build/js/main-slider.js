@@ -37,4 +37,8 @@ $(document).ready(function() {
       asNavFor: $('.js-main-slider')
     });
   }
+
+  if($('.page-banner__video').length) {
+    $('.page-banner__video')[0].play();
+  }
 });

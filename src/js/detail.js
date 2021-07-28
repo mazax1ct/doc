@@ -121,6 +121,12 @@ $(document).on('click', '.detail__thumb', function () {
 
 $('.js-detail-slider').on('afterChange', function(slick, currentSlide) {
   $('.detail__thumb').removeClass('is-active').eq(currentSlide.currentSlide).addClass('is-active');
+  if($('.js-detail-slider .slick-active').hasClass('detail-slider__slide--video')) {
+    $('.js-detail-slider video')[0].pause();
+    $('.js-detail-slider .slick-active video')[0].play();
+  }
+
+  //currentSlide.currentSlide.find
 });
 
 $(document).on('click', '.detail__tab-toggler', function () {

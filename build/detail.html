@@ -1118,15 +1118,18 @@
                                     <button class="detail__thumb is-active"><img src="images/content/detail/thumb.jpg" srcset="images/content/detail/thumb@2x.jpg 2x" alt=""></button>
                                     <button class="detail__thumb"><img src="images/content/detail/thumb_2.jpg" srcset="images/content/detail/thumb_2@2x.jpg 2x" alt=""></button>
                                     <button class="detail__thumb detail__thumb--video"><img src="images/content/detail/thumb.jpg" srcset="images/content/detail/thumb@2x.jpg 2x" alt=""></button>
+                                    <button class="detail__thumb detail__thumb--video"><img src="images/content/detail/thumb.jpg" srcset="images/content/detail/thumb@2x.jpg 2x" alt=""></button>
                                     <button class="detail__thumb"><img src="images/content/detail/thumb.jpg" srcset="images/content/detail/thumb@2x.jpg 2x" alt=""></button>
                                     <button class="detail__thumb"><img src="images/content/detail/thumb_2.jpg" srcset="images/content/detail/thumb_2@2x.jpg 2x" alt=""></button>
                                     <button class="detail__thumb"><img src="images/content/detail/thumb.jpg" srcset="images/content/detail/thumb@2x.jpg 2x" alt=""></button>
                                     <button class="detail__thumb"><img src="images/content/detail/thumb_2.jpg" srcset="images/content/detail/thumb_2@2x.jpg 2x" alt=""></button>
                                 </div>
                                 <div class="detail__slider">
-                                    <button class="detail__fav" type="button" title="Убрать из избранного"><svg>
+                                    <button class="detail__fav" type="button" title="Убрать из избранного">
+                                        <svg>
                                             <use xlink:href="#favorites_filled"></use>
-                                        </svg></button>
+                                        </svg>
+                                    </button>
                                     <div class="js-detail-slider detail-slider">
                                         <div class="detail-slider__slide">
                                             <div class="zoom" style="background-image: url('https://media.tiffany.com/is/image/Tiffany/68172071_1016275_ED?$EcomItemL2$&id=A1Pqw1&fmt=jpg&fit=constrain,1&wid=598&hei=598&hei=1550&wid=1550&qlt=90');">
@@ -1149,12 +1152,14 @@
                                             </div>
                                         </div>
                                         <div class="detail-slider__slide detail-slider__slide--video">
-                                            <a href="https://www.youtube.com/watch?v=sn-S82mF_gw" data-fancybox="images">
-                                                <picture>
-                                                    <source srcset="images/content/detail/img_1_desc.jpg, images/content/detail/img_1_desc@2x.jpg 2x" media="(min-width: 1024px)">
-                                                    <img src="images/content/detail/img_1_mob.jpg" srcset="images/content/detail/img_1_mob@2x.jpg 2x" alt="alt">
-                                                </picture>
-                                            </a>
+                                            <video playsinline preload="auto" loop="loop" muted controls>
+                                                <source src="https://g1.sunlight.net/media/product/video-crf25-800/2021/06/21/0a3af4dd9557434272e622caa82df1fa0f65ec0c.mp4">
+                                            </video>
+                                        </div>
+                                        <div class="detail-slider__slide detail-slider__slide--video">
+                                            <video playsinline preload="auto" loop="loop" muted controls>
+                                                <source src="https://g1.sunlight.net/media/product/video-crf25-800/2021/06/21/c3468d8c6734f0f39f1173917bdbdbcfe896352e.mp4">
+                                            </video>
                                         </div>
                                         <div class="detail-slider__slide">
                                             <div class="zoom" style="background-image: url('https://media.tiffany.com/is/image/Tiffany/68172071_1016275_ED?$EcomItemL2$&id=A1Pqw1&fmt=jpg&fit=constrain,1&wid=598&hei=598&hei=1550&wid=1550&qlt=90');">
