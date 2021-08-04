@@ -1105,9 +1105,12 @@
         <div class="container">
             <div class="title-block">
                 <h1>Корзина</h1>
-                <a class="back-link" href="catalog.html">Вернуться к покупкам <svg>
+                <a class="back-link" href="catalog.html">
+                    Вернуться к покупкам
+                    <svg>
                         <use xlink:href="#back"></use>
-                    </svg></a>
+                    </svg>
+                </a>
             </div>
 
             <div class="cart">
@@ -1218,12 +1221,26 @@
                         <p class="summary__item"><span>Товаров</span> 2 шт.</p>
                         <p class="summary__item"><span>Общая стоимость</span> 30 000 руб.</p>
                         <div class="summary__promocode">
-                            <label class="summary__promocode-label"><span>Ввести промо‑код</span> <input class="summary__promocode-input" type="text"></label>
-                            <button class="summary__promocode-apply" type="button" title="Применить">
-                                <svg>
-                                    <use xlink:href="#double_chevron_right"></use>
-                                </svg>
-                            </button>
+                            <div class="summary__promocode-container">
+                                <label class="summary__promocode-label"><span>Ввести промо‑код</span> <input class="summary__promocode-input" type="text"></label>
+                                <button class="summary__promocode-apply" type="button" title="Применить">
+                                    <svg>
+                                        <use xlink:href="#double_chevron_right"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="summary__promocode-codes">
+                                <p>ПРИМЕНЁННЫЕ КУПОНЫ:</p>
+                                <span>TEST_CODE_COUPON <a href="javascript:void(0)" data-action="delCoupon" data-value="TEST_CODE_COUPON"><svg>
+                                            <use xlink:href="#delete_crest"></use>
+                                        </svg></a></span><br>
+                                <span>PROMOCODE_2021 <a href="javascript:void(0)"><svg>
+                                            <use xlink:href="#delete_crest"></use>
+                                        </svg></a></span><br>
+                                <span>DLINNOE_NAZVANIE_CUPONA_2021 <a href="javascript:void(0)"><svg>
+                                            <use xlink:href="#delete_crest"></use>
+                                        </svg></a></span>
+                            </div>
                         </div>
                         <p class="summary__links"><a href="#" target="_blank">Правила доставки</a> <a href="#" target="_blank">Условия оферты</a></p>
                         <p class="summary__item"><span>Итого (без&nbsp;учета доставки):</span> <span class="summary__price">2 000 000 руб.</span></p>
