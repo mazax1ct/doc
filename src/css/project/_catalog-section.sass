@@ -171,7 +171,7 @@
     &::after
       display: block
       content: ''
-      min-height: 50px
+      min-height: 70px
 
       @media(min-width: 1024px)
         display: none
@@ -232,31 +232,22 @@
     @media(min-width: 1024px)
       display: none
 
-    @media(min-width: 1200px)
+    @media(min-width: 1900px)
       align-items: center
       border-top: 1px solid rgba($color_gold, 0.3)
       border-bottom: 1px solid rgba($color_gold, 0.3)
       border-right: 1px solid rgba($color_gold, 0.3)
       display: flex
-      font-size: 10px
+      font-size: 16px
       font-weight: 500
-      height: 50px
+      height: 100px
       justify-content: center
       margin: 0
-      padding-left: 15px
-      padding-right: 15px
-
-    @media(min-width: 1350px)
-      font-size: 14px
-      height: 80px
-
-    @media(min-width: 1900px)
-      height: 100px
       padding-left: 30px
       padding-right: 30px
 
     &::after
-      @media(min-width: 1024px)
+      @media(min-width: 1900px)
         content: ':'
 
     svg
@@ -266,7 +257,7 @@
       margin-right: 10px
       width: 16px
 
-      @media(min-width: 1024px)
+      @media(min-width: 1900px)
         display: block
 
   &__section
@@ -387,7 +378,7 @@
         display: block
         left: auto
         position: absolute
-        padding: 30px
+        padding: 30px 10px
         top: 100%
         width: 100%
         z-index: 5
@@ -395,6 +386,8 @@
       @media(min-width: 1900px)
         padding-top: 40px
         padding-bottom: 40px
+        padding-left: 20px
+        padding-right: 20px
 
       &::after
         background-color: #fff
@@ -544,6 +537,35 @@
       @media(min-width: 1900px)
         padding-right: 50px
 
+  &__apply
+    background-color: $color_darkblue
+    border: none
+    border-top-color: rgba($color_gold, 0.3)
+    border-bottom-color: rgba($color_gold, 0.3)
+    border-right: 1px solid rgba($color_gold, 0.3)
+    color: #fff
+    cursor: pointer
+    height: 50px
+    letter-spacing: 0
+    justify-content: center
+    position: relative
+    padding-left: 10px
+    padding-right: 10px
+    text-transform: none
+    transition: background-color 0.3s
+    width: 100%
+
+    @media(min-width: 1350px)
+      font-size: 16px
+      height: 80px
+
+    @media(min-width: 1900px)
+      height: 100px
+
+    &:hover,
+    &:focus
+      background-color: $color_lightblue
+
   &__sort
     border: 1px solid $color_grey
     cursor: pointer
@@ -563,12 +585,12 @@
       display: flex
       margin-left: 0
       margin-right: 0
-      min-width: 310px
+      min-width: 160px
       width: auto
 
     @media(min-width: 1350px)
       height: 80px
-      min-width: 370px
+      min-width: 220px
 
     @media(min-width: 1900px)
       height: 100px
@@ -597,12 +619,12 @@
       border: none
       height: 48px
 
-      @media(min-width: 1024px)
+      //@media(min-width: 1024px)
         padding-left: 140px
 
       @media(min-width: 1350px)
         height: 78px
-        padding-left: 170px
+        //padding-left: 170px
 
       @media(min-width: 1900px)
         height: 98px
@@ -627,19 +649,23 @@
       @media(min-width: 1024px)
         font-size: 13px
         font-weight: 500
+        line-height: 38px
         padding-right: 25px
+        padding-top: 10px
         text-transform: none
 
       @media(min-width: 1350px)
         font-size: 16px
-        line-height: 78px
+        line-height: 58px
+        padding-left: 15px
+        padding-top: 20px
 
       @media(min-width: 1900px)
-        line-height: 98px
+        line-height: 78px
 
     .select2-container--default .select2-selection--single .select2-selection__arrow
       height: 10px
-      right: 5px
+      right: 10px
       top: 19px
       width: 10px
 
@@ -647,7 +673,7 @@
         top: 21px
 
       @media(min-width: 1350px)
-        right: 7px
+        right: 12px
         top: 36px
 
       @media(min-width: 1900px)
@@ -689,20 +715,23 @@
     display: none
     font-size: 13px
     font-weight: 400
-    text-transform: uppercase
 
     @media(min-width: 1024px)
       display: block
       left: 10px
       pointer-events: none
       position: absolute
-      top: 50%
-      transform: translateY(-50%)
+      top: 6px
+      //transform: translateY(-50%)
       z-index: 1
 
     @media(min-width: 1350px)
       font-size: 16px
       left: 15px
+      top: 16px
+
+    @media(min-width: 1900px)
+      top: 20px
 
   &__reset-block
     &--outer

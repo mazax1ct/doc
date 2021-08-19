@@ -58,23 +58,36 @@
 
             <div class="filter">
                 <div class="filter__container">
-                    <button class="js-filter-opener filter__opener" type="button"><svg>
+                    <button class="js-filter-opener filter__opener" type="button">
+                        <svg>
                             <use xlink:href="#filter"></use>
-                        </svg> <span>ФИЛЬТР</span> <svg>
+                        </svg>
+                        <span>ФИЛЬТР</span>
+                        <svg>
                             <use xlink:href="#chevron_down"></use>
-                        </svg></button>
+                        </svg>
+                    </button>
                     <div class="filter__filter">
                         <div class="filter__filter-inner">
-                            <button class="js-filter-closer filter__closer" type="button" title="Закрыть"><svg>
+                            <button class="js-filter-closer filter__closer" type="button" title="Закрыть">
+                                <svg>
                                     <use xlink:href="#close"></use>
-                                </svg></button>
-                            <p class="filter__title"><svg>
+                                </svg>
+                            </button>
+                            <p class="filter__title">
+                                <svg>
                                     <use xlink:href="#filter"></use>
-                                </svg> Фильтр</p>
+                                </svg>
+                                Фильтр
+                            </p>
                             <div class="filter__section">
-                                <button class="filter__section-toggler" type="button"><span class="filter__section-toggler-qnt">2</span>Тип изделия <svg>
+                                <button class="filter__section-toggler" type="button">
+                                    <span class="filter__section-toggler-qnt">2</span>
+                                    Тип изделия
+                                    <svg>
                                         <use xlink:href="#chevron_down"></use>
-                                    </svg></button>
+                                    </svg>
+                                </button>
                                 <div class="filter__section-dropdown">
                                     <label class="filter__option">
                                         <input type="checkbox">
@@ -103,9 +116,28 @@
                                 </div>
                             </div>
                             <div class="filter__section">
-                                <button class="filter__section-toggler" type="button"><span class="filter__section-toggler-qnt">2</span>Цвет золота <svg>
+                                <button class="filter__section-toggler" type="button">
+                                    Ширина
+                                    <svg>
                                         <use xlink:href="#chevron_down"></use>
-                                    </svg></button>
+                                    </svg>
+                                </button>
+                                <div class="filter__section-dropdown">
+                                    <div class="filter__slider">
+                                        <div class="filter__slider-inner">
+                                            <input class="js-weight-slider" type="text" name="price" value="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter__section">
+                                <button class="filter__section-toggler" type="button">
+                                    <span class="filter__section-toggler-qnt">2</span>
+                                    Цвет металла
+                                    <svg>
+                                        <use xlink:href="#chevron_down"></use>
+                                    </svg>
+                                </button>
                                 <div class="filter__section-dropdown">
                                     <label class="filter__option">
                                         <input type="checkbox">
@@ -122,9 +154,11 @@
                                 </div>
                             </div>
                             <div class="filter__section">
-                                <button class="filter__section-toggler" type="button"><span class="filter__section-toggler-qnt">2</span>Вставка <svg>
+                                <button class="filter__section-toggler" type="button">
+                                    <span class="filter__section-toggler-qnt">2</span>Вставка <svg>
                                         <use xlink:href="#chevron_down"></use>
-                                    </svg></button>
+                                    </svg>
+                                </button>
                                 <div class="filter__section-dropdown">
                                     <label class="filter__option">
                                         <input type="checkbox">
@@ -157,9 +191,13 @@
                                 </div>
                             </div>
                             <div class="filter__section">
-                                <button class="filter__section-toggler" type="button"><span class="filter__section-toggler-qnt">2</span>Размер <svg>
+                                <button class="filter__section-toggler" type="button">
+                                    <span class="filter__section-toggler-qnt">2</span>
+                                    Размер
+                                    <svg>
                                         <use xlink:href="#chevron_down"></use>
-                                    </svg></button>
+                                    </svg>
+                                </button>
                                 <div class="filter__section-dropdown">
                                     <div class="filter__sizes">
                                         <label class="filter__size">
@@ -238,9 +276,12 @@
                                 </div>
                             </div>
                             <div class="filter__section">
-                                <button class="filter__section-toggler" type="button">Вес <svg>
+                                <button class="filter__section-toggler" type="button">
+                                    Вес
+                                    <svg>
                                         <use xlink:href="#chevron_down"></use>
-                                    </svg></button>
+                                    </svg>
+                                </button>
                                 <div class="filter__section-dropdown">
                                     <div class="filter__slider">
                                         <div class="filter__slider-inner">
@@ -250,9 +291,12 @@
                                 </div>
                             </div>
                             <div class="filter__section">
-                                <button class="filter__section-toggler" type="button">Цена <svg>
+                                <button class="filter__section-toggler" type="button">
+                                    Цена
+                                    <svg>
                                         <use xlink:href="#chevron_down"></use>
-                                    </svg></button>
+                                    </svg>
+                                </button>
                                 <div class="filter__section-dropdown">
                                     <div class="filter__slider">
                                         <div class="filter__slider-inner">
@@ -283,10 +327,16 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="filter__section">
+                                <button class="filter__apply" type="button">ПРИМЕНИТЬ</button>
+                            </div>
                             <div class="filter__reset-block">
-                                <button class="filter__reset filter__reset--all" type="button">СБРОСИТЬ ВСЕ ФИЛЬТРЫ <svg>
+                                <button class="filter__reset filter__reset--all" type="button">
+                                    СБРОСИТЬ ВСЕ ФИЛЬТРЫ
+                                    <svg>
                                         <use xlink:href="#delete_crest"></use>
-                                    </svg></button>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -294,9 +344,9 @@
                         <span class="filter__sort-title">Сортировать по:</span>
                         <select id="sort_select" class="js-sorting filter__sort-select" placeholder="Сортировать">
                             <option></option>
-                            <option value="1">По популярности</option>
-                            <option value="2">По возрастанию цены</option>
-                            <option value="3">По убыванию цены</option>
+                            <option value="1">популярности</option>
+                            <option value="2">возрастанию цены</option>
+                            <option value="3">убыванию цены</option>
                         </select>
                     </label>
                 </div>
