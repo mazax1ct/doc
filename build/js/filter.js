@@ -1,3 +1,17 @@
+//функция навешивания класса на фильтр
+var filter_resize_scroll = function(e) {
+  var hHeight = $('.header').height();
+  var fOffsetTop = $(".filter").offset().top - hHeight;
+  if($(window).scrollTop() > fOffsetTop) {
+    $(".filter__inner").addClass("scrolled");
+  } else {
+    $(".filter__inner").removeClass("scrolled");
+  }
+};
+
+//перезапуск функции навешивания класса на шапку при скролле и ресайзе
+$(window).on("scroll", filter_resize_scroll).on("resize", filter_resize_scroll);
+
 $(document).on('click', '.js-filter-opener', function () {
   $('body').addClass('popover-open');
   $('.filter__filter').fadeIn();
@@ -43,6 +57,12 @@ $(document).on('click', '.catalog-list.open-filter', function () {
 });
 
 $(document).ready(function() {
+  var filterHeight = $('.filter').height();
+  $('.filter').css('minHeight', filterHeight);
+
+  //функция навешивания класса на фильтр
+  filter_resize_scroll();
+
   $('.js-price-slider').ionRangeSlider({
     skin: 'round',
     type: 'double',
