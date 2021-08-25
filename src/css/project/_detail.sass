@@ -100,6 +100,36 @@
     @media(min-width: 1350px)
       padding-left: 140px
 
+  &__slider
+    position: relative
+
+  &__stickers
+    display: flex
+    flex-wrap: wrap
+    left: 0
+    position: absolute
+    top: 0
+    z-index: 1
+
+  &__sticker
+    color: #fff
+    font-size: 13px
+    font-weight: 700
+    letter-spacing: 3px
+    margin-bottom: 5px
+    margin-right: 5px
+    padding: 10px 8px
+    text-transform: uppercase
+
+    &--sale
+      background-color: rgba($color_gold, 0.7)
+
+    &--hit
+      background-color: rgba($color_lightblue, 0.7)
+
+    &--new
+      background-color: rgba(#9FA7BA, 0.7)
+
   &__fav
     align-items: center
     background-color: transparent
