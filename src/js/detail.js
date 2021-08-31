@@ -1,4 +1,4 @@
-function zoom(e){
+/*function zoom(e){
   var x, y;
   var zoomer = e.currentTarget;
   if(e.offsetX) {
@@ -15,7 +15,7 @@ function zoom(e){
   x = offsetX/zoomer.offsetWidth*100;
   y = offsetY/zoomer.offsetHeight*100;
   zoomer.style.backgroundPosition = x+'% '+y+'%';
-}
+}*/
 
 var offset_top = 150;
 
@@ -63,9 +63,14 @@ $(document).ready(function() {
     }
   }
 
-  $(".zoom").mousemove(function(e){
+  //зум для картинки
+  /*$(".zoom").mousemove(function(e){
 		zoom(e);
-	});
+	});*/
+
+  $('.js-zoom').zoom({
+    url: $(this).attr('data-src')
+  });
 });
 
 $(window).resize(function() {
@@ -125,8 +130,6 @@ $('.js-detail-slider').on('afterChange', function(slick, currentSlide) {
     $('.js-detail-slider video')[0].pause();
     $('.js-detail-slider .slick-active video')[0].play();
   }
-
-  //currentSlide.currentSlide.find
 });
 
 $(document).on('click', '.detail__tab-toggler', function () {
