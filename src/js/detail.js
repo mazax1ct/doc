@@ -35,6 +35,7 @@ $(document).ready(function() {
       speed: 300,
       slidesToShow: 1,
       slidesToScroll: 1,
+      swipe: false,
       responsive: [
         {
           breakpoint: 1023,
