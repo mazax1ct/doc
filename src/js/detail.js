@@ -69,9 +69,7 @@ $(document).ready(function() {
 		zoom(e);
 	});*/
 
-  $('.js-zoom').zoom({
-    url: $(this).attr('data-src')
-  });
+  $('.js-zoom').zoom();
 });
 
 $(window).resize(function() {
