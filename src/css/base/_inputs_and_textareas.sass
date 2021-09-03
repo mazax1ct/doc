@@ -80,18 +80,24 @@
   &::-webkit-input-placeholder
     color: $color_grey
     opacity: 1
+    text-transform: uppercase
 
   &::-moz-placeholder
     color: $color_grey
     opacity: 1
+    text-transform: uppercase
 
   &:-ms-input-placeholder
     color: $color_grey
     opacity: 1
+    text-transform: uppercase
 
 .input
   height: 54px
   padding: 19px 17px 18px
+
+  &[type="password"]
+    text-transform: none
 
 .textarea
   height: 130px
