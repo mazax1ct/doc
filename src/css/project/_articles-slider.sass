@@ -101,8 +101,15 @@
     transform: scale(1)
 
   &:hover
+    @media(min-width: 1024px)
+      transform: scale(1.16)
+
     img
       transform: scale(1.02)
+
+    .article-slide__title
+      @media(min-width: 1024px)
+        opacity: 1
 
   &__image
     border-radius: 50%

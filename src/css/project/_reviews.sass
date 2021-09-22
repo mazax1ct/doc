@@ -173,6 +173,10 @@
   &__preview-text
     margin-bottom: 20px
 
+  &__detail-text
+    display: none
+    padding-bottom: 20px
+
   &__more
     align-items: center
     background-color: transparent
@@ -194,10 +198,18 @@
     &:focus
       color: $color_lightblue
 
+    &.is-active
+      svg
+        transform: rotate(-90deg)
+
+    span
+      margin-right: 10px
+
     svg
       fill: $color_lightblue
       height: 10px
-      margin-left: 10px
+      transition: transform 0.3s
+      transform-origin: 50% 50% 0
       width: 10px
 
   &__answer

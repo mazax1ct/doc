@@ -1,9 +1,9 @@
 //яндекс карты
 var contactsMap;
 var locations = [
-  [59.946734, 30.352430, 'Россия, Санкт-Петербург, ул. Чайковского 22', '<img src="images/content/contacts-map/img_1.jpg" alt="Россия, Санкт-Петербург, ул. Чайковского 22" />', '<p class="balloon__address">ул. Чайковского 22</p>', '<p class="balloon__work-time">Режим работы: с 12:00 до 21:00</p>', '<p class="balloon__credit">Возможность покупки в рассрочку</p>', '<p class="balloon__phone">Тел.: <a href="tel:+79219872251">+7(921)9872251</a></p>'],
-  [59.914534, 30.436754, 'Россия, Санкт-Петербург, пр. Дальневосточный, 12', '<img src="images/content/contacts-map/img_1.jpg" alt="Россия, Санкт-Петербург, пр. Дальневосточный, 12" />', '<p class="balloon__address">пр. Дальневосточный, 12</p>', '<p class="balloon__work-time">Режим работы: с 10:00 до 20:00</p>', '', '<p class="balloon__phone">Тел.: <a href="tel:+79219872251">+7(921)9872251</a></p>'],
-  [59.863328, 30.404083, 'Россия, Санкт-Петербург, ул. Пражская, 48/50', '<img src="images/content/contacts-map/img_1.jpg" alt="Россия, Санкт-Петербург, ул. Пражская, 48/50" />', '<p class="balloon__address">ул. Пражская, 48/50</p>', '<p class="balloon__work-time">Режим работы: с 11:30 до 20:30</p>', '', '<p class="balloon__phone">Тел.: <a href="tel:+79219872251">+7(921)9872251</a></p>']
+  [59.946734, 30.352430, 'Россия, Санкт-Петербург, ул. Чайковского 22', '<img src="images/content/contacts-map/img_1.jpg" alt="Россия, Санкт-Петербург, ул. Чайковского 22" />', '<p class="balloon__address">ул. Чайковского 22</p>', '<p class="balloon__work-time">Режим работы: с 12:00 до 21:00</p>', '<p class="balloon__credit">Возможность покупки в рассрочку</p>', '<p class="balloon__phone">Тел.: <a href="tel:+79219872251">+7(921)9872251</a></p>','<p class="balloon__way"><a href="#">Проложить маршрут</a></p>'],
+  [59.914534, 30.436754, 'Россия, Санкт-Петербург, пр. Дальневосточный, 12', '<img src="images/content/contacts-map/img_1.jpg" alt="Россия, Санкт-Петербург, пр. Дальневосточный, 12" />', '<p class="balloon__address">пр. Дальневосточный, 12</p>', '<p class="balloon__work-time">Режим работы: с 10:00 до 20:00</p>', '', '<p class="balloon__phone">Тел.: <a href="tel:+79219872251">+7(921)9872251</a></p>','<p class="balloon__way"><a href="#">Проложить маршрут</a></p>'],
+  [59.863328, 30.404083, 'Россия, Санкт-Петербург, ул. Пражская, 48/50', '<img src="images/content/contacts-map/img_1.jpg" alt="Россия, Санкт-Петербург, ул. Пражская, 48/50" />', '<p class="balloon__address">ул. Пражская, 48/50</p>', '<p class="balloon__work-time">Режим работы: с 11:30 до 20:30</p>', '', '<p class="balloon__phone">Тел.: <a href="tel:+79219872251">+7(921)9872251</a></p>','<p class="balloon__way"><a href="#">Проложить маршрут</a></p>']
 ];
 
 setTimeout(function() {
@@ -28,13 +28,13 @@ function init() {
 
   var iconLayout = 'default#image';
   var iconImageHref = 'images/icons/map_pin.svg';
-  var iconImageSize = [25, 30];
-  var iconImageOffset = [-12, -30];
+  var iconImageSize = [40, 45];
+  var iconImageOffset = [-20, -45];
 
   for (i = 0; i < locations.length; i++) {
     placemark = new ymaps.Placemark([locations[i][0], locations[i][1]], {
       hintContent: locations[i][2],
-      balloonContentBody: '<div class="balloon"><p class="balloon__title">ДВОРЕЦ ОБРУЧАЛЬНЫХ КОЛЕЦ</p><div class="balloon__inner"><div class="balloon__image">'+ locations[i][3] +'</div><div class="balloon__info">'+ locations[i][4] + locations[i][5] + locations[i][6] + locations[i][7]  +'</div></div></div>'
+      balloonContentBody: '<div class="balloon"><p class="balloon__title">ДВОРЕЦ ОБРУЧАЛЬНЫХ КОЛЕЦ</p><div class="balloon__inner"><div class="balloon__image">'+ locations[i][3] +'</div><div class="balloon__info">'+ locations[i][4] + locations[i][5] + locations[i][6] + locations[i][7] + locations[i][8] +'</div></div></div>'
     }, {
       balloonMaxWidth: 520,
       iconLayout: iconLayout,

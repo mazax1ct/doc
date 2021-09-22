@@ -56,3 +56,12 @@ $(window).on("orientationchange", function(event) {
     }
   }
 });
+
+//ввод промокода
+$(document).on('input', '.summary__promocode-input', function () {
+	if($(this).val().length > 0) {
+		$('.summary__promocode-apply').prop('disabled', '');
+	}else{
+		$('.summary__promocode-apply').prop('disabled', 'disabled');
+	}
+});

@@ -1,17 +1,19 @@
-//функция навешивания класса на шапку
-var resize_scroll = function(e) {
-  var h = $(".header");
-  if($(window).scrollTop() > 0) {
-    h.addClass("scrolled");
-  } else {
-    h.removeClass("scrolled");
-  }
-};
+var header = $('.header'),
+		scrollPrev = 0;
 
-$(document).ready(function() {
-  //запуск функции навешивания класса на шапку
-  resize_scroll();
+$(window).scroll(function() {
+	var scrolled = $(window).scrollTop();
+
+  if ( scrolled > 0 ) {
+		header.addClass('scrolled');
+	} else {
+		header.removeClass('scrolled');
+	}
+
+	if ( scrolled > $('.header').height() && scrolled > scrollPrev ) {
+		header.addClass('out');
+	} else {
+		header.removeClass('out');
+	}
+	scrollPrev = scrolled;
 });
-
-//перезапуск функции навешивания класса на шапку при скролле и ресайзе
-$(window).on("scroll", resize_scroll).on("resize", resize_scroll);

@@ -1682,10 +1682,30 @@
                             <div style="max-width: 660px; width: 100%">
                                 <div class="simple-slider-block">
                                     <div class="js-simple-slider simple-slider" data-id="1">
-                                        <div><img src="images/content/simple-slider/img_1.jpg" srcset="images/content/simple-slider/img_1@2x.jpg" alt=""></div>
-                                        <div><img src="images/content/simple-slider/img_1.jpg" srcset="images/content/simple-slider/img_1@2x.jpg" alt=""></div>
-                                        <div><img src="images/content/simple-slider/img_1.jpg" srcset="images/content/simple-slider/img_1@2x.jpg" alt=""></div>
-                                        <div><img src="images/content/simple-slider/img_1.jpg" srcset="images/content/simple-slider/img_1@2x.jpg" alt=""></div>
+                                        <div>
+                                            <picture>
+                                                <source srcset="images/content/fw/img_1_desc.jpg, images/content/fw/img_1_desc@2x.jpg 2x" media="(min-width: 768px)">
+                                                <img src="images/content/fw/img_1_mob.jpg" srcset="images/content/fw/img_1_mob@2x.jpg 2x" alt="alt">
+                                            </picture>
+                                        </div>
+                                        <div>
+                                            <picture>
+                                                <source srcset="images/content/fw/img_1_desc.jpg, images/content/fw/img_1_desc@2x.jpg 2x" media="(min-width: 768px)">
+                                                <img src="images/content/fw/img_1_mob.jpg" srcset="images/content/fw/img_1_mob@2x.jpg 2x" alt="alt">
+                                            </picture>
+                                        </div>
+                                        <div>
+                                            <picture>
+                                                <source srcset="images/content/fw/img_1_desc.jpg, images/content/fw/img_1_desc@2x.jpg 2x" media="(min-width: 768px)">
+                                                <img src="images/content/fw/img_1_mob.jpg" srcset="images/content/fw/img_1_mob@2x.jpg 2x" alt="alt">
+                                            </picture>
+                                        </div>
+                                        <div>
+                                            <picture>
+                                                <source srcset="images/content/fw/img_1_desc.jpg, images/content/fw/img_1_desc@2x.jpg 2x" media="(min-width: 768px)">
+                                                <img src="images/content/fw/img_1_mob.jpg" srcset="images/content/fw/img_1_mob@2x.jpg 2x" alt="alt">
+                                            </picture>
+                                        </div>
                                     </div>
                                     <div class="simple-slider-nav">
                                         <div class="js-simple-slider-nav" data-id="1">
@@ -2257,7 +2277,7 @@
                         </div>
                     </div>
 
-                    <div class="catalog-slider-nav-container">
+                    <!--<div class="catalog-slider-nav-container">
                         <div class="js-catalog-slider-nav catalog-slider-nav" data-id="slider_1">
                             <div class="catalog-slider-nav__slide" data-filter="1">
                                 <button type="type"></button>
@@ -2305,7 +2325,9 @@
                                 <button type="type"></button>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
+                    <br>
+                    <p class="text-center"><a class="highlighted-btn" href="catalog-section.html"><span>Перейти в каталог</span></a></p>
                 </div>
             </div>
 
@@ -2512,7 +2534,7 @@
                         </div>
                     </div>
 
-                    <div class="news-slider-nav-container">
+                    <!--<div class="news-slider-nav-container">
                         <div class="js-news-slider-nav news-slider-nav" data-id="1">
                             <div class="news-slider-nav__slide">
                                 <button type="type">01</button>
@@ -2530,7 +2552,7 @@
                                 <button type="type">05</button>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
 
                 <p class="text-center"><a class="highlighted-btn" href="#"><span>Все акции и новости</span></a></p>
@@ -2600,7 +2622,7 @@
                             </div>
                         </div>
 
-                        <div class="articles-slider-nav-container">
+                        <!--<div class="articles-slider-nav-container">
                             <div class="js-articles-slider-nav articles-slider-nav" data-id="1">
                                 <div class="articles-slider-nav__slide">
                                     <button type="type">01</button>
@@ -2621,7 +2643,7 @@
                                     <button type="type">06</button>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
 
                         <p class="text-center"><a class="highlighted-btn" href="articles.html"><span>Смотреть все статьи</span></a></p>
                     </div>
@@ -2659,7 +2681,7 @@
                     <p class="footer__subscribe-title"><small>подписаться на новости</small> и получить подарок!</p>
                     <form action="">
                         <input class="footer__subscribe-input" type="text" placeholder="EMAIL">
-                        <button class="footer__subscribe-submit" type="submit" title="Отправить">
+                        <button class="footer__subscribe-submit" type="submit" title="Отправить" disabled>
                             <svg>
                                 <use xlink:href="#double_chevron_right"></use>
                             </svg>

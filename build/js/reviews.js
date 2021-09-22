@@ -20,3 +20,17 @@ $(document).on('click', '.js-scroll-to-reviews', function () {
   var top = $('.reviews-form').offset().top - $('.header').height();
   $('body, html').animate({scrollTop: top}, 1500);
 });
+
+$(document).on('click', '.js-review-more', function () {
+  var _this = $(this);
+  if(!_this.hasClass('is-active')){
+    _this.addClass('is-active');
+    _this.find('span').text('Скрыть');
+    _this.prev('.review__detail-text').slideDown();
+  }else{
+    _this.removeClass('is-active');
+    _this.find('span').text('Читать полностью');
+    _this.prev('.review__detail-text').slideUp();
+  }
+  return false;
+});

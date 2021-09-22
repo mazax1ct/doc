@@ -173,18 +173,18 @@
         padding-right: 30px
         width: 50%
 
-      @media(min-width: 1350px)
+      @media(min-width: 1024px)
         max-width: 300px
         margin-bottom: 0
-        width: 33.33333%
+        width: 25%
 
     &:nth-child(3)
       .search__vars-title
         margin-bottom: 30px
 
-      @media(min-width: 1350px)
+      @media(min-width: 1024px)
         flex-grow: 1
-        width: calc(100% - 66.66666%)
+        width: calc(100% - 50%)
 
   &__vars-title
     color: $color_darkblue
@@ -289,6 +289,12 @@
       padding-left: 15px
       padding-right: 15px
 
+    @media(min-width: 1024px)
+      width: 50%
+
+    @media(min-width: 1350px)
+      width: 33.33333%
+
 .popular
   min-height: 104px
   max-width: 250px
@@ -298,7 +304,7 @@
   &__link
     color: $color_grey
     display: block
-    font-size: 14px
+    font-size: 13px
     font-weight: 500
     margin-bottom: 12px
     text-decoration: none

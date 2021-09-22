@@ -106,8 +106,15 @@
     height: 30px
     display: block
     min-width: 30px
+    opacity: 0
     padding: 0
+    transition: opacity 0.3s
+    visibility: hidden
     width: 30px
+
+    &:not(:disabled)
+      opacity: 1
+      visibility: visible
 
     &:hover,
     &:focus

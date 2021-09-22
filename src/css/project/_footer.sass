@@ -95,12 +95,19 @@
     height: 100%
     justify-content: center
     left: auto
+    opacity: 0
     padding: 0
     position: absolute
     right: 0
     top: 0
+    transition: opacity 0.3s
+    visibility: hidden
     width: 40px
     z-index: 1
+
+    &:not(:disabled)
+      opacity: 1
+      visibility: visible
 
     &:hover,
     &:focus
@@ -350,7 +357,7 @@
       padding-bottom: 15px
       text-align: center
 
-      @media(min-width: 1350px)
+      @media(min-width: 1024px)
         justify-content: space-between
 
   &__copyright
@@ -363,21 +370,22 @@
     width: 100%
 
     @media(min-width: 1024px)
-      letter-spacing: 2px
-      margin-bottom: 15px
-
-    @media(min-width: 1350px)
       margin-bottom: 0
       width: auto
+
+    @media(min-width: 1350px)
+      letter-spacing: 2px
 
   &__service-menu
     align-items: center
     display: none
     font-size: 12px
-    letter-spacing: 2px
 
     @media(min-width: 1024px)
       display: flex
+
+    @media(min-width: 1350px)
+      letter-spacing: 1px
 
     li
       &:not(:last-child)

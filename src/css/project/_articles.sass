@@ -316,19 +316,33 @@
           flex-direction: row-reverse
 
         @media(min-width: 768px)
-          align-items: flex-end
+          align-items: flex-start
+
+      .article-nav__link-title
+        @media(min-width: 768px)
+          padding-left: 36px
+
+        @media(min-width: 1024px)
+          padding-left: 44px
 
     &:last-child
       @media(min-width: 768px)
         align-items: flex-end
         text-align: right
 
-        .article-nav__link
-          @media(max-width: 767px)
-            flex-direction: row-reverse
+      .article-nav__link
+        @media(max-width: 767px)
+          flex-direction: row-reverse
 
-          @media(min-width: 768px)
-            align-items: flex-start
+        @media(min-width: 768px)
+          align-items: flex-end
+
+      .article-nav__link-title
+        @media(min-width: 768px)
+          padding-right: 36px
+
+        @media(min-width: 1024px)
+          padding-right: 46px
 
   &__link
     align-items: center
@@ -350,13 +364,13 @@
       max-width: 420px
 
     &--prev
-      text-align: right
+      //text-align: right
 
       svg
         margin-right: 25px
 
     &--next
-      text-align: left
+      //text-align: left
 
       svg
         margin-left: 25px

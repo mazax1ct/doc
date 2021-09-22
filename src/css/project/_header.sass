@@ -103,7 +103,8 @@
   position: fixed
   right: 0
   top: 0
-  transition: background-color 0.3s, height 0.3s, box-shadow 0.3s
+  transition: background-color 0.3s, height 0.3s, box-shadow 0.3s, transform 0.3s
+  transform: translateY(0)
   z-index: 10
 
   @media(min-width: 1024px)
@@ -206,6 +207,10 @@
 
         svg
           fill: $color_grey
+
+  &.out
+    box-shadow: none
+    transform: translateY(-100%)
 
   &__top
     border-bottom: 1px solid #fff

@@ -1,7 +1,6 @@
 //функция навешивания класса на фильтр
 var filter_resize_scroll = function(e) {
-  var hHeight = $('.header').height();
-  var fOffsetTop = $(".filter").offset().top - hHeight;
+  var fOffsetTop = $(".filter").offset().top;
   if($(window).scrollTop() > fOffsetTop) {
     $(".filter__inner").addClass("scrolled");
   } else {

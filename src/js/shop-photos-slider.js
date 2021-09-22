@@ -6,12 +6,12 @@ $(document).ready(function() {
         prevArrow: '<button class="slick-arrow slick-prev" aria-label="Назад" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#chevron_left"/></svg></button>',
         nextArrow: '<button class="slick-arrow slick-next" aria-label="Вперед" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#chevron_right"/></svg></button>',
         mobileFirst: true,
-        dots: true,
+        //dots: true,
         infinite: true,
         speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1,
-        asNavFor: $('.js-shop-photos-slider-nav[data-id="'+$(this).attr('data-id')+'"]'),
+        //asNavFor: $('.js-shop-photos-slider-nav[data-id="'+$(this).attr('data-id')+'"]'),
         centerMode: true,
         centerPadding: '20px',
         responsive: [
@@ -22,7 +22,7 @@ $(document).ready(function() {
               centerPadding: '28.22916%',
               slidesToShow: 1,
               slidesToScroll: 1,
-              dots: false
+              dots: true
             }
           },
         ]
@@ -30,7 +30,7 @@ $(document).ready(function() {
     });
   }
 
-  if($('.js-shop-photos-slider-nav').length) {
+  /*if($('.js-shop-photos-slider-nav').length) {
     $('.js-shop-photos-slider-nav').each(function(index) {
       $(this).slick({
         arrows: true,
@@ -50,5 +50,5 @@ $(document).ready(function() {
         asNavFor: $('.js-shop-photos-slider[data-id="'+$(this).attr('data-id')+'"]')
       });
     });
-  }
+  }*/
 });

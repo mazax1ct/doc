@@ -1,7 +1,7 @@
 $(document).ready(function() {
   if($('.js-main-slider').length) {
     $('.js-main-slider').slick({
-      autoplay: true,
+      //autoplay: true,
       autoplaySpeed: 5000,
       fade: true,
       arrows: false,
@@ -17,7 +17,7 @@ $(document).ready(function() {
 
   if($('.js-main-slider-nav').length) {
     $('.js-main-slider-nav').slick({
-      autoplay: true,
+      //autoplay: true,
       autoplaySpeed: 5000,
       vertical: true,
       arrows: true,

@@ -1,5 +1,6 @@
 .main-slider
   background-color: $color_darkblue
+  height: 100vh
   margin-bottom: 50px
   position: relative
 
@@ -41,8 +42,17 @@
       height: 28px
       width: 28px
 
-  .page-banner
+  .slick-slider,
+  .slick-list,
+  .slick-track,
+  .page-banner,
+  picture,
+  img,
+  .page-banner--big img
     height: 100%
+
+  img
+    object-fit: cover
 
 .js-main-slider
   .slick-track

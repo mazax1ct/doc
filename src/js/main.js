@@ -29,11 +29,11 @@ $(document).ready(function() {
 	});
 });
 
-//смена цвета карточки
-$('.card .btn').hover(
-  function() {
-    $(this).closest('.card').addClass('change-color');
-  }, function() {
-		$(this).closest('.card').removeClass('change-color');
-  }
-);
+//форма подписки
+$(document).on('input', '.footer__subscribe-input', function () {
+	if($(this).val().length > 0) {
+		$('.footer__subscribe-submit').prop('disabled', '');
+	}else{
+		$('.footer__subscribe-submit').prop('disabled', 'disabled');
+	}
+});

@@ -2,1032 +2,1099 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>Избранное</title>
+    <title>Избранное</title>
 
-  <meta name="description" content="">
+    <meta name="description" content="">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
 
-  //= template/favicon.html
+    //= template/favicon.html
 
-  //= template/fonts-preload.html
+    //= template/fonts-preload.html
 
-  //= template/preloader-styles.html
+    //= template/preloader-styles.html
 
-  //= template/style.html
+    //= template/style.html
 </head>
 
 <body class="nobanner-page">
-  //= template/preloader.html
+    //= template/preloader.html
 
-  //= template/sprite.html
+    //= template/sprite.html
 
-  //= template/header.html
+    //= template/header.html
 
-  //= template/popovers.html
+    //= template/popovers.html
 
-  <main class="page-content">
+    <main class="page-content">
 
-    <div class="container">
-      <div class="title-block">
-        <h1>ЛИЧНЫЙ КАБИНЕТ</h1>
-      </div>
+        <div class="container">
+            <div class="title-block">
+                <h1>ЛИЧНЫЙ КАБИНЕТ</h1>
+            </div>
 
-      <ul class="personal-menu">
-        <li class="personal-menu__item"><a class="personal-menu__link" href="personal.html">ЛИЧНЫЕ ДАННЫЕ</a></li>
-        <li class="personal-menu__item"><a class="personal-menu__link" href="last-order.html">ПОСЛЕДНИЙ ЗАКАЗ</a></li>
-        <li class="personal-menu__item"><a class="personal-menu__link" href="history.html">ИСТОРИЯ ЗАКАЗОВ</a></li>
-        <li class="personal-menu__item is-active"><a class="personal-menu__link is-active" href="javascript:void(0)">ИЗБРАННОЕ</a></li>
-        <li class="personal-menu__item"><a class="personal-menu__link" href="subscribes.html">ПОДПИСКИ</a></li>
-      </ul>
+            <ul class="personal-menu">
+                <li class="personal-menu__item"><a class="personal-menu__link" href="personal.html">ЛИЧНЫЕ ДАННЫЕ</a></li>
+                <li class="personal-menu__item"><a class="personal-menu__link" href="last-order.html">ПОСЛЕДНИЙ ЗАКАЗ</a></li>
+                <li class="personal-menu__item"><a class="personal-menu__link" href="history.html">ИСТОРИЯ ЗАКАЗОВ</a></li>
+                <li class="personal-menu__item is-active"><a class="personal-menu__link is-active" href="javascript:void(0)">ИЗБРАННОЕ</a></li>
+                <li class="personal-menu__item"><a class="personal-menu__link" href="subscribes.html">ПОДПИСКИ</a></li>
+            </ul>
 
-      <div class="favorites-buttons">
-        <button class="favorites-button" type="button"><span>Купить выбранные</span> <svg><use xlink:href="#cart"></use></svg></button>
-        <button class="favorites-button" type="button"><span>Удалить выбранные</span> <svg><use xlink:href="#delete"></use></svg></button>
-      </div>
+            <div class="favorites-buttons">
+                <button class="favorites-button" type="button"><span>Купить выбранные</span> <svg>
+                        <use xlink:href="#cart"></use>
+                    </svg></button>
+                <button class="favorites-button" type="button"><span>Удалить выбранные</span> <svg>
+                        <use xlink:href="#delete"></use>
+                    </svg></button>
+            </div>
 
-      <div class="favorites">
-        <div class="favorites__item">
-          <div class="favorite">
-            <div class="favorite__inner">
-              <label class="favorite__image">
-                <input type="checkbox"/>
-                <span class="checkbox-icon"></span>
-                <img src="images/content/history/img.jpg" srcset="images/content/history/img@2x.jpg 2x" alt="alt">
-              </label>
-              <div class="favorite__info">
-                <div class="favorite__info-top">
-                  <p class="favorite__articul">Арт.: 921657Б</p>
-                  <a class="favorite__add-cart" href="#" title="В корзину"><span>В корзину</span> <svg><use xlink:href="#cart"></use></svg></a>
-                  <button class="favorite__delete" type="button" title="Удалить"><span>Удалить</span> <svg><use xlink:href="#delete"></use></svg></button>
+            <div class="favorites">
+                <div class="favorites__item">
+                    <div class="favorite">
+                        <div class="favorite__inner">
+                            <label class="favorite__image">
+                                <input type="checkbox" />
+                                <span class="checkbox-icon"></span>
+                                <img src="images/content/history/img.jpg" srcset="images/content/history/img@2x.jpg 2x" alt="alt">
+                            </label>
+                            <div class="favorite__info">
+                                <div class="favorite__info-top">
+                                    <p class="favorite__articul">Арт.: 921657Б</p>
+                                    <a class="favorite__add-cart" href="#" title="В корзину"><span>В корзину</span> <svg>
+                                            <use xlink:href="#cart"></use>
+                                        </svg></a>
+                                    <button class="favorite__delete" type="button" title="Удалить"><span>Удалить</span> <svg>
+                                            <use xlink:href="#delete"></use>
+                                        </svg></button>
+                                </div>
+                                <p class="favorite__title"><a href="detail.html">Кольцо с бриллиантами и изумрудами из комбинированного золота</a></p>
+                                <p class="favorite__description">1 брил. - 0,06 Ct (приведены характеристики вставок средние для модели), Вставка - Бриллиант, Материал - Золото 585</p>
+                                <label class="favorite__size select-wrapper">
+                                    <span class="select-wrapper__container">
+                                        <select class="js-select">
+                                            <option value="1">16 размер</option>
+                                            <option value="2">17 размер</option>
+                                            <option value="3">18 размер</option>
+                                        </select>
+                                    </span>
+                                </label>
+                                <div class="favorite__prices">
+                                    <p class="favorite__old-price">14 278 990 руб.</p>
+                                    <p class="favorite__price">2 115 900 руб.</p>
+                                    <a class="favorite__add-cart2 btn btn--type_1" href="#">добавить в корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="favorite__title"><a href="detail.html">Кольцо с бриллиантами и изумрудами из комбинированного золота</a></p>
-                <p class="favorite__description">1 брил. - 0,06 Ct (приведены характеристики вставок средние для модели), Вставка - Бриллиант, Материал - Золото 585</p>
-                <label class="favorite__size select-wrapper">
-                  <span class="select-wrapper__container">
-                    <select class="js-select">
-                      <option value="1">16 размер</option>
-                      <option value="2">17 размер</option>
-                      <option value="3">18 размер</option>
-                    </select>
-                  </span>
-                </label>
-                <div class="favorite__prices">
-                  <p class="favorite__old-price">14 278 990 руб.</p>
-                  <p class="favorite__price">2 115 900 руб.</p>
-                  <a class="favorite__add-cart2 btn btn--type_1" href="#">добавить в корзину</a>
+                <div class="favorites__item">
+                    <div class="favorite">
+                        <div class="favorite__inner">
+                            <label class="favorite__image">
+                                <input type="checkbox" />
+                                <span class="checkbox-icon"></span>
+                                <img src="images/content/history/img.jpg" srcset="images/content/history/img@2x.jpg 2x" alt="alt">
+                            </label>
+                            <div class="favorite__info">
+                                <div class="favorite__info-top">
+                                    <p class="favorite__articul">Арт.: 921657Б</p>
+                                    <a class="favorite__add-cart" href="#" title="В корзину"><span>В корзину</span> <svg>
+                                            <use xlink:href="#cart"></use>
+                                        </svg></a>
+                                    <button class="favorite__delete" type="button" title="Удалить"><span>Удалить</span> <svg>
+                                            <use xlink:href="#delete"></use>
+                                        </svg></button>
+                                </div>
+                                <p class="favorite__title"><a href="detail.html">Кольцо с бриллиантами и изумрудами из комбинированного золота</a></p>
+                                <p class="favorite__description">1 брил. - 0,06 Ct (приведены характеристики вставок средние для модели), Вставка - Бриллиант, Материал - Золото 585</p>
+                                <label class="favorite__size select-wrapper">
+                                    <span class="select-wrapper__container">
+                                        <select class="js-select">
+                                            <option value="1">16 размер</option>
+                                            <option value="2">17 размер</option>
+                                            <option value="3">18 размер</option>
+                                        </select>
+                                    </span>
+                                </label>
+                                <div class="favorite__prices">
+                                    <p class="favorite__old-price">14 278 990 руб.</p>
+                                    <p class="favorite__price">2 115 900 руб.</p>
+                                    <a class="favorite__add-cart2 btn btn--type_1" href="#">добавить в корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="favorites__item">
+                    <div class="favorite">
+                        <div class="favorite__inner">
+                            <label class="favorite__image">
+                                <input type="checkbox" />
+                                <span class="checkbox-icon"></span>
+                                <img src="images/content/history/img.jpg" srcset="images/content/history/img@2x.jpg 2x" alt="alt">
+                            </label>
+                            <div class="favorite__info">
+                                <div class="favorite__info-top">
+                                    <p class="favorite__articul">Арт.: 921657Б</p>
+                                    <a class="favorite__add-cart" href="#" title="В корзину"><span>В корзину</span> <svg>
+                                            <use xlink:href="#cart"></use>
+                                        </svg></a>
+                                    <button class="favorite__delete" type="button" title="Удалить"><span>Удалить</span> <svg>
+                                            <use xlink:href="#delete"></use>
+                                        </svg></button>
+                                </div>
+                                <p class="favorite__title"><a href="detail.html">Кольцо с бриллиантами и изумрудами из комбинированного золота</a></p>
+                                <p class="favorite__description">1 брил. - 0,06 Ct (приведены характеристики вставок средние для модели), Вставка - Бриллиант, Материал - Золото 585</p>
+                                <label class="favorite__size select-wrapper">
+                                    <span class="select-wrapper__container">
+                                        <select class="js-select">
+                                            <option value="1">16 размер</option>
+                                            <option value="2">17 размер</option>
+                                            <option value="3">18 размер</option>
+                                        </select>
+                                    </span>
+                                </label>
+                                <div class="favorite__prices">
+                                    <p class="favorite__old-price">14 278 990 руб.</p>
+                                    <p class="favorite__price">2 115 900 руб.</p>
+                                    <a class="favorite__add-cart2 btn btn--type_1" href="#">добавить в корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="favorites__item">
-          <div class="favorite">
-            <div class="favorite__inner">
-              <label class="favorite__image">
-                <input type="checkbox"/>
-                <span class="checkbox-icon"></span>
-                <img src="images/content/history/img.jpg" srcset="images/content/history/img@2x.jpg 2x" alt="alt">
-              </label>
-              <div class="favorite__info">
-                <div class="favorite__info-top">
-                  <p class="favorite__articul">Арт.: 921657Б</p>
-                  <a class="favorite__add-cart" href="#" title="В корзину"><span>В корзину</span> <svg><use xlink:href="#cart"></use></svg></a>
-                  <button class="favorite__delete" type="button" title="Удалить"><span>Удалить</span> <svg><use xlink:href="#delete"></use></svg></button>
-                </div>
-                <p class="favorite__title"><a href="detail.html">Кольцо с бриллиантами и изумрудами из комбинированного золота</a></p>
-                <p class="favorite__description">1 брил. - 0,06 Ct (приведены характеристики вставок средние для модели), Вставка - Бриллиант, Материал - Золото 585</p>
-                <label class="favorite__size select-wrapper">
-                  <span class="select-wrapper__container">
-                    <select class="js-select">
-                      <option value="1">16 размер</option>
-                      <option value="2">17 размер</option>
-                      <option value="3">18 размер</option>
-                    </select>
-                  </span>
-                </label>
-                <div class="favorite__prices">
-                  <p class="favorite__old-price">14 278 990 руб.</p>
-                  <p class="favorite__price">2 115 900 руб.</p>
-                  <a class="favorite__add-cart2 btn btn--type_1" href="#">добавить в корзину</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="favorites__item">
-          <div class="favorite">
-            <div class="favorite__inner">
-              <label class="favorite__image">
-                <input type="checkbox"/>
-                <span class="checkbox-icon"></span>
-                <img src="images/content/history/img.jpg" srcset="images/content/history/img@2x.jpg 2x" alt="alt">
-              </label>
-              <div class="favorite__info">
-                <div class="favorite__info-top">
-                  <p class="favorite__articul">Арт.: 921657Б</p>
-                  <a class="favorite__add-cart" href="#" title="В корзину"><span>В корзину</span> <svg><use xlink:href="#cart"></use></svg></a>
-                  <button class="favorite__delete" type="button" title="Удалить"><span>Удалить</span> <svg><use xlink:href="#delete"></use></svg></button>
-                </div>
-                <p class="favorite__title"><a href="detail.html">Кольцо с бриллиантами и изумрудами из комбинированного золота</a></p>
-                <p class="favorite__description">1 брил. - 0,06 Ct (приведены характеристики вставок средние для модели), Вставка - Бриллиант, Материал - Золото 585</p>
-                <label class="favorite__size select-wrapper">
-                  <span class="select-wrapper__container">
-                    <select class="js-select">
-                      <option value="1">16 размер</option>
-                      <option value="2">17 размер</option>
-                      <option value="3">18 размер</option>
-                    </select>
-                  </span>
-                </label>
-                <div class="favorite__prices">
-                  <p class="favorite__old-price">14 278 990 руб.</p>
-                  <p class="favorite__price">2 115 900 руб.</p>
-                  <a class="favorite__add-cart2 btn btn--type_1" href="#">добавить в корзину</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <h2 class="title-1">Дополни образ</h2>
+            <section class="catalog-slider-block">
+                <h2 class="title-1">Дополни образ</h2>
 
-      <div class="js-catalog-slider catalog-slider" data-id="slider_1">
-        <div class="catalog-slider__item">
-          <div class="catalog-item">
-            <div class="catalog-item__image-block">
-              <a class="catalog-item__image" href="detail.html">
-                <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
-                <div class="catalog-item__image-togglers">
-                  <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                <div class="js-catalog-slider catalog-slider" data-id="slider_1">
+                    <div class="catalog-slider__item">
+                        <div class="catalog-item">
+                            <div class="catalog-item__image-block">
+                                <a class="catalog-item__image" href="detail.html">
+                                    <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
+                                    <div class="catalog-item__image-togglers">
+                                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                    </div>
+                                </a>
+                                <button class="catalog-item__fav" type="button" title="Убрать из избранного"><svg>
+                                        <use xlink:href="#favorites_filled"></use>
+                                    </svg></button>
+                            </div>
+                            <div class="catalog-item__info-block">
+                                <p class="catalog-item__colors">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
+                                </p>
+                                <p class="catalog-item__articul">921657Б</p>
+                                <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
+                                <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
+                                <p class="catalog-item__prices">
+                                    <span class="catalog-item__price">41 600 руб.</span>
+                                    <span class="catalog-item__old-price">93 000 руб.</span>
+                                </p>
+                                <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-slider__item">
+                        <div class="catalog-item">
+                            <div class="catalog-item__image-block">
+                                <a class="catalog-item__image" href="detail.html">
+                                    <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
+                                    <div class="catalog-item__image-togglers">
+                                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                    </div>
+                                </a>
+                                <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg>
+                                        <use xlink:href="#favorites"></use>
+                                    </svg></button>
+                            </div>
+                            <div class="catalog-item__info-block">
+                                <p class="catalog-item__colors">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
+                                </p>
+                                <p class="catalog-item__articul">921657Б</p>
+                                <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
+                                <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
+                                <p class="catalog-item__prices">
+                                    <span class="catalog-item__price">41 600 руб.</span>
+                                    <span class="catalog-item__old-price">93 000 руб.</span>
+                                </p>
+                                <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-slider__item">
+                        <div class="catalog-item">
+                            <div class="catalog-item__image-block">
+                                <a class="catalog-item__image" href="detail.html">
+                                    <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
+                                    <div class="catalog-item__image-togglers">
+                                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                    </div>
+                                </a>
+                                <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg>
+                                        <use xlink:href="#favorites"></use>
+                                    </svg></button>
+                            </div>
+                            <div class="catalog-item__info-block">
+                                <p class="catalog-item__colors">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
+                                </p>
+                                <p class="catalog-item__articul">921657Б</p>
+                                <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
+                                <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
+                                <p class="catalog-item__prices">
+                                    <span class="catalog-item__price">41 600 руб.</span>
+                                    <span class="catalog-item__old-price">93 000 руб.</span>
+                                </p>
+                                <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-slider__item">
+                        <div class="catalog-item">
+                            <div class="catalog-item__image-block">
+                                <a class="catalog-item__image" href="detail.html">
+                                    <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
+                                    <div class="catalog-item__image-togglers">
+                                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                    </div>
+                                </a>
+                                <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg>
+                                        <use xlink:href="#favorites"></use>
+                                    </svg></button>
+                            </div>
+                            <div class="catalog-item__info-block">
+                                <p class="catalog-item__colors">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
+                                </p>
+                                <p class="catalog-item__articul">921657Б</p>
+                                <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
+                                <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
+                                <p class="catalog-item__prices">
+                                    <span class="catalog-item__price">41 600 руб.</span>
+                                    <span class="catalog-item__old-price">93 000 руб.</span>
+                                </p>
+                                <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-slider__item">
+                        <div class="catalog-item">
+                            <div class="catalog-item__image-block">
+                                <a class="catalog-item__image" href="detail.html">
+                                    <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
+                                    <div class="catalog-item__image-togglers">
+                                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                    </div>
+                                </a>
+                                <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg>
+                                        <use xlink:href="#favorites"></use>
+                                    </svg></button>
+                            </div>
+                            <div class="catalog-item__info-block">
+                                <p class="catalog-item__colors">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
+                                </p>
+                                <p class="catalog-item__articul">921657Б</p>
+                                <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
+                                <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
+                                <p class="catalog-item__prices">
+                                    <span class="catalog-item__price">41 600 руб.</span>
+                                    <span class="catalog-item__old-price">93 000 руб.</span>
+                                </p>
+                                <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-slider__item">
+                        <div class="catalog-item">
+                            <div class="catalog-item__image-block">
+                                <a class="catalog-item__image" href="detail.html">
+                                    <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
+                                    <div class="catalog-item__image-togglers">
+                                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                    </div>
+                                </a>
+                                <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg>
+                                        <use xlink:href="#favorites"></use>
+                                    </svg></button>
+                            </div>
+                            <div class="catalog-item__info-block">
+                                <p class="catalog-item__colors">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
+                                </p>
+                                <p class="catalog-item__articul">921657Б</p>
+                                <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
+                                <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
+                                <p class="catalog-item__prices">
+                                    <span class="catalog-item__price">41 600 руб.</span>
+                                    <span class="catalog-item__old-price">93 000 руб.</span>
+                                </p>
+                                <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-slider__item">
+                        <div class="catalog-item">
+                            <div class="catalog-item__image-block">
+                                <a class="catalog-item__image" href="detail.html">
+                                    <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
+                                    <div class="catalog-item__image-togglers">
+                                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                    </div>
+                                </a>
+                                <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg>
+                                        <use xlink:href="#favorites"></use>
+                                    </svg></button>
+                            </div>
+                            <div class="catalog-item__info-block">
+                                <p class="catalog-item__colors">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
+                                </p>
+                                <p class="catalog-item__articul">921657Б</p>
+                                <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
+                                <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
+                                <p class="catalog-item__prices">
+                                    <span class="catalog-item__price">41 600 руб.</span>
+                                    <span class="catalog-item__old-price">93 000 руб.</span>
+                                </p>
+                                <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-slider__item">
+                        <div class="catalog-item">
+                            <div class="catalog-item__image-block">
+                                <a class="catalog-item__image" href="detail.html">
+                                    <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
+                                    <div class="catalog-item__image-togglers">
+                                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                    </div>
+                                </a>
+                                <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg>
+                                        <use xlink:href="#favorites"></use>
+                                    </svg></button>
+                            </div>
+                            <div class="catalog-item__info-block">
+                                <p class="catalog-item__colors">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
+                                </p>
+                                <p class="catalog-item__articul">921657Б</p>
+                                <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
+                                <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
+                                <p class="catalog-item__prices">
+                                    <span class="catalog-item__price">41 600 руб.</span>
+                                    <span class="catalog-item__old-price">93 000 руб.</span>
+                                </p>
+                                <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-slider__item">
+                        <div class="catalog-item">
+                            <div class="catalog-item__image-block">
+                                <a class="catalog-item__image" href="detail.html">
+                                    <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
+                                    <div class="catalog-item__image-togglers">
+                                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                    </div>
+                                </a>
+                                <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg>
+                                        <use xlink:href="#favorites"></use>
+                                    </svg></button>
+                            </div>
+                            <div class="catalog-item__info-block">
+                                <p class="catalog-item__colors">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
+                                </p>
+                                <p class="catalog-item__articul">921657Б</p>
+                                <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
+                                <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
+                                <p class="catalog-item__prices">
+                                    <span class="catalog-item__price">41 600 руб.</span>
+                                    <span class="catalog-item__old-price">93 000 руб.</span>
+                                </p>
+                                <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-slider__item">
+                        <div class="catalog-item">
+                            <div class="catalog-item__image-block">
+                                <a class="catalog-item__image" href="detail.html">
+                                    <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
+                                    <div class="catalog-item__image-togglers">
+                                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                    </div>
+                                </a>
+                                <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg>
+                                        <use xlink:href="#favorites"></use>
+                                    </svg></button>
+                            </div>
+                            <div class="catalog-item__info-block">
+                                <p class="catalog-item__colors">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
+                                </p>
+                                <p class="catalog-item__articul">921657Б</p>
+                                <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
+                                <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
+                                <p class="catalog-item__prices">
+                                    <span class="catalog-item__price">41 600 руб.</span>
+                                    <span class="catalog-item__old-price">93 000 руб.</span>
+                                </p>
+                                <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-slider__item">
+                        <div class="catalog-item">
+                            <div class="catalog-item__image-block">
+                                <a class="catalog-item__image" href="detail.html">
+                                    <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
+                                    <div class="catalog-item__image-togglers">
+                                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                    </div>
+                                </a>
+                                <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg>
+                                        <use xlink:href="#favorites"></use>
+                                    </svg></button>
+                            </div>
+                            <div class="catalog-item__info-block">
+                                <p class="catalog-item__colors">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
+                                </p>
+                                <p class="catalog-item__articul">921657Б</p>
+                                <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
+                                <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
+                                <p class="catalog-item__prices">
+                                    <span class="catalog-item__price">41 600 руб.</span>
+                                    <span class="catalog-item__old-price">93 000 руб.</span>
+                                </p>
+                                <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-slider__item">
+                        <div class="catalog-item">
+                            <div class="catalog-item__image-block">
+                                <a class="catalog-item__image" href="detail.html">
+                                    <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
+                                    <div class="catalog-item__image-togglers">
+                                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                    </div>
+                                </a>
+                                <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg>
+                                        <use xlink:href="#favorites"></use>
+                                    </svg></button>
+                            </div>
+                            <div class="catalog-item__info-block">
+                                <p class="catalog-item__colors">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
+                                </p>
+                                <p class="catalog-item__articul">921657Б</p>
+                                <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
+                                <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
+                                <p class="catalog-item__prices">
+                                    <span class="catalog-item__price">41 600 руб.</span>
+                                    <span class="catalog-item__old-price">93 000 руб.</span>
+                                </p>
+                                <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </a>
-              <button class="catalog-item__fav" type="button" title="Убрать из избранного"><svg><use xlink:href="#favorites_filled"></use></svg></button>
-            </div>
-            <div class="catalog-item__info-block">
-              <p class="catalog-item__colors">
-                <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
-              </p>
-              <p class="catalog-item__articul">921657Б</p>
-              <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
-              <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
-              <p class="catalog-item__prices">
-                <span class="catalog-item__price">41 600 руб.</span>
-                <span class="catalog-item__old-price">93 000 руб.</span>
-              </p>
-              <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
-            </div>
-          </div>
-        </div>
-        <div class="catalog-slider__item">
-          <div class="catalog-item">
-            <div class="catalog-item__image-block">
-              <a class="catalog-item__image" href="detail.html">
-                <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
-                <div class="catalog-item__image-togglers">
-                  <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                </div>
-              </a>
-              <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg><use xlink:href="#favorites"></use></svg></button>
-            </div>
-            <div class="catalog-item__info-block">
-              <p class="catalog-item__colors">
-                <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
-              </p>
-              <p class="catalog-item__articul">921657Б</p>
-              <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
-              <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
-              <p class="catalog-item__prices">
-                <span class="catalog-item__price">41 600 руб.</span>
-                <span class="catalog-item__old-price">93 000 руб.</span>
-              </p>
-              <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
-            </div>
-          </div>
-        </div>
-        <div class="catalog-slider__item">
-          <div class="catalog-item">
-            <div class="catalog-item__image-block">
-              <a class="catalog-item__image" href="detail.html">
-                <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
-                <div class="catalog-item__image-togglers">
-                  <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                </div>
-              </a>
-              <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg><use xlink:href="#favorites"></use></svg></button>
-            </div>
-            <div class="catalog-item__info-block">
-              <p class="catalog-item__colors">
-                <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
-              </p>
-              <p class="catalog-item__articul">921657Б</p>
-              <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
-              <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
-              <p class="catalog-item__prices">
-                <span class="catalog-item__price">41 600 руб.</span>
-                <span class="catalog-item__old-price">93 000 руб.</span>
-              </p>
-              <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
-            </div>
-          </div>
-        </div>
-        <div class="catalog-slider__item">
-          <div class="catalog-item">
-            <div class="catalog-item__image-block">
-              <a class="catalog-item__image" href="detail.html">
-                <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
-                <div class="catalog-item__image-togglers">
-                  <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                </div>
-              </a>
-              <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg><use xlink:href="#favorites"></use></svg></button>
-            </div>
-            <div class="catalog-item__info-block">
-              <p class="catalog-item__colors">
-                <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
-              </p>
-              <p class="catalog-item__articul">921657Б</p>
-              <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
-              <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
-              <p class="catalog-item__prices">
-                <span class="catalog-item__price">41 600 руб.</span>
-                <span class="catalog-item__old-price">93 000 руб.</span>
-              </p>
-              <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
-            </div>
-          </div>
-        </div>
-        <div class="catalog-slider__item">
-          <div class="catalog-item">
-            <div class="catalog-item__image-block">
-              <a class="catalog-item__image" href="detail.html">
-                <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
-                <div class="catalog-item__image-togglers">
-                  <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                </div>
-              </a>
-              <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg><use xlink:href="#favorites"></use></svg></button>
-            </div>
-            <div class="catalog-item__info-block">
-              <p class="catalog-item__colors">
-                <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
-              </p>
-              <p class="catalog-item__articul">921657Б</p>
-              <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
-              <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
-              <p class="catalog-item__prices">
-                <span class="catalog-item__price">41 600 руб.</span>
-                <span class="catalog-item__old-price">93 000 руб.</span>
-              </p>
-              <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
-            </div>
-          </div>
-        </div>
-        <div class="catalog-slider__item">
-          <div class="catalog-item">
-            <div class="catalog-item__image-block">
-              <a class="catalog-item__image" href="detail.html">
-                <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
-                <div class="catalog-item__image-togglers">
-                  <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                </div>
-              </a>
-              <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg><use xlink:href="#favorites"></use></svg></button>
-            </div>
-            <div class="catalog-item__info-block">
-              <p class="catalog-item__colors">
-                <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
-              </p>
-              <p class="catalog-item__articul">921657Б</p>
-              <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
-              <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
-              <p class="catalog-item__prices">
-                <span class="catalog-item__price">41 600 руб.</span>
-                <span class="catalog-item__old-price">93 000 руб.</span>
-              </p>
-              <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
-            </div>
-          </div>
-        </div>
-        <div class="catalog-slider__item">
-          <div class="catalog-item">
-            <div class="catalog-item__image-block">
-              <a class="catalog-item__image" href="detail.html">
-                <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
-                <div class="catalog-item__image-togglers">
-                  <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                </div>
-              </a>
-              <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg><use xlink:href="#favorites"></use></svg></button>
-            </div>
-            <div class="catalog-item__info-block">
-              <p class="catalog-item__colors">
-                <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
-              </p>
-              <p class="catalog-item__articul">921657Б</p>
-              <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
-              <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
-              <p class="catalog-item__prices">
-                <span class="catalog-item__price">41 600 руб.</span>
-                <span class="catalog-item__old-price">93 000 руб.</span>
-              </p>
-              <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
-            </div>
-          </div>
-        </div>
-        <div class="catalog-slider__item">
-          <div class="catalog-item">
-            <div class="catalog-item__image-block">
-              <a class="catalog-item__image" href="detail.html">
-                <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
-                <div class="catalog-item__image-togglers">
-                  <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                </div>
-              </a>
-              <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg><use xlink:href="#favorites"></use></svg></button>
-            </div>
-            <div class="catalog-item__info-block">
-              <p class="catalog-item__colors">
-                <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
-              </p>
-              <p class="catalog-item__articul">921657Б</p>
-              <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
-              <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
-              <p class="catalog-item__prices">
-                <span class="catalog-item__price">41 600 руб.</span>
-                <span class="catalog-item__old-price">93 000 руб.</span>
-              </p>
-              <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
-            </div>
-          </div>
-        </div>
-        <div class="catalog-slider__item">
-          <div class="catalog-item">
-            <div class="catalog-item__image-block">
-              <a class="catalog-item__image" href="detail.html">
-                <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
-                <div class="catalog-item__image-togglers">
-                  <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                </div>
-              </a>
-              <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg><use xlink:href="#favorites"></use></svg></button>
-            </div>
-            <div class="catalog-item__info-block">
-              <p class="catalog-item__colors">
-                <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
-              </p>
-              <p class="catalog-item__articul">921657Б</p>
-              <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
-              <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
-              <p class="catalog-item__prices">
-                <span class="catalog-item__price">41 600 руб.</span>
-                <span class="catalog-item__old-price">93 000 руб.</span>
-              </p>
-              <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
-            </div>
-          </div>
-        </div>
-        <div class="catalog-slider__item">
-          <div class="catalog-item">
-            <div class="catalog-item__image-block">
-              <a class="catalog-item__image" href="detail.html">
-                <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
-                <div class="catalog-item__image-togglers">
-                  <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                </div>
-              </a>
-              <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg><use xlink:href="#favorites"></use></svg></button>
-            </div>
-            <div class="catalog-item__info-block">
-              <p class="catalog-item__colors">
-                <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
-              </p>
-              <p class="catalog-item__articul">921657Б</p>
-              <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
-              <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
-              <p class="catalog-item__prices">
-                <span class="catalog-item__price">41 600 руб.</span>
-                <span class="catalog-item__old-price">93 000 руб.</span>
-              </p>
-              <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
-            </div>
-          </div>
-        </div>
-        <div class="catalog-slider__item">
-          <div class="catalog-item">
-            <div class="catalog-item__image-block">
-              <a class="catalog-item__image" href="detail.html">
-                <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
-                <div class="catalog-item__image-togglers">
-                  <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                </div>
-              </a>
-              <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg><use xlink:href="#favorites"></use></svg></button>
-            </div>
-            <div class="catalog-item__info-block">
-              <p class="catalog-item__colors">
-                <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
-              </p>
-              <p class="catalog-item__articul">921657Б</p>
-              <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
-              <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
-              <p class="catalog-item__prices">
-                <span class="catalog-item__price">41 600 руб.</span>
-                <span class="catalog-item__old-price">93 000 руб.</span>
-              </p>
-              <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
-            </div>
-          </div>
-        </div>
-        <div class="catalog-slider__item">
-          <div class="catalog-item">
-            <div class="catalog-item__image-block">
-              <a class="catalog-item__image" href="detail.html">
-                <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
-                <div class="catalog-item__image-togglers">
-                  <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                </div>
-              </a>
-              <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg><use xlink:href="#favorites"></use></svg></button>
-            </div>
-            <div class="catalog-item__info-block">
-              <p class="catalog-item__colors">
-                <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
-              </p>
-              <p class="catalog-item__articul">921657Б</p>
-              <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
-              <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
-              <p class="catalog-item__prices">
-                <span class="catalog-item__price">41 600 руб.</span>
-                <span class="catalog-item__old-price">93 000 руб.</span>
-              </p>
-              <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="catalog-slider-nav-container">
-        <div class="js-catalog-slider-nav catalog-slider-nav" data-id="slider_1">
-          <div class="catalog-slider-nav__slide">
-            <button type="type"></button>
-          </div>
-          <div class="catalog-slider-nav__slide">
-            <button type="type"></button>
-          </div>
-          <div class="catalog-slider-nav__slide">
-            <button type="type"></button>
-          </div>
-          <div class="catalog-slider-nav__slide">
-            <button type="type"></button>
-          </div>
-          <div class="catalog-slider-nav__slide">
-            <button type="type"></button>
-          </div>
-          <div class="catalog-slider-nav__slide">
-            <button type="type"></button>
-          </div>
-          <div class="catalog-slider-nav__slide">
-            <button type="type"></button>
-          </div>
-          <div class="catalog-slider-nav__slide">
-            <button type="type"></button>
-          </div>
-          <div class="catalog-slider-nav__slide">
-            <button type="type"></button>
-          </div>
-          <div class="catalog-slider-nav__slide">
-            <button type="type"></button>
-          </div>
-          <div class="catalog-slider-nav__slide">
-            <button type="type"></button>
-          </div>
-          <div class="catalog-slider-nav__slide">
-            <button type="type"></button>
-          </div>
-        </div>
-      </div>
+                <!--<div class="catalog-slider-nav-container">
+                  <div class="js-catalog-slider-nav catalog-slider-nav" data-id="slider_1">
+                    <div class="catalog-slider-nav__slide">
+                      <button type="type"></button>
+                    </div>
+                    <div class="catalog-slider-nav__slide">
+                      <button type="type"></button>
+                    </div>
+                    <div class="catalog-slider-nav__slide">
+                      <button type="type"></button>
+                    </div>
+                    <div class="catalog-slider-nav__slide">
+                      <button type="type"></button>
+                    </div>
+                    <div class="catalog-slider-nav__slide">
+                      <button type="type"></button>
+                    </div>
+                    <div class="catalog-slider-nav__slide">
+                      <button type="type"></button>
+                    </div>
+                    <div class="catalog-slider-nav__slide">
+                      <button type="type"></button>
+                    </div>
+                    <div class="catalog-slider-nav__slide">
+                      <button type="type"></button>
+                    </div>
+                    <div class="catalog-slider-nav__slide">
+                      <button type="type"></button>
+                    </div>
+                    <div class="catalog-slider-nav__slide">
+                      <button type="type"></button>
+                    </div>
+                    <div class="catalog-slider-nav__slide">
+                      <button type="type"></button>
+                    </div>
+                    <div class="catalog-slider-nav__slide">
+                      <button type="type"></button>
+                    </div>
+                  </div>
+                </div>-->
+            </section>
 
-      <h2 class="title-1">Недавно смотрели</h2>
+            <section class="catalog-slider-block">
+                <h2 class="title-1">Недавно смотрели</h2>
 
-      <div class="js-catalog-slider catalog-slider" data-id="slider_2">
-        <div class="catalog-slider__item">
-          <div class="catalog-item">
-            <div class="catalog-item__image-block">
-              <a class="catalog-item__image" href="detail.html">
-                <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
-                <div class="catalog-item__image-togglers">
-                  <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                <div class="js-catalog-slider catalog-slider" data-id="slider_2">
+                    <div class="catalog-slider__item">
+                        <div class="catalog-item">
+                            <div class="catalog-item__image-block">
+                                <a class="catalog-item__image" href="detail.html">
+                                    <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
+                                    <div class="catalog-item__image-togglers">
+                                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                    </div>
+                                </a>
+                                <button class="catalog-item__fav" type="button" title="Убрать из избранного"><svg>
+                                        <use xlink:href="#favorites_filled"></use>
+                                    </svg></button>
+                            </div>
+                            <div class="catalog-item__info-block">
+                                <p class="catalog-item__colors">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
+                                </p>
+                                <p class="catalog-item__articul">921657Б</p>
+                                <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
+                                <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
+                                <p class="catalog-item__prices">
+                                    <span class="catalog-item__price">41 600 руб.</span>
+                                    <span class="catalog-item__old-price">93 000 руб.</span>
+                                </p>
+                                <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-slider__item">
+                        <div class="catalog-item">
+                            <div class="catalog-item__image-block">
+                                <a class="catalog-item__image" href="detail.html">
+                                    <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
+                                    <div class="catalog-item__image-togglers">
+                                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                    </div>
+                                </a>
+                                <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg>
+                                        <use xlink:href="#favorites"></use>
+                                    </svg></button>
+                            </div>
+                            <div class="catalog-item__info-block">
+                                <p class="catalog-item__colors">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
+                                </p>
+                                <p class="catalog-item__articul">921657Б</p>
+                                <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
+                                <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
+                                <p class="catalog-item__prices">
+                                    <span class="catalog-item__price">41 600 руб.</span>
+                                    <span class="catalog-item__old-price">93 000 руб.</span>
+                                </p>
+                                <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-slider__item">
+                        <div class="catalog-item">
+                            <div class="catalog-item__image-block">
+                                <a class="catalog-item__image" href="detail.html">
+                                    <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
+                                    <div class="catalog-item__image-togglers">
+                                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                    </div>
+                                </a>
+                                <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg>
+                                        <use xlink:href="#favorites"></use>
+                                    </svg></button>
+                            </div>
+                            <div class="catalog-item__info-block">
+                                <p class="catalog-item__colors">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
+                                </p>
+                                <p class="catalog-item__articul">921657Б</p>
+                                <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
+                                <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
+                                <p class="catalog-item__prices">
+                                    <span class="catalog-item__price">41 600 руб.</span>
+                                    <span class="catalog-item__old-price">93 000 руб.</span>
+                                </p>
+                                <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-slider__item">
+                        <div class="catalog-item">
+                            <div class="catalog-item__image-block">
+                                <a class="catalog-item__image" href="detail.html">
+                                    <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
+                                    <div class="catalog-item__image-togglers">
+                                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                    </div>
+                                </a>
+                                <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg>
+                                        <use xlink:href="#favorites"></use>
+                                    </svg></button>
+                            </div>
+                            <div class="catalog-item__info-block">
+                                <p class="catalog-item__colors">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
+                                </p>
+                                <p class="catalog-item__articul">921657Б</p>
+                                <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
+                                <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
+                                <p class="catalog-item__prices">
+                                    <span class="catalog-item__price">41 600 руб.</span>
+                                    <span class="catalog-item__old-price">93 000 руб.</span>
+                                </p>
+                                <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-slider__item">
+                        <div class="catalog-item">
+                            <div class="catalog-item__image-block">
+                                <a class="catalog-item__image" href="detail.html">
+                                    <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
+                                    <div class="catalog-item__image-togglers">
+                                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                    </div>
+                                </a>
+                                <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg>
+                                        <use xlink:href="#favorites"></use>
+                                    </svg></button>
+                            </div>
+                            <div class="catalog-item__info-block">
+                                <p class="catalog-item__colors">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
+                                </p>
+                                <p class="catalog-item__articul">921657Б</p>
+                                <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
+                                <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
+                                <p class="catalog-item__prices">
+                                    <span class="catalog-item__price">41 600 руб.</span>
+                                    <span class="catalog-item__old-price">93 000 руб.</span>
+                                </p>
+                                <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-slider__item">
+                        <div class="catalog-item">
+                            <div class="catalog-item__image-block">
+                                <a class="catalog-item__image" href="detail.html">
+                                    <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
+                                    <div class="catalog-item__image-togglers">
+                                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                    </div>
+                                </a>
+                                <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg>
+                                        <use xlink:href="#favorites"></use>
+                                    </svg></button>
+                            </div>
+                            <div class="catalog-item__info-block">
+                                <p class="catalog-item__colors">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
+                                </p>
+                                <p class="catalog-item__articul">921657Б</p>
+                                <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
+                                <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
+                                <p class="catalog-item__prices">
+                                    <span class="catalog-item__price">41 600 руб.</span>
+                                    <span class="catalog-item__old-price">93 000 руб.</span>
+                                </p>
+                                <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-slider__item">
+                        <div class="catalog-item">
+                            <div class="catalog-item__image-block">
+                                <a class="catalog-item__image" href="detail.html">
+                                    <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
+                                    <div class="catalog-item__image-togglers">
+                                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                    </div>
+                                </a>
+                                <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg>
+                                        <use xlink:href="#favorites"></use>
+                                    </svg></button>
+                            </div>
+                            <div class="catalog-item__info-block">
+                                <p class="catalog-item__colors">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
+                                </p>
+                                <p class="catalog-item__articul">921657Б</p>
+                                <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
+                                <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
+                                <p class="catalog-item__prices">
+                                    <span class="catalog-item__price">41 600 руб.</span>
+                                    <span class="catalog-item__old-price">93 000 руб.</span>
+                                </p>
+                                <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-slider__item">
+                        <div class="catalog-item">
+                            <div class="catalog-item__image-block">
+                                <a class="catalog-item__image" href="detail.html">
+                                    <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
+                                    <div class="catalog-item__image-togglers">
+                                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                    </div>
+                                </a>
+                                <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg>
+                                        <use xlink:href="#favorites"></use>
+                                    </svg></button>
+                            </div>
+                            <div class="catalog-item__info-block">
+                                <p class="catalog-item__colors">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
+                                </p>
+                                <p class="catalog-item__articul">921657Б</p>
+                                <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
+                                <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
+                                <p class="catalog-item__prices">
+                                    <span class="catalog-item__price">41 600 руб.</span>
+                                    <span class="catalog-item__old-price">93 000 руб.</span>
+                                </p>
+                                <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-slider__item">
+                        <div class="catalog-item">
+                            <div class="catalog-item__image-block">
+                                <a class="catalog-item__image" href="detail.html">
+                                    <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
+                                    <div class="catalog-item__image-togglers">
+                                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                    </div>
+                                </a>
+                                <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg>
+                                        <use xlink:href="#favorites"></use>
+                                    </svg></button>
+                            </div>
+                            <div class="catalog-item__info-block">
+                                <p class="catalog-item__colors">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
+                                </p>
+                                <p class="catalog-item__articul">921657Б</p>
+                                <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
+                                <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
+                                <p class="catalog-item__prices">
+                                    <span class="catalog-item__price">41 600 руб.</span>
+                                    <span class="catalog-item__old-price">93 000 руб.</span>
+                                </p>
+                                <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-slider__item">
+                        <div class="catalog-item">
+                            <div class="catalog-item__image-block">
+                                <a class="catalog-item__image" href="detail.html">
+                                    <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
+                                    <div class="catalog-item__image-togglers">
+                                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                    </div>
+                                </a>
+                                <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg>
+                                        <use xlink:href="#favorites"></use>
+                                    </svg></button>
+                            </div>
+                            <div class="catalog-item__info-block">
+                                <p class="catalog-item__colors">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
+                                </p>
+                                <p class="catalog-item__articul">921657Б</p>
+                                <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
+                                <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
+                                <p class="catalog-item__prices">
+                                    <span class="catalog-item__price">41 600 руб.</span>
+                                    <span class="catalog-item__old-price">93 000 руб.</span>
+                                </p>
+                                <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-slider__item">
+                        <div class="catalog-item">
+                            <div class="catalog-item__image-block">
+                                <a class="catalog-item__image" href="detail.html">
+                                    <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
+                                    <div class="catalog-item__image-togglers">
+                                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                    </div>
+                                </a>
+                                <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg>
+                                        <use xlink:href="#favorites"></use>
+                                    </svg></button>
+                            </div>
+                            <div class="catalog-item__info-block">
+                                <p class="catalog-item__colors">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
+                                </p>
+                                <p class="catalog-item__articul">921657Б</p>
+                                <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
+                                <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
+                                <p class="catalog-item__prices">
+                                    <span class="catalog-item__price">41 600 руб.</span>
+                                    <span class="catalog-item__old-price">93 000 руб.</span>
+                                </p>
+                                <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-slider__item">
+                        <div class="catalog-item">
+                            <div class="catalog-item__image-block">
+                                <a class="catalog-item__image" href="detail.html">
+                                    <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
+                                    <div class="catalog-item__image-togglers">
+                                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
+                                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
+                                    </div>
+                                </a>
+                                <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg>
+                                        <use xlink:href="#favorites"></use>
+                                    </svg></button>
+                            </div>
+                            <div class="catalog-item__info-block">
+                                <p class="catalog-item__colors">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
+                                    <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
+                                </p>
+                                <p class="catalog-item__articul">921657Б</p>
+                                <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
+                                <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
+                                <p class="catalog-item__prices">
+                                    <span class="catalog-item__price">41 600 руб.</span>
+                                    <span class="catalog-item__old-price">93 000 руб.</span>
+                                </p>
+                                <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </a>
-              <button class="catalog-item__fav" type="button" title="Убрать из избранного"><svg><use xlink:href="#favorites_filled"></use></svg></button>
-            </div>
-            <div class="catalog-item__info-block">
-              <p class="catalog-item__colors">
-                <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
-              </p>
-              <p class="catalog-item__articul">921657Б</p>
-              <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
-              <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
-              <p class="catalog-item__prices">
-                <span class="catalog-item__price">41 600 руб.</span>
-                <span class="catalog-item__old-price">93 000 руб.</span>
-              </p>
-              <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
-            </div>
-          </div>
-        </div>
-        <div class="catalog-slider__item">
-          <div class="catalog-item">
-            <div class="catalog-item__image-block">
-              <a class="catalog-item__image" href="detail.html">
-                <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
-                <div class="catalog-item__image-togglers">
-                  <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                </div>
-              </a>
-              <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg><use xlink:href="#favorites"></use></svg></button>
-            </div>
-            <div class="catalog-item__info-block">
-              <p class="catalog-item__colors">
-                <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
-              </p>
-              <p class="catalog-item__articul">921657Б</p>
-              <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
-              <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
-              <p class="catalog-item__prices">
-                <span class="catalog-item__price">41 600 руб.</span>
-                <span class="catalog-item__old-price">93 000 руб.</span>
-              </p>
-              <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
-            </div>
-          </div>
-        </div>
-        <div class="catalog-slider__item">
-          <div class="catalog-item">
-            <div class="catalog-item__image-block">
-              <a class="catalog-item__image" href="detail.html">
-                <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
-                <div class="catalog-item__image-togglers">
-                  <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                </div>
-              </a>
-              <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg><use xlink:href="#favorites"></use></svg></button>
-            </div>
-            <div class="catalog-item__info-block">
-              <p class="catalog-item__colors">
-                <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
-              </p>
-              <p class="catalog-item__articul">921657Б</p>
-              <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
-              <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
-              <p class="catalog-item__prices">
-                <span class="catalog-item__price">41 600 руб.</span>
-                <span class="catalog-item__old-price">93 000 руб.</span>
-              </p>
-              <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
-            </div>
-          </div>
-        </div>
-        <div class="catalog-slider__item">
-          <div class="catalog-item">
-            <div class="catalog-item__image-block">
-              <a class="catalog-item__image" href="detail.html">
-                <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
-                <div class="catalog-item__image-togglers">
-                  <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                </div>
-              </a>
-              <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg><use xlink:href="#favorites"></use></svg></button>
-            </div>
-            <div class="catalog-item__info-block">
-              <p class="catalog-item__colors">
-                <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
-              </p>
-              <p class="catalog-item__articul">921657Б</p>
-              <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
-              <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
-              <p class="catalog-item__prices">
-                <span class="catalog-item__price">41 600 руб.</span>
-                <span class="catalog-item__old-price">93 000 руб.</span>
-              </p>
-              <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
-            </div>
-          </div>
-        </div>
-        <div class="catalog-slider__item">
-          <div class="catalog-item">
-            <div class="catalog-item__image-block">
-              <a class="catalog-item__image" href="detail.html">
-                <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
-                <div class="catalog-item__image-togglers">
-                  <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                </div>
-              </a>
-              <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg><use xlink:href="#favorites"></use></svg></button>
-            </div>
-            <div class="catalog-item__info-block">
-              <p class="catalog-item__colors">
-                <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
-              </p>
-              <p class="catalog-item__articul">921657Б</p>
-              <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
-              <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
-              <p class="catalog-item__prices">
-                <span class="catalog-item__price">41 600 руб.</span>
-                <span class="catalog-item__old-price">93 000 руб.</span>
-              </p>
-              <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
-            </div>
-          </div>
-        </div>
-        <div class="catalog-slider__item">
-          <div class="catalog-item">
-            <div class="catalog-item__image-block">
-              <a class="catalog-item__image" href="detail.html">
-                <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
-                <div class="catalog-item__image-togglers">
-                  <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                </div>
-              </a>
-              <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg><use xlink:href="#favorites"></use></svg></button>
-            </div>
-            <div class="catalog-item__info-block">
-              <p class="catalog-item__colors">
-                <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
-              </p>
-              <p class="catalog-item__articul">921657Б</p>
-              <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
-              <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
-              <p class="catalog-item__prices">
-                <span class="catalog-item__price">41 600 руб.</span>
-                <span class="catalog-item__old-price">93 000 руб.</span>
-              </p>
-              <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
-            </div>
-          </div>
-        </div>
-        <div class="catalog-slider__item">
-          <div class="catalog-item">
-            <div class="catalog-item__image-block">
-              <a class="catalog-item__image" href="detail.html">
-                <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
-                <div class="catalog-item__image-togglers">
-                  <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                </div>
-              </a>
-              <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg><use xlink:href="#favorites"></use></svg></button>
-            </div>
-            <div class="catalog-item__info-block">
-              <p class="catalog-item__colors">
-                <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
-              </p>
-              <p class="catalog-item__articul">921657Б</p>
-              <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
-              <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
-              <p class="catalog-item__prices">
-                <span class="catalog-item__price">41 600 руб.</span>
-                <span class="catalog-item__old-price">93 000 руб.</span>
-              </p>
-              <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
-            </div>
-          </div>
-        </div>
-        <div class="catalog-slider__item">
-          <div class="catalog-item">
-            <div class="catalog-item__image-block">
-              <a class="catalog-item__image" href="detail.html">
-                <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
-                <div class="catalog-item__image-togglers">
-                  <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                </div>
-              </a>
-              <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg><use xlink:href="#favorites"></use></svg></button>
-            </div>
-            <div class="catalog-item__info-block">
-              <p class="catalog-item__colors">
-                <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
-              </p>
-              <p class="catalog-item__articul">921657Б</p>
-              <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
-              <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
-              <p class="catalog-item__prices">
-                <span class="catalog-item__price">41 600 руб.</span>
-                <span class="catalog-item__old-price">93 000 руб.</span>
-              </p>
-              <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
-            </div>
-          </div>
-        </div>
-        <div class="catalog-slider__item">
-          <div class="catalog-item">
-            <div class="catalog-item__image-block">
-              <a class="catalog-item__image" href="detail.html">
-                <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
-                <div class="catalog-item__image-togglers">
-                  <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                </div>
-              </a>
-              <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg><use xlink:href="#favorites"></use></svg></button>
-            </div>
-            <div class="catalog-item__info-block">
-              <p class="catalog-item__colors">
-                <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
-              </p>
-              <p class="catalog-item__articul">921657Б</p>
-              <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
-              <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
-              <p class="catalog-item__prices">
-                <span class="catalog-item__price">41 600 руб.</span>
-                <span class="catalog-item__old-price">93 000 руб.</span>
-              </p>
-              <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
-            </div>
-          </div>
-        </div>
-        <div class="catalog-slider__item">
-          <div class="catalog-item">
-            <div class="catalog-item__image-block">
-              <a class="catalog-item__image" href="detail.html">
-                <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
-                <div class="catalog-item__image-togglers">
-                  <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                </div>
-              </a>
-              <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg><use xlink:href="#favorites"></use></svg></button>
-            </div>
-            <div class="catalog-item__info-block">
-              <p class="catalog-item__colors">
-                <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
-              </p>
-              <p class="catalog-item__articul">921657Б</p>
-              <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
-              <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
-              <p class="catalog-item__prices">
-                <span class="catalog-item__price">41 600 руб.</span>
-                <span class="catalog-item__old-price">93 000 руб.</span>
-              </p>
-              <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
-            </div>
-          </div>
-        </div>
-        <div class="catalog-slider__item">
-          <div class="catalog-item">
-            <div class="catalog-item__image-block">
-              <a class="catalog-item__image" href="detail.html">
-                <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
-                <div class="catalog-item__image-togglers">
-                  <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                </div>
-              </a>
-              <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg><use xlink:href="#favorites"></use></svg></button>
-            </div>
-            <div class="catalog-item__info-block">
-              <p class="catalog-item__colors">
-                <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
-              </p>
-              <p class="catalog-item__articul">921657Б</p>
-              <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
-              <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
-              <p class="catalog-item__prices">
-                <span class="catalog-item__price">41 600 руб.</span>
-                <span class="catalog-item__old-price">93 000 руб.</span>
-              </p>
-              <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
-            </div>
-          </div>
-        </div>
-        <div class="catalog-slider__item">
-          <div class="catalog-item">
-            <div class="catalog-item__image-block">
-              <a class="catalog-item__image" href="detail.html">
-                <img src="images/content/catalog-item/img_1.jpg" srcset="images/content/catalog-item/img_1@2x.jpg 2x" alt="">
-                <div class="catalog-item__image-togglers">
-                  <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_2.jpg" data-srcset="images/content/catalog-item/img_2@2x.jpg 2x"></div>
-                  <div class="catalog-item__image-toggler" data-src="images/content/catalog-item/img_1.jpg" data-srcset="images/content/catalog-item/img_1@2x.jpg 2x"></div>
-                </div>
-              </a>
-              <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg><use xlink:href="#favorites"></use></svg></button>
-            </div>
-            <div class="catalog-item__info-block">
-              <p class="catalog-item__colors">
-                <img width="10" height="10" src="images/content/catalog-item/img_3.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_4.jpg" alt="Цвет">
-                <img width="10" height="10" src="images/content/catalog-item/img_5.jpg" alt="Цвет">
-              </p>
-              <p class="catalog-item__articul">921657Б</p>
-              <p class="catalog-item__title"><a href="#">КОЛЬЦО СЕТЧАТОЕ С БРИЛЛИАНТАМИ</a></p>
-              <p class="catalog-item__description">Белое золото<br> 22 бриллианта 0,11ct 4/4А</p>
-              <p class="catalog-item__prices">
-                <span class="catalog-item__price">41 600 руб.</span>
-                <span class="catalog-item__old-price">93 000 руб.</span>
-              </p>
-              <a class="js-popover-opener catalog-item__btn btn btn--type_4" href="javascript:void(0)" data-popover="add-cart">Купить</a>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="catalog-slider-nav-container">
-        <div class="js-catalog-slider-nav catalog-slider-nav" data-id="slider_2">
-          <div class="catalog-slider-nav__slide">
-            <button type="type"></button>
-          </div>
-          <div class="catalog-slider-nav__slide">
-            <button type="type"></button>
-          </div>
-          <div class="catalog-slider-nav__slide">
-            <button type="type"></button>
-          </div>
-          <div class="catalog-slider-nav__slide">
-            <button type="type"></button>
-          </div>
-          <div class="catalog-slider-nav__slide">
-            <button type="type"></button>
-          </div>
-          <div class="catalog-slider-nav__slide">
-            <button type="type"></button>
-          </div>
-          <div class="catalog-slider-nav__slide">
-            <button type="type"></button>
-          </div>
-          <div class="catalog-slider-nav__slide">
-            <button type="type"></button>
-          </div>
-          <div class="catalog-slider-nav__slide">
-            <button type="type"></button>
-          </div>
-          <div class="catalog-slider-nav__slide">
-            <button type="type"></button>
-          </div>
-          <div class="catalog-slider-nav__slide">
-            <button type="type"></button>
-          </div>
-          <div class="catalog-slider-nav__slide">
-            <button type="type"></button>
-          </div>
+                <!--<div class="catalog-slider-nav-container">
+                  <div class="js-catalog-slider-nav catalog-slider-nav" data-id="slider_2">
+                    <div class="catalog-slider-nav__slide">
+                      <button type="type"></button>
+                    </div>
+                    <div class="catalog-slider-nav__slide">
+                      <button type="type"></button>
+                    </div>
+                    <div class="catalog-slider-nav__slide">
+                      <button type="type"></button>
+                    </div>
+                    <div class="catalog-slider-nav__slide">
+                      <button type="type"></button>
+                    </div>
+                    <div class="catalog-slider-nav__slide">
+                      <button type="type"></button>
+                    </div>
+                    <div class="catalog-slider-nav__slide">
+                      <button type="type"></button>
+                    </div>
+                    <div class="catalog-slider-nav__slide">
+                      <button type="type"></button>
+                    </div>
+                    <div class="catalog-slider-nav__slide">
+                      <button type="type"></button>
+                    </div>
+                    <div class="catalog-slider-nav__slide">
+                      <button type="type"></button>
+                    </div>
+                    <div class="catalog-slider-nav__slide">
+                      <button type="type"></button>
+                    </div>
+                    <div class="catalog-slider-nav__slide">
+                      <button type="type"></button>
+                    </div>
+                    <div class="catalog-slider-nav__slide">
+                      <button type="type"></button>
+                    </div>
+                  </div>
+                </div>-->
+            </section>
         </div>
-      </div>
 
-    </div>
+    </main>
 
-  </main>
+    //= template/footer.html
 
-  //= template/footer.html
+    //= template/float-bar.html
 
-  //= template/float-bar.html
+    //= template/scripts.html
 
-  //= template/scripts.html
-
-  <script src="js/catalog-slider.js"></script>
-  <script src="js/catalog-item.js"></script>
-  <script src="js/quantity.js"></script>
+    <script src="js/catalog-slider.js"></script>
+    <script src="js/catalog-item.js"></script>
+    <script src="js/quantity.js"></script>
 </body>
 
 </html>

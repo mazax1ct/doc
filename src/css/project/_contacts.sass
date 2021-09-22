@@ -362,3 +362,25 @@
 
   &__work-time
     color: $color_grey
+
+  &__way
+    @media(min-width: 1350px)
+      display: none
+      
+    a
+      align-items: center
+      border: 1px solid $color_darkblue
+      color: $color_darkblue
+      display: flex
+      height: 40px
+      justify-content: center
+      text-transform: uppercase
+      text-decoration: none
+      transition: background-color 0.3s, color 0.3s
+
+      &:hover
+        background-color: $color_darkblue
+        color: #fff
+
+[class*="ymaps-2-1"][class*="-ground-pane"]
+  filter: grayscale(1)
