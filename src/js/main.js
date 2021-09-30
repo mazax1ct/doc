@@ -37,3 +37,10 @@ $(document).on('input', '.footer__subscribe-input', function () {
 		$('.footer__subscribe-submit').prop('disabled', 'disabled');
 	}
 });
+
+//закрытие сообщения
+$(document).on('click', '.js-warning-closer', function() {
+  $('.warning').remove();
+  $('body').removeClass('warning-page');
+  return false;
+});

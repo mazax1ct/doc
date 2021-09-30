@@ -1,0 +1,54 @@
+body.nobanner-page.warning-page
+  .page-content
+    @media(min-width: 1900px)
+      padding-top: 225px
+
+.nobanner-page.warning-page
+  .warning
+    left: 0
+    position: absolute
+    top: 0
+    right: 0
+
+.warning-page
+  .header
+    top: 50px
+
+.warning
+  align-items: center
+  background-color: $color_darkblue
+  color: #fff
+  display: flex
+  font-size: 9px
+  height: 50px
+  justify-content: center
+  padding-left: 40px
+  padding-right: 40px
+  text-align: center
+
+  @media(min-width: 1024px)
+    font-size: 12px
+
+  @media(min-width: 1350px)
+    font-size: 14px
+
+  &__close
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    height: 50px
+    justify-content: center
+    left: auto
+    position: absolute
+    padding: 0
+    right: 0
+    top: 0
+    width: 40px
+    z-index: 1
+
+    svg
+      fill: #fff
+      height: 16px
+      width: 16px

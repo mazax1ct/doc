@@ -17,12 +17,12 @@
   zoomer.style.backgroundPosition = x+'% '+y+'%';
 }*/
 
-var offset_top = 150;
+var offset_top = 20;
 
 $(document).ready(function() {
-  if($('body').width() > 1890) {
+  /*if($('body').width() > 1890) {
     offset_top = 200;
-  }
+  }*/
 
   if($('.js-detail-slider').length) {
     $('.js-detail-slider').slick({
@@ -73,9 +73,9 @@ $(document).ready(function() {
 });
 
 $(window).resize(function() {
-  if($('body').width() > 1890) {
+  /*if($('body').width() > 1890) {
     offset_top = 200;
-  }
+  }*/
 
   if ($("body").width() >= 1024) {
     $(".js-sticky-block").trigger("sticky_kit:detach");
@@ -95,9 +95,9 @@ $(window).resize(function() {
 });
 
 $(window).on("orientationchange", function(event) {
-  if($('body').width() > 1890) {
+  /*if($('body').width() > 1890) {
     offset_top = 200;
-  }
+  }*/
 
   if ($("body").width() >= 1024) {
     $(".js-sticky-block").trigger("sticky_kit:detach");
