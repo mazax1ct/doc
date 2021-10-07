@@ -269,16 +269,12 @@
         margin-right: 5px
 
   &__top-buttons
-    display: none
     left: auto
     position: absolute
-    right: 0
-    top: -10px
+    right: 10px
+    top: 0
     width: 40px
     z-index: 1
-
-    @media(min-width: 1024px)
-      display: block
 
   &__top-button
     align-items: center
@@ -543,7 +539,11 @@
 
   &__price-block
     margin-bottom: 50px
+    text-align: center
     white-space: nowrap
+
+    @media(min-width: 1024px)
+      text-align: left
 
   &__old-price
     color: rgba($color_grey, 0.3)
@@ -1071,9 +1071,13 @@
 
   &__list-item
     .catalog-item
+      display: flex
+      flex-direction: column
+      height: 100%
       max-width: 365px
 
       &__info-block
+        flex-grow: 1
         padding: 15px 0 0
         position: relative
 
@@ -1099,8 +1103,12 @@
       &__description
         display: block
 
+      &__prices
+        margin-bottom: 15px
+
       &__btn
         display: flex
+        margin-top: auto
 
       &__info-block-dropdown
         background-color: #fff

@@ -34,7 +34,7 @@ function init() {
   for (i = 0; i < locations.length; i++) {
     placemark = new ymaps.Placemark([locations[i][0], locations[i][1]], {
       hintContent: locations[i][2],
-      balloonContentBody: '<div class="balloon"><p class="balloon__title">ДВОРЕЦ ОБРУЧАЛЬНЫХ КОЛЕЦ</p><div class="balloon__inner"><div class="balloon__image">'+ locations[i][3] +'</div><div class="balloon__info">'+ locations[i][4] + locations[i][5] + locations[i][6] + locations[i][7] + locations[i][8] +'</div></div></div>'
+      balloonContentBody: '<div class="balloon"><p class="balloon__title">Санкт-Петербург, ул. Чайковского, дом 22</p><div class="balloon__inner"><div class="balloon__image">'+ locations[i][3] +'</div><div class="balloon__info">'+ locations[i][4] + locations[i][5] + locations[i][6] + locations[i][7] + locations[i][8] +'</div></div></div>'
     }, {
       balloonMaxWidth: 520,
       iconLayout: iconLayout,

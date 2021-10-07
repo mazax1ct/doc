@@ -864,18 +864,18 @@
                 <div class="cols-3__container container">
                     <h2 class="title-1">К вашим услугам</h2>
                     <div class="cols-3__cols">
-                        <div class="cols-3__col">
+                        <a class="cols-3__col" href="#">
                             <img src="images/content/cols-3/img_1.svg" alt="">
                             <p>Бесплатная<br> доставка</p>
-                        </div>
-                        <div class="cols-3__col">
+                        </a>
+                        <a class="cols-3__col" href="#">
                             <img src="images/content/cols-3/img_2.svg" alt="">
                             <p>Бесплатная<br> подарочная упаковка</p>
-                        </div>
-                        <div class="cols-3__col">
+                        </a>
+                        <a class="cols-3__col" href="#">
                             <img src="images/content/cols-3/img_3.svg" alt="">
                             <p>Пожизненное<br> обслуживание</p>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -951,9 +951,14 @@
                         <div style="max-width: 470px">
                             <h2>Собственное производство</h2>
                             <p class="brand-text">Ассортимент включает<br> <span class="color-gold">более 1000 моделей</span> помолвочных, обручальных колец, которые могут быть преподнесены любимым в качестве подарка.</p>
-                            <p><a class="more-link" href="#">Узнать больше <svg>
+                            <p>
+                                <a class="more-link" href="#">
+                                    Узнать больше
+                                    <svg>
                                         <use xlink:href="#double_chevron_right"></use>
-                                    </svg></a></p>
+                                    </svg>
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -983,18 +988,18 @@
                 <div class="cols-3__container container">
                     <h2 class="title-1">Сертификат качества</h2>
                     <div class="cols-3__cols">
-                        <div class="cols-3__col">
+                        <a class="cols-3__col" href="#">
                             <img src="images/content/cols-3/img_4.svg" alt="">
                             <p>Каратность</p>
-                        </div>
-                        <div class="cols-3__col">
+                        </a>
+                        <a class="cols-3__col" href="#">
                             <img src="images/content/cols-3/img_5.svg" alt="">
                             <p>Качество огранки</p>
-                        </div>
-                        <div class="cols-3__col">
+                        </a>
+                        <a class="cols-3__col" href="#">
                             <img src="images/content/cols-3/img_6.svg" alt="">
                             <p>Чистота</p>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -1202,6 +1207,17 @@
     <script src="js/catalog-slider.js"></script>
     <script src="js/news-slider.js"></script>
     <script src="js/articles-slider.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            setTimeout(function() {
+                if (!$('body').hasClass('compensate-for-scrollbar')) {
+                    scrollCompensate();
+                }
+                popoverOpen('geolocation');
+            }, 1000);
+        });
+    </script>
 </body>
 
 </html>

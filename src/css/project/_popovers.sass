@@ -1,3 +1,7 @@
+.warning-page
+  .shade
+    top: 0
+
 .shade
   background-color: rgba($color_darkblue, 0.5)
   bottom: 0
@@ -251,3 +255,74 @@
 
     & + .file
       margin-top: -5px
+
+.geolocation
+  background-color: #fff
+  box-shadow: 0 4px 4px 0 rgba(#000, 0.25)
+  border-radius: 20px
+  color: $color_darkblue
+  cursor: initial
+  display: none
+  font-size: 18px
+  height: auto
+  max-width: 340px
+  margin: 50px auto
+  position: relative
+  padding: 40px 40px 20px
+  text-align: center
+  width: 100%
+  z-index: 10
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+  @media(min-width: 1024px)
+    height: auto
+    max-width: 400px
+
+  &.is-open
+    display: block
+
+  &__closer
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    height: 40px
+    justify-content: center
+    left: auto
+    padding: 0
+    position: absolute
+    top: 5px
+    right: 5px
+    width: 40px
+
+    svg
+      fill: $color_darkblue
+      height: 16px
+      width: 16px
+
+  &__city
+    margin-bottom: 20px
+
+  &__yes
+    align-items: center
+    border: 1px solid $color_darkblue
+    background-color: #fff
+    border-radius: 10px
+    color: $color_darkblue
+    cursor: pointer
+    display: inline-flex
+    font-size: 16px
+    height: 40px
+    padding: 5px 10px 8px
+
+  &__choose
+    align-items: center
+    border: none
+    background-color: #fff
+    border-radius: 10px
+    color: $color_darkblue
+    cursor: pointer
+    display: inline-flex
+    font-size: 16px
+    height: 40px
+    padding: 5px 10px

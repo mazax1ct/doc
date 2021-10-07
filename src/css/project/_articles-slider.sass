@@ -86,6 +86,24 @@
     .article-slide__title
       opacity: 1
 
+  &:hover
+    .slick-current
+      .article-slide
+        @media(min-width: 1024px)
+          transform: scale(1)
+
+      .article-slide__title
+        opacity: 0
+
+  .slick-slide
+    &:hover
+      .article-slide
+        @media(min-width: 1024px)
+          transform: scale(1.16)
+
+      .article-slide__title
+        opacity: 1
+
 .article-slide
   display: block
   margin-left: auto

@@ -140,17 +140,30 @@
         width: 10px
 
   &__filter
-    border-top: 1px solid rgba($color_grey, 0.3)
     background-color: #fff
     cursor: initial
     display: none
-    height: calc(100% - 77px)
+    height: 100%
     left: 0
+    padding-top: 77px
     position: fixed
-    top: 77px
+    top: 0
     width: 100%
     z-index: 10
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+    &::before
+      background-color: rgba($color_grey, 0.3)
+      content: ''
+      height: 1px
+      left: 0
+      position: absolute
+      top: 76px
+      width: 100%
+      z-index: 1
+
+      @media(min-width: 1024px)
+        display: none
 
     @media(min-width: 1024px)
       border-top: none
@@ -159,6 +172,7 @@
       height: auto
       left: auto
       position: static
+      padding-top: 0
       padding-left: 0
       padding-right: 0
       top: auto
@@ -211,7 +225,7 @@
     justify-content: center
     letter-spacing: 3px
     left: 0
-    top: -77px
+    top: 0
     position: absolute
     padding: 0
     text-transform: uppercase
@@ -721,14 +735,13 @@
 
   &__reset-block
     &--outer
-      display: none
+      display: flex
+      flex-wrap: wrap
       padding-left: 30px
       padding-right: 30px
 
-      @media(min-width: 1024px)
-        align-items: center
-        display: flex
-        flex-wrap: wrap
+      .filter__reset--all
+        margin-top: 10px
 
   &__reset
     align-items: center
@@ -740,8 +753,11 @@
     font-size: 13px
     font-weight: 500
     margin-right: 20px
-    padding: 15px 0
+    padding: 10px 0
     transition: color 0.3s
+
+    @media(min-width: 1024px)
+      padding: 15px 0
 
     @media(min-width: 1350px)
       margin-right: 40px
@@ -878,8 +894,8 @@
 
 .catalog-banner
   display: block
-  margin-left: -30px
-  margin-right: -30px
+  //margin-left: -30px
+  //margin-right: -30px
   position: relative
   text-decoration: none
   width: 100%

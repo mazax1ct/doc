@@ -46,6 +46,23 @@
                         <p class="detail__pseudo-title">Кольцо с бриллиантами и изумрудами из комбинированного золота</p>
                         <div class="js-sticky-block">
                             <div class="detail__images">
+                                <div class="detail__top-buttons">
+                                    <button class="detail__top-button" type="button" title="Поделиться">
+                                        <svg>
+                                            <use xlink:href="#share"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="detail__top-button" type="button" title="Убрать из избранного">
+                                        <svg>
+                                            <use xlink:href="#favorites_filled"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="js-popover-opener detail__top-button" type="button" title="Намекнуть на подарок" data-popover="hint">
+                                        <svg>
+                                            <use xlink:href="#envelope"></use>
+                                        </svg>
+                                    </button>
+                                </div>
                                 <div class="detail__thumbs">
                                     <button class="detail__thumb is-active"><img src="images/content/detail/thumb.jpg" srcset="images/content/detail/thumb@2x.jpg 2x" alt=""></button>
                                     <button class="detail__thumb"><img src="images/content/detail/thumb_2.jpg" srcset="images/content/detail/thumb_2@2x.jpg 2x" alt=""></button>
@@ -62,11 +79,6 @@
                                         <div class="detail__sticker detail__sticker--hit">хит продаж</div>
                                         <div class="detail__sticker detail__sticker--new">новинка</div>
                                     </div>
-                                    <button class="detail__fav" type="button" title="Убрать из избранного">
-                                        <svg>
-                                            <use xlink:href="#favorites_filled"></use>
-                                        </svg>
-                                    </button>
                                     <div class="js-detail-slider detail-slider">
                                         <div class="detail-slider__slide">
                                             <div class="js-zoom">
@@ -144,17 +156,6 @@
                         </div>
                     </div>
                     <div class="js-content-with-sticky detail__top-right">
-                        <div class="detail__top-buttons">
-                            <button class="detail__top-button" type="button" title="Поделиться"><svg>
-                                    <use xlink:href="#share"></use>
-                                </svg></button>
-                            <button class="detail__top-button" type="button" title="Убрать из избранного"><svg>
-                                    <use xlink:href="#favorites_filled"></use>
-                                </svg></button>
-                            <button class="js-popover-opener detail__top-button" type="button" title="Намекнуть на подарок" data-popover="hint"><svg>
-                                    <use xlink:href="#envelope"></use>
-                                </svg></button>
-                        </div>
                         <div class="detail__art-colors">
                             <p class="detail__articul">Арт. 921657Б</p>
                             <div class="detail__colors">
@@ -378,9 +379,14 @@
                     <h2 class="detail__bottom-title">Описание и характеристики</h2>
                     <div class="detail__bottom-container">
                         <div class="detail__bottom-left">
-                            <h3 class="detail__bottom-left-title"><button type="button">Описание украшения <svg>
+                            <h3 class="detail__bottom-left-title">
+                                <button type="button">
+                                    Описание украшения
+                                    <svg>
                                         <use xlink:href="#chevron_down"></use>
-                                    </svg></button></h3>
+                                    </svg>
+                                </button>
+                            </h3>
                             <div class="detail__bottom-left-text">
                                 <p>Яркий дизайн, который не устареет никогда, в сочетании с удобством «европейки», делают это женское свадебное кольцо из красного золота необычайно привлекательным.</p>
                                 <p>Ободок шириной 4 мм украшают глубокая алмазная грань и природные бриллианты, утопленные вровень с поверхностью для максимального удобства.</p>
@@ -1648,6 +1654,7 @@
                     </div>
                 </div>
             </div>
+            <p class="text-center"><a class="highlighted-btn" href="catalog-section.html"><span>Вернуться в каталог</span></a></p>
         </section>
 
         //= template/action-banner.html

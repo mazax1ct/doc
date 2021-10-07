@@ -319,10 +319,13 @@
   font-weight: 500
   line-height: 1.85714
   letter-spacing: 0.35px
-  padding: 10px
+  max-width: 260px
+  padding: 5px
 
   @media(min-width: 1024px)
     min-width: 490px
+    max-width: 100%
+    padding: 10px
 
   &__title
     font-size: 14px
@@ -366,7 +369,7 @@
   &__way
     @media(min-width: 1350px)
       display: none
-      
+
     a
       align-items: center
       border: 1px solid $color_darkblue

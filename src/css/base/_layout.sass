@@ -447,20 +447,31 @@ body
       margin-bottom: 80px
 
     @media(min-width: 1350px)
-      margin-bottom: 100px
+      margin-bottom: 150px
 
     @media(min-width: 1900px)
-      margin-bottom: 160px
+      margin-bottom: 175px
 
   &__container
     @media(min-width: 1900px)
       max-width: 1860px
+
+    &:not(:last-child)
+      @media(min-width: 768px)
+        margin-bottom: 80px
+
+      @media(min-width: 1350px)
+        margin-bottom: 150px
+
+      @media(min-width: 1900px)
+        margin-bottom: 175px
 
   &__cols
     @media(min-width: 768px)
       display: flex
 
   &__col
+    display: block
     font-size: 14px
     font-weight: 700
     letter-spacing: 2px

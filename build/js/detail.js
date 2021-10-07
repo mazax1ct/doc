@@ -1,28 +1,6 @@
-/*function zoom(e){
-  var x, y;
-  var zoomer = e.currentTarget;
-  if(e.offsetX) {
-    offsetX = e.offsetX;
-  } else {
-    offsetX = e.touches[0].pageX;
-  }
-
-  if(e.offsetY) {
-    offsetY = e.offsetY;
-  } else {
-    offsetX = e.touches[0].pageX;
-  }
-  x = offsetX/zoomer.offsetWidth*100;
-  y = offsetY/zoomer.offsetHeight*100;
-  zoomer.style.backgroundPosition = x+'% '+y+'%';
-}*/
-
 var offset_top = 20;
 
 $(document).ready(function() {
-  /*if($('body').width() > 1890) {
-    offset_top = 200;
-  }*/
 
   if($('.js-detail-slider').length) {
     $('.js-detail-slider').slick({
@@ -64,19 +42,10 @@ $(document).ready(function() {
     }
   }
 
-  //зум для картинки
-  /*$(".zoom").mousemove(function(e){
-		zoom(e);
-	});*/
-
   $('.js-zoom').zoom();
 });
 
 $(window).resize(function() {
-  /*if($('body').width() > 1890) {
-    offset_top = 200;
-  }*/
-
   if ($("body").width() >= 1024) {
     $(".js-sticky-block").trigger("sticky_kit:detach");
     setTimeout(function() {
@@ -95,10 +64,6 @@ $(window).resize(function() {
 });
 
 $(window).on("orientationchange", function(event) {
-  /*if($('body').width() > 1890) {
-    offset_top = 200;
-  }*/
-
   if ($("body").width() >= 1024) {
     $(".js-sticky-block").trigger("sticky_kit:detach");
     setTimeout(function() {

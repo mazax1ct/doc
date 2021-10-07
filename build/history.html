@@ -244,9 +244,12 @@
 
     <header class="header compensate-for-scrollbar">
         <div class="header__top">
-            <button class="js-popover-opener header__locations" type="button" data-popover="locations"><svg>
+            <button class="js-popover-opener header__locations" type="button" data-popover="locations">
+                <svg>
                     <use xlink:href="#location"></use>
-                </svg> Санкт-петербург</button>
+                </svg>
+                Санкт-петербург
+            </button>
             <ul class="header__service-menu">
                 <li><a href="#">Магазины</a></li>
                 <li><a href="#">Представительства</a></li>
@@ -255,40 +258,64 @@
             <button class="js-popover-opener header__callback" type="button" data-popover="recall">Заказать звонок</button>
             <a class="header__phone" href="tel:+78008888888">8 800 888 88 88</a>
             <div class="header__socials">
-                <a href="#" target="_blank" rel="nofollow noreferrer noopener" title="Instagram"><svg>
+                <a href="#" target="_blank" rel="nofollow noreferrer noopener" title="Instagram">
+                    <svg>
                         <use xlink:href="#inst"></use>
-                    </svg></a>
-                <a href="#" target="_blank" rel="nofollow noreferrer noopener" title="Vkontakte"><svg>
+                    </svg>
+                </a>
+                <a href="#" target="_blank" rel="nofollow noreferrer noopener" title="Vkontakte">
+                    <svg>
                         <use xlink:href="#vk"></use>
-                    </svg></a>
-                <a href="#" target="_blank" rel="nofollow noreferrer noopener" title="Facebook"><svg>
+                    </svg>
+                </a>
+                <a href="#" target="_blank" rel="nofollow noreferrer noopener" title="Facebook">
+                    <svg>
                         <use xlink:href="#fb"></use>
-                    </svg></a>
-                <a href="#" target="_blank" rel="nofollow noreferrer noopener" title="YouTube"><svg>
+                    </svg>
+                </a>
+                <a href="#" target="_blank" rel="nofollow noreferrer noopener" title="YouTube">
+                    <svg>
                         <use xlink:href="#yt"></use>
-                    </svg></a>
+                    </svg>
+                </a>
             </div>
         </div>
         <div class="header__bottom">
-            <button class="js-menu-toggler header__menu-toggler" type="button" title="Меню"><svg>
+            <button class="js-menu-toggler header__menu-toggler" type="button" title="Меню">
+                <svg>
                     <use xlink:href="#burger"></use>
-                </svg></button>
-            <a class="header__logo" href="main.html" title="На главную"><svg>
+                </svg>
+            </button>
+            <a class="header__logo" href="main.html" title="На главную">
+                <svg>
                     <use xlink:href="#logo"></use>
-                </svg></a>
-            <button class="js-popover-opener header__search-toggler" type="button" data-popover="search"><svg>
+                </svg>
+            </a>
+            <button class="js-popover-opener header__search-toggler" type="button" data-popover="search">
+                <svg>
                     <use xlink:href="#search"></use>
-                </svg> <span>Поиск</span></button>
+                </svg>
+                <span>Поиск</span>
+            </button>
             <div class="header__bottom-right">
-                <a class="js-popover-opener header__cart-link" href="cart.html" title="Корзина" data-popover="small-cart"><span class="header__cart-icon"><svg>
+                <a class="js-popover-opener header__cart-link" href="cart.html" title="Корзина" data-popover="small-cart"><span class="header__cart-icon">
+                        <svg>
                             <use xlink:href="#cart_2"></use>
-                        </svg> <span class="header__cart-qnt">2</span></span></a>
-                <a class="js-popover-opener header__fav-link" href="favorites.html" title="Избранное" data-popover="favorites-popup"><svg>
+                        </svg>
+                        <span class="header__cart-qnt">2</span>
+                    </span>
+                </a>
+                <a class="js-popover-opener header__fav-link" href="favorites.html" title="Избранное" data-popover="favorites-popup">
+                    <svg>
                         <use xlink:href="#favorites"></use>
-                    </svg></a>
-                <a class="js-popover-opener header__enter-link" href="login.html" title="Личный кабинет" data-popover="login"><span>Вход</span> <svg>
+                    </svg>
+                </a>
+                <a class="js-popover-opener header__enter-link" href="login.html" title="Личный кабинет" data-popover="login">
+                    <span>Вход</span>
+                    <svg>
                         <use xlink:href="#personal"></use>
-                    </svg></a>
+                    </svg>
+                </a>
             </div>
         </div>
         <nav class="main-menu">
@@ -501,10 +528,43 @@
                 </li>
                 <li class="main-menu__item"><a class="main-menu__link" href="contacts.html">Контакты</a></li>
             </ul>
+            <div class="header__socials">
+                <a href="#" target="_blank" rel="nofollow noreferrer noopener" title="Instagram">
+                    <svg>
+                        <use xlink:href="#inst"></use>
+                    </svg>
+                </a>
+                <a href="#" target="_blank" rel="nofollow noreferrer noopener" title="Vkontakte">
+                    <svg>
+                        <use xlink:href="#vk"></use>
+                    </svg>
+                </a>
+                <a href="#" target="_blank" rel="nofollow noreferrer noopener" title="Facebook">
+                    <svg>
+                        <use xlink:href="#fb"></use>
+                    </svg>
+                </a>
+                <a href="#" target="_blank" rel="nofollow noreferrer noopener" title="YouTube">
+                    <svg>
+                        <use xlink:href="#yt"></use>
+                    </svg>
+                </a>
+            </div>
         </nav>
     </header>
 
     <div class="shade">
+        <div class="geolocation popover" tabindex="0">
+            <button class="js-popover-closer geolocation__closer" type="button" title="Закрыть">
+                <svg>
+                    <use xlink:href="#close"></use>
+                </svg>
+            </button>
+            <p class="geolocation__city">Ваш&nbsp;город <b>Сосновый Бор</b>?</p>
+            <button class="js-popover-closer geolocation__yes" type="button">ДА</button>
+            <button class="js-popover-opener geolocation__choose" type="button" data-popover="locations">Выбрать город</button>
+        </div>
+    
         <div class="locations popover" tabindex="0">
             <button class="js-popover-closer popover__closer" type="button" title="Закрыть">
                 <svg>
@@ -809,34 +869,37 @@
         </div>
     
         <!--<div class="small-cart popover popover--at_right" tabindex="0">
-        <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg><use xlink:href="#close"></use></svg> <span>Закрыть</span></button>
-        <div class="popover__inner">
-          <p class="small-cart__accaunt-title"><a href="login.html">Войти</a> / <a href="register.html">Зарегистироваться</a></p>
-          <p class="small-cart__title">Ваша корзина пуста</p>
-          <ul class="small-cart__menu">
-            <li><a href="#">Обручальные кольца <svg><use xlink:href="#chevron_right"></use></svg></a></li>
-            <li><a href="#">Помолвочные кольца <svg><use xlink:href="#chevron_right"></use></svg></a></li>
-            <li><a href="#">Парные кольца <svg><use xlink:href="#chevron_right"></use></svg></a></li>
-            <li><a href="#">Подобрать подарок <svg><use xlink:href="#chevron_right"></use></svg></a></li>
-          </ul>
-          <div class="help-block">
-            <p class="help-block__intro">Нужна помощь?</p>
-            <p class="help-block__title">Позвоните нам</p>
-            <p class="help-block__phone"><a href="tel:+78008888888">8 800 888 88 88</a></p>
-            <p class="help-block__support"><a href="#">Клиентская поддержка</a></p>
+          <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg><use xlink:href="#close"></use></svg> <span>Закрыть</span></button>
+          <div class="popover__inner">
+            <p class="small-cart__accaunt-title"><a href="login.html">Войти</a> / <a href="register.html">Зарегистироваться</a></p>
+            <p class="small-cart__title">Ваша корзина пуста</p>
+            <ul class="small-cart__menu">
+              <li><a href="#">Обручальные кольца <svg><use xlink:href="#chevron_right"></use></svg></a></li>
+              <li><a href="#">Помолвочные кольца <svg><use xlink:href="#chevron_right"></use></svg></a></li>
+              <li><a href="#">Парные кольца <svg><use xlink:href="#chevron_right"></use></svg></a></li>
+              <li><a href="#">Подобрать подарок <svg><use xlink:href="#chevron_right"></use></svg></a></li>
+            </ul>
+            <div class="help-block">
+              <p class="help-block__intro">Нужна помощь?</p>
+              <p class="help-block__title">Позвоните нам</p>
+              <p class="help-block__phone"><a href="tel:+78008888888">8 800 888 88 88</a></p>
+              <p class="help-block__support"><a href="#">Клиентская поддержка</a></p>
+            </div>
+            <div class="socials">
+              <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Instagram"><svg><use xlink:href="#inst"></use></svg></a>
+              <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Vkontakte"><svg><use xlink:href="#vk"></use></svg></a>
+              <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Facebook"><svg><use xlink:href="#fb"></use></svg></a>
+            </div>
           </div>
-          <div class="socials">
-            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Instagram"><svg><use xlink:href="#inst"></use></svg></a>
-            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Vkontakte"><svg><use xlink:href="#vk"></use></svg></a>
-            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Facebook"><svg><use xlink:href="#fb"></use></svg></a>
-          </div>
-        </div>
-      </div>-->
+        </div>-->
     
         <div class="small-cart popover popover--at_right" tabindex="0">
-            <button class="js-popover-closer popover__closer" type="button" title="Закрыть"><svg>
+            <button class="js-popover-closer popover__closer" type="button" title="Закрыть">
+                <svg>
                     <use xlink:href="#close"></use>
-                </svg> <span>Закрыть</span></button>
+                </svg>
+                <span>Закрыть</span>
+            </button>
             <div class="popover__inner">
                 <p class="small-cart__accaunt-title">Добро пожаловать в&nbsp;ваш&nbsp;аккаунт,<br> Валерия!</p>
                 <p class="small-cart__title">Ваша корзина</p>

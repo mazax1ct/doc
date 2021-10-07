@@ -30,6 +30,7 @@
   margin-right: auto
   max-width: 315px
   padding: 10px
+  position: relative
   text-align: center
   transition: background-color 0.3s, border-color 0.3s, color 0.3s
   width: 100%
@@ -122,6 +123,15 @@
 
     @media(min-width: 768px)
       font-size: 13px
+
+    &::after
+      bottom: 0
+      cursor: pointer
+      content: ''
+      left: 0
+      position: absolute
+      right: 0
+      top: 0
 
   &:hover
     background-color: $color_grey

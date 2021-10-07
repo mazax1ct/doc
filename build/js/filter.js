@@ -13,7 +13,6 @@ $(window).on("scroll", filter_resize_scroll).on("resize", filter_resize_scroll);
 
 $(document).on('click', '.js-filter-opener', function () {
   $('body').addClass('popover-open');
-  $('.filter__filter').fadeIn();
   $('.filter__filter').fadeIn(300, function() {
     $('.filter__filter').addClass('is-open');
   });
@@ -22,7 +21,9 @@ $(document).on('click', '.js-filter-opener', function () {
 
 $(document).on('click', '.js-filter-closer', function () {
   $('body').removeClass('popover-open');
-  $('.filter__filter').fadeOut();
+  $('.filter__filter').fadeOut(300, function() {
+    $('.filter__filter').removeClass('is-open');
+  });
   return false;
 });
 
