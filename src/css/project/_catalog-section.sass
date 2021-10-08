@@ -880,9 +880,13 @@
       grid-column-gap: 20px
 
     @media(min-width: 1900px)
-      //grid-column-gap: 40px
-      //grid-row-gap: 40px
       max-width: 1760px
+
+    &:not(:last-child)
+      margin-bottom: 80px
+
+      @media(min-width: 1900px)
+        margin-bottom: 160px
 
   &__item
     &--banner
