@@ -3,7 +3,7 @@
     align-items: center
     background-color: transparent
     border: none
-    color: rgba($color_grey, 0.3)
+    color: $color_darkblue
     cursor: pointer
     display: flex
     font-size: 13px
@@ -20,16 +20,18 @@
       margin-top: 0
 
     &:hover,
-    &:focus
-      color: $color_grey
-
+    &:focus,
     &:active
       color: $color_lightblue
 
+      svg
+        fill: $color_lightblue
+
     svg
-      fill: $color_lightblue
+      fill: $color_darkblue
       height: 18px
       margin-right: 10px
+      transition: fill 0.3s
       width: 18px
 
   &__form

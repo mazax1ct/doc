@@ -42,7 +42,9 @@ $(document).ready(function() {
     }
   }
 
-  $('.js-zoom').zoom();
+  $('.js-zoom').zoom({
+    touch: false
+  });
 });
 
 $(window).resize(function() {

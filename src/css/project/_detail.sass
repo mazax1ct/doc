@@ -260,13 +260,22 @@
     @media(min-width: 1024px)
       display: none
 
-    img
-      min-width: 10px
+    & > a
       margin-bottom: 5px
-      width: 10px
 
       &:not(:last-child)
         margin-right: 5px
+
+    & > img
+        margin-bottom: 5px
+
+        &:not(:last-child)
+          margin-right: 5px
+
+    img,
+    a
+      min-width: 10px
+      width: 10px
 
   &__top-buttons
     left: auto
