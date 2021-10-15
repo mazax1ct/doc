@@ -9,7 +9,8 @@
   left: 0
   position: fixed
   right: 0
-  top: 77px
+  //top: 77px
+  top: 0
   z-index: 10
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 
@@ -21,14 +22,17 @@
     display: block
 
 .popover
-  border-top: 1px solid rgba($color_grey, 0.3)
+  //border-top: 1px solid rgba($color_grey, 0.3)
   background-color: #fff
   cursor: initial
   display: none
-  height: calc(100% - 77px)
+  //height: calc(100% - 77px)
+  height: 100%
   left: 0
   position: fixed
-  top: 77px
+  padding-top: 77px
+  //top: 77px
+  top: 0
   text-align: center
   width: 100%
   z-index: 10
@@ -38,6 +42,7 @@
     box-shadow: 0 4px 4px 0 rgba(#000, 0.25)
     border-top: none
     height: 100%
+    padding-top: 0
     top: 0
     right: auto
     width: 480px
@@ -47,6 +52,19 @@
 
   @media(min-width: 1600px)
     width: 645px
+
+  &::before
+    background-color: rgba($color_grey, 0.3)
+    content: ''
+    height: 1px
+    left: 0
+    position: absolute
+    top: 77px
+    width: 100%
+    z-index: 1
+
+    @media(min-width: 1024px)
+      display: none
 
   &.is-open
     display: flex
@@ -112,11 +130,13 @@
     display: flex
     font-size: 13px
     font-weight: 500
-    height: 76px
+    height: 77px
+    //height: 76px
     justify-content: center
     letter-spacing: 3px
     left: 0
-    top: -77px
+    //top: -77px
+    top: 0
     position: absolute
     padding: 0
     text-transform: uppercase
@@ -277,6 +297,10 @@
   @media(min-width: 1024px)
     height: auto
     max-width: 400px
+    padding-top: 40px
+
+  &::before
+    display: none
 
   &.is-open
     display: block
