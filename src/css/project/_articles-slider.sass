@@ -93,7 +93,8 @@
           transform: scale(1)
 
       .article-slide__title
-        opacity: 0
+        @media(min-width: 1024px)
+          opacity: 0
 
   .slick-slide
     &:hover
@@ -102,7 +103,8 @@
           transform: scale(1.16)
 
       .article-slide__title
-        opacity: 1
+        @media(min-width: 1024px)
+          opacity: 1
 
 .article-slide
   display: block
