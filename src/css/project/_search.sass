@@ -167,9 +167,11 @@
   &__vars-block
     &:nth-child(1),
     &:nth-child(2)
+      display: none
       margin-bottom: 40px
 
       @media(min-width: 768px)
+        display: block
         padding-right: 30px
         width: 50%
 
@@ -179,6 +181,9 @@
         width: 25%
 
     &:nth-child(3)
+      display: flex
+      flex-direction: column
+
       .search__vars-title
         margin-bottom: 30px
 
@@ -237,7 +242,8 @@
     font-weight: 500
     letter-spacing: 3px
     margin-top: -5px
-    margin-bottom: 40px
+    margin-top: 40px
+    order: 3
     padding-top: 8px
     padding-bottom: 8px
     text-transform: uppercase

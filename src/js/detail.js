@@ -127,3 +127,25 @@ $(document).on('click', '.detail__pair-tabs-button', function () {
   $('.detail__pair-tab[data-target="'+$(this).attr('data-target')+'"]').addClass('is-active');
   return false;
 });
+
+$(document).on('click', '.js-scroll-to-title', function () {
+  var titleOffsetTop = $('#' + $(this).attr('data-href')).offset().top;
+
+  console.log(titleOffsetTop);
+
+  if(titleOffsetTop > 0) {
+    var top = titleOffsetTop - $('.header').height() - 40;
+    $('body, html').animate({scrollTop: top}, 1000);
+  } else {
+    var top = $('.detail__pair-tabs').offset().top - $('.header').height() - 40;
+    $('body, html').animate({scrollTop: top}, 1000);
+
+    if($(this).attr('data-href') == 'female_ring') {
+      $('.detail__pair-tabs-button[data-target="1"]').click();
+    } else {
+      $('.detail__pair-tabs-button[data-target="2"]').click();
+    }
+  }
+
+  return false;
+});
